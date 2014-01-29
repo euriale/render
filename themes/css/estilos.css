@@ -77,13 +77,13 @@ color:#f1f1f1;
 }
 
 h4{
-padding-top:25px;
-font: bold 40px arial;
-color:#000000;
+padding-top:35px;
+font: bold 35px arial;
+color:#FF8C00;
+text-align:left;
 }
 h5{
-padding-top:25px;
-font: bold 30px arial;
+font: 25px arial;
 color:#000000;
 }
 .drive{
@@ -199,16 +199,27 @@ border:1px solid #f9f68a; -webkit-border-radius: 3px; -moz-border-radius: 3px;bo
 	width:100%;
 	top:2500px;
 }
-.logosaplic{
-width:100px;
-margin:0 auto;
+.secciones{
+float:left;
+width:auto;
+text-align:left;
 
+}
+.seccioncaja{
+	width:80%;
+	margin:0 auto;
+}
+#logos1{
+	width:250px;
+}
+#logos2{
+	width:250px;
+}
+#textoseccion{
+	width:50%;
+	text-align:left;
 }
 .logoaplic{
-float:left;
+padding:15px;
 }
-.logosaplic2{
-width:0px;
- auto;
 
-}
