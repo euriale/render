@@ -55,7 +55,7 @@
 		<div class="cajablanca">
 			<div class="seccioncaja">
 			<div class="secciones">
-			<img src="themes/img/logos/prueba.jpg" title="Contacto" alt="Contacto" width="90px"
+			<img src="themes/img/logos/prueba.jpg" title="Contacto" alt="Contacto" width="90px">
 			</div>
 			<div class="secciones">
 			<h4>Contacto</h4>
