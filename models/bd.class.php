@@ -2,11 +2,11 @@
 class bd{
 
 
-  var $usuari='elios'; //nombre de usuario de la base de datos  //qhz480
-  var $clau='alyusanna'; //contrase�a del usuario Guiapass01
+  var $usuari='render1813'; //nombre de usuario de la base de datos  //qhz480
+  var $clau='MAKZ86Ba'; //contrase�a del usuario Guiapass01
 
   var $servidor='localhost'; 
-  var $nomBD='yusanna'; //nombre de la base de datos //qhz480
+  var $nomBD='panacota14'; //nombre de la base de datos //qhz480
   var $conn; //necesario para la conexion y desconexion de la base de datos
   var $debug; //modo depuracion, mostrara los errores y los querys
 

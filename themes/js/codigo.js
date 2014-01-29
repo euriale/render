@@ -6,7 +6,7 @@ Si es menor de 1 el fondo irá más deprisa que el frente.
 */
 var parallax  = -2;
 
-
+$(document).ready(function() { $("#aplicacion").select2(); });
 $(document).ready(function () {
 	cabecerablanca();
 
@@ -27,6 +27,13 @@ $(document).ready(function () {
 	});
 	$( "#cabecera" ).mouseout(function() {
 		cabeceranaranja();
+	});
+	
+	$("input").focus(function(){
+		$(this).css("border", "1px solid #5897FB");
+	});
+	$("input").blur(function(){
+		$(this).css("border", "1px solid #AAAAAA");
 	});
 });
 

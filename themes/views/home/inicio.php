@@ -7,6 +7,7 @@
 		
 		
 </div>
+
 <div class="" id="diapo2">
 		<div class="espacio"></div>
 		
@@ -21,7 +22,6 @@
 		
 	<div class="cajawhite">  
 		<div class="seccioncaja">
-		
 		
 			<div class="secciones" id="logos1">
 				<div class="logoaplic"><img src="themes/img/logos/cinema.png" title="Cinema 4D" alt="Cinema 4D" width="80px"></div>
@@ -66,73 +66,35 @@
 				
 				$milabel = new label('nombre','Nombre',1,'');
 				$milabel->crearLabel();
-				$miinput = new input('text','id="nombre" name="nombre" class=""','','');
+				$miinput = new input('text','id="nombre" name="nombre" class="input"','','');
 				$miinput->crearInput();
 				
 				$milabel = new label('apellidos','Apellidos',1,'');
 				$milabel->crearLabel();
-				$miinput = new input('text','id="apellidos" name="apellidos" class=""','','');
+				$miinput = new input('text','id="apellidos" name="apellidos" class="input"','','');
 				$miinput->crearInput();
 
-				$milabel = new label('apellidos','Apellidos',1,'');
+				$milabel = new label('email','Email',1,'');
 				$milabel->crearLabel();
-				$miinput = new input('text','id="apellidos" name="apellidos" class=""','','');
+				$miinput = new input('text','id="email" name="email" class="input"','','');
 				$miinput->crearInput();
 				
-				/*
-				<tr>
-				<td><label>Input tipo password</label></td>
-				<td><input type="password" name="password" id="password"  style="width:100px" minlength="8"  maxlength="12" />
-				</tr>
-				<tr>
-				<td><label>Textarea</label></td>
-				<td><textarea></textarea>
-				  </td>
-				</tr>
-				<tr>
-				<td><label>Select</label></td>
-				<td><select name="color" id="color" >
-				<option value="0">Selecciona ...</option>
-				<option value="rojo">Rojo</option>
-				<option value="amarillo">Amarillo</option>
-				<option value="verde">Verde</option>
-				<option value="azul">Azul</option>
-				</select>
-				</td>
-				</tr>
-				<tr>
-				<td><label>Archivo</label></td>
-				<td><input type="file" name="archivo" id="archivo">
-				  </td>
-				</tr>
-
-				<tr>
-				<td><label>Radio</label></td>
-				<td>
-				<input type="radio" name="radio" value="1" />Sí<br />
-				<input type="radio" name="radio" value="1" />No
-				  </td>
-				</tr>
-
-				<tr>
-				<td><label>Checkbox</label></td>
-				<td>
-				<input type="checkbox" name="checkbox" value="0" />Opción 1<br />
-				<input type="checkbox" name="checkbox" value="1" />Opción 2
-				  </td>
-				</tr>
-				<tr>
-				<td><label>Button</label></td>
-				<td>
-				<input type="button" value="Mi botón" /></td>
-				</tr>
-				<tr>
-				  <td>&nbsp;</td>
-				  <td>&nbsp;</td>
-				</tr>
-
-				</table>
-				</form>*/
+				$milabel = new label('telefono','Teléfono',1,'');
+				$milabel->crearLabel();
+				$miinput = new input('text','id="telefono" name="telefono" class="input"','','');
+				$miinput->crearInput();
+				
+				$milabel = new label('aplicacion','Aplicación',1,'');
+				$milabel->crearLabel();
+				$miselect = new select('aplicacion','id="aplicacion"',"aplicaciones","aplicaciones","idaplicaciones",'','1=1','');
+				$miselect->crearSelect();
+				$milabel = new label('consulta','Envie su pregunta',1,'');
+				$milabel->crearLabel();
+				$miarea = new area('consulta','','','');
+				$miarea->crearArea();
+				
+				echo '<input type="submit" id="envio" name="envio" class="boton"  value="Enviar">';
+				$miformulario->cerrarFormulario();
 				?>
 			</fieldset>
 			</div>
