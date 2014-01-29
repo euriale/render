@@ -60,7 +60,7 @@
 			<div class="secciones">
 			<h4>Contacto</h4>
 			<fieldset>
-				<?php
+				<?php/*
 				$miformulario = new form('post',$GLOBALS['raiz']. 'controllers/direct/guardarclienteController.php','','','formulario');
 				$miformulario->crearFormulario(); 
 				
@@ -94,7 +94,7 @@
 				$miarea->crearArea();
 				
 				echo '<input type="submit" id="envio" name="envio" class="boton"  value="Enviar">';
-				$miformulario->cerrarFormulario();
+				$miformulario->cerrarFormulario();*/
 				?>
 			</fieldset>
 			</div>
