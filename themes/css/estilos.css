@@ -223,3 +223,10 @@ text-align:left;
 padding:15px;
 }
 
+fieldset{
+	border:solid 10px #444;
+	width:500px;
+	margin:0 auto;
+	margin-top:25px;
+}
+

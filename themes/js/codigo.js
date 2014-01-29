@@ -6,8 +6,10 @@ Si es menor de 1 el fondo irá más deprisa que el frente.
 */
 var parallax  = -2;
 
+
 $(document).ready(function () {
 	cabecerablanca();
+
 	$(document).scroll(function () {
 	cabeceranaranja();
 		s = $(document).scrollTop();

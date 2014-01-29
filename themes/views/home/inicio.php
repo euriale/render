@@ -52,7 +52,69 @@
 		<div class="espacio"></div>
 		
 		<div class="cajablanca">
-			Nombre <br> Apellidos <br> Teléfono Contacto <br> Correo electrónico <br> Software 3D <br>
+		
+			<fieldset>
+				<form name="" id="form1" method="post" enctype="multipart/form-data" action="#">
+				<table width="600" border="0" align="center" cellpadding="0" cellspacing="0" >
+				<tr>
+				  <td width="150"><label>Input tipo Text</label></td>
+				  <td><input type="text" name="email" id="email" maxlength="80" style="width:200px" /></td>
+				  <td class="status"></td>
+				</tr>
+				<tr>
+				<td><label>Input tipo password</label></td>
+				<td><input type="password" name="password" id="password"  style="width:100px" minlength="8"  maxlength="12" />
+				</tr>
+				<tr>
+				<td><label>Textarea</label></td>
+				<td><textarea></textarea>
+				  </td>
+				</tr>
+				<tr>
+				<td><label>Select</label></td>
+				<td><select name="color" id="color" >
+				<option value="0">Selecciona ...</option>
+				<option value="rojo">Rojo</option>
+				<option value="amarillo">Amarillo</option>
+				<option value="verde">Verde</option>
+				<option value="azul">Azul</option>
+				</select>
+				</td>
+				</tr>
+				<tr>
+				<td><label>Archivo</label></td>
+				<td><input type="file" name="archivo" id="archivo">
+				  </td>
+				</tr>
+
+				<tr>
+				<td><label>Radio</label></td>
+				<td>
+				<input type="radio" name="radio" value="1" />Sí<br />
+				<input type="radio" name="radio" value="1" />No
+				  </td>
+				</tr>
+
+				<tr>
+				<td><label>Checkbox</label></td>
+				<td>
+				<input type="checkbox" name="checkbox" value="0" />Opción 1<br />
+				<input type="checkbox" name="checkbox" value="1" />Opción 2
+				  </td>
+				</tr>
+				<tr>
+				<td><label>Button</label></td>
+				<td>
+				<input type="button" value="Mi botón" /></td>
+				</tr>
+				<tr>
+				  <td>&nbsp;</td>
+				  <td>&nbsp;</td>
+				</tr>
+
+				</table>
+				</form>
+			</fieldset>
 
 		</div>
 		
