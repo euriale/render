@@ -53,15 +53,29 @@
 		<div class="espacio"></div>
 		
 		<div class="cajablanca">
-		
+			<div class="seccioncaja">
+			<h4>Contacto</h4>
 			<fieldset>
-				<form name="" id="form1" method="post" enctype="multipart/form-data" action="#">
-				<table width="600" border="0" align="center" cellpadding="0" cellspacing="0" >
-				<tr>
-				  <td width="150"><label>Input tipo Text</label></td>
-				  <td><input type="text" name="email" id="email" maxlength="80" style="width:200px" /></td>
-				  <td class="status"></td>
-				</tr>
+				<?php
+				$miformulario = new form('post',$GLOBALS['raiz']. 'controllers/direct/guardarclienteController.php','','','formulario');
+				$miformulario->crearFormulario(); 
+				
+				$milabel = new label('nombre','Nombre',1,'');
+				$milabel->crearLabel();
+				$miinput = new input('text','id="nombre" name="nombre" class=""','','');
+				$miinput->crearInput();
+				
+				$milabel = new label('apellidos','Apellidos',1,'');
+				$milabel->crearLabel();
+				$miinput = new input('text','id="apellidos" name="apellidos" class=""','','');
+				$miinput->crearInput();
+
+				$milabel = new label('apellidos','Apellidos',1,'');
+				$milabel->crearLabel();
+				$miinput = new input('text','id="apellidos" name="apellidos" class=""','','');
+				$miinput->crearInput();
+				
+				
 				<tr>
 				<td><label>Input tipo password</label></td>
 				<td><input type="password" name="password" id="password"  style="width:100px" minlength="8"  maxlength="12" />
@@ -115,8 +129,9 @@
 
 				</table>
 				</form>
+				?>
 			</fieldset>
-
+		</div>
 		</div>
 		
 				
