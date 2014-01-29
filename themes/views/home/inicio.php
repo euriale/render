@@ -60,7 +60,8 @@
 			<div class="secciones">
 			<h4>Contacto</h4>
 			<fieldset>
-				<?php/*
+				<?php
+				/*
 				$miformulario = new form('post',$GLOBALS['raiz']. 'controllers/direct/guardarclienteController.php','','','formulario');
 				$miformulario->crearFormulario(); 
 				
