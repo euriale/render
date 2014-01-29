@@ -57,7 +57,7 @@
 			<div class="secciones">
 			<img src="themes/img/logos/prueba.jpg" title="Contacto" alt="Contacto" width="90px"
 			</div>
-			
+			<div class="secciones">
 			<h4>Contacto</h4>
 			<fieldset>
 				<?php
@@ -135,6 +135,7 @@
 				</form>*/
 				?>
 			</fieldset>
+			</div>
 		</div>
 		</div>
 		
