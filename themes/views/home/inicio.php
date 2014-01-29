@@ -75,7 +75,7 @@
 				$miinput = new input('text','id="apellidos" name="apellidos" class=""','','');
 				$miinput->crearInput();
 				
-				
+				/*
 				<tr>
 				<td><label>Input tipo password</label></td>
 				<td><input type="password" name="password" id="password"  style="width:100px" minlength="8"  maxlength="12" />
@@ -128,7 +128,7 @@
 				</tr>
 
 				</table>
-				</form>
+				</form>*/
 				?>
 			</fieldset>
 		</div>
