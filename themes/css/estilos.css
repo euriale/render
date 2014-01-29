@@ -168,7 +168,8 @@ border:1px solid #f9f68a; -webkit-border-radius: 3px; -moz-border-radius: 3px;bo
  background-image: -moz-linear-gradient(top, #fcfac0, #f6f283);
  background-image: -ms-linear-gradient(top, #fcfac0, #f6f283);
  background-image: -o-linear-gradient(top, #fcfac0, #f6f283);
- background-image: linear-gradient(to bottom, #fcfac0, #f6f283);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#fcfac0, endColorstr=#f6f283);
+ background-image: linear-gradient(to bottom, #fcfac0, #f6f283);
+ filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#fcfac0, endColorstr=#f6f283);
 }
 
 .boton:hover{
