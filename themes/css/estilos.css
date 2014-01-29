@@ -1,6 +1,5 @@
 @charset "utf-8";
 /* CSS Document */
-
 html,body{
  font-family: arial;
  font-size:12px;
@@ -67,25 +66,37 @@ text-decoration:none;
 }
 h2{
 padding-top:25px;
-font: bold 40px arial;
+font: bold 50px arial;
 color:#fff;
 }
 
 h3{
 padding-top:25px;
-font: bold 30px arial;
+font: bold 35px arial;
 color:#f1f1f1;
 }
 
 h4{
-padding-top:35px;
-font: bold 35px arial;
+padding-top:0px;
+font: bold 50px arial;
 color:#FF8C00;
 text-align:left;
 }
 h5{
-font: 25px arial;
+font: 35px arial;
 color:#000000;
+}
+.txt16naranja{
+font: 26px arial;
+color:#FF8C00;
+text-align:left;
+float:left;
+}
+.txt16negro{
+font: 26px arial;
+color:#000000;
+text-align:left;
+
 }
 .drive{
 color:#fff;
@@ -133,7 +144,7 @@ opacity:0.9;
 .cajawhite{
  background:#fff;
  width:100%;
- height:400px;
+ height:450px;
  filter: alpha(opacity=90); 
 opacity:0.9;
 -moz-opacity:0.9; 
@@ -213,11 +224,15 @@ text-align:left;
 }
 #logos1{
 	width:150px;
-        margin-top:50px;
+    margin-top:50px;
 }
 #logos2{
 	width:250px;
 	margin-top:50px;
+}
+#logos3{
+	width:450px;
+	margin-top:40px;
 }
 #textoseccion{
 	width:50%;
@@ -233,6 +248,7 @@ fieldset{
 	margin:0 auto;
 	margin-top:25px;
 }
+
 input{
 width:350px;
  -moz-user-select: none;
@@ -254,5 +270,31 @@ width:350px;
 
     
 
+.abreintnegro{
+background-repeat:no-repeat;
+background-image:url("../img/logos/faqa.jpg");
+height:55px;
+width:35px;
+float:left;
+}
+.cierraintnegro{
+background-repeat:no-repeat;
+background-image:url("../img/logos/faq.jpg");
+height:55px;
+width:35px;
+float:left;
+}.abreintnaranja{
+background-repeat:no-repeat;
+background-image:url("../img/logos/faqn.jpg");
+height:55px;
+width:35px;
+float:left;
 
 
+}.cierraintnaranja{
+background-repeat:no-repeat;
+background-image:url("../img/logos/faqna.jpg");
+height:55px;
+width:35px;
+float:left;
+}
