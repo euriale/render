@@ -64,3 +64,4 @@
 		<div class="cajablanca">
 			Aquí debería ir las FAQs
 		</div>
+		
