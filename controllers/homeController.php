@@ -1,0 +1,9 @@
+<?php	
+render('home/inicio');
+?>
+
+
+
+
+
+
