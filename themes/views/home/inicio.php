@@ -21,7 +21,7 @@
 		
 	<div class="cajawhite">  
 		<div class="seccioncaja">
-		<h4> Nuestros Servicios Render</h4>
+		
 		
 			<div class="secciones" id="logos1">
 				<div class="logoaplic"><img src="themes/img/logos/cinema.png" title="Cinema 4D" alt="Cinema 4D" width="80px"></div>
@@ -34,7 +34,8 @@
 			</div>
 		
 			<div class="secciones" id="textoseccion">
-				<h5>Nuestros nodos están preparados para Maya, Cinema 4D, Blender, LightWave, 3D Max, así como motores VRAY, Fryrender etc. <br>	Si usas otro software 3D o un plugin en concreto, no dudes en consultarnos. </h5>
+			<h4> Nuestros Servicios Render</h4>
+			<h5>Nuestros nodos están preparados para Maya, Cinema 4D, Blender, LightWave, 3D Max, así como motores VRAY, Fryrender etc. <br>	Si usas otro software 3D o un plugin en concreto, no dudes en consultarnos. </h5>
 			</div>
 		</div>
 	</div>
