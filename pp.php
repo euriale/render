@@ -10,14 +10,27 @@ define ('__SITE_PATH', $site_path);
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <META charset="ISO 8859-1">
-<title>Render</title>
+<title>Render Drive - Servicios de Render Online</title>
+
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script language="javascript" src="themes/js/codigo.js" charset="ISO-8859-1"></script>
+
 <?php 
 $GLOBALS['raiz']='/render/';
 ?>
 <link rel="STYLESHEET" type="text/css" href="themes/css/estilos.css"></link>
-<script language="javascript" src="themes/js/codigo.js" charset="ISO-8859-1"></script>
+<link rel="stylesheet" href="themes/css/uniform.css" media="screen" />
 
+<!-- Make sure your CSS file is listed before jQuery -->
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+<script src="themes/js/jquery.uniform.js"></script>
+<script type='text/javascript'>
+    // On load, style typical form elements
+    $(function () {
+        $("select, input, button").uniform();
+    });
+</script>
 </head>
 
 <body>
