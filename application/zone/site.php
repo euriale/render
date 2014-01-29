@@ -2,12 +2,12 @@
 <div id="cabecera">
 <div class="menu">
       <ul class="navigation">
-        <li>Inicio</li>
-        <li>Servicios Render</a></li>
-		<li>Tarifas</li>
-        <li>Contacto</li>
-		<li>FAQ</li>
-        <li>Tutorial</li>
+        <li><a href="#inicio” class=”ancla" > Inicio </a></li>
+        <li><a href="#servicios" class="ancla" > Servicios Render </a></li>
+		<li><a href="#tarifas" class="ancla" > Tarifas </a></li>
+        <li><a href="#contacto" class="ancla" > Contacto </a></li>
+		<li><a href="#faq" class="ancla" > FAQ </a></li>
+        <li><a href="tutorial" target="_blank" > Inicio </a>Tutorial</li>
       </ul>
 </div>
 <div class="idiomas"><a href="">ES</a><a href="">EN</a><a href="">FR</a></div> 

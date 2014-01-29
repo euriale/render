@@ -11,7 +11,7 @@ define ('__SITE_PATH', $site_path);
 <head>
 <META charset="ISO 8859-1">
 <title>Render Drive - Servicios de Render Online</title>
-
+<script src="themes/js/jquery.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
 <script language="javascript" src="themes/js/codigo.js" charset="ISO-8859-1"></script>
 

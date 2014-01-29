@@ -11,7 +11,7 @@
 <div class="" id="diapo2">
 		<div class="espacio"></div>
 		
-		<div class="cajanocolor"> 
+		<div class="cajanocolor"><div id="inicio"></div> 
 			<h2>Granja de Render Online</h2>
 			<h3>Ponemos a tu disposicion cientos de nodos compatibles con la mayoría del software 3D </h3>
 			<div class="boton">Si usas Maya prueba nuestra APP</div>
@@ -20,7 +20,7 @@
 		<div class="espacio"></div>
 		
 		
-	<div class="cajawhite">  
+	<div class="cajawhite">  <div id="servicios"></div> 
 		<div class="seccioncaja">
 		
 			<div class="secciones" id="logos1">
@@ -44,7 +44,7 @@
 		<div class="espacio"></div>
 		<div class="espacio"></div>
 		
-		<div class="cajablanca">
+		<div class="cajablanca"><div id="tarifas"></div> 
 			Tarifas tabla resumida
 		</div>
 
@@ -52,7 +52,7 @@
 		<div class="espacio"></div>
 		<div class="espacio"></div>
 		
-		<div class="cajablanca">
+		<div class="cajablanca"><div id="contacto"></a> 
 			<div class="seccioncaja">
 			<div class="secciones">
 			<img src="themes/img/logos/prueba.jpg" title="Contacto" alt="Contacto" width="90px">
@@ -105,7 +105,7 @@
 		<div class="espacio"></div>
 		<div class="espacio"></div>
 		
-		<div class="cajablanca">
+		<div class="cajablanca"><div id="faq"></div> 
 		<div class="seccioncaja">
 		 <div class="secciones" id="logos3"><img src="themes/img/logos/faq.jpg" title="Contacto" alt="Contacto" width="80px"></div>
 		 <div class="secciones">
