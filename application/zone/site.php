@@ -11,7 +11,11 @@
         <li><a href="tutorial" target="_blank" > Tutorial</a></li>
       </ul>
 </div>
-<div class="idiomas"><a href="">ES</a><a href="">EN</a><a href="">FR</a></div> 
+<div class="idiomas">
+	<a href="<?php echo $GLOBALS['raiz'].'idioma/ES';?>">ES</a>
+	<a href="<?php echo $GLOBALS['raiz'].'idioma/EN';?>">EN</a>
+	<a href="<?php echo $GLOBALS['raiz'].'idioma/FR';?>">FR</a>
+</div> 
 </div>
 <div id="inicio"></div> 
 

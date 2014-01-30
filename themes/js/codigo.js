@@ -56,7 +56,7 @@ $(document).ready(function () {
 	
 	$("#aplicacion").change(function () {
 		var valor=$(this).val();
-		var pathaux="../themes/views/resultados/ajax/versiones.php";
+		var pathaux="themes/views/home/ajax/versiones.php";
 			$.ajax({
 				type: "GET",
 				url: pathaux,
