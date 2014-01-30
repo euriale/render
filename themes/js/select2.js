@@ -99,7 +99,6 @@ the specific language governing permissions and limitations under the Apache Lic
     MEASURE_SCROLLBAR_TEMPLATE = "<div class='select2-measure-scrollbar'></div>",
 
 
-
     $document = $(document);
 
     nextUid=(function() { var counter=1; return function() { return counter++; }; }());

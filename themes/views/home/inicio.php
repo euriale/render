@@ -11,7 +11,7 @@
 <div class="" id="diapo2">
 		<div class="espacio"></div>
 		
-		<div class="cajanocolor"> 
+		<div class="cajanocolor"><div id="inicio"></div> 
 			<h2>Granja de Render Online</h2>
 			<h3>Ponemos a tu disposicion cientos de nodos compatibles con la mayoría del software 3D </h3>
 			<div class="boton">Si usas Maya prueba nuestra APP</div>
@@ -20,7 +20,7 @@
 		<div class="espacio"></div>
 		
 		
-	<div class="cajawhite">  
+	<div class="cajawhite">  <div id="servicios"></div> 
 		<div class="seccioncaja">
 		
 			<div class="secciones" id="logos1">
@@ -44,7 +44,7 @@
 		<div class="espacio"></div>
 		<div class="espacio"></div>
 		
-		<div class="cajablanca">
+		<div class="cajablanca"><div id="tarifas"></div> 
 			Tarifas tabla resumida
 		</div>
 
@@ -52,7 +52,11 @@
 		<div class="espacio"></div>
 		<div class="espacio"></div>
 		
+<<<<<<< HEAD:themes/views/home/inicio.php
 		<div class="cajablanca" style="height:650px;">
+=======
+		<div class="cajablanca"><div id="contacto"></a> 
+>>>>>>> 88e80b143846f2e9711aa37e792edb81924a694d:themes/views/home/inicio.php
 			<div class="seccioncaja">
 			<div class="secciones">
 			<img src="themes/img/contacto.png" title="Contacto" alt="Contacto">
@@ -61,6 +65,7 @@
 			<h4>Contacto</h4>
 			<fieldset>
 				<?php
+				/*
 				$miformulario = new form('post',$GLOBALS['raiz']. 'controllers/direct/guardarclienteController.php','','','formulario');
 				$miformulario->crearFormulario(); 
 				
@@ -93,8 +98,10 @@
 				$miarea = new area('consulta','','','');
 				$miarea->crearArea();
 				
-				echo '<input type="submit" id="envio" name="envio" class="botonnegro"  value="Enviar">';
-				$miformulario->cerrarFormulario();
+
+				echo '<input type="submit" id="envio" name="envio" class="boton"  value="Enviar">';
+				$miformulario->cerrarFormulario();*/
+
 				?>
 			</fieldset>
 			</div>
@@ -105,7 +112,7 @@
 		<div class="espacio"></div>
 		<div class="espacio"></div>
 		
-		<div class="cajablanca">
+		<div class="cajablanca"><div id="faq"></div> 
 		<div class="seccioncaja">
 		 <div class="secciones" id="logos3"><img src="themes/img/logos/faq.jpg" title="Contacto" alt="Contacto" width="80px"></div>
 		 <div class="secciones">

@@ -33,6 +33,12 @@ html,body{
 	text-align:left;
 
 }
+.navigation li a{
+	color:#fff;
+	text-decoration:none;
+	font:15px arial;
+
+}
 .navigation li:hover,.active{
 	cursor:pointer;
 }
