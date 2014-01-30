@@ -51,6 +51,21 @@ $(document).ready(function () {
 	$("input").blur(function(){
 		$(this).css("border", "1px solid #AAAAAA");
 	});
+	
+	/* ---------------- Versiones de las aplicaciones en el formulario contacto------------------*/
+	
+	$("#aplicacion").change(function () {
+		var valor=$(this).val();
+		var pathaux="../themes/views/resultados/ajax/versiones.php";
+			$.ajax({
+				type: "GET",
+				url: pathaux,
+				data: "idaplicaciones="+valor,
+				success: function(texto){
+						$('#versiones').html(texto);
+				}
+			});
+	});
 
 });
 function cabecerablanca(){

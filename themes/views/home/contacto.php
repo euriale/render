@@ -37,6 +37,7 @@
 				$milabel->crearLabel();
 				$miselect = new select('aplicacion','id="aplicacion"',"aplicaciones","aplicaciones","idaplicaciones",'','1=1','');
 				$miselect->crearSelect();
+				echo '<div class="versiones"></div>';
 				$milabel = new label('consulta','Envie su pregunta',1,'');
 				$milabel->crearLabel();
 				$miarea = new area('consulta','','','');

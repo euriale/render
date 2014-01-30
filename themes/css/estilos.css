@@ -281,26 +281,10 @@ fieldset{
 	margin:0 auto;
 	margin-top:25px;
 	padding:25px;
+	background:#f1f1f1;
 }
 
-input{
-width:350px;
- -moz-user-select: none;
-    background-clip: padding-box;
-    background-color: #FFFFFF;
-    background-image: -moz-linear-gradient(center bottom , #EEEEEE 0%, #FFFFFF 50%);
-    border: 1px solid #AAAAAA;
-    border-radius: 4px;
-    color: #444444;
-    display: block;
-    height: 26px;
-    line-height: 26px;
-    overflow: hidden;
-    padding: 0 0 0 8px;
-    position: relative;
-    text-decoration: none;
-    white-space: nowrap;
-}
+
 
     
 
@@ -332,20 +316,46 @@ height:55px;
 width:35px;
 float:left;
 }
+input{
+ margin-bottom:15px;
+width:350px;
+ -moz-user-select: none;
+    background-clip: padding-box;
+    background-color: #FFFFFF;
+    background-image: -moz-linear-gradient(center bottom , #EEEEEE 0%, #FFFFFF 50%);
+    border: 1px solid #AAAAAA;
+    border-radius: 4px;
+    color: #444444;
+    display: block;
+    height: 26px;
+    line-height: 26px;
+    overflow: hidden;
+    padding: 0 0 0 8px;
+    position: relative;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
 textarea{
 	width:400px;
 	height:150px;
+	 margin-bottom:15px;
+}
+label {
+color:#444;
+font:bold 12px arial; 
 }
 
 select
   {
-  border: 1px solid #DBE1EB;
-  font-size: 18px;
-  font-family: Arial, Verdana;
-  padding-left: 7px;
+  margin-bottom:15px;
+  width:360px;
+  border: 1px solid #AAAAAA;
+  font: bold 12px arial;
+   padding-left: 7px;
   padding-right: 7px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 4px;
+  padding-bottom: 4px;
   border-radius: 4px;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
@@ -355,12 +365,12 @@ select
   background: -moz-linear-gradient(left, #FFFFFF, #F7F9FA);
   background: -webkit-linear-gradient(left, #FFFFFF, #F7F9FA);
   background: -o-linear-gradient(left, #FFFFFF, #F7F9FA);
-  color: #2E3133;
+  color: #444;
   }
   
 select:hover
   {
-  border-color: #FBFFAD;
+  border-color: #5897FB;
   }
   
 select option
