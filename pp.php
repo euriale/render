@@ -20,10 +20,6 @@ $GLOBALS['raiz']='/render/';
 ?>
 <link rel="STYLESHEET" type="text/css" href="themes/css/estilos.css"></link>
 <link rel="stylesheet" href="themes/css/select2.css" media="screen" />
-
-<!-- Make sure your CSS file is listed before jQuery -->
-
-
 <script src="themes/js/select2.js"></script>
 
 </head>

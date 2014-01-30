@@ -52,10 +52,10 @@
 		<div class="espacio"></div>
 		<div class="espacio"></div>
 		
-		<div class="cajablanca">
+		<div class="cajablanca" style="height:650px;">
 			<div class="seccioncaja">
 			<div class="secciones">
-			<img src="themes/img/logos/prueba.jpg" title="Contacto" alt="Contacto" width="90px">
+			<img src="themes/img/contacto.png" title="Contacto" alt="Contacto">
 			</div>
 			<div class="secciones">
 			<h4>Contacto</h4>
@@ -93,7 +93,7 @@
 				$miarea = new area('consulta','','','');
 				$miarea->crearArea();
 				
-				echo '<input type="submit" id="envio" name="envio" class="boton"  value="Enviar">';
+				echo '<input type="submit" id="envio" name="envio" class="botonnegro"  value="Enviar">';
 				$miformulario->cerrarFormulario();
 				?>
 			</fieldset>
