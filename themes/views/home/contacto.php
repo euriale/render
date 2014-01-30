@@ -3,13 +3,13 @@
 
 			<div class="seccioncaja">
 			<div class="secciones">
-			<img src="themes/img/contacto.png" title="Contacto" alt="Contacto">
+		
 			</div>
 			<div class="secciones">
 			<h4>Contacto</h4>
 			<fieldset>
 				<?php
-				/*
+				
 				$miformulario = new form('post',$GLOBALS['raiz']. 'controllers/direct/guardarclienteController.php','','','formulario');
 				$miformulario->crearFormulario(); 
 				
@@ -43,8 +43,8 @@
 				$miarea->crearArea();
 				
 
-				echo '<input type="submit" id="envio" name="envio" class="boton"  value="Enviar">';
-				$miformulario->cerrarFormulario();*/
+				echo '<input type="submit" id="envio" name="envio" class="botonnegro"  value="Enviar">';
+				$miformulario->cerrarFormulario();
 
 				?>
 			</fieldset>
