@@ -2,7 +2,7 @@
 <div id="cabecera">
 <div class="menu">
       <ul class="navigation">
-        <li><a href="#inicio” class=”ancla" > Inicio </a></li>
+        <li><a href="#inicio" class="ancla" > Inicio </a></li>
         <li><a href="#servicios" class="ancla" > Servicios Render </a></li>
 		<li><a href="#tarifas" class="ancla" > Tarifas </a></li>
         <li><a href="#contacto" class="ancla" > Contacto </a></li>
