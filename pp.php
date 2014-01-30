@@ -19,8 +19,7 @@ define ('__SITE_PATH', $site_path);
 $GLOBALS['raiz']='/render/';
 ?>
 <link rel="STYLESHEET" type="text/css" href="themes/css/estilos.css"></link>
-<link rel="stylesheet" href="themes/css/select2.css" media="screen" />
-<script src="themes/js/select2.js"></script>
+
 
 </head>
 
