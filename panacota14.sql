@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 30-01-2014 a las 12:04:17
+-- Tiempo de generación: 30-01-2014 a las 12:23:50
 -- Versión del servidor: 5.6.14
 -- Versión de PHP: 5.5.6
 
@@ -78,7 +78,26 @@ CREATE TABLE IF NOT EXISTS `version_aplicaciones` (
   `idaplicacion` int(11) NOT NULL,
   `activo` int(1) NOT NULL,
   PRIMARY KEY (`idversion_aplicacion`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=14 ;
+
+--
+-- Volcado de datos para la tabla `version_aplicaciones`
+--
+
+INSERT INTO `version_aplicaciones` (`idversion_aplicacion`, `version`, `idaplicacion`, `activo`) VALUES
+(1, '2014', 1, 1),
+(2, '2013', 1, 1),
+(3, '2012', 1, 1),
+(4, '2012', 1, 1),
+(5, '2012', 1, 1),
+(6, '2014', 2, 1),
+(7, '2013', 2, 1),
+(8, '2012', 2, 1),
+(9, '2014', 5, 1),
+(10, '2013', 5, 1),
+(11, '2012', 5, 1),
+(12, '2013', 5, 1),
+(13, '2012', 5, 1);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
