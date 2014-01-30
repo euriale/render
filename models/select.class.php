@@ -19,6 +19,7 @@ class select {
     if ($campoOption){$this->fieldOption=$campoOption;}
     if ($valorPorDefecto){$this->valorPorDefecto=$valorPorDefecto;}
     if ($oblig){$this->oblig = $oblig;}
+	
    }
   
   function crearSelect(){

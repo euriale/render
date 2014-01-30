@@ -392,3 +392,30 @@ select option:hover
   font-style: italic;
   color: #FFFFFF;
   }
+  
+  #otraaplic{
+  display:none;
+  }
+  #respuesta{
+  display:none;
+    background: none repeat scroll 0 0 #FF8C00;
+    height: 150px;
+    margin: 0 auto;
+    position: absolute;
+    width: 400px;
+    margin-top: -500px;
+	border: 1px solid #FF8C00;
+	border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -o-border-radius: 4px;
+  filter: alpha(opacity=90); 
+	opacity:0.9;
+	-moz-opacity:0.9; 
+	-webkit-opacity:0.9;
+	color:#fff;
+	font:bold 14px arial;
+	padding-top:50px;
+	text-align:center;
+	
+  }

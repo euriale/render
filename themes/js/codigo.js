@@ -41,6 +41,8 @@ $(document).ready(function () {
 	$( "#cabecera" ).mouseover(function() {
 		cabecerablanca();
 	});
+	
+	
 	$( "#cabecera" ).mouseout(function() {
 		cabeceranaranja();
 	});
@@ -65,6 +67,47 @@ $(document).ready(function () {
 						$('#versiones').html(texto);
 				}
 			});
+	});
+	/* -------------visualiza input otras aplicaciones en caso de valor=='otros'----------------*/
+	$("#aplicacion").change(function () {
+		var valor=$(this).val();
+		if (valor=='8' || valor=='9' || valor=='10') $('#otraaplic').show();
+		else {
+			$('#otraaplic').val('');
+			$('#otraaplic').hide();
+		}	
+	});
+	
+	/*--------------guardar el cliente en la bbdd y manda correo-----------------*/
+	
+		
+	
+	$('#envio').click(function () {
+		var nombre=$("#nombre").val();
+		var apellidos=$("#apellidos").val();
+		var telefono=$("#telefono").val();
+		var idaplicacion=$("#aplicacion").val();
+		var consulta=$("#consulta").val();
+		var email=$("#email").val();
+		var otraaplicacion=$("#otraaplicacion").val();
+		var versiones=$("#versiones").val();
+	
+		if (nombre=='') $("#nombre").css("border", "1px solid #FF0000");
+		if (email=='') $("#email").css("border", "1px solid #FF0000");
+		if (consulta=='') $("#consulta").css("border", "1px solid #FF0000");
+		
+		if (nombre!='' && email!='' && consulta!=''){
+			var pathaux="themes/views/home/ajax/guardarcliente.php";
+			$("#respuesta").show();
+			$.ajax({
+				type: "GET",
+				url: pathaux,
+				data: "nombre="+nombre+"&apellidos="+apellidos+"&telefono="+telefono+"&idaplicacion="+idaplicacion+"&consulta="+consulta+"&email="+email+"&otraaplicacion="+otraaplicacion+"&versiones="+versiones,
+				success: function(texto){
+						$('#respuesta').html(texto);
+				}
+			});		
+		}
 	});
 
 });

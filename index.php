@@ -6,7 +6,6 @@ if (!isset($_SESSION['idioma'])){
     $idioma =substr($_SERVER["HTTP_ACCEPT_LANGUAGE"],0,2); 
 	$_SESSION['idioma']=$idioma;
 } 
-var_dump($_SESSION);
 error_reporting(E_ALL|E_STRICT);
 $site_path = realpath(dirname(__FILE__));
 define ('__SITE_PATH', $site_path);
@@ -19,7 +18,6 @@ define ('__SITE_PATH', $site_path);
 <META charset="ISO 8859-1">
 <title>Render Drive - Servicios de Render Online</title>
 <script src="themes/js/jquery.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
 <script language="javascript" src="themes/js/codigo.js" charset="ISO-8859-1"></script>
 
 <?php 
