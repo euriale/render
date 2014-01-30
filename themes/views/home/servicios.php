@@ -14,7 +14,7 @@
 			
 		<div class="secciones" id="textoseccion">
 			<h4> Nuestros Servicios Render</h4>
-			<h5>Nuestros nodos están preparados para Maya, Cinema 4D, Blender, LightWave, 3D Max, así como motores VRAY, Fryrender etc. <br>	Si usas otro software 3D o un plugin en concreto, no dudes en consultarnos. </h5>
+			<h5>Nuestros nodos están preparados para Maya, Cinema 4D, 3ds Max, Blender, LightWave, After Effects<br>	Si usas otro software contáctanos. </h5>
 		</div>
 	</div>
 </div>
