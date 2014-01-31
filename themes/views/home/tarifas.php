@@ -1,4 +1,5 @@
 <div class="cajablanca">
+<div class="medioespacio"></div>
 <div id="tarifas"></div> 
 <div class="seccioncaja">
  <div class="secciones" id="logos3">
