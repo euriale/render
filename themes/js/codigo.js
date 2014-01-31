@@ -90,7 +90,7 @@ $(document).ready(function () {
 		var consulta=$("#consulta").val();
 		var email=$("#email").val();
 		var otraaplicacion=$("#otraaplicacion").val();
-		var versiones=$("#versiones").val();
+		var versiones=$("#versionesaux").val();
 	
 		if (nombre=='') $("#nombre").css("border", "1px solid #FF0000");
 		if (email=='') $("#email").css("border", "1px solid #FF0000");
