@@ -7,6 +7,7 @@ if (!isset($_SESSION['idioma'])){
 	$_SESSION['idioma']=$idioma;
 } 
 $idiomaaux=$_SESSION['idioma'];
+$idiomaaux=strtoupper ($idiomaaux);
 require_once("themes/langs/".$idiomaaux.".php");
 
 error_reporting(E_ALL|E_STRICT);
@@ -25,7 +26,9 @@ define ('__SITE_PATH', $site_path);
 
 <?php 
 if ($_SERVER['HTTP_HOST']=="www.renderdrive.com") $raiz='http://www.renderdrive.com/';
+elseif ($_SERVER['HTTP_HOST']=="renderdrive.com") $raiz='http://renderdrive.com/';
 else $GLOBALS['raiz']='/render/';
+
 
 ?>
 <link rel="STYLESHEET" type="text/css" href="themes/css/estilos.css"></link>

@@ -3,12 +3,12 @@
 
 <div class="menu">
       <ul class="navigation">
-        <li><a href="#inicio" class="ancla" > Inicio </a></li>
-        <li><a href="#servicios" class="ancla" > Servicios Render </a></li>
-		<li><a href="#tarifas" class="ancla" > Tarifas </a></li>
-        <li><a href="#contacto" class="ancla" > Contacto </a></li>
-		<li><a href="#faq" class="ancla" > FAQ </a></li>
-        <li><a href="tutorial" target="_blank" > Tutorial</a></li>
+        <li><a href="#inicio" class="ancla" ><?php echo INICIO; ?> </a></li>
+        <li><a href="#servicios" class="ancla" > <?php echo SERVICIOS_RENDER; ?> </a></li>
+		<li><a href="#tarifas" class="ancla" ><?php echo TARIFAS; ?> </a></li>
+        <li><a href="#contacto" class="ancla" ><?php echo CONTACTO; ?> </a></li>
+		<li><a href="#faq" class="ancla" ><?php echo FAQ; ?> </a></li>
+        <li><a href="tutorial" target="_blank" ><?php echo TUTORIAL; ?></a></li>
       </ul>
 </div>
 <div class="idiomas">
