@@ -1,5 +1,7 @@
-<div class="cajablanca">
 <div id="faq"></div> 
+<div class="medioespacio"></div>
+<div class="cajablanca">
+
 <div class="seccioncaja">
  <div class="secciones" id="logos3">
   <img src="themes/img/faq_small.png" title="Contacto" alt="Contacto" width="200px">
@@ -12,3 +14,7 @@
  </div>
 </div>	
 </div>
+<div class="espacio"></div>
+<div class="espacio"></div>
+<div class="espacio"></div>
+<div class="espacio"></div>

@@ -1,9 +1,10 @@
+<div id="contacto"></div> 
+<div class="medioespacio"></div>
+<div class="cajablanca" style="height:650px;">
 
-		<div class="cajablanca" style="height:650px;"><div id="contacto"></div> 
-
-			<div class="seccioncaja">
+<div class="seccioncaja">
 			<div class="secciones">
-		
+		  <img src="themes/img/contacto.jpg" title="Contacto" alt="Contacto" width="200px">
 			</div>
 			<div class="secciones">
 			<h4>Contacto</h4>
