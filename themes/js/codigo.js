@@ -17,9 +17,10 @@ $(document).ready(function () {
 		/* Efecto parallax */
 		$(document).scroll(function () {
 			s = $(document).scrollTop();
-			$("#diapo1").css("top", Math.round(s/parallax)  + "px");
-			//var newheight =  parseInt($("#diapo2").css("height").replace("px","")) - Math.round(s/3);	
-			//$("#diapo1").css("height", newheight + "px" );
+			/*------------en la misma direccion--------------*/
+			//$("#diapo1").css("top", Math.round(s/parallax)  + "px");
+			/*------------en diferente direccion--------------*/
+			$("#diapo1").css("background-position", "0px "+(Math.round(s/0.8)+50)  + "px");
 		});
 	});
    
