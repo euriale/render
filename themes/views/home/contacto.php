@@ -53,7 +53,7 @@
 				$miformulario->cerrarFormulario();
 				
 				?>
-				<div id="respuesta"></div>
+				<div id="respuesta"><div class="iconclose" style="float:right;"></div><div style="clear:both"></div><div id="respuestaaux"></div></div>
 				<div style="clear:both"></div>
 			</fieldset>
 			
