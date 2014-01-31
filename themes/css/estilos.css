@@ -400,9 +400,9 @@ select option:hover
   display:none;
   }
   #respuesta{
-  display:none;
+ display:none;
     background: none repeat scroll 0 0 #FF8C00;
-    height: 150px;
+    height: 100px;
     margin: 0 auto;
     position: absolute;
     width: 400px;
@@ -417,8 +417,17 @@ select option:hover
 	-moz-opacity:0.9; 
 	-webkit-opacity:0.9;
 	color:#fff;
-	font:bold 14px arial;
+	font:16px arial;
 	padding-top:50px;
 	text-align:center;
 	
   }
+  .iconclose{
+	background-repeat:no-repeat;
+	background-image:url("../img/iconclose.png");
+	margin-top:-45px;
+	height:22px;
+	width:22px;
+	float:left;
+	cursor:pointer;
+ }

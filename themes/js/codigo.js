@@ -50,9 +50,16 @@ $(document).ready(function () {
 	$("input").focus(function(){
 		$(this).css("border", "1px solid #5897FB");
 	});
+	$("textarea").focus(function(){
+		$(this).css("border", "1px solid #5897FB");
+	});
 	$("input").blur(function(){
 		$(this).css("border", "1px solid #AAAAAA");
 	});
+	$("textarea").blur(function(){
+		$(this).css("border", "1px solid #AAAAAA");
+	});
+	
 	
 	/* ---------------- Versiones de las aplicaciones en el formulario contacto------------------*/
 	
@@ -104,13 +111,24 @@ $(document).ready(function () {
 				url: pathaux,
 				data: "nombre="+nombre+"&apellidos="+apellidos+"&telefono="+telefono+"&idaplicacion="+idaplicacion+"&consulta="+consulta+"&email="+email+"&otraaplicacion="+otraaplicacion+"&versiones="+versiones,
 				success: function(texto){
-						$('#respuesta').html(texto);
+						$('#respuestaaux').html(texto);
 				}
 			});		
 		}
 	});
-
-});
+	
+		$('.iconclose').click(function () {
+		$("#respuesta").hide();
+		$("#nombre").val('');
+		$("#apellidos").val('');
+		$("#telefono").val('');
+		$("#aplicacion").val('');
+		$("#consulta").val('');
+		$("#email").val('');
+		$("#otraaplicacion").val('');
+		$("#versionesaux").val('');
+	});
+	});
 function cabecerablanca(){
 		$("#cabecera" ).css("background", "#fff");
 		$(".drive").css("color", "#FF8C00");
