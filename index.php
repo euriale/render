@@ -6,6 +6,9 @@ if (!isset($_SESSION['idioma'])){
     $idioma =substr($_SERVER["HTTP_ACCEPT_LANGUAGE"],0,2); 
 	$_SESSION['idioma']=$idioma;
 } 
+$idiomaaux=$_SESSION['idioma'];
+require_once("themes/langs/".$idiomaaux.".php");
+
 error_reporting(E_ALL|E_STRICT);
 $site_path = realpath(dirname(__FILE__));
 define ('__SITE_PATH', $site_path);
