@@ -1,8 +1,6 @@
 <div id="contacto"></div> 
-<div class="medioespacio"></div>
-<div class="cajablanca" style="height:650px;">
-
-<div class="seccioncaja">
+<div class="cajablanca"> 
+	<div class="seccioncaja">
 			<div class="secciones">
 		  <img src="themes/img/contacto.jpg" title="Contacto" alt="Contacto" width="200px">
 			</div>
@@ -61,10 +59,8 @@
 			</div>
 			
 		</div>
+		<div style="clear:both"></div>
 		</div>
-		
-				
-		<div class="espacio"></div>
-		<div class="espacio"></div>
+
 
 		

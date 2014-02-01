@@ -73,13 +73,13 @@ text-decoration:none;
 }
 h2{
 padding-top:25px;
-font: bold 50px arial;
+font: bold 45px arial;
 color:#fff;
 }
 
 h3{
-padding-top:25px;
-font: bold 35px arial;
+padding-top:5px;
+font: bold 25px arial;
 color:#f1f1f1;
 }
 
@@ -116,11 +116,32 @@ color:#fff;
 	width: 100%;
 	z-index: 0;
 	height:2000px;
-		background-repeat:repeat-y;
-	background-image:url("../img/background2.jpg");
+		background-repeat:repeat;
+	background-image:url("../img/papel1.jpg");
 }
-
-
+#diapo2 {
+	position: absolute;
+	width: 100%;
+	z-index: 0;
+	height:2000px;
+		background-repeat:repeat;
+	
+	filter: alpha(opacity=50); 
+	opacity:0.5;
+	-moz-opacity:0.5; 
+	-webkit-opacity:0.5;
+}
+.bolanaranja {
+	width: 430px;
+	height:430px;
+		background-repeat:no-repeat;
+	background-image:url("../img/bola.png");
+	filter: alpha(opacity=50); 
+	opacity:0.5;
+	-moz-opacity:0.5; 
+	-webkit-opacity:0.5;
+	padding:35px;
+}
 .cajanaranja{
  background:#FF8C00;
  width:600px;
@@ -139,12 +160,14 @@ color:#fff;
 .cajablanca{
  background:#fff;
  width:100%;
- height:300px;
- filter: alpha(opacity=90); 
-opacity:0.9;
--moz-opacity:0.9; 
--webkit-opacity:0.9;
+ height:auto;
+ filter: alpha(opacity=50); 
+opacity:0.5;
+-moz-opacity:0.5; 
+-webkit-opacity:0.5;
+margin-bottom:20%;
 }
+
 .cajawhite{
  background:#fff;
  width:100%;

@@ -21,6 +21,8 @@ $(document).ready(function () {
 			//$("#diapo1").css("top", Math.round(s/parallax)  + "px");
 			/*------------en diferente direccion--------------*/
 			$("#diapo1").css("background-position", "0px "+(Math.round(s/0.8)+50)  + "px");
+			//$("#diapo2").css("background-position", "0px "+(Math.round(s/0.8))  + "px");
+			$("#diapo2").css("top", Math.round(s/parallax)  + "px");
 		});
 	});
    

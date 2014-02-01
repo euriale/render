@@ -1,5 +1,5 @@
 <div id="tarifas"></div> 
-<div class="medioespacio"></div>
+
 
 <div class="cajablanca">
 
@@ -12,7 +12,5 @@
 	
  </div>
 </div>	
+<div style="clear:both"></div>
 </div>
-<div class="espacio"></div>
-<div class="espacio"></div><div class="espacio"></div>
-<div class="espacio"></div>

@@ -1,7 +1,5 @@
 <div id="servicios"></div> 
-<div class="medioespacio"></div>
 <div class="cajablanca">  
-
 	<div class="seccioncaja">
 		<div class="secciones" id="logos1">
 			<div class="logoaplic"><img src="themes/img/logos/cinema.png" title="Cinema 4D" alt="Cinema 4D" width="80px"></div>
@@ -19,9 +17,7 @@
 			<h5>Nuestros nodos están preparados para Maya, Cinema 4D, 3ds Max, Blender, LightWave, After Effects<br>	Si usas otro software contáctanos. </h5>
 		</div>
 	</div>
+	<div style="clear:both"></div>
 </div>
-<div class="espacio"></div>
-<div class="espacio"></div>
-<div class="espacio"></div>
-<div class="espacio"></div>
+
 
