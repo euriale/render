@@ -7,5 +7,3 @@
 	<div class="boton">Si usas Maya prueba nuestra APP</div>
 </div>	
 </div> 		
-
-<div class="espacio"></div>
