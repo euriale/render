@@ -9,7 +9,7 @@ var parallax  = -2;
 
 $(document).ready(function () {
 	cabecerablanca();
-	
+
 	/*funcion para parallax*/
 	$(document).scroll(function () {
 		cabeceranaranja();
@@ -150,4 +150,14 @@ function cabeceranaranja(){
 		$("#cabecera" ).css("opacity", "0.7");
 		$("#cabecera" ).css("-moz-opacity", "0.7");
 		$("#cabecera" ).css("-webkit-opacity", "0.7");
-}		
+}	
+
+function resolucion_encaje_robot(){
+	var ancho=$(window).width();
+	var cajablanca=parseInt((80*ancho)/100);
+	var capacidad_para_el_robot=ancho-cajablanca;
+	var loquedebemedir=ancho-528;
+	if (capacidad_para_el_robot<528) $(".cajablancabase" ).css("width", loquedebemedir);
+	
+
+}	
