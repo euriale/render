@@ -109,16 +109,15 @@ h5{
 font: 25px arial;
 color:#000000;
 }
-.txt16naranja{
-font: 26px arial;
+.faqsask{
+font: bold 16px arial;
 color:#FF8C00;
-text-align:left;
-float:left;
+margin-top:25px;
+
 }
-.txt16negro{
-font: 26px arial;
+.faqanswer{
+font: 16px arial;
 color:#000000;
-text-align:left;
 
 }
 .drive{
@@ -317,9 +316,9 @@ width:80%;
 #logos3{
 	width:450px;
 	margin-top:40px;
-}
+}t
 #textoseccion{
-	
+	margin: 0 auto;
 	text-align:left;
 }
 .logoaplic{
