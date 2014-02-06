@@ -1,3 +1,6 @@
+
+<div class="cajablancabase">
+<div class="cajarobot"></div>
 <div class="logo"><h1><a href="<?php echo $GLOBALS['raiz']; ?>">Render <span class="drive">Drive</span></a></h1></div>	
 <div id="cabecera">
 
@@ -29,3 +32,4 @@ require_once(__SITE_PATH.'/'.$ccontroller);
 <div id="subpie"></div>
 
 </div>-->
+</div>

@@ -9,6 +9,7 @@ var parallax  = -2;
 
 $(document).ready(function () {
 	cabecerablanca();
+	resolucion_encaje_robot();
 	
 	/*funcion para parallax*/
 	$(document).scroll(function () {
@@ -25,6 +26,8 @@ $(document).ready(function () {
 			$("#diapo2").css("top", Math.round(s/parallax)  + "px");
 		});
 	});
+	
+	
    
    /*-------ancla-----*/
             //nos desplazamos entre todos los divs
@@ -39,7 +42,18 @@ $(document).ready(function () {
 				}, 1000); 
 			}); 
 
+/*-------------Funcionalidad FAQs---------------------*/
 
+	$('.faqsask').click(function () {
+		var elemento=$(this).attr("id");
+		var idask=elemento.substring(3);
+		$(".faqanswer").hide();	
+		$("#ans"+idask).show();
+		$(".pointerfaq").css("background-image", "url(themes/img/redpointer.png)");
+		$("#poi"+idask).css("background-image", "url(themes/img/redpointer_down.png)");
+	});
+	
+/*--------------Cabecera-----------------*/	
 	
 	$( "#cabecera" ).mouseover(function() {
 		cabecerablanca();
@@ -150,4 +164,15 @@ function cabeceranaranja(){
 		$("#cabecera" ).css("opacity", "0.7");
 		$("#cabecera" ).css("-moz-opacity", "0.7");
 		$("#cabecera" ).css("-webkit-opacity", "0.7");
-}		
+}	
+
+function resolucion_encaje_robot(){
+	var ancho=$(window).width();
+	var cajablanca=parseInt((80*ancho)/100);
+	var capacidad_para_el_robot=ancho-cajablanca;
+	var loquedebemedir=ancho-400;
+	if (capacidad_para_el_robot<528) $(".cajablancabase" ).css("width", loquedebemedir);
+	if (capacidad_para_el_robot<528) $("#cabecera" ).css("width", loquedebemedir);
+	
+
+}	

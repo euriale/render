@@ -6,8 +6,24 @@ html,body{
 	width:100%;
 	height:100%;
 	margin:0;
-	background:#fff;
+	background:#d6d6d6;
 
+}
+.cajarobot{
+	background-image:url("../img//WPTVG48X.png");
+	background-repeat:no-repeat;
+	position:fixed;
+	height:347px;
+	width:264px;
+	margin-left:-190px;
+	z-index:1005;
+	margin-top:40px;
+}
+.cajablancabase{
+	background:#fff;
+	margin:0 auto;
+	width:80%;
+	min-height:100%;
 }
 /*-------------------menu-----------------*/
 .menu{
@@ -45,7 +61,7 @@ html,body{
 }
 
 #cabecera{
-	width:100%;
+	width:80%;
 	height:60px;
 	position:fixed;
 	top:0;
@@ -93,16 +109,29 @@ h5{
 font: 25px arial;
 color:#000000;
 }
-.txt16naranja{
-font: 26px arial;
-color:#FF8C00;
-text-align:left;
-float:left;
+.pointerfaq{
+	width: 10px;
+	height:10px;
+	background-repeat:no-repeat;
+	background-image:url("../img/redpointer.png");
+	float:left;
+	margin-top:29px;
+	margin-right:10px;
 }
-.txt16negro{
-font: 26px arial;
+.faqsask{
+font: bold 16px arial;
+color:#FF8C00;
+margin-top:25px;
+float:left;
+cursor:pointer;
+
+
+
+}
+.faqanswer{
+font: 16px arial;
 color:#000000;
-text-align:left;
+display:none;
 
 }
 .drive{
@@ -158,6 +187,7 @@ color:#fff;
 		background-repeat:no-repeat;
 	background-image:url("../img/bola2.png");
 	padding:25px;
+	margin:0 auto;
 }
 .cajanaranja{
  background:#FF8C00;
@@ -167,23 +197,17 @@ color:#fff;
  text-align:center;
 }
 .cajanocolor{
- width:600px;
+ width:500px;
  text-align:center;
  z-index:3;
- position:relative;
- left:500px;
+margin:0 auto;
+padding-top:75px;
+ 
 }
 .cajablanca{
 margin-top:12%;
- background:#fff;
-left:433px;
- position:relative;
- /*
- filter: alpha(opacity=50); 
-opacity:0.5;
--moz-opacity:0.5; 
--webkit-opacity:0.5;*/
 margin-bottom:20%;
+
 }
 
 .cajawhite{
@@ -293,41 +317,42 @@ border:1px solid #f9f68a; -webkit-border-radius: 3px; -moz-border-radius: 3px;bo
 	top:2500px;
 }
 .secciones{
-float:left;
-width:auto;
 text-align:left;
-
+width:80%;
 }
 .seccioncaja{
 	width:80%;
-	margin-left:180px;
+	margin:0 auto;
 }
 #logos1{
-	width:150px;
+	
 
 }
 #logos2{
-	width:250px;
+	
 }
 #logos3{
 	width:450px;
 	margin-top:40px;
-}
+}t
 #textoseccion{
-	width:50%;
+	margin: 0 auto;
 	text-align:left;
 }
 .logoaplic{
 padding:15px;
+float:left;
 }
 
 fieldset{
 	border:solid 1px #AAAAAA;
-	width:500px;
+	width:400px;
 	margin:0 auto;
 	margin-top:25px;
 	padding:25px;
-	background:#f1f1f1;
+	background:#d6d6d6;
+	margin-bottom:50px;
+	
 }
 
 
