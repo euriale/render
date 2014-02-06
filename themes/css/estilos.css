@@ -109,15 +109,29 @@ h5{
 font: 25px arial;
 color:#000000;
 }
+.pointerfaq{
+	width: 10px;
+	height:10px;
+	background-repeat:no-repeat;
+	background-image:url("../img/redpointer.png");
+	float:left;
+	margin-top:29px;
+	margin-right:10px;
+}
 .faqsask{
 font: bold 16px arial;
 color:#FF8C00;
 margin-top:25px;
+float:left;
+cursor:pointer;
+
+
 
 }
 .faqanswer{
 font: 16px arial;
 color:#000000;
+display:none;
 
 }
 .drive{

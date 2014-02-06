@@ -42,7 +42,18 @@ $(document).ready(function () {
 				}, 1000); 
 			}); 
 
+/*-------------Funcionalidad FAQs---------------------*/
 
+	$('.faqsask').click(function () {
+		var elemento=$(this).attr("id");
+		var idask=elemento.substring(3);
+		$(".faqanswer").hide();	
+		$("#ans"+idask).show();
+		$(".pointerfaq").css("background-image", "url(themes/img/redpointer.png)");
+		$("#poi"+idask).css("background-image", "url(themes/img/redpointer_down.png)");
+	});
+	
+/*--------------Cabecera-----------------*/	
 	
 	$( "#cabecera" ).mouseover(function() {
 		cabecerablanca();
