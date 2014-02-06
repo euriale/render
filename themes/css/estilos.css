@@ -54,7 +54,7 @@ html,body{
 	opacity:0.7;
 	-moz-opacity:0.7; 
 	-webkit-opacity:0.7;
-	z-index:4;
+	z-index:1004;
 }
 h1{
 font: 30px arial;
@@ -69,6 +69,7 @@ color:#000;
 margin:0;
 margin-top:8px;
 text-decoration:none;
+position:absolute;
 
 }
 h2{
@@ -84,13 +85,12 @@ color:#f1f1f1;
 }
 
 h4{
-padding-top:0px;
-font: bold 40px arial;
-color:#FF8C00;
-text-align:left;
+font: bold 35px arial;
+color:#fff;
+text-align:center;
 }
 h5{
-font: 30px arial;
+font: 25px arial;
 color:#000000;
 }
 .txt16naranja{
@@ -114,10 +114,24 @@ color:#fff;
 #diapo1 {
 	position: absolute;
 	width: 100%;
+	z-index: 1000;
+	height:2000px;
+		background-repeat:repeat;
+	/*background-image:url("../img/papel1.jpg");*/
+
+}
+#robot {
+	position: absolute;
+	width: 100%;
 	z-index: 0;
 	height:2000px;
 		background-repeat:repeat;
+<<<<<<< HEAD
 	background-image:url("../img/papelo.jpg");
+=======
+	/*background-image:url("../img/papel1.jpg");*/
+	background-color:white;
+>>>>>>> 932e5bd9f6f42bde73c7f11b388caa9ab6b060f7
 }
 #diapo2 {
 	position: absolute;
@@ -136,11 +150,14 @@ color:#fff;
 	height:430px;
 		background-repeat:no-repeat;
 	background-image:url("../img/bola.png");
-	filter: alpha(opacity=50); 
-	opacity:0.5;
-	-moz-opacity:0.5; 
-	-webkit-opacity:0.5;
 	padding:35px;
+}
+.bolanaranja2 {
+	width: 195px;
+	height:195px;
+		background-repeat:no-repeat;
+	background-image:url("../img/bola2.png");
+	padding:25px;
 }
 .cajanaranja{
  background:#FF8C00;
@@ -151,20 +168,21 @@ color:#fff;
 }
 .cajanocolor{
  width:600px;
- height:800px;
- margin: 0 auto;
  text-align:center;
  z-index:3;
  position:relative;
+ left:500px;
 }
 .cajablanca{
+margin-top:12%;
  background:#fff;
- width:100%;
- height:auto;
+left:433px;
+ position:relative;
+ /*
  filter: alpha(opacity=50); 
 opacity:0.5;
 -moz-opacity:0.5; 
--webkit-opacity:0.5;
+-webkit-opacity:0.5;*/
 margin-bottom:20%;
 }
 
@@ -282,15 +300,14 @@ text-align:left;
 }
 .seccioncaja{
 	width:80%;
-	margin:0 auto;
+	margin-left:180px;
 }
 #logos1{
 	width:150px;
-    margin-top:50px;
+
 }
 #logos2{
 	width:250px;
-	margin-top:50px;
 }
 #logos3{
 	width:450px;
