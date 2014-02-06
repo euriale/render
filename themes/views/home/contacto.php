@@ -1,12 +1,9 @@
 <div id="contacto"></div> 
 <div class="cajablanca"> 
 	<div class="seccioncaja">
-			<div class="secciones">
-		  <img src="themes/img/contacto.jpg" title="Contacto" alt="Contacto" width="200px">
-			</div>
-			<div class="secciones">
-			<h4>Contacto</h4>
-			<fieldset>
+	<div class="bolanaranja2"><h4>Contacta con nosotros</h4></div>
+			
+				<fieldset>
 				<?php
 				
 				$miformulario = new form('post',$GLOBALS['raiz']. 'controllers/direct/guardarclienteController.php','','','formulario');
@@ -55,8 +52,7 @@
 				<div id="respuesta"><div class="iconclose" style="float:right;"></div><div style="clear:both"></div><div id="respuestaaux"></div></div>
 				<div style="clear:both"></div>
 			</fieldset>
-			
-			</div>
+		
 			
 		</div>
 		<div style="clear:both"></div>

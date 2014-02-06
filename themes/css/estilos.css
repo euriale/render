@@ -170,6 +170,7 @@ color:#fff;
 		background-repeat:no-repeat;
 	background-image:url("../img/bola2.png");
 	padding:25px;
+	margin:0 auto;
 }
 .cajanaranja{
  background:#FF8C00;
@@ -179,23 +180,17 @@ color:#fff;
  text-align:center;
 }
 .cajanocolor{
- width:600px;
+ width:500px;
  text-align:center;
  z-index:3;
- position:relative;
- left:500px;
+margin:0 auto;
+padding-top:75px;
+ 
 }
 .cajablanca{
 margin-top:12%;
- background:#fff;
-left:433px;
- position:relative;
- /*
- filter: alpha(opacity=50); 
-opacity:0.5;
--moz-opacity:0.5; 
--webkit-opacity:0.5;*/
 margin-bottom:20%;
+
 }
 
 .cajawhite{
@@ -305,41 +300,42 @@ border:1px solid #f9f68a; -webkit-border-radius: 3px; -moz-border-radius: 3px;bo
 	top:2500px;
 }
 .secciones{
-float:left;
-width:auto;
 text-align:left;
-
+width:80%;
 }
 .seccioncaja{
 	width:80%;
-	margin-left:180px;
+	margin:0 auto;
 }
 #logos1{
-	width:150px;
+	
 
 }
 #logos2{
-	width:250px;
+	
 }
 #logos3{
 	width:450px;
 	margin-top:40px;
 }
 #textoseccion{
-	width:50%;
+	
 	text-align:left;
 }
 .logoaplic{
 padding:15px;
+float:left;
 }
 
 fieldset{
 	border:solid 1px #AAAAAA;
-	width:500px;
+	width:400px;
 	margin:0 auto;
 	margin-top:25px;
 	padding:25px;
-	background:#f1f1f1;
+	background:#d6d6d6;
+	margin-bottom:50px;
+	
 }
 
 

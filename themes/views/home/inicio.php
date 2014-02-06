@@ -1,4 +1,4 @@
-<div class="espacio"></div>
+
 		
 <div class="cajanocolor">
 <div class="bolanaranja">

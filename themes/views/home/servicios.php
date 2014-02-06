@@ -4,10 +4,9 @@
 <div class="bolanaranja2"><h4> Nuestros Servicios Render</h4></div>
 			
 		<div class="secciones" id="textoseccion">
-		
-			
-			<h5>Nuestros nodos están preparados para Maya, Cinema 4D, 3ds Max, Blender, LightWave, After Effects<br>	Si usas otro software contáctanos. </h5>
-		</div><div style="clear:both"></div>
+			<h5>Nuestros nodos están preparados para Maya, Cinema 4D, 3ds Max, Blender, LightWave, After Effects<br>	Si usas otro software contacta con nosotros. </h5>
+		</div>
+		<div style="clear:both"></div>
 			<div class="secciones" id="logos1">
 			<div class="logoaplic"><img src="themes/img/logos/cinema.png" title="Cinema 4D" alt="Cinema 4D" width="80px"></div>
 			<div class="logoaplic"><img src="themes/img/logos/blender.png" title="Blender" alt="Blender" width="80px"></div>
