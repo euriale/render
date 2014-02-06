@@ -146,7 +146,7 @@ color:#fff;
 	z-index: 1000;
 	height:2000px;
 		background-repeat:repeat;
-	/*background-image:url("../img/papel1.jpg");*/
+	/*background-image:url("../img/prueba.jpg");*/
 
 }
 #robot {
@@ -167,8 +167,7 @@ color:#fff;
 	width: 100%;
 	z-index: 0;
 	height:2000px;
-		background-repeat:repeat;
-	
+	background-repeat:repeat;
 	filter: alpha(opacity=50); 
 	opacity:0.5;
 	-moz-opacity:0.5; 
@@ -355,9 +354,6 @@ fieldset{
 	
 }
 
-
-
-    
 
 .abreintnegro{
 background-repeat:no-repeat;

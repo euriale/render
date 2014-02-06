@@ -4,11 +4,12 @@
 <div class="cajablanca">
 
 <div class="seccioncaja">
- <div class="secciones" id="logos3">
-  <img src="themes/img/euro.png" title="Tarifas" alt="Tarifas" width="200px">
- </div>
- <div class="secciones">
-	<h4>Tarifas tabla resumida</h4>
+
+<div class="bolanaranja2"><h4> Tarifas</h4></div>
+ <div class="secciones"  id="textoseccion">
+  
+	
+	<h5>Tarifas tabla resumida</h5>
 	
  </div>
 </div>	
