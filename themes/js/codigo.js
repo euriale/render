@@ -176,6 +176,7 @@ function resolucion_encaje_robot(){
 	if (capacidad_para_el_robot<528) { 
 		$(".cajablancabase" ).css("width", loquedebemedir);
 		$("#cabecera" ).css("width", loquedebemedir);
+		$(".app" ).css("margin-right", "75px");
 	}	
 
 }	

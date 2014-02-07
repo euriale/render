@@ -66,14 +66,23 @@ width:350px;
 .navigation li:hover,.active{
 	cursor:pointer;
 }
-.app a{
-    color: #fff;
-    float: right;
-    margin-right: 5px;
-    margin-top: 15px;
-    text-decoration: none;
-	font:bold 14px arial;
+
+.app{
+	z-index:1005;
+	float:right;
+	margin-top:15px;
 }
+.app a{
+	font: bold 10px arial;
+	color:#000;
+	margin-left:5px;
+	text-decoration: none;
+	font:bold 14px arial;
+	position:fixed;
+	
+	
+}
+
 #cabecera{
 	width:80%;
 	height:70px;
@@ -106,7 +115,7 @@ position:absolute;
   text-decoration: none;
 }
 h2{
-padding-top:25px;
+
 font: bold 45px arial;
 color:#fff;
 }
@@ -209,14 +218,16 @@ color:#fff;
  margin: 0 auto;
  text-align:center;
 }
+
+
 .cajanocolor{
- width:500px;
  text-align:center;
- z-index:3;
-margin:0 auto;
 padding-top:95px;
- 
+background-repeat:no-repeat;
+background-image:url("../img/12b.jpg");
+width:100%;
 }
+
 .cajablanca{
 margin-top:12%;
 margin-bottom:20%;
@@ -518,7 +529,7 @@ background: none repeat scroll 0 0 #d6d6d6;
     position: fixed;
     right: 0;
     text-align: right;
-    top: 95%;
+    top: 96%;
     width: 100%;
  }
 .boton1 {
