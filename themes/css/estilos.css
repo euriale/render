@@ -132,6 +132,7 @@ font: bold 35px arial;
 color:#666;
 text-align:left;
 margin-bottom:10px;
+margin-top:0;
 }
 h5{
 font: 25px arial;
@@ -348,9 +349,10 @@ border:1px solid #f9f68a; -webkit-border-radius: 3px; -moz-border-radius: 3px;bo
 text-align:left;
 }
 .seccioncaja{
-	width:80%;
-	margin:0 auto;
-	margin-top:-25px;
+   border: 1px solid #DDDDDD;
+    margin: 0 auto;
+    padding: 25px;
+    width: 80%;
 }
 #logos1{
 	
