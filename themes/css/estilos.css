@@ -21,7 +21,7 @@ html,body{
 }
 .cajablancabase{
 	background-image:url("../img/papelo.jpg");
-	background-repeat:repeat-y;
+	background-repeat:repeat;
 
 	margin:0 auto;
 	width:80%;
