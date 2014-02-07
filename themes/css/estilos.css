@@ -29,7 +29,7 @@ html,body{
 /*-------------------menu-----------------*/
 .menu{
 	float:right;
-	width:625px;
+	width:480px;
 	z-index:1005;
 	position:relative;
 	margin-top:20px;
@@ -226,6 +226,7 @@ color:#fff;
 padding-top:65px;
 background-repeat:no-repeat;
 background-image:url("../img/12b.jpg");
+background-size: 100% auto;
 width:100%;
 }
 
@@ -348,6 +349,7 @@ text-align:left;
 .seccioncaja{
 	width:80%;
 	margin:0 auto;
+	margin-top:-25px;
 }
 #logos1{
 	
