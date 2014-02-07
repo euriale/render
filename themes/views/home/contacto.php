@@ -1,7 +1,7 @@
 <div id="contacto"></div> 
 <div class="cajablanca"> 
 	<div class="seccioncaja">
-	<div class="bolanaranja2"><h4>Contacta con nosotros</h4></div>
+	<h4>Contacta con nosotros</h4>
 			
 				<fieldset>
 				<?php
@@ -57,8 +57,7 @@
 		</div>
 		<div style="clear:both"></div>
 		</div>
-<div class="espacio"></div>
-<div class="espacio"></div>
+
 
 
 		

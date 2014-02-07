@@ -28,12 +28,14 @@ html,body{
 /*-------------------menu-----------------*/
 .menu{
 	float:right;
-	width:750px;
+	width:630px;
+	margin-top:10px;
+	z-index:1005;
 }
 .logo{
  position: fixed;
  width: 180px;
- z-index: 5;
+ z-index: 1005;
  margin-left:15px;
 }
 .navigation{
@@ -70,7 +72,7 @@ html,body{
 	opacity:0.7;
 	-moz-opacity:0.7; 
 	-webkit-opacity:0.7;
-	z-index:1004;
+	z-index:1;
 }
 h1{
 font: 30px arial;
@@ -102,8 +104,8 @@ color:#f1f1f1;
 
 h4{
 font: bold 35px arial;
-color:#fff;
-text-align:center;
+color:#666;
+text-align:left;
 }
 h5{
 font: 25px arial;
@@ -112,6 +114,7 @@ color:#000000;
 .pointerfaq{
 	width: 10px;
 	height:10px;
+
 	background-repeat:no-repeat;
 	background-image:url("../img/redpointer.png");
 	float:left;
@@ -145,7 +148,7 @@ color:#fff;
 	width: 100%;
 	z-index: 1000;
 	height:2000px;
-		background-repeat:repeat;
+	background-repeat:repeat;
 	/*background-image:url("../img/prueba.jpg");*/
 
 }
@@ -154,13 +157,9 @@ color:#fff;
 	width: 100%;
 	z-index: 0;
 	height:2000px;
-		background-repeat:repeat;
-<<<<<<< HEAD
-	background-image:url("../img/papelo.jpg");
-=======
-	/*background-image:url("../img/papel1.jpg");*/
+	background-repeat:repeat;
 	background-color:white;
->>>>>>> 932e5bd9f6f42bde73c7f11b388caa9ab6b060f7
+
 }
 #diapo2 {
 	position: absolute;
@@ -299,15 +298,18 @@ border:1px solid #f9f68a; -webkit-border-radius: 3px; -moz-border-radius: 3px;bo
 }
 .idiomas{
 	float:right;
-	margin-right:20px;
-	margin-top:20px;
+	margin-right:70px;
+	margin-top:5px;
+}
+.idiomasaux{
+	position:fixed;
+	z-index:1005;
 }
 .idiomas a{
-
 	font: bold 10px arial;
 	color:#000;
 	margin-left:5px;
-	
+	float:left;
 }
 #pie{
 	background:#000;
@@ -317,7 +319,6 @@ border:1px solid #f9f68a; -webkit-border-radius: 3px; -moz-border-radius: 3px;bo
 }
 .secciones{
 text-align:left;
-width:80%;
 }
 .seccioncaja{
 	width:80%;
@@ -333,7 +334,7 @@ width:80%;
 #logos3{
 	width:450px;
 	margin-top:40px;
-}t
+}
 #textoseccion{
 	margin: 0 auto;
 	text-align:left;
@@ -494,4 +495,16 @@ select option:hover
 	width:22px;
 	float:left;
 	cursor:pointer;
+ }
+ 
+ #pseudopie{
+background: none repeat scroll 0 0 #d6d6d6;
+    height: 40px;
+    padding-right: 5px;
+    padding-top: 3px;
+    position: fixed;
+    right: 0;
+    text-align: right;
+    top: 95%;
+    width: 100%;
  }

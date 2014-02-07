@@ -1,7 +1,7 @@
 <div id="servicios"></div> 
 <div class="cajablanca">  
 	<div class="seccioncaja">
-<div class="bolanaranja2"><h4> Nuestros Servicios Render</h4></div>
+<h4> Nuestros Servicios Render</h4>
 			
 		<div class="secciones" id="textoseccion">
 			<h5>Nuestros nodos están preparados para Maya, Cinema 4D, 3ds Max, Blender, LightWave, After Effects<br>	Si usas otro software contacta con nosotros. </h5>
@@ -22,5 +22,3 @@
 </div>
 
 
-<div class="espacio"></div>
-<div class="espacio"></div>

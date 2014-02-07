@@ -1,7 +1,7 @@
 <div id="faq"></div> 
 <div class="cajablanca">
 <div class="seccioncaja">
-	<div class="bolanaranja2"><h4>Preguntas Frecuentes</h4></div>
+	<h4>Preguntas Frecuentes</h4>
 	
 	<div class="pointerfaq" id="poi1"></div>
 	<div class="faqsask" id="ask1"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </div>
@@ -57,5 +57,5 @@
 
 </div>	
 </div>
-<div class="espacio"></div>
+
 
