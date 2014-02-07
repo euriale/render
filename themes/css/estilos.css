@@ -10,7 +10,7 @@ html,body{
 
 }
 .cajarobot{
-	background-image:url("../img//WPTVG48X.png");
+	background-image:url("../img/WPTVG48X.png");
 	background-repeat:no-repeat;
 	position:fixed;
 	height:347px;
@@ -20,7 +20,9 @@ html,body{
 	margin-top:40px;
 }
 .cajablancabase{
-	background:#fff;
+	background-image:url("../img/papelo.jpg");
+	background-repeat:repeat-y;
+
 	margin:0 auto;
 	width:80%;
 	min-height:100%;
