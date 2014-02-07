@@ -29,7 +29,7 @@ html,body{
 /*-------------------menu-----------------*/
 .menu{
 	float:right;
-	width:480px;
+	width:610px;
 	z-index:1005;
 	position:relative;
 	margin-top:20px;
@@ -131,6 +131,7 @@ h4{
 font: bold 35px arial;
 color:#666;
 text-align:left;
+margin-bottom:10px;
 }
 h5{
 font: 25px arial;

@@ -15,6 +15,7 @@
 	<div class="menu">
 		  <ul class="navigation">
 			<li><a href="#inicio" class="ancla" ><?php echo INICIO; ?> </a></li>
+			<li><a href="#servicios" class="ancla" ><?php echo SERVICIOS_RENDER; ?> </a></li>
 			<li><a href="#tarifas" class="ancla" ><?php echo TARIFAS; ?> </a></li>
 			<li><a href="#contacto" class="ancla" ><?php echo CONTACTO; ?> </a></li>
 			<li><a href="#faq" class="ancla" ><?php echo FAQ; ?> </a></li>
