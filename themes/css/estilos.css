@@ -27,14 +27,15 @@ html,body{
 }
 /*-------------------menu-----------------*/
 .menu{
-	float:right;
+	float:left;
 	width:630px;
-	margin-top:10px;
+	margin-top:40px;
 	z-index:1005;
+	margin-left:20px;
 }
 .logo{
  position: fixed;
- width: 180px;
+ width: 250px;
  z-index: 1005;
  margin-left:15px;
 }
@@ -55,7 +56,7 @@ html,body{
 .navigation li a{
 	color:#fff;
 	text-decoration:none;
-	font:19px arial;
+	font:17px arial;
 
 }
 .navigation li:hover,.active{
@@ -64,7 +65,7 @@ html,body{
 
 #cabecera{
 	width:80%;
-	height:60px;
+	height:80px;
 	position:fixed;
 	top:0;
 	background:#FF8C00;
@@ -85,9 +86,10 @@ h1 a{
 font: 30px arial;
 color:#000;
 margin:0;
-margin-top:8px;
+margin-top:5px;
 text-decoration:none;
 position:absolute;
+margin-left:55px;
 
 }
 h2{
@@ -199,7 +201,7 @@ color:#fff;
  text-align:center;
  z-index:3;
 margin:0 auto;
-padding-top:75px;
+padding-top:95px;
  
 }
 .cajablanca{
@@ -232,10 +234,8 @@ opacity:0.9;
 }
 
 .txt14gris{
-padding:40px;
 font: arial 14px;
 color:#444;
-
 }
 .espacio{
 height:150px;
