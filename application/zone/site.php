@@ -12,20 +12,26 @@
 	</div>
 </div>
 <div style="clear:both;"></div>
-<div class="botonaux"><div class="boton1">Ir a la APP</div></div>
-<div class="menu">
-      <ul class="navigation">
-        <li><a href="#inicio" class="ancla" ><?php echo INICIO; ?> </a></li>
-		<li><a href="#rendernube" class="ancla" ><?php echo RENDER_NUBE; ?> </a></li>
-        <li><a href="#servicios" class="ancla" > <?php echo SERVICIOS_RENDER; ?> </a></li>
-		<li><a href="#tarifas" class="ancla" ><?php echo TARIFAS; ?> </a></li>
-        <li><a href="#contacto" class="ancla" ><?php echo CONTACTO; ?> </a></li>
-		<li><a href="#faq" class="ancla" ><?php echo FAQ; ?> </a></li>
-        <li><a href="tutorial" target="_blank" ><?php echo TUTORIAL; ?></a></li>
-      </ul>
-</div>
+	<div class="menu">
+		  <ul class="navigation">
+			<li><a href="#inicio" class="ancla" ><?php echo INICIO; ?> </a></li>
+			<li><a href="#rendernube" class="ancla" ><?php echo RENDER_NUBE; ?> </a></li>
+			<li><a href="#tarifas" class="ancla" ><?php echo TARIFAS; ?> </a></li>
+			<li><a href="#contacto" class="ancla" ><?php echo CONTACTO; ?> </a></li>
+			<li><a href="#faq" class="ancla" ><?php echo FAQ; ?> </a></li>
+			<li><a href="tutorial" target="_blank" ><?php echo TUTORIAL; ?></a></li>
+			
+		  </ul>
+		  <div class="app"><a href="https://farm.renderdrive.com" target="_blank" >Ir a la APP</a></div>
+	</div>
+	
 <div id="cabecera">
 </div>
+
+
+
+
+
 
 
 <div id="inicio"></div> 

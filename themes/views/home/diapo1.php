@@ -1,5 +1,5 @@
  <div class="" id="diapo1">
-		<!--<img src="themes/img/WPTVG48X.png" style="width:100%;position:fixed;">
+		<!--<img src="themes/img/12.jpg" style="">
 		<img src="themes/img/WPTVG48X.png" style="width:100%;position:fixed;z-index:1000;">
 
 		<img src="themes/img/WPTVG48X.png" style="position:fixed;z-index:1000;">

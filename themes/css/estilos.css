@@ -20,27 +20,29 @@ html,body{
 	margin-top:40px;
 }
 .cajablancabase{
-	background-image:url("../img/papelo.jpg");
-	background-repeat:repeat;
 
+	background:#fff;
 	margin:0 auto;
 	width:80%;
 	min-height:100%;
 }
 /*-------------------menu-----------------*/
 .menu{
-	float:left;
-	width:630px;
-	margin-top:40px;
+	float:right;
+	width:625px;
 	z-index:1005;
-	margin-left:20px;
+	position:relative;
+	margin-top:20px;
+	
 }
 .logo{
  position: fixed;
- width: 250px;
+width:350px;
  z-index: 1005;
- margin-left:15px;
+
 }
+
+
 .navigation{
 	position:fixed;
 	z-index:5;
@@ -64,35 +66,44 @@ html,body{
 .navigation li:hover,.active{
 	cursor:pointer;
 }
-
+.app a{
+    color: #fff;
+    float: right;
+    margin-right: 5px;
+    margin-top: 15px;
+    text-decoration: none;
+	font:bold 14px arial;
+}
 #cabecera{
 	width:80%;
-	height:80px;
+	height:70px;
 	position:fixed;
 	top:0;
-	background:#FF8C00;
+	background:#FFCC66;
+	/*
 	filter: alpha(opacity=80); 
 	opacity:0.7;
 	-moz-opacity:0.7; 
 	-webkit-opacity:0.7;
+	background:#D20000;*/
 	z-index:1;
 }
 h1{
-font: 30px arial;
 color:#000;
 margin:0;
 margin-top:8px;
 
+
 }
 h1 a{
-font: 30px arial;
 color:#000;
+font: 45px arial;
 margin:0;
-margin-top:5px;
 text-decoration:none;
 position:absolute;
-margin-left:55px;
-
+  margin: 5px 0 0 50px;
+  position: absolute;
+  text-decoration: none;
 }
 h2{
 padding-top:25px;
@@ -554,7 +565,7 @@ background: none repeat scroll 0 0 #d6d6d6;
 .botonaux{
 	left: 75%;
     position: fixed;
-    top: 45px;
+    top: 35px;
     z-index: 1005;
 }
 
