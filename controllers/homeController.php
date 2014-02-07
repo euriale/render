@@ -1,8 +1,8 @@
 <?php	
 //render('home/diapo1');
 render('home/inicio');
+render('home/rendernube');
 render('home/servicios');
-render('home/tarifas');
 render('home/contacto');
 
 /*render('home/tarifas');*/
