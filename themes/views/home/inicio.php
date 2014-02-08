@@ -1,10 +1,10 @@
 	
 <div class="cajanocolor">
 	<h2><?php echo GRANJA_RENDER_ONLINE; ?></h2>
-	<h3>Ponemos a tu disposicion una granja de render compatible con la mayoría del software 3D del mercado</h3>
-	<div class="boton2">Si usas Maya prueba nuestra APP</div>
+	<h3>Ponemos a tu disposición cientos de máquinas preparadas para renderizar tu proyecto</h3>
+	<div class="boton2">Si usas Maya prueba YA nuestra APP</div>
 </div> 		
-
+<!-- 
 <div class="seccioncaja">
 <h4> Render en la nube</h4>
 			
@@ -18,3 +18,4 @@
 		</div>
 </div>
 
+-->
