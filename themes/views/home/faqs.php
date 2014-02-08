@@ -4,12 +4,12 @@
 	<h4>Preguntas Frecuentes</h4>
 	
 	<div class="pointerfaq" id="poi1"></div>
-	<div class="faqsask" id="ask1"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </div>
+	<div class="faqsask" id="ask1"> ¿Que ventajas obtengo por renderizar en la nube?. </div>
 	<div style="clear:both;"></div>
 	<div class="faqanswer" id="ans1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tristique tellus sed arcu bibendum facilisis. Nullam bibendum, libero ut interdum porta, quam turpis mollis ante, sit amet lobortis nisi nulla vel lorem. Mauris pulvinar est a eleifend eleifend. Mauris varius vulputate metus, in aliquet lacus. </div>
 
 	<div class="pointerfaq" id="poi2"></div>
-	<div class="faqsask" id="ask2">  Fusce imperdiet dui eu mauris vehicula, in faucibus tellus posuere. </div>
+	<div class="faqsask" id="ask2">  ¿ </div>
 	<div style="clear:both;"></div>
 	<div class="faqanswer" id="ans2"> Donec mi nisi, feugiat ut varius non, luctus quis lacus. Mauris tincidunt aliquet facilisis. Integer pulvinar eros in est consequat feugiat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam erat volutpat. Curabitur vel neque eget metus posuere viverra. Ut euismod, dui et posuere ornare, purus magna varius felis, ac pulvinar lectus magna ac lorem. Quisque faucibus tellus at mi rhoncus auctor. Proin mollis leo turpis, at convallis lacus posuere ut. </div>
 	
