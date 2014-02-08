@@ -4,12 +4,12 @@
 	<h4>Preguntas Frecuentes</h4>
 	
 	<div class="pointerfaq" id="poi1"></div>
-	<div class="faqsask" id="ask1"> ¿Que ventajas obtengo por renderizar en la nube?. </div>
+	<div class="faqsask" id="ask1"> Que ventajas obtengo por renderizar en la nube </div>
 	<div style="clear:both;"></div>
 	<div class="faqanswer" id="ans1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tristique tellus sed arcu bibendum facilisis. Nullam bibendum, libero ut interdum porta, quam turpis mollis ante, sit amet lobortis nisi nulla vel lorem. Mauris pulvinar est a eleifend eleifend. Mauris varius vulputate metus, in aliquet lacus. </div>
 
 	<div class="pointerfaq" id="poi2"></div>
-	<div class="faqsask" id="ask2">  ¿ </div>
+	<div class="faqsask" id="ask2"> Integer ut nulla non justo pharetra laoreet. </div>
 	<div style="clear:both;"></div>
 	<div class="faqanswer" id="ans2"> Donec mi nisi, feugiat ut varius non, luctus quis lacus. Mauris tincidunt aliquet facilisis. Integer pulvinar eros in est consequat feugiat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam erat volutpat. Curabitur vel neque eget metus posuere viverra. Ut euismod, dui et posuere ornare, purus magna varius felis, ac pulvinar lectus magna ac lorem. Quisque faucibus tellus at mi rhoncus auctor. Proin mollis leo turpis, at convallis lacus posuere ut. </div>
 	
@@ -19,7 +19,7 @@
 	<div class="faqanswer" id="ans3"> Sed tristique dolor euismod libero suscipit, non aliquet augue cursus. Nam mattis interdum porta. Quisque tincidunt vitae mauris ac consectetur. Suspendisse facilisis, magna nec scelerisque iaculis, arcu turpis faucibus justo, eget pulvinar velit est eu mauris.  </div>
 	
 	<div class="pointerfaq" id="poi4"></div>
-	<div class="faqsask" id="ask4">  Maecenas sed turpis viverra, interdum leo quis, iaculis mauris. </div>
+	<div class="faqsask" id="ask4"> Maecenas sed turpis viverra, interdum leo quis, iaculis mauris. </div>
 	<div style="clear:both;"></div>
 	<div class="faqanswer" id="ans4"> Sed eleifend, eros eu suscipit aliquam, purus libero adipiscing lectus, tempor feugiat mauris quam sit amet sem. Sed neque neque, placerat nec nulla sed, gravida mollis libero. Suspendisse blandit vehicula mi vel molestie. Curabitur tempor libero vitae blandit posuere. </div>
 	
