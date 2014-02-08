@@ -149,7 +149,7 @@ color:#000000;
 	margin-right:10px;
 }
 .faqsask{
-font: bold 16px arial;
+font: bold 26px arial;
 color:#FF8C00;
 margin-top:25px;
 float:left;
@@ -159,7 +159,7 @@ cursor:pointer;
 
 }
 .faqanswer{
-font: 16px arial;
+font: 24px arial;
 color:#000000;
 display:none;
 
@@ -261,9 +261,10 @@ opacity:0.9;
 
 }
 
-.txt14gris{
-font: arial 14px;
+.txt24gris{
+font: arial 24px;
 color:#444;
+font-size:24px;
 }
 .espacio{
 height:150px;
