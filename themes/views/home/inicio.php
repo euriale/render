@@ -1,6 +1,7 @@
 	
 <div class="cajanocolor">
 	<h2><?php echo GRANJA_RENDER_ONLINE; ?></h2>
+
 	<h3>Ponemos a tu disposicion una granja de render compatible con la mayoría del software 3D del mercado</h3>
 </div> 		
 <div class="seccionlogosinicio">
@@ -17,3 +18,4 @@
 </div>
 
 <div class="logoaplic"><img src="themes/img/logos/maya.png" title="Maya" alt="Maya" width="80px"></div>
+

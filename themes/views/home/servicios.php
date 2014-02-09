@@ -3,11 +3,12 @@
 
 <div class="seccioncaja">
 	<h4> Nuestros Servicios Render</h4>
-			
-
 	<div class="secciones" id="textoseccion">
-		<h5>Nuestros nodos están preparados para Maya, Cinema 4D, 3ds Max, Blender, LightWave, After Effects<br>	
-		Si usas otro software <a href="#contacto" class="ancla" >contacta</a> con nosotros </h5>
+
+	<h5>Te ofrecemos toda la potencia que necesitas para renderizar tu proyecto de forma rápida y sencilla.		
+	<br>
+		Trabajamos con Maya, Cinema 4D, 3ds Max,SoftImage, Blender, LightWave, After Effects<br>	Si usas otro software <a href="#contacto" class="ancla" >contacta</a> con nosotros </h5>
+
 		
 		<div style="clear:both"></div>
 		<div class="secciones" id="logos1">
