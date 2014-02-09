@@ -167,6 +167,7 @@ function resolucion_encaje_robot(){
 	var loquedebemedir=ancho-400;
 	if (capacidad_para_el_robot<528) { 
 		$(".cajablancabase" ).css("width", loquedebemedir);
+		$(".cajanocolor" ).css("width", loquedebemedir);
 		$("#cabecera" ).css("width", loquedebemedir);
 		
 	}	
