@@ -8,12 +8,9 @@ var parallax  = -2;
 
 
 $(document).ready(function () {
-	cabecerablanca();
-	resolucion_encaje_robot();
-	
+		
 	/*funcion para parallax*/
 	$(document).scroll(function () {
-		cabeceranaranja();
 		s = $(document).scrollTop();
 		/* Efecto parallax */
 		$(document).scroll(function () {
@@ -53,16 +50,7 @@ $(document).ready(function () {
 		$("#poi"+idask).css("background-image", "url(themes/img/redpointer_down.png)");
 	});
 	
-/*--------------Cabecera-----------------*/	
-	
-	$( "#cabecera" ).mouseover(function() {
-		cabecerablanca();
-	});
-	
-	
-	$( "#cabecera" ).mouseout(function() {
-		cabeceranaranja();
-	});
+
 	
 	$("input").focus(function(){
 		$(this).css("border", "1px solid #5897FB");
@@ -146,30 +134,3 @@ $(document).ready(function () {
 		$("#versionesaux").val('');
 	});
 	});
-function cabecerablanca(){
-		$("#cabecera" ).css("background", "#fff");
-		$(".drive").css("color", "#FF8C00");
-		$(".navigation li a").css("color", "#000");
-		$(".app a").css("color", "#FF8C00");
-}
-
-function cabeceranaranja(){
-		$("#cabecera" ).css("background", "#FF8C00");
-		$(".drive").css("color", "#fff");		
-		$(".navigation li a").css("color", "#000");
-		$(".app a").css("color", "#fff");
-}	
-
-function resolucion_encaje_robot(){
-	var ancho=$(window).width();
-	var cajablanca=parseInt((80*ancho)/100);
-	var capacidad_para_el_robot=ancho-cajablanca;
-	var loquedebemedir=ancho-400;
-	if (capacidad_para_el_robot<528) { 
-		$(".cajablancabase" ).css("width", loquedebemedir);
-		$(".cajanocolor" ).css("width", loquedebemedir);
-		$("#cabecera" ).css("width", loquedebemedir);
-		
-	}	
-
-}	
