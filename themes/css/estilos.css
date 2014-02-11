@@ -1,143 +1,146 @@
 @charset "utf-8";
 /* CSS Document */
 html,body{
- font-family: arial;
- font-size:12px;
-	width:100%;
+	font-family:  'Open Sans',Arial,Helvetica,sans-serif;
 	height:100%;
 	margin:0;
-	background:#d6d6d6;
-
-}
-.cajarobot{
-	background-image:url("../img/WPTVG48X.png");
-	background-repeat:no-repeat;
-	position:fixed;
-	height:347px;
-	width:264px;
-	margin-left:-190px;
-	z-index:1005;
-	margin-top:40px;
-}
-.cajablancabase{
-
 	background:#fff;
-	margin:0 auto;
-	width:80%;
-	min-height:100%;
+	text-align:center;
+}
+#contenedor{
+	width: 960px;
+	border:1px solid red;
+}
+#cabecera{
+	width:100%;
+	position:fixed;
+	top:0;
+	background:#FF8C00;
 }
 /*-------------------menu-----------------*/
-.menu{
-	float:right;
-	width:610px;
-	z-index:1005;
-	position:relative;
-	margin-top:20px;
-	
-}
-.logo{
- position: fixed;
-width:350px;
- z-index: 1005;
-
-}
-
-
 .navigation{
-	position:fixed;
-	z-index:5;
-
+	display:inline-block;
+	float:right;
+	margin-top:20px;
 }
 .navigation li{
 	color:#fff;
 	display:block;
 	padding: 0 10px;
 	float:left;
-	margin-bottom:2px;
 	text-align:left;
 
 }
 .navigation li a{
 	color:#fff;
 	text-decoration:none;
-	font:17px arial;
+	font:1em 'Open Sans', arial;
 
 }
 .navigation li:hover,.active{
 	cursor:pointer;
 }
-
-.app{
-	z-index:1005;
+.dreta{
 	float:right;
-	margin-top:15px;
 }
-.app a{
-	font: bold 10px arial;
+.idiomas{
+	float:right;
+	margin-right:2%;
+	margin-top:5px;
+}
+
+.idiomas a{
 	color:#000;
 	margin-left:5px;
-	text-decoration: none;
-	font:bold 14px arial;
-	position:fixed;
-	
-	
+	float:left;
+	border:0;
 }
 
-#cabecera{
-	width:80%;
-	height:70px;
-	position:fixed;
-	top:0;
-	background:#FF8C00;
-	/*
-	filter: alpha(opacity=80); 
-	opacity:0.7;
-	-moz-opacity:0.7; 
-	-webkit-opacity:0.7;
-	background:#D20000;*/
-	z-index:1;
+.logo{
+	float:left;
+	display:inline-block;
+	margin-left:1em;
 }
 h1{
-color:#000;
-margin:0;
-margin-top:8px;
-
-
+	color:#000;
 }
 h1 a{
-color:#000;
-font: 45px arial;
-margin:0;
-text-decoration:none;
-position:absolute;
-  margin: 5px 0 0 50px;
-  position: absolute;
-  text-decoration: none;
+	color:#000;
+	font: 1.2em 'Open Sans',arial;
+	margin:0;
+	text-decoration:none;
+}
+.drive{
+color:#fff;
 }
 h2{
+padding-top:2.2em;
+font: 3em 'Open Sans',arial;
+color:#FF8C00;
 
-font: bold 45px arial;
-color:#fff;
-margin-bottom:0;
 }
 
 h3{
-margin-top:0;
-font: bold 25px arial;
-color:#f1f1f1;
+font: 1.7em 'Open Sans',arial;
+color:#fff;
+margin-left:2em;
+margin-right:2em;
+padding-bottom:2em;
 }
 
 h4{
-font: bold 35px arial;
-color:#666;
-text-align:left;
-margin-bottom:10px;
-margin-top:0;
+font: 1.6em 'Open Sans',arial;
+color:#111;
+
+
 }
 h5{
-font: 25px arial;
-color:#000000;
+font: 18px arial;
+color:#444;
 }
+h5 a{
+font: 18px arial;
+color:#444;
+}
+
+.slide{
+	background-repeat:no-repeat;
+	background-image:url("../img/slide.jpg");
+	height:45%;
+	background-size: 100% auto;
+	background-position:center bottom;
+	margin-top:0;
+}
+
+.primeracaja{
+min-height:48%;
+border:solid 1px red;
+width:100%;
+background:#ddd;
+display:inline-block;
+
+}
+.cajapagina{
+min-height:100%;
+border:solid 1px blue;
+width:100%;
+}
+
+.cajamini{
+display:inline-block;
+border:solid 1px green;
+width:300px;
+height:300px;
+}
+
+
+
+
+
+
+
+
+
 .pointerfaq{
 	width: 10px;
 	height:10px;
@@ -164,9 +167,7 @@ color:#000000;
 display:none;
 
 }
-.drive{
-color:#fff;
-}
+
 .imagen{
 	max-width:100%;
 }
@@ -225,11 +226,15 @@ color:#fff;
 
 .cajanocolor{
  text-align:center;
-padding-top:65px;
+padding-top:1%;
+padding-bottom:1%;
 background-repeat:no-repeat;
-background-image:url("../img/12b.jpg");
+background-image:url("../img/12.jpg");
 background-size: 100% auto;
+background-position:center bottom;
 width:100%;
+height:50%;
+position:relative;
 }
 
 .cajablanca{
@@ -260,10 +265,28 @@ opacity:0.9;
 
 
 }
+.flecha{
+background-repeat:no-repeat;
+background-image:url("../img/abajo.png");
+background-position:center bottom;
+height:50px;
+text-align:center;
+font: bold 1em arial;
+color:#FF8C00;
 
-.txt14gris{
-font: arial 14px;
+}
+
+.seccionlogosinicio{
+ border: 1px solid #DDDDDD;
+    margin: 1%;
+    padding: 2%;
+    width: 40%;
+}
+
+.txt18gris{
+font: 18px arial;
 color:#444;
+
 }
 .espacio{
 height:150px;
@@ -324,21 +347,6 @@ border:1px solid #f9f68a; -webkit-border-radius: 3px; -moz-border-radius: 3px;bo
 	background-image: -o-linear-gradient(top, #000, #666);
 	background-image: linear-gradient(to bottom, #000, #666);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#000, endColorstr=#666);
 }
-.idiomas{
-	float:right;
-	margin-right:70px;
-	margin-top:5px;
-}
-.idiomasaux{
-	position:fixed;
-	z-index:1005;
-}
-.idiomas a{
-	font: bold 10px arial;
-	color:#000;
-	margin-left:5px;
-	float:left;
-}
 #pie{
 	background:#000;
 	height:300px;
@@ -350,9 +358,11 @@ text-align:left;
 }
 .seccioncaja{
    border: 1px solid #DDDDDD;
-    margin: 0 auto;
-    padding: 25px;
-    width: 80%;
+   margin: 0 auto;
+   padding: 25px;
+   width: 80%;
+   background:#f1f1f1;
+   margin-top:25px;	
 }
 #logos1{
 	
@@ -368,9 +378,13 @@ text-align:left;
 #textoseccion{
 	margin: 0 auto;
 	text-align:left;
+	font: 18px arial;
+color:#444;
 }
 .logoaplic{
-padding:15px;
+padding-right:15px;
+padding-left:15px;
+padding-bottom:15px;
 float:left;
 }
 
@@ -538,7 +552,11 @@ background: none repeat scroll 0 0 #d6d6d6;
     top: 96%;
     width: 100%;
  }
+ 
+
 .boton1 {
+	float:right;
+	margin-top:15px;
 	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #757574), color-stop(1, #030302) );
 	background:-moz-linear-gradient( center top, #757574 5%, #030302 100% );
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#757574', endColorstr='#030302');
@@ -558,15 +576,15 @@ background: none repeat scroll 0 0 #d6d6d6;
 	text-indent:0;
 	display:inline-block;
 	color:#ffffff;
-	font-family:Arial;
-	font-size:15px;
-	font-weight:bold;
-	font-style:normal;
+	font:bold 14px arial;
+	color:#000;
 	height:26px;
 	line-height:26px;
-	width:131px;
+	width:100px;
 	text-decoration:none;
 	text-align:center;
+	position:fixed;
+	z-index:1009;
 }
 .boton1:hover {
 	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #030302), color-stop(1, #757574) );
@@ -577,13 +595,18 @@ background: none repeat scroll 0 0 #d6d6d6;
 	position:relative;
 	top:1px;
 }
+.boton1 a {
+	color:#fff;
+	text-decoration: none;
+	font:bold 14px arial;
+}
 
-
-.botonaux{
-	left: 75%;
+.botaux{
+	left: 77%;
     position: fixed;
-    top: 35px;
+    top: 20px;
     z-index: 1005;
+	float:right;
 }
 
 

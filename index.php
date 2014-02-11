@@ -23,13 +23,11 @@ define ('__SITE_PATH', $site_path);
 <title>Render Drive - Servicios de Render Online</title>
 <script src="themes/js/jquery.js"></script>
 <script language="javascript" src="themes/js/codigo.js" charset="ISO-8859-1"></script>
-
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Roboto:300&amp;subset=latin-ext' rel='stylesheet'>
 <?php 
 if ($_SERVER['HTTP_HOST']=="www.renderdrive.com") $raiz='http://www.renderdrive.com/';
 elseif ($_SERVER['HTTP_HOST']=="renderdrive.com") $raiz='http://renderdrive.com/';
 else $GLOBALS['raiz']='/render/';
-
-
 ?>
 <link rel="STYLESHEET" type="text/css" href="themes/css/estilos.css"></link>
 
