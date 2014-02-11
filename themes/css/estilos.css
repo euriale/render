@@ -74,26 +74,25 @@ h1 a{
 color:#fff;
 }
 h2{
-margin-top:2em;
-font: 3em arial;
-color:#fff;
+padding-top:2.2em;
+font: 3em 'Open Sans',arial;
+color:#FF8C00;
 
 }
 
 h3{
-font: 1.8em arial;
+font: 1.7em 'Open Sans',arial;
 color:#fff;
 margin-left:2em;
 margin-right:2em;
-margin-bottom:2em;
+padding-bottom:2em;
 }
 
 h4{
-font: bold 35px arial;
-color:#666;
-text-align:left;
-margin-bottom:10px;
-margin-top:0;
+font: 1.6em 'Open Sans',arial;
+color:#111;
+
+
 }
 h5{
 font: 18px arial;
@@ -107,10 +106,40 @@ color:#444;
 .slide{
 	background-repeat:no-repeat;
 	background-image:url("../img/slide.jpg");
-	height:35%;
+	height:45%;
 	background-size: 100% auto;
 	background-position:center bottom;
+	margin-top:0;
 }
+
+.primeracaja{
+min-height:48%;
+border:solid 1px red;
+width:100%;
+background:#ddd;
+display:inline-block;
+
+}
+.cajapagina{
+min-height:100%;
+border:solid 1px blue;
+width:100%;
+}
+
+.cajamini{
+display:inline-block;
+border:solid 1px green;
+width:300px;
+height:300px;
+}
+
+
+
+
+
+
+
+
 
 .pointerfaq{
 	width: 10px;
