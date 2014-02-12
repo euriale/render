@@ -155,6 +155,7 @@ font: 18px arial;
 color:#444;
 }
 
+
 .slide,.slide2{
 	background-repeat:no-repeat;
 	background-image:url("../img/slide.jpg");
@@ -163,7 +164,7 @@ color:#444;
 	background-position:center bottom;
 	margin-top:0;
 }
-.slide,.slide2{
+.slide2{
 	background-image:url("../img/tokio.jpg");
 }
 .primeracaja{
@@ -205,6 +206,7 @@ padding-top:25px;
 .txt15{
 	font: 15px 'Open Sans',arial;
 	color:#444;
+	text-align:justify;
 }
 
 .imagencaja{
