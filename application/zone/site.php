@@ -24,8 +24,8 @@ require_once(__SITE_PATH.'/'.$ccontroller);
 ?>
 
 	
-<!--
-<div id="pie">
-<div id="subpie"></div>
 
-</div>-->
+<div id="pie">
+</div>
+
+
