@@ -1,8 +1,8 @@
 	
 <div class="slide2">
-	<h2><?php echo GRANJA_RENDER_ONLINE; ?></h2>
+	<h2>Aplicación </h2>
 
-	<h3>Ponemos a tu disposicion una granja de render compatible con la mayoría del software 3D del mercado</h3>
+	<h3>Regístrate ahora en nuestra aplicación y recibe un <strong> 20% de descuento</strong></h3>
 </div> 	
 <div id="descripcion"></div> 
 <div class="primeracaja">
