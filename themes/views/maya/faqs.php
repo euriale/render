@@ -53,7 +53,20 @@
 	<div style="clear:both;"></div>
 	<div class="faqanswer" id="ans10"> Nunc molestie justo quis tristique blandit. Aenean felis metus, dictum ut lorem at, dictum malesuada orci. Aliquam erat volutpat. Quisque sed metus non turpis iaculis aliquam vel a tortor. Pellentesque tincidunt dolor vel tristique egestas. Morbi a egestas ipsum. Aliquam varius elit sed suscipit sodales. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.  </div>
 	
-	
+	Cuáles son las ventajas de usar nuestra APP?
+¿Qué aplicaciones son compatibles? 
+¿Mis créditos caducan?
+¿Es posible tener créditos negativos?
+¿Qué es un Ghz hora?
+Es una unidad de equivalencia. Una computadora Pentium 4 de 1 núcleo y 1 Ghz de renderizado durante 1 hora es igual a la unidad “1 Ghz hora”.
+¿Cuánto costará renderizar mi proyecto?
+Esta es la gran pregunta que no se puede contestar con total certeza ya que no conocemos la naturaleza de la escena previamente, no podemos dar una estimación precisa por adelantado.
+Podemos usar esta formular : [Incluir fórmula]
+
+El renderizado es un proceso paso a paso y muchos detalles, tamaño de la escena, etc. afectan el proceso de renderizado. 
+¿Cómo se realiza el pago?
+¿Dónde puedo obtener mis ficheros?
+
 
 </div>	
 </div>

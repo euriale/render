@@ -158,14 +158,14 @@ color:#444;
 
 .slide,.slide2{
 	background-repeat:no-repeat;
-	background-image:url("../img/slide.jpg");
+	background-image:url("../img/bkc.jpg");
 	height:45%;
 	background-size: 100% auto;
 	background-position:center bottom;
 	margin-top:0;
 }
 .slide2{
-	background-image:url("../img/tokio.jpg");
+	background-image:url("../img/mayas.jpg");
 }
 .primeracaja{
 min-height:48%;

@@ -10,7 +10,7 @@
   
 	
 	<h5>Tarifas tabla resumida</h5>
-	
+En función de la rapidez con la que necesites para renderizar tu proyecto elige uno de estos paquetes. Si tus necesidades cambian podrás utilizar tus créditos comprados en otra modalidad sin ninguna penalización.	
  </div>
 </div>	
 <div style="clear:both"></div>
