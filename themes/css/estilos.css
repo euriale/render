@@ -155,6 +155,10 @@ font: 18px arial;
 color:#444;
 }
 
+.rojo{
+font: 15px 'Open Sans',arial;
+color:#FF0000;
+}
 .slide{
 	background-repeat:no-repeat;
 	background-image:url("../img/slide.jpg");
@@ -203,6 +207,7 @@ padding-top:25px;
 .txt15{
 	font: 15px 'Open Sans',arial;
 	color:#444;
+	text-align:justify;
 }
 
 .imagencaja{
