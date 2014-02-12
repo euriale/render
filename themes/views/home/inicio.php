@@ -9,7 +9,7 @@
 
 	<div class="cajamini">
 		<h4>Uso Maya para mis Proyectos</h4><br>
-		<div class="imagencaja"><img src="themes/img/logos/maya.png" width="60%"></div><br>
+		<div class="imagencaja"><img src="themes/img/logos/maya.png" width="30%"></div><br>
 		<div class="txt15">	Regístrate y accede a nuestra aplicación
 		<br>Si te das de alta hasta antes del 1 de Marzo te damos un <strong> 20% de descuento </strong>.</div>
 		
