@@ -2,19 +2,19 @@
 <div class="slide">
 	<h2><?php echo GRANJA_RENDER_ONLINE; ?></h2>
 
-	<h3>Ponemos a tu disposicion una granja de render compatible con la mayoría del software 3D del mercado</h3>
+	<h3>Ponemos a tu disposición cientos de nodos preparados con el software que necesitas para que el renderizado sea un proceso sencillo, rápido y económico. Selecciona la opción con tu software, calcula el coste de tu proyecto y comienza renderizar </h3>
 </div> 	
 <div id="ventajas"></div> 
 <div class="primeracaja">
 
 	<div class="cajamini">
-		<h4>Usas Maya para tus Proyectos</h4>
+		<h4>Uso Maya para mis Proyectos</h4>
 	</div>
 	<div class="cajamini">
-		<h4>Ventajas del Render en la nube</h4>
+		<h4>Por qué renderizar con RenderDrive</h4>
 	</div>
 	<div class="cajamini">
-		<h4>Usas otro Software para tus Proyectos </h4>
+		<h4>Uso otro Software para mis Proyectos </h4>
 	</div>
 </div>
 
