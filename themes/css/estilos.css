@@ -40,6 +40,41 @@ html,body{
 .navigation li:hover,.active{
 	cursor:pointer;
 }
+
+/*-------------------submenu-----------------*/
+.submenu{
+	width:100%;
+	position:fixed;
+	top:80px;
+	background:#000;
+	
+	
+}
+.subnavigation{
+	display:inline-block;
+	float:right;
+	margin-top:20px;
+}
+.subnavigation li{
+	color:#fff;
+	display:block;
+	padding: 0 10px;
+	float:left;
+	text-align:left;
+
+}
+.subnavigation li a{
+	color:#fff;
+	text-decoration:none;
+	font:1em 'Open Sans', arial;
+
+}
+.subnavigation li:hover,.active{
+	cursor:pointer;
+}
+
+
+
 .dreta{
 	float:right;
 }
@@ -89,7 +124,7 @@ padding-bottom:2em;
 }
 
 h4{
-font: 1.6em 'Open Sans',arial;
+font: 1.3em 'Open Sans',arial;
 color:#111;
 
 
@@ -116,7 +151,6 @@ color:#444;
 min-height:48%;
 border:solid 1px red;
 width:100%;
-background:#ddd;
 display:inline-block;
 
 }
@@ -125,12 +159,17 @@ min-height:100%;
 border:solid 1px blue;
 width:100%;
 }
+.cajamediapagina{
+min-height:50%;
+border:solid 1px pink;
+width:100%;
+}
 
 .cajamini{
 display:inline-block;
 border:solid 1px green;
-width:300px;
-height:300px;
+width:25%;
+height:25%;
 }
 
 
