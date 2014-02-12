@@ -229,8 +229,6 @@ margin-right:15%;
 margin-top:20px;
 }
 
-
-
 li{
 line-height:2;
 }
@@ -243,10 +241,36 @@ line-height:2;
 }
 
 
+.tarifaup1,.tarifaup2,.tarifaup3{
+padding:25px;
+background:#C9DE36;
+font: 18px 'Open Sans',arial;
+color:#fff;
 
+}
+.tarifaup2{
+background:#A2B51E;
+}
+.tarifaup3{
+background:#51910B;
+}
+.tarifadown1,.tarifadown2,.tarifadown3{
+padding:25px;
+background:#fff;
+font: 18px 'Open Sans',arial;
+color:#444;
 
-
-
+}
+.tarifadown2{
+background:#fff;
+}
+.tarifadown3{
+background:#fff;
+}
+.muygrande{
+font: bold 50px 'Open Sans',arial;
+color:#fff;
+}
 
 
 
