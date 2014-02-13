@@ -37,9 +37,63 @@ html,body{
 	font:1em 'Open Sans', arial;
 
 }
-.navigation li:hover,.active{
+.navigation li a:hover,.active{
 	cursor:pointer;
+	color:#666;
+
 }
+
+/*-------------------submenu-----------------*/
+.submenu{
+	width:100%;
+	position:fixed;
+	top:80px;
+	background:#000;
+	height:40px;
+	text-align:center;
+	
+	
+}
+.subnavigation{
+	display:inline-block;
+	margin-top:0px;
+	margin-right:5%;
+	margin-bottom:0px;
+	padding-left:0;
+
+}
+.subnavigation li{
+	color:#fff;
+	display:block;
+	padding: 0 10px;
+	float:left;
+	text-align:left;
+
+	height:23px;
+
+}
+.subnavigation li a{
+	color:#fff;
+	text-decoration:none;
+	font:1em 'Open Sans', arial;
+
+}
+.subnavigation li a:hover,.active{
+	cursor:pointer;
+	color:#666;
+}
+
+.breadcrum{
+	background-repeat:no-repeat;
+	background-image:url("../img/indicet.png");
+	background-position:right;
+	font: 18px 'Open Sans', arial;
+	color:#FF8C00;
+	display:inline-block;
+	padding-left:50px;
+	width:100px;
+}
+
 .dreta{
 	float:right;
 }
@@ -77,22 +131,20 @@ h2{
 padding-top:2.2em;
 font: 3em 'Open Sans',arial;
 color:#FF8C00;
-
 }
 
 h3{
-font: 1.7em 'Open Sans',arial;
+font: 18px 'Open Sans',arial;
 color:#fff;
-margin-left:2em;
-margin-right:2em;
+margin:0 auto;
 padding-bottom:2em;
+max-width:70%;
 }
 
 h4{
-font: 1.6em 'Open Sans',arial;
-color:#111;
-
-
+font: 1.3em 'Open Sans',arial;
+color:#444;
+margin-bottom:0;
 }
 h5{
 font: 18px arial;
@@ -103,38 +155,122 @@ font: 18px arial;
 color:#444;
 }
 
-.slide{
+
+.slide,.slide2{
 	background-repeat:no-repeat;
-	background-image:url("../img/slide.jpg");
+	background-image:url("../img/bkc.jpg");
 	height:45%;
 	background-size: 100% auto;
 	background-position:center bottom;
 	margin-top:0;
 }
-
+.slide2{
+	background-image:url("../img/mayas.jpg");
+}
 .primeracaja{
 min-height:48%;
-border:solid 1px red;
 width:100%;
-background:#ddd;
 display:inline-block;
 
 }
 .cajapagina{
 min-height:100%;
-border:solid 1px blue;
 width:100%;
+}
+.cajamediapagina{
+min-height:50%;
+width:100%;
+background:#f1f1f1;
+padding-top:25px;
 }
 
 .cajamini{
-display:inline-block;
-border:solid 1px green;
-width:300px;
-height:300px;
+	display:inline-block;
+	width:340px;
+	height:25%;
+	padding:15px;
+
+}
+.link a{
+	font: 14px 'Open Sans',arial;
+	color:#FF8C00;
+	text-decoration:none;
+}
+
+.link a:hover{
+	font: 14px 'Open Sans',arial;
+	color:#444;
+	text-decoration:underline;
+}
+
+.txt15{
+	font: 15px 'Open Sans',arial;
+	color:#444;
+	text-align:justify;
+}
+
+.imagencaja{
+	margin:10px;
+}
+
+.titulo{
+font: 2.1em 'Open Sans',arial;
+color:#FF8C00;
+}
+.textocontenido{
+font: 15px 'Open Sans',arial;
+color:#444;
+text-align:left;
+}
+.auxtexto{
+margin:0 auto;
+margin-left:15%;
+margin-right:15%;
+margin-top:20px;
+}
+
+li{
+line-height:2;
+}
+
+#pie{
+	background:#444;
+	height:300px;
+	width:100%;
+	margin-top:0;
 }
 
 
+.tarifaup1,.tarifaup2,.tarifaup3{
+padding:25px;
+background:#C9DE36;
+font: 18px 'Open Sans',arial;
+color:#fff;
 
+}
+.tarifaup2{
+background:#A2B51E;
+}
+.tarifaup3{
+background:#51910B;
+}
+.tarifadown1,.tarifadown2,.tarifadown3{
+padding:25px;
+background:#fff;
+font: 18px 'Open Sans',arial;
+color:#444;
+
+}
+.tarifadown2{
+background:#fff;
+}
+.tarifadown3{
+background:#fff;
+}
+.muygrande{
+font: bold 50px 'Open Sans',arial;
+color:#fff;
+}
 
 
 
@@ -347,12 +483,7 @@ border:1px solid #f9f68a; -webkit-border-radius: 3px; -moz-border-radius: 3px;bo
 	background-image: -o-linear-gradient(top, #000, #666);
 	background-image: linear-gradient(to bottom, #000, #666);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#000, endColorstr=#666);
 }
-#pie{
-	background:#000;
-	height:300px;
-	width:100%;
-	top:2500px;
-}
+
 .secciones{
 text-align:left;
 }

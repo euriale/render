@@ -10,7 +10,7 @@
 	</div>
 	
    <ul class="navigation">
-		<li><a href="#inicio" class="ancla"><?php echo INICIO; ?></a></li>
+		<li><a href="<?php echo $GLOBALS['raiz']; ?>"><?php echo INICIO; ?></a></li>
 		<li><a href="maya">MAYA</a></li>
 		<li><a href="no-maya">NO MAYA</a></li>
 		<li><a href="#ventajas" class="ancla" >VENTAJAS</a></li>
@@ -24,8 +24,8 @@ require_once(__SITE_PATH.'/'.$ccontroller);
 ?>
 
 	
-<!--
-<div id="pie">
-<div id="subpie"></div>
 
-</div>-->
+<div id="pie">
+</div>
+
+
