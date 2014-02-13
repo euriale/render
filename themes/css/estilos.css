@@ -183,17 +183,15 @@ width:100%;
 background:#f1f1f1;
 padding-top:25px;
 }
-.auxcajamini{
-	margin:0 auto;
-	width:1050px;
-}
 
-.cajamini{
-	float:left;
+.cajamini,.cajamini2{
+	display:inline-block;
 	width:320px;
 	height:25%;
 	padding:15px;
-
+}
+.cajamini2{
+	display:inline-flex;
 }
 .link a{
 	font: 14px 'Open Sans',arial;
