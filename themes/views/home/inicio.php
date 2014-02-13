@@ -6,7 +6,7 @@
 </div> 	
 <div id="ventajas"></div> 
 <div class="primeracaja">
-
+<div class="auxcajamini">
 	<div class="cajamini">
 		<h4>Uso Maya para mis Proyectos</h4><br>
 		<div class="imagencaja"><img src="themes/img/logos/maya.png" width="30%"></div><br>
@@ -32,6 +32,9 @@
 		
 		<div class="link"><a href="no-maya">Saber más</a></div>
 
+	</div>
+	
+	<div style="clear:both;"></div>
 	</div>
 </div>
 

@@ -26,6 +26,53 @@ require_once(__SITE_PATH.'/'.$ccontroller);
 	
 
 <div id="pie">
+<div class="auxcajapie">
+
+
+
+<div class="cajapie">
+	<div class="txtnaranja16">Render Drive</div>
+	<ul>
+		<li><a href="<?php echo $GLOBALS['raiz']; ?>" title="Uso Maya" Alt="Uso Maya">Por qué trabajar con Render Drive</a></li>
+		
+	</ul>
+
+</div>
+<div class="cajapie">
+	<div class="txtnaranja16">Uso Maya</div>
+	<ul>
+		<li><a href="<?php echo $GLOBALS['raiz']; ?>maya" title="Uso Maya" Alt="Uso Maya">Uso Maya</a></li>
+		<li><a href="<?php echo $GLOBALS['raiz']; ?>maya#tarifas" title="Uso Maya - Tarifas" Alt="Uso Maya - Tarifas">Tarifas</a></li>
+		<li><a href="<?php echo $GLOBALS['raiz']; ?>maya#faqs" title="Uso Maya - Faqs" Alt="Uso Maya - Faqs">FAQS</a></li>
+		<li><a href="<?php echo $GLOBALS['raiz']; ?>maya#Contacta" title="Uso Maya - Contacta" Alt="Uso Maya - Contacta">Contacta</a></li>
+	</ul>
+
+</div>
+
+<div class="cajapie">
+	<div class="txtnaranja16">Uso otras aplicaciones</div>
+	<ul>
+		<li><a href="<?php echo $GLOBALS['raiz']; ?>no-maya" title="Uso Maya" Alt="Uso Maya">Uso otras aplicaciones</a></li>
+		<li><a href="<?php echo $GLOBALS['raiz']; ?>no-maya#tarifas" title="Uso otro Software - Tarifas" Alt="Uso Maya - Tarifas">Tarifas</a></li>
+		<li><a href="<?php echo $GLOBALS['raiz']; ?>no-maya#faqs" title="Uso Maya - Faqs" Alt="Uso Maya - Faqs">FAQS</a></li>
+		<li><a href="<?php echo $GLOBALS['raiz']; ?>no-maya#Contacta" title="Uso Maya - Contacta" Alt="Uso Maya - Contacta">Contacta</a></li>
+	</ul>
+
+</div>
+
+<div class="cajapie">
+	<div class="txtnaranja16">Uso Maya</div>
+	<ul>
+		<li><a href=""><img src="themes/img/logos/facebook.png" width="20px;"> Facebook</a></li>
+		<li><a href=""><img src="themes/img/logos/linkedin.png" width="20px;"> Linkedin</a></li>
+		<li><a href=""><img src="themes/img/logos/twitter.png" width="20px;"> Twitter</a></li>
+		<li><a href=""><img src="themes/img/logos/google.png" width="20px;"> Google+</a></li>
+	</ul>
+</div>
+	
+	
+<div style="clear:both"></div>
+</div>
 </div>
 
 

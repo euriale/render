@@ -183,10 +183,14 @@ width:100%;
 background:#f1f1f1;
 padding-top:25px;
 }
+.auxcajamini{
+	margin:0 auto;
+	width:1050px;
+}
 
 .cajamini{
-	display:inline-block;
-	width:340px;
+	float:left;
+	width:320px;
 	height:25%;
 	padding:15px;
 
@@ -239,7 +243,39 @@ line-height:2;
 	width:100%;
 	margin-top:0;
 }
+.auxcajapie{
+	width:1020px;
+	margin:0 auto;
+	margin-top:15px;
+	
+}
 
+.cajapie{
+	float:left;
+	width:220px;
+	height:25%;
+	padding:15px;
+	font: 14px 'Open Sans',arial;
+	color:#fff;
+	text-align:left;
+}
+.txtnaranja16{
+font: 14px 'Open Sans',arial;
+color:#FF8C00;
+}
+.cajapie ul{
+	list-style-type: none;
+	padding-left:0;
+}
+
+.cajapie li a{
+	font: 13px 'Open Sans',arial;
+	color:#fff;
+	text-decoration:none;
+}
+.cajapie li img{
+	font: 13px 'Open Sans',arial;
+}
 
 .tarifaup1,.tarifaup2,.tarifaup3{
 padding:25px;
