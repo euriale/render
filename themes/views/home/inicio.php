@@ -14,6 +14,7 @@
 	</div>
 	<div class="cajamini">
 		<h4>Usas otro Software para tus Proyectos </h4>
+		<div class="txtcajamini"></div>
 	</div>
 </div>
 
