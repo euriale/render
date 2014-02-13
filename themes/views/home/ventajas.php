@@ -2,7 +2,7 @@
 <div class="titulo">Por que trabajar con Render Drive</div>
 <div class="auxtexto">
 <div class="textocontenido">
-Actualmente, debido a la complejidad de la software 3D es necesaria una gran cantidad de horas para renderizar un proyecto. Además supone una gran inversión tener un equipo el equipamiento destinado a esta tarea, gastos en licencias, costos costes de energía y refrigeración, mantenimiento, etc.
+Debido a la complejidad de la software 3D es necesaria una gran cantidad de horas para renderizar un proyecto. Además supone una gran inversión disponer de el equipamiento destinado a esta tarea, gastos en licencias, costes de energía y refrigeración, mantenimiento, etc.
 <br>
 <br>
 Te ofrecemos toda la potencia que necesitas para renderizar tu proyecto de forma rápida y sencilla. En pocos pasos comenzarías a recibir tus resultados conforme se van renderizando
