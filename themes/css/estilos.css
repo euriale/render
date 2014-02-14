@@ -120,7 +120,7 @@ h1{
 }
 h1 a{
 	color:#000;
-	font: 1.2em 'Open Sans',arial;
+	font: 1.2em 'Roboto','Open Sans',Arial,Helvetica,sans-serif;
 	margin:0;
 	text-decoration:none;
 }
@@ -129,23 +129,29 @@ color:#fff;
 }
 h2{
 padding-top:2.2em;
-font: 3em 'Open Sans',arial;
+font-size: 3em;
+font-family: 'Roboto','Open Sans',Arial,Helvetica,sans-serif;
 color:#FF8C00;
 }
 
 h3{
-font: 18px 'Open Sans',arial;
+font: 18px 'Roboto','Open Sans',arial;
 color:#fff;
 margin:0 auto;
 padding-bottom:2em;
 max-width:70%;
 }
 
-h4{
-font: 1.3em 'Open Sans',arial;
-color:#444;
+h4 a{
+font: 1.5em 'Roboto','Open Sans',arial;
+color:#FF8C00;
 margin-bottom:0;
+text-decoration:none;
 }
+h4 a:hover{
+color:#444;
+}
+
 h5{
 font: 18px arial;
 color:#444;
@@ -189,6 +195,9 @@ padding-top:25px;
 	width:320px;
 	height:25%;
 	padding:15px;
+	margin-left:10px;
+	margin-right:10px;
+
 }
 .cajamini2{
 	
@@ -197,25 +206,30 @@ padding-top:25px;
 text-align:left;
 }
 .link a{
-	font: 14px 'Open Sans',arial;
+	font: 14px 'Roboto','Open Sans',arial;
 	color:#FF8C00;
 	text-decoration:none;
 	text-align:left;
 }
 
 .link a:hover{
-	font: 14px 'Open Sans',arial;
+	font: 14px 'Roboto','Open Sans',arial;
 	color:#444;
 	text-decoration:underline;
 }
 
 .txt15{
-	font: 15px 'Open Sans',arial;
+	font: 15px 'Roboto','Open Sans',arial;
 	color:#444;
 	text-align:justify;
 }
+.txt15centro{
+	font: 15px 'Roboto','Open Sans',arial;
+	color:#444;
+	text-align:center;
+}
 .txt17{
-	font: 17px 'Open Sans',arial;
+	font: 17px 'Roboto','Open Sans',arial;
 	color:#444;
 	text-align:justify;
 }
@@ -224,11 +238,11 @@ text-align:left;
 }
 
 .titulo{
-font: 2.1em 'Open Sans',arial;
+font: 2.1em 'Roboto','Open Sans',arial;
 color:#FF8C00;
 }
 .textocontenido{
-font: 15px 'Open Sans',arial;
+font: 15px 'Roboto','Open Sans',arial;
 color:#444;
 text-align:left;
 }
@@ -266,7 +280,7 @@ line-height:2;
 	text-align:left;
 }
 .txtnaranja16{
-font: 14px 'Open Sans',arial;
+font: 14px 'Roboto','Open Sans',arial;
 color:#FF8C00;
 }
 .cajapie ul{
@@ -275,18 +289,18 @@ color:#FF8C00;
 }
 
 .cajapie li a{
-	font: 13px 'Open Sans',arial;
+	font: 13px 'Roboto','Open Sans',arial;
 	color:#fff;
 	text-decoration:none;
 }
 .cajapie li img{
-	font: 13px 'Open Sans',arial;
+	font: 13px 'Roboto','Open Sans',arial;
 }
 
 .tarifaup1,.tarifaup2,.tarifaup3{
 padding-top:25px;
 background:#C9DE36;
-font: 18px 'Open Sans',arial;
+font: 18px 'Roboto','Open Sans',arial;
 color:#fff;
 display:block-line;
 text-align:center;
@@ -302,7 +316,7 @@ background:#51910B;
 .tarifadown1,.tarifadown2,.tarifadown3{
 padding:25px;
 background:#fff;
-font: 18px 'Open Sans',arial;
+font: 18px 'Roboto','Open Sans',arial;
 color:#444;
 
 }
@@ -313,7 +327,7 @@ background:#fff;
 background:#fff;
 }
 .muygrande{
-font: bold 50px 'Open Sans',arial;
+font: bold 50px 'Roboto','Open Sans',arial;
 color:#fff;
 }
 
