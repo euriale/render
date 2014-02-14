@@ -4,9 +4,11 @@ render('aplicacion/inicio');
 
 /*
 render('aplicacion/contacto');
+
+
+*/
 render('aplicacion/tarifas');
 render('aplicacion/faqs');
-*/
 ?>
 
 

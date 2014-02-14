@@ -1,13 +1,11 @@
+
+
+<div class="cajamediapagina">
 <div id="contacto"></div> 
-
-
-<div class="cajablanca"> 
-	<div class="seccioncaja">
-	<h4>Contacta con nosotros</h4>
+	<div class="titulo">Contacta con nosotros</div>
 			
-				<fieldset>
-				<?php
-				
+			<?php
+	echo '<div class="cajaminidoble">';			
 				$miformulario = new form('post',$GLOBALS['raiz']. 'controllers/direct/guardarclienteController.php','','','formulario');
 				$miformulario->crearFormulario(); 
 				
@@ -31,6 +29,12 @@
 				$miinput = new input('text','id="telefono" name="telefono" class="input"','','');
 				$miinput->crearInput();
 				
+				$milabel = new label('empresa','Empresa','','');
+				$milabel->crearLabel();
+				$miinput = new input('text','id="empresa" name="empresa" class="input"','','');
+				$miinput->crearInput();
+		echo '</div>		
+		<div class="cajaminidoble">';		
 				$milabel = new label('aplicacion','Aplicación','','');
 				$milabel->crearLabel();
 				$miselect = new select('aplicacion','id="aplicacion"',"aplicaciones","aplicaciones","idaplicaciones",'','activo=1 and (idioma="" or idioma="'.$_SESSION['idioma'].'") ','');
@@ -53,12 +57,12 @@
 				?>
 				<div id="respuesta"><div class="iconclose" style="float:right;"></div><div style="clear:both"></div><div id="respuestaaux"></div></div>
 				<div style="clear:both"></div>
-			</fieldset>
+		
 		
 			
-		</div>
-		<div style="clear:both"></div>
-		</div>
+</div>
+	
+</div>
 
 
 

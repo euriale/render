@@ -69,7 +69,7 @@ html,body{
 	padding: 0 10px;
 	float:left;
 	text-align:left;
-
+font:1em 'Open Sans', arial;
 	height:23px;
 
 }
@@ -84,15 +84,15 @@ html,body{
 	color:#666;
 }
 
-.breadcrum{
+#breadcrum{
 	background-repeat:no-repeat;
 	background-image:url("../img/indicet.png");
 	background-position:right;
-	font: bold 18px 'Open Sans', arial;
+	font:bold 1em 'Open Sans', arial;
 	color:#FF8C00;
-	display:inline-block;
+
 	padding-left:50px;
-	width:130px;
+	width:120px;
 }
 
 .dreta{
@@ -180,6 +180,8 @@ color:#444;
 min-height:48%;
 width:100%;
 display:inline-block;
+padding-bottom:35px;
+padding-top:55px;
 
 }
 .cajapagina{
@@ -190,7 +192,7 @@ width:100%;
 min-height:50%;
 width:100%;
 background:#f1f1f1;
-padding-top:25px;
+padding-top:55px;
 }
 
 .cajamini,.cajamini2{
@@ -200,10 +202,18 @@ padding-top:25px;
 	padding:15px;
 	margin-left:10px;
 	margin-right:10px;
+	vertical-align: top;
 
 }
-.cajamini2{
-	
+.cajaminidoble{
+	display:inline-block;
+	max-width:470px;
+	height:auto;
+	padding:15px;
+	margin-left:15px;
+	margin-right:15px;
+text-align:left;
+vertical-align: top;
 }
 .link{
 text-align:left;
@@ -262,25 +272,21 @@ line-height:2;
 
 #pie{
 	background:#444;
-	height:300px;
+	min-height:300px;
 	width:100%;
 	margin-top:0;
 }
-.auxcajapie{
-	width:1020px;
-	margin:0 auto;
-	margin-top:15px;
-	
-}
+
 
 .cajapie{
-	float:left;
+	display:inline-block;
 	width:220px;
 	height:25%;
 	padding:15px;
 	font: 14px 'Open Sans',arial;
 	color:#fff;
 	text-align:left;
+	vertical-align: top;
 }
 .txtnaranja16{
 font: 14px 'Roboto','Open Sans',arial;
@@ -334,9 +340,146 @@ font: bold 50px 'Roboto','Open Sans',arial;
 color:#fff;
 }
 
+.faqsask{
+font: bold 16px 'Open Sans',arial;
+color:#FF8C00;
+margin-top:25px;
+cursor:pointer;
+display:block;
+margin-bottom:15px;
+
+}
+.faqanswer{
+font: 16px 'Open Sans',arial;
+color:#444;
+
+}
+input{
+ margin-bottom:15px;
+width:350px;
+ -moz-user-select: none;
+    background-clip: padding-box;
+    background-color: #FFFFFF;
+    background-image: -moz-linear-gradient(center bottom , #EEEEEE 0%, #FFFFFF 50%);
+    border: 1px solid #AAAAAA;
+    border-radius: 4px;
+    color: #444444;
+    display: block;
+    height: 26px;
+    line-height: 26px;
+    overflow: hidden;
+    padding: 0 0 0 8px;
+    position: relative;
+    text-decoration: none;
+    white-space: nowrap;
+	font:16px 'Open Sans',arial;
+}
+
+textarea{
+	width:370px;
+	height:120px;
+	 margin-bottom:15px;
+	 font:16px 'Open Sans',arial;
+}
+label {
+color:#444;
+font:16px 'Open Sans',arial;
+}
+
+select
+  {
+  margin-bottom:15px;
+  width:360px;
+  border: 1px solid #AAAAAA;
+  font: 16px 'Open Sans',arial;
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -o-border-radius: 4px;
+  background: #FFFFFF;
+  background: linear-gradient(left, #FFFFFF, #F7F9FA);
+  background: -moz-linear-gradient(left, #FFFFFF, #F7F9FA);
+  background: -webkit-linear-gradient(left, #FFFFFF, #F7F9FA);
+  background: -o-linear-gradient(left, #FFFFFF, #F7F9FA);
+  color: #444;
+  }
+  
+select:hover
+  {
+  border-color: #5897FB;
+  }
+  
+select option
+  {
+  border: 1px solid #DBE1EB;
+  }
+  
+select option:hover
+  {
+  font-style: italic;
+  color: #FFFFFF;
+  }
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+.abreintnegro{
+background-repeat:no-repeat;
+background-image:url("../img/logos/faqa.jpg");
+height:55px;
+width:35px;
+float:left;
+}
+.cierraintnegro{
+background-repeat:no-repeat;
+background-image:url("../img/logos/faq.jpg");
+height:55px;
+width:35px;
+float:left;
+}.abreintnaranja{
+background-repeat:no-repeat;
+background-image:url("../img/logos/faqn.jpg");
+height:55px;
+width:35px;
+float:left;
+
+
+}.cierraintnaranja{
+background-repeat:no-repeat;
+background-image:url("../img/logos/faqna.jpg");
+height:55px;
+width:35px;
+float:left;
+}
 
 
 .pointerfaq{
@@ -349,22 +492,7 @@ color:#fff;
 	margin-top:29px;
 	margin-right:10px;
 }
-.faqsask{
-font: bold 16px arial;
-color:#FF8C00;
-margin-top:25px;
-float:left;
-cursor:pointer;
 
-
-
-}
-.faqanswer{
-font: 16px arial;
-color:#000000;
-display:none;
-
-}
 
 .imagen{
 	max-width:100%;
@@ -593,110 +721,7 @@ fieldset{
 }
 
 
-.abreintnegro{
-background-repeat:no-repeat;
-background-image:url("../img/logos/faqa.jpg");
-height:55px;
-width:35px;
-float:left;
-}
-.cierraintnegro{
-background-repeat:no-repeat;
-background-image:url("../img/logos/faq.jpg");
-height:55px;
-width:35px;
-float:left;
-}.abreintnaranja{
-background-repeat:no-repeat;
-background-image:url("../img/logos/faqn.jpg");
-height:55px;
-width:35px;
-float:left;
 
-
-}.cierraintnaranja{
-background-repeat:no-repeat;
-background-image:url("../img/logos/faqna.jpg");
-height:55px;
-width:35px;
-float:left;
-}
-input{
- margin-bottom:15px;
-width:350px;
- -moz-user-select: none;
-    background-clip: padding-box;
-    background-color: #FFFFFF;
-    background-image: -moz-linear-gradient(center bottom , #EEEEEE 0%, #FFFFFF 50%);
-    border: 1px solid #AAAAAA;
-    border-radius: 4px;
-    color: #444444;
-    display: block;
-    height: 26px;
-    line-height: 26px;
-    overflow: hidden;
-    padding: 0 0 0 8px;
-    position: relative;
-    text-decoration: none;
-    white-space: nowrap;
-}
-
-textarea{
-	width:400px;
-	height:150px;
-	 margin-bottom:15px;
-}
-label {
-color:#444;
-font:bold 12px arial; 
-}
-
-select
-  {
-  margin-bottom:15px;
-  width:360px;
-  border: 1px solid #AAAAAA;
-  font: bold 12px arial;
-   padding-left: 7px;
-  padding-right: 7px;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  border-radius: 4px;
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
-  -o-border-radius: 4px;
-  background: #FFFFFF;
-  background: linear-gradient(left, #FFFFFF, #F7F9FA);
-  background: -moz-linear-gradient(left, #FFFFFF, #F7F9FA);
-  background: -webkit-linear-gradient(left, #FFFFFF, #F7F9FA);
-  background: -o-linear-gradient(left, #FFFFFF, #F7F9FA);
-  color: #444;
-  }
-  
-select:hover
-  {
-  border-color: #5897FB;
-  }
-  
-select option
-  {
-  border: 1px solid #DBE1EB;
-  border-radius: 4px;
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
-  -o-border-radius: 4px;
-  }
-  
-select option:hover
-  {
-  background: #FC4F06;
-  background: linear-gradient(left, #FC4F06, #D85F2B);
-  background: -moz-linear-gradient(left, #FC4F06, #D85F2B);
-  background: -webkit-linear-gradient(left, #FC4F06, #D85F2B);
-  background: -o-linear-gradient(left, #FC4F06, #D85F2B);
-  font-style: italic;
-  color: #FFFFFF;
-  }
   
   #otraaplic{
   display:none;

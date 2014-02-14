@@ -1,3 +1,14 @@
+<?php
+if (isset($_GET['r1']) && ($_GET['r1']=='aplicacion' || $_GET['r1']=='servicios')){
+	$urlinicio=$GLOBALS['raiz'];
+	$clase="";
+}else {
+	$urlinicio="#ventajas";
+	$clase="ancla";
+} 	
+?>
+
+
 <div id="cabecera">
 	<div class="logo">
 		<h1><a href="<?php echo $GLOBALS['raiz']; ?>">Render <span class="drive">Drive</span></a></h1>	
@@ -11,9 +22,12 @@
 	
    <ul class="navigation">
 		<li><a href="<?php echo $GLOBALS['raiz']; ?>"><?php echo INICIO; ?></a></li>
-		<li><a href="#ventajas" class="ancla" >¿Por qué Render Drive?</a></li>
+		<li>
+	
+		<a href="<?php echo $urlinicio; ?>" class="<?php echo $clase; ?>" >¿Por qué Render Drive?</a></li>
 		<li><a href="aplicacion">Aplicación</a></li>
 		<li><a href="servicios">Servicios</a></li>
+		<li><a href="contacto">Contacto</a></li>
 		
    </ul>		
    </div>

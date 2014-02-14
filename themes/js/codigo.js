@@ -39,18 +39,6 @@ $(document).ready(function () {
 				}, 1000); 
 			}); 
 
-/*-------------Funcionalidad FAQs---------------------*/
-
-	$('.faqsask').click(function () {
-		var elemento=$(this).attr("id");
-		var idask=elemento.substring(3);
-		$(".faqanswer").hide();	
-		$("#ans"+idask).show();
-		$(".pointerfaq").css("background-image", "url(themes/img/redpointer.png)");
-		$("#poi"+idask).css("background-image", "url(themes/img/redpointer_down.png)");
-	});
-	
-
 	
 	$("input").focus(function(){
 		$(this).css("border", "1px solid #5897FB");
@@ -101,6 +89,7 @@ $(document).ready(function () {
 		var idaplicacion=$("#aplicacion").val();
 		var consulta=$("#consulta").val();
 		var email=$("#email").val();
+		var empresa=$("#empresa").val();
 		var otraaplicacion=$("#otraaplicacion").val();
 		var versiones=$("#versionesaux").val();
 	
@@ -114,7 +103,7 @@ $(document).ready(function () {
 			$.ajax({
 				type: "GET",
 				url: pathaux,
-				data: "nombre="+nombre+"&apellidos="+apellidos+"&telefono="+telefono+"&idaplicacion="+idaplicacion+"&consulta="+consulta+"&email="+email+"&otraaplicacion="+otraaplicacion+"&versiones="+versiones,
+				data: "nombre="+nombre+"&apellidos="+apellidos+"&telefono="+telefono+"&empresa="+empresa+"&idaplicacion="+idaplicacion+"&consulta="+consulta+"&email="+email+"&otraaplicacion="+otraaplicacion+"&versiones="+versiones,
 				success: function(texto){
 						$('#respuestaaux').html(texto);
 				}
