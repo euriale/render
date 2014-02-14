@@ -1,6 +1,7 @@
 <div id="tarifas"></div> 
 <div class="cajamediapagina">
 <div class="titulo">Tarifas</div>  
+<div class="auxcajamini">
 	<div class="cajamini">
 		<div class="tarifaup1">
 		
@@ -31,7 +32,7 @@
 				Siempre primero. Prioridad absoluta en sus proyectos de renderizados. Sin concesiones.				   
 			</div>	
 	</div>
-	
+</div>	
 </div>
 
 
