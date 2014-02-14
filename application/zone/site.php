@@ -13,7 +13,7 @@
 		<li><a href="<?php echo $GLOBALS['raiz']; ?>"><?php echo INICIO; ?></a></li>
 		<li><a href="#ventajas" class="ancla" >¿Por qué Render Drive?</a></li>
 		<li><a href="aplicacion">Aplicación</a></li>
-		<li><a href="servicio">Servicios</a></li>
+		<li><a href="servicios">Servicios</a></li>
 		
    </ul>		
    </div>
@@ -44,10 +44,10 @@ require_once(__SITE_PATH.'/'.$ccontroller);
 <div class="cajapie">
 	<div class="txtnaranja16">Uso Maya</div>
 	<ul>
-		<li><a href="<?php echo $GLOBALS['raiz']; ?>maya" title="Uso Maya" Alt="Uso Maya">Uso Maya</a></li>
-		<li><a href="<?php echo $GLOBALS['raiz']; ?>maya#tarifas" title="Uso Maya - Tarifas" Alt="Uso Maya - Tarifas">Tarifas</a></li>
-		<li><a href="<?php echo $GLOBALS['raiz']; ?>maya#faqs" title="Uso Maya - Faqs" Alt="Uso Maya - Faqs">FAQS</a></li>
-		<li><a href="<?php echo $GLOBALS['raiz']; ?>maya#Contacta" title="Uso Maya - Contacta" Alt="Uso Maya - Contacta">Contacta</a></li>
+		<li><a href="<?php echo $GLOBALS['raiz']; ?>aplicacion" title="Uso Maya" Alt="Uso Maya">Uso Maya</a></li>
+		<li><a href="<?php echo $GLOBALS['raiz']; ?>aplicacion" title="Uso Maya - Tarifas" Alt="Uso Maya - Tarifas">Tarifas</a></li>
+		<li><a href="<?php echo $GLOBALS['raiz']; ?>aplicacion" title="Uso Maya - Faqs" Alt="Uso Maya - Faqs">FAQS</a></li>
+		<li><a href="<?php echo $GLOBALS['raiz']; ?>aplicacion" title="Uso Maya - Contacta" Alt="Uso Maya - Contacta">Contacta</a></li>
 	</ul>
 
 </div>
@@ -55,10 +55,10 @@ require_once(__SITE_PATH.'/'.$ccontroller);
 <div class="cajapie">
 	<div class="txtnaranja16">Uso otras aplicaciones</div>
 	<ul>
-		<li><a href="<?php echo $GLOBALS['raiz']; ?>no-maya" title="Uso Maya" Alt="Uso Maya">Uso otras aplicaciones</a></li>
-		<li><a href="<?php echo $GLOBALS['raiz']; ?>no-maya#tarifas" title="Uso otro Software - Tarifas" Alt="Uso Maya - Tarifas">Tarifas</a></li>
-		<li><a href="<?php echo $GLOBALS['raiz']; ?>no-maya#faqs" title="Uso Maya - Faqs" Alt="Uso Maya - Faqs">FAQS</a></li>
-		<li><a href="<?php echo $GLOBALS['raiz']; ?>no-maya#Contacta" title="Uso Maya - Contacta" Alt="Uso Maya - Contacta">Contacta</a></li>
+		<li><a href="<?php echo $GLOBALS['raiz']; ?>servicios" title="Uso Maya" Alt="Uso Maya">Uso otras aplicaciones</a></li>
+		<li><a href="<?php echo $GLOBALS['raiz']; ?>servicios" title="Uso otro Software - Tarifas" Alt="Uso Maya - Tarifas">Tarifas</a></li>
+		<li><a href="<?php echo $GLOBALS['raiz']; ?>servicios" title="Uso Maya - Faqs" Alt="Uso Maya - Faqs">FAQS</a></li>
+		<li><a href="<?php echo $GLOBALS['raiz']; ?>servicios" title="Uso Maya - Contacta" Alt="Uso Maya - Contacta">Contacta</a></li>
 	</ul>
 
 </div>
