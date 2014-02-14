@@ -11,9 +11,10 @@
 	
    <ul class="navigation">
 		<li><a href="<?php echo $GLOBALS['raiz']; ?>"><?php echo INICIO; ?></a></li>
-		<li><a href="maya">MAYA</a></li>
-		<li><a href="no-maya">NO MAYA</a></li>
-		<li><a href="#ventajas" class="ancla" >VENTAJAS</a></li>
+		<li><a href="#ventajas" class="ancla" >¿Por qué Render Drive?</a></li>
+		<li><a href="aplicacion">Aplicación</a></li>
+		<li><a href="servicio">Servicios</a></li>
+		
    </ul>		
    </div>
 
@@ -34,7 +35,9 @@ require_once(__SITE_PATH.'/'.$ccontroller);
 	<div class="txtnaranja16">Render Drive</div>
 	<ul>
 		<li><a href="<?php echo $GLOBALS['raiz']; ?>" title="Uso Maya" Alt="Uso Maya">Por qué trabajar con Render Drive</a></li>
-		
+		<li><a href="<?php echo $GLOBALS['raiz']; ?>" title="Uso Maya" Alt="Uso Maya">Reducción de tiempos</a></li>
+		<li><a href="<?php echo $GLOBALS['raiz']; ?>" title="Uso Maya" Alt="Uso Maya">Reducción de costes</a></li>
+		<li><a href="<?php echo $GLOBALS['raiz']; ?>" title="Uso Maya" Alt="Uso Maya">Confianza y disponibilidad</a></li>
 	</ul>
 
 </div>

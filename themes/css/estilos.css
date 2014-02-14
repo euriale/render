@@ -193,10 +193,14 @@ padding-top:25px;
 .cajamini2{
 	
 }
+.link{
+text-align:left;
+}
 .link a{
 	font: 14px 'Open Sans',arial;
 	color:#FF8C00;
 	text-decoration:none;
+	text-align:left;
 }
 
 .link a:hover{
@@ -210,7 +214,11 @@ padding-top:25px;
 	color:#444;
 	text-align:justify;
 }
-
+.txt17{
+	font: 17px 'Open Sans',arial;
+	color:#444;
+	text-align:justify;
+}
 .imagencaja{
 	margin:10px;
 }
