@@ -35,13 +35,7 @@ El precio final de renderizado depende de tu proyecto, se puede realizar una est
 <br>
  Si lo deseas, podemos realizar una estimación sin compromiso, una vez nos hayas subido tu proyecto a nuestro FTP. 
 </div>
-<div class="titulo">¿Tienes más dudas? </div>  
-<div class="textocontenido">
 
-Visita nuestras preguntas frecuentes, o contacta con nosotros para resolverla. 
-<br>
-Si quieres darte de alta como cliente y que te hagamos un presupuesto a medida sin compromiso, rellena nuestro formulario y un técnico se pondrá en contacto contigo. Estaremos encantados de atenderte.
-</div> 
 
 </div>
 </div>

@@ -215,6 +215,16 @@ padding-top:55px;
 text-align:left;
 vertical-align: top;
 }
+.cajasimple{
+	display:inline-block;
+	max-width:940px;
+	height:auto;
+	padding:15px;
+	margin-left:15px;
+	margin-right:15px;
+text-align:left;
+vertical-align: top;
+}
 .link{
 text-align:left;
 }
