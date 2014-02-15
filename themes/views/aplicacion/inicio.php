@@ -1,8 +1,9 @@
 	
 <div class="slide2">
 	<h2>Aplicación </h2>
-
 	<h3>Regístrate ahora en nuestra aplicación y recibe un <strong> 20% de descuento</strong></h3>
+	<div style="text-align:center;margin-top:-25px;"><div class="botonapp">Ir a la aplicación</div></div>
+	
 </div> 	
 <div id="descripcion"></div> 
 <div class="primeracaja">

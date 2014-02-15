@@ -48,20 +48,21 @@ require_once(__SITE_PATH.'/'.$ccontroller);
 <div class="cajapie">
 	<div class="txtnaranja16"><a href="<?php echo $GLOBALS['raiz']; ?>" title="Uso Maya" Alt="Uso Maya">Render Drive</a></div>
 	<ul>
-		<li><a href="<?php echo $GLOBALS['raiz']; ?>" title="Uso Maya" Alt="Uso Maya">Por qué trabajar con Render Drive</a></li>
-		<li><a href="<?php echo $GLOBALS['raiz']; ?>" title="Uso Maya" Alt="Uso Maya">Reducción de tiempos</a></li>
-		<li><a href="<?php echo $GLOBALS['raiz']; ?>" title="Uso Maya" Alt="Uso Maya">Reducción de costes</a></li>
-		<li><a href="<?php echo $GLOBALS['raiz']; ?>" title="Uso Maya" Alt="Uso Maya">Confianza y disponibilidad</a></li>
+		<li><a href="<?php echo $GLOBALS['raiz']; ?>" title="Por qué trabajar con Render Drive" Alt="Por qué trabajar con Render Drive">Por qué trabajar con Render Drive</a></li>
+		<li><a href="<?php echo $GLOBALS['raiz']; ?>" title="Render Drive - Reducción de tiempos" Alt="Render Drive - Reducción de tiempos"">Reducción de tiempos</a></li>
+		<li><a href="<?php echo $GLOBALS['raiz']; ?>" title="Render Drive - Reducción de costes" Alt="Render Drive - Reducción de costes">Reducción de costes</a></li>
+		<li><a href="<?php echo $GLOBALS['raiz']; ?>" title="Render Drive - Confianza y disponibilidada" Alt="Render Drive - Confianza y disponibilidada">Confianza y disponibilidad</a></li>
+		<li><a href="<?php echo $GLOBALS['raiz']; ?>" title="Render Drive - Contacto" Alt="Render Drive - Contacto">Contacto</a></li>
 	</ul>
 
 </div>
 <div class="cajapie">
-	<div class="txtnaranja16"><a href="<?php echo $GLOBALS['raiz']; ?>maya" title="Uso Maya" Alt="Uso Maya">Uso Maya</a></div>
+	<div class="txtnaranja16"><a href="<?php echo $GLOBALS['raiz']; ?>aplicacion" title="Aplicación - Uso Maya" Alt="Aplicación - Uso Maya">Uso Maya</a></div>
 	<ul>
-		<li><a href="<?php echo $GLOBALS['raiz']; ?>aplicacion" title="Uso Maya" Alt="Uso Maya">Uso Maya</a></li>
-		<li><a href="<?php echo $GLOBALS['raiz']; ?>aplicacion" title="Uso Maya - Tarifas" Alt="Uso Maya - Tarifas">Tarifas</a></li>
-		<li><a href="<?php echo $GLOBALS['raiz']; ?>aplicacion" title="Uso Maya - Faqs" Alt="Uso Maya - Faqs">FAQS</a></li>
-		<li><a href="<?php echo $GLOBALS['raiz']; ?>aplicacion" title="Uso Maya - Contacta" Alt="Uso Maya - Contacta">Contacta</a></li>
+		<li><a href="<?php echo $GLOBALS['raiz']; ?>aplicacion" title="Aplicación - Uso Maya" Alt="Aplicación - Uso Maya">Uso Maya</a></li>
+		<li><a href="<?php echo $GLOBALS['raiz']; ?>aplicacion" title="Aplicación - Tarifas" Alt="Aplicación - Tarifas">Tarifas</a></li>
+		<li><a href="<?php echo $GLOBALS['raiz']; ?>aplicacion" title="Aplicación - Faqs" Alt="Aplicación - Faqs">FAQS</a></li>
+		<li><a href="<?php echo $GLOBALS['raiz']; ?>aplicacion" title="Aplicación - Contacta" Alt="Aplicación - Contacto">Contacto</a></li>
 	</ul>
 
 </div>
@@ -72,7 +73,7 @@ require_once(__SITE_PATH.'/'.$ccontroller);
 		<li><a href="<?php echo $GLOBALS['raiz']; ?>servicios" title="Uso Maya" Alt="Uso Maya">Uso otras aplicaciones</a></li>
 		<li><a href="<?php echo $GLOBALS['raiz']; ?>servicios" title="Uso otro Software - Tarifas" Alt="Uso Maya - Tarifas">Tarifas</a></li>
 		<li><a href="<?php echo $GLOBALS['raiz']; ?>servicios" title="Uso Maya - Faqs" Alt="Uso Maya - Faqs">FAQS</a></li>
-		<li><a href="<?php echo $GLOBALS['raiz']; ?>servicios" title="Uso Maya - Contacta" Alt="Uso Maya - Contacta">Contacta</a></li>
+		<li><a href="<?php echo $GLOBALS['raiz']; ?>servicios" title="Uso Maya - Contacta" Alt="Uso Maya - Contacta">Contacto</a></li>
 	</ul>
 
 </div>

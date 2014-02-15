@@ -81,8 +81,9 @@ function getCountry($ip_address){
 				$milabel->crearLabel();
 				$miarea = new area('consulta','','','');
 				$miarea->crearArea();
-
-				echo '<input type="button" id="envio" name="envio" class="botonnegro"  value="Enviar">';
+			
+echo '</div>';
+				echo '<input type="button" id="envio" name="envio" class="botonenvio"  value="Enviar">';
 				$miformulario->cerrarFormulario();
 				
 				?>
@@ -90,8 +91,7 @@ function getCountry($ip_address){
 				<div style="clear:both"></div>
 		
 		
-			
-</div>
+
 	
 </div>
 
