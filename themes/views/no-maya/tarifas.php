@@ -1,39 +1,63 @@
 <div id="tarifas"></div> 
 <div class="cajamediapagina">
 <div class="titulo">Tarifas</div>  
-<div class="auxcajamini">
-	<div class="cajamini">
+
+	<div class="cajamini2">
+
 		<div class="tarifaup1">
 		
-			Prioridad Baja
-			<div class="muygrande">1.2</div>
+			Prioridad Normal
+			<div class="muygrande">1.2 €</div>
 		</div>	
 		<div class="tarifadown1">
 			La mejor opción para renderizado en línea económico y altamente competitivo.
 		</div>	
 	</div>
-	<div class="cajamini">
+	<div class="cajamini2">
 				<div class="tarifaup2">
 			
-					Prioridad Media
-					<div class="muygrande">3.4</div>
+					Prioridad Alta
+					<div class="muygrande">3.4 €</div>
 				</div>
 		<div class="tarifadown2">
 			La mejor opción para empresas. Una combinación económica y de renderizado prioritario.
 		</div>					
 	</div>
-	<div class="cajamini">
+	<div class="cajamini2">
 			<div class="tarifaup3">
 			
-				Prioridad Alta
-				<div class="muygrande">3.8</div>
+				Prioridad Premium
+				<div class="muygrande">3.8 €</div>
 			</div>	
 			<div class="tarifadown3">
-				Siempre primero. Prioridad absoluta en sus proyectos de renderizados. Sin concesiones.				   
+				Siempre primero. Prioridad absoluta en sus proyectos de renderizados. 				   
 			</div>	
 	</div>
-</div>	
+	<div style="clear:both;"></div>
+	<table class="tablatarifas" cellspadding="4">
+		<th>lilo</th><th>+lilolilo</th><th>lilolilolilo</th>
+		<tr><td></td><td></td><td></td></tr>
+		<tr><td></td><td></td><td></td></tr>
+		<tr><td></td><td></td><td></td></tr>
+	
+	</table>
+	
+	 <div class="titulo">Ejemplos de estimaciones</div>
+<div class="cajamini2">
+ In my machine of 4 cores at 2.6 GHz the render takes an average of 2min per frame. <br>
+ There are 1000 frames to render:<br>
+		4 cores * 2.6Ghz * 0.06€ * 2/60hr * 1000 frames=
+		<span class="txtnaranja16">Alta prioridad: 20,80€    Baja prioridad: 13,86€   </span>
 </div>
+<div class="cajamini2">
+  I have to render 600 frames which take 20 min in a 4 core at 2,6Ghz:
+		4 cores * 2.6Ghz * 0.06€ * 20/60hr * 600 frames=
+
+		<span class="txtnaranja16">Alta prioridad:124,80€       Baja Prioridad:83,20€</span>
+</div>
+
+</div>	
+
 
 
 

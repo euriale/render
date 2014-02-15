@@ -6,10 +6,10 @@
 </div> 	
 <div id="ventajas"></div> 
 <div class="primeracaja">
-<div class="auxcajamini">
+
 	<div class="cajamini">
 		<h4>Uso Maya para mis Proyectos</h4><br>
-		<div class="imagencaja"><img src="themes/img/logos/maya.png" width="30%"></div><br>
+		<div class="imagencaja"><img src="themes/img/logos/maya.jpg" width="30%"> <img src="themes/img/logos/maya2014.jpg" width="30%"></div><br>
 		<div class="txt15">	Regístrate ya y accede a nuestra aplicación
 		<br>Si te das de alta hasta antes del 1 de Marzo te regalamos un <strong> 20% de descuento </strong>.</div>
 		<br>
@@ -17,7 +17,7 @@
 	</div>
 	<div class="cajamini">
 		<h4>Por qué usar RenderDrive</h4><br>
-		<div class="imagencaja"><img src="themes/img/cpdbyn.jpg" width="60%"></div>
+		<div class="imagencaja"><img src="themes/img/porque.jpg" width="60%"></div>
 		<div class="txt15"> Conoce las ventajas de usar renderderizar en la nube.</div>
 		<br>
 	
@@ -25,7 +25,7 @@
 		
 	</div>
 	<div class="cajamini">
-		<h4>Uso otro Software para mis Proyectos </h4><br>
+		<h4>Uso otro Software en mis Proyectos </h4><br>
 		<div class="imagencaja"><img src="themes/img/logos/016.jpg" width="60%"></div>
 		<div class="txt15"> Trabajamos con Maya, Cinema 4D, 3ds Max,SoftImage, Blender, LightWave, After Effects.
 		</div>
@@ -34,9 +34,9 @@
 
 	</div>
 	
-	<div style="clear:both;"></div>
+
 	</div>
-</div>
+
 
 
 

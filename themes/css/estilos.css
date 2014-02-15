@@ -183,17 +183,15 @@ width:100%;
 background:#f1f1f1;
 padding-top:25px;
 }
-.auxcajamini{
-	margin:0 auto;
-	width:1050px;
-}
 
-.cajamini{
-	float:left;
+.cajamini,.cajamini2{
+	display:inline-block;
 	width:320px;
 	height:25%;
 	padding:15px;
-
+}
+.cajamini2{
+	
 }
 .link a{
 	font: 14px 'Open Sans',arial;
@@ -263,6 +261,15 @@ line-height:2;
 font: 14px 'Open Sans',arial;
 color:#FF8C00;
 }
+.txtnaranja16 a{
+font: 14px 'Open Sans',arial;
+color:#FF8C00;
+text-decoration:none;
+}
+.txtnaranja16 a:hover{
+
+text-decoration:underline;
+}
 .cajapie ul{
 	list-style-type: none;
 	padding-left:0;
@@ -276,12 +283,40 @@ color:#FF8C00;
 .cajapie li img{
 	font: 13px 'Open Sans',arial;
 }
+.tablatarifas{
+	width:60%;
+	margin:0 auto;
+	margin-top:25px;
+
+}
+ .tablatarifas th{
+	height:25px;
+	font: 14px 'Open Sans',arial;
+	color:#444;
+	background:#aaa;
+}
+ .tablatarifas td{
+	height:25px;
+	font: 14px 'Open Sans',arial;
+	color:#444;
+	margin:2px;
+	background:#ddd;
+}
+
+.imgpie{
+margin-top:3px;
+float:left;
+margin-right:5px;
+}
 
 .tarifaup1,.tarifaup2,.tarifaup3{
-padding:25px;
+padding-top:25px;
 background:#C9DE36;
 font: 18px 'Open Sans',arial;
 color:#fff;
+display:block-line;
+text-align:center;
+
 
 }
 .tarifaup2{

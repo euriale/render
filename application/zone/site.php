@@ -31,7 +31,7 @@ require_once(__SITE_PATH.'/'.$ccontroller);
 
 
 <div class="cajapie">
-	<div class="txtnaranja16">Render Drive</div>
+	<div class="txtnaranja16"><a href="<?php echo $GLOBALS['raiz']; ?>" title="Uso Maya" Alt="Uso Maya">Render Drive</a></div>
 	<ul>
 		<li><a href="<?php echo $GLOBALS['raiz']; ?>" title="Uso Maya" Alt="Uso Maya">Por qué trabajar con Render Drive</a></li>
 		
@@ -39,7 +39,7 @@ require_once(__SITE_PATH.'/'.$ccontroller);
 
 </div>
 <div class="cajapie">
-	<div class="txtnaranja16">Uso Maya</div>
+	<div class="txtnaranja16"><a href="<?php echo $GLOBALS['raiz']; ?>maya" title="Uso Maya" Alt="Uso Maya">Uso Maya</a></div>
 	<ul>
 		<li><a href="<?php echo $GLOBALS['raiz']; ?>maya" title="Uso Maya" Alt="Uso Maya">Uso Maya</a></li>
 		<li><a href="<?php echo $GLOBALS['raiz']; ?>maya#tarifas" title="Uso Maya - Tarifas" Alt="Uso Maya - Tarifas">Tarifas</a></li>
@@ -50,7 +50,7 @@ require_once(__SITE_PATH.'/'.$ccontroller);
 </div>
 
 <div class="cajapie">
-	<div class="txtnaranja16">Uso otras aplicaciones</div>
+	<div class="txtnaranja16"><a href="<?php echo $GLOBALS['raiz']; ?>no-maya" title="Uso Maya" Alt="Uso Maya">Uso otras aplicaciones</a></div>
 	<ul>
 		<li><a href="<?php echo $GLOBALS['raiz']; ?>no-maya" title="Uso Maya" Alt="Uso Maya">Uso otras aplicaciones</a></li>
 		<li><a href="<?php echo $GLOBALS['raiz']; ?>no-maya#tarifas" title="Uso otro Software - Tarifas" Alt="Uso Maya - Tarifas">Tarifas</a></li>
@@ -61,12 +61,12 @@ require_once(__SITE_PATH.'/'.$ccontroller);
 </div>
 
 <div class="cajapie">
-	<div class="txtnaranja16">Uso Maya</div>
+	<div class="txtnaranja16">Síguenos</div>
 	<ul>
-		<li><a href=""><img src="themes/img/logos/facebook.png" width="20px;"> Facebook</a></li>
-		<li><a href=""><img src="themes/img/logos/linkedin.png" width="20px;"> Linkedin</a></li>
-		<li><a href=""><img src="themes/img/logos/twitter.png" width="20px;"> Twitter</a></li>
-		<li><a href=""><img src="themes/img/logos/google.png" width="20px;"> Google+</a></li>
+		<li><a href=""><div class="imgpie"><img src="themes/img/logos/facebook.png" width="20px;"></div> Facebook</a></li>
+		<li><a href=""><div class="imgpie"><img src="themes/img/logos/linkedin.png" width="20px;"></div> Linkedin</a></li>
+		<li><a href=""><div class="imgpie"><img src="themes/img/logos/twitter.png" width="20px;"></div> Twitter</a></li>
+		<li><a href=""><div class="imgpie"><img src="themes/img/logos/google.png" width="20px;"></div> Google+</a></li>
 	</ul>
 </div>
 	
