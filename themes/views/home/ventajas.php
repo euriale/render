@@ -1,4 +1,5 @@
 <div class="cajamediapagina">
+<div id="pq"></div> 
 <div class="titulo">Por que trabajar con Render Drive</div>
 <div class="auxtexto">
 <div class="textocontenido">

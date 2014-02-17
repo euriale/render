@@ -11,17 +11,17 @@ Si quieres darte de alta como cliente y que te hagamos un presupuesto a medida s
 	<div class="titulo">Preguntas Frecuentes</div>
 	
 <div class="cajaminidoble">
-	<div class="faqsask" id="ask1"> Que ventajas obtengo por renderizar en la nube </div>
+	<div class="faqsask" id="ask1"> Uso otra aplicación que no aparece en la página</div>
 	
 	<div class="faqanswer" id="ans1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tristique tellus sed arcu bibendum facilisis. Nullam bibendum, libero ut interdum porta, quam turpis mollis ante, sit amet lobortis nisi nulla vel lorem. Mauris pulvinar est a eleifend eleifend. Mauris varius vulputate metus, in aliquet lacus. </div>
 
 
-	<div class="faqsask" id="ask2"> Integer ut nulla non justo pharetra laoreet. </div>
+	<div class="faqsask" id="ask2"> ¿Por qué no me dais un precio cerrado?	</div>
 
 	<div class="faqanswer" id="ans2"> Donec mi nisi, feugiat ut varius non, luctus quis lacus. Mauris tincidunt aliquet facilisis. Integer pulvinar eros in est consequat feugiat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam erat volutpat. Curabitur vel neque eget metus posuere viverra. Ut euismod, dui et posuere ornare, purus magna varius felis, ac pulvinar lectus magna ac lorem. Quisque faucibus tellus at mi rhoncus auctor. Proin mollis leo turpis, at convallis lacus posuere ut. </div>
 	
 
-	<div class="faqsask" id="ask3"> Integer ut nulla non justo pharetra laoreet. </div>
+	<div class="faqsask" id="ask3"> ¿Me podeis enviar mi proyecto por mensajería en un disco duro USB? </div>
 	
 	<div class="faqanswer" id="ans3"> Sed tristique dolor euismod libero suscipit, non aliquet augue cursus. Nam mattis interdum porta. Quisque tincidunt vitae mauris ac consectetur. Suspendisse facilisis, magna nec scelerisque iaculis, arcu turpis faucibus justo, eget pulvinar velit est eu mauris.  </div>
 	

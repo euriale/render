@@ -1,6 +1,6 @@
 <?php
 if (isset($_GET['r1']) && ($_GET['r1']=='aplicacion' || $_GET['r1']=='servicios')){
-	$urlinicio=$GLOBALS['raiz'];
+	$urlinicio=$GLOBALS['raiz']."index.php#ventajas";
 	$clase="";
 }else {
 	$urlinicio="#ventajas";
@@ -27,7 +27,7 @@ if (isset($_GET['r1']) && ($_GET['r1']=='aplicacion' || $_GET['r1']=='servicios'
 		<a href="<?php echo $urlinicio; ?>" class="<?php echo $clase; ?>" >¿Por qué Render Drive?</a></li>
 		<li><a href="aplicacion">Aplicación</a></li>
 		<li><a href="servicios">Servicios</a></li>
-		<li><a href="contacto">Contacto</a></li>
+		<li><a href="#contacto" class="ancla">Contacto</a></li>
 		
    </ul>		
    </div>
@@ -46,45 +46,47 @@ require_once(__SITE_PATH.'/'.$ccontroller);
 
 
 <div class="cajapie">
-	<div class="txtnaranja16">Render Drive</div>
+	<div class="txtnaranja16"><a href="<?php echo $GLOBALS['raiz']; ?>" title="Uso Maya" Alt="Uso Maya">Render Drive</a></div>
 	<ul>
-		<li><a href="<?php echo $GLOBALS['raiz']; ?>" title="Uso Maya" Alt="Uso Maya">Por qué trabajar con Render Drive</a></li>
-		<li><a href="<?php echo $GLOBALS['raiz']; ?>" title="Uso Maya" Alt="Uso Maya">Reducción de tiempos</a></li>
-		<li><a href="<?php echo $GLOBALS['raiz']; ?>" title="Uso Maya" Alt="Uso Maya">Reducción de costes</a></li>
-		<li><a href="<?php echo $GLOBALS['raiz']; ?>" title="Uso Maya" Alt="Uso Maya">Confianza y disponibilidad</a></li>
+		<li><a href="<?php echo $GLOBALS['raiz']; ?>" title="Por qué trabajar con Render Drive" Alt="Por qué trabajar con Render Drive">Por qué trabajar con Render Drive</a></li>
+		<li><a href="<?php echo $GLOBALS['raiz']; ?>" title="Render Drive - Reducción de tiempos" Alt="Render Drive - Reducción de tiempos"">Reducción de tiempos</a></li>
+		<li><a href="<?php echo $GLOBALS['raiz']; ?>" title="Render Drive - Reducción de costes" Alt="Render Drive - Reducción de costes">Reducción de costes</a></li>
+		<li><a href="<?php echo $GLOBALS['raiz']; ?>" title="Render Drive - Confianza y disponibilidada" Alt="Render Drive - Confianza y disponibilidada">Confianza y disponibilidad</a></li>
+		<li><a href="<?php echo $GLOBALS['raiz']; ?>" title="Render Drive - Contacto" Alt="Render Drive - Contacto">Contacto</a></li>
 	</ul>
 
 </div>
 <div class="cajapie">
-	<div class="txtnaranja16">Uso Maya</div>
+	<div class="txtnaranja16"><a href="<?php echo $GLOBALS['raiz']; ?>aplicacion" title="Aplicación - Uso Maya" Alt="Aplicación - Uso Maya">Uso Maya</a></div>
 	<ul>
-		<li><a href="<?php echo $GLOBALS['raiz']; ?>aplicacion" title="Uso Maya" Alt="Uso Maya">Uso Maya</a></li>
-		<li><a href="<?php echo $GLOBALS['raiz']; ?>aplicacion" title="Uso Maya - Tarifas" Alt="Uso Maya - Tarifas">Tarifas</a></li>
-		<li><a href="<?php echo $GLOBALS['raiz']; ?>aplicacion" title="Uso Maya - Faqs" Alt="Uso Maya - Faqs">FAQS</a></li>
-		<li><a href="<?php echo $GLOBALS['raiz']; ?>aplicacion" title="Uso Maya - Contacta" Alt="Uso Maya - Contacta">Contacta</a></li>
+		<li><a href="<?php echo $GLOBALS['raiz']; ?>aplicacion" title="Aplicación - Uso Maya" Alt="Aplicación - Uso Maya">Uso Maya</a></li>
+		<li><a href="<?php echo $GLOBALS['raiz']; ?>aplicacion" title="Aplicación - Tarifas" Alt="Aplicación - Tarifas">Tarifas</a></li>
+		<li><a href="<?php echo $GLOBALS['raiz']; ?>aplicacion" title="Aplicación - Faqs" Alt="Aplicación - Faqs">FAQS</a></li>
+		<li><a href="<?php echo $GLOBALS['raiz']; ?>aplicacion" title="Aplicación - Contacta" Alt="Aplicación - Contacto">Contacto</a></li>
 	</ul>
 
 </div>
 
 <div class="cajapie">
-	<div class="txtnaranja16">Uso otras aplicaciones</div>
+	<div class="txtnaranja16"><a href="<?php echo $GLOBALS['raiz']; ?>no-maya" title="Uso Maya" Alt="Uso Maya">Uso otras aplicaciones</a></div>
 	<ul>
 		<li><a href="<?php echo $GLOBALS['raiz']; ?>servicios" title="Uso Maya" Alt="Uso Maya">Uso otras aplicaciones</a></li>
 		<li><a href="<?php echo $GLOBALS['raiz']; ?>servicios" title="Uso otro Software - Tarifas" Alt="Uso Maya - Tarifas">Tarifas</a></li>
 		<li><a href="<?php echo $GLOBALS['raiz']; ?>servicios" title="Uso Maya - Faqs" Alt="Uso Maya - Faqs">FAQS</a></li>
-		<li><a href="<?php echo $GLOBALS['raiz']; ?>servicios" title="Uso Maya - Contacta" Alt="Uso Maya - Contacta">Contacta</a></li>
+		<li><a href="<?php echo $GLOBALS['raiz']; ?>servicios" title="Uso Maya - Contacta" Alt="Uso Maya - Contacta">Contacto</a></li>
 	</ul>
 
 </div>
 
 <div class="cajapie">
-	<div class="txtnaranja16">Uso Maya</div>
+	<div class="txtnaranja16">Síguenos</div>
 	<ul>
-		<li><a href=""><img src="themes/img/logos/facebook.png" width="20px;"> Facebook</a></li>
-		<li><a href=""><img src="themes/img/logos/linkedin.png" width="20px;"> Linkedin</a></li>
-		<li><a href=""><img src="themes/img/logos/twitter.png" width="20px;"> Twitter</a></li>
-		<li><a href=""><img src="themes/img/logos/google.png" width="20px;"> Google+</a></li>
+		<li><a href=""><div class="imgpie"><img src="themes/img/logos/facebook.png" width="20px;"></div> Facebook</a></li>
+		<li><a href=""><div class="imgpie"><img src="themes/img/logos/linkedin.png" width="20px;"></div> Linkedin</a></li>
+		<li><a href=""><div class="imgpie"><img src="themes/img/logos/twitter.png" width="20px;"></div> Twitter</a></li>
+		<li><a href=""><div class="imgpie"><img src="themes/img/logos/google.png" width="20px;"></div> Google+</a></li>
 	</ul>
+	<ul><li><div class="fb-like" data-href="http://www.renderdrive.com" data-layout="button" data-action="like" data-show-faces="true" data-share="false"></div></li></ul>
 </div>
 	
 	
