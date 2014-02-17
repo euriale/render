@@ -2,7 +2,7 @@
 <div class="primeracaja">
 <div class="titulo">¿Tienes más dudas? </div>  
 <div class="cajasimple">
-<div class="textocontenido">
+<div class="faqanswer">
 
 Visita nuestras preguntas frecuentes, o contacta con nosotros para resolverla. 
 <br>
