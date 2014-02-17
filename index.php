@@ -30,7 +30,8 @@ if ($_SERVER['HTTP_HOST']=="www.renderdrive.com") $raiz='http://www.renderdrive.
 elseif ($_SERVER['HTTP_HOST']=="renderdrive.com") $raiz='http://renderdrive.com/';
 else $GLOBALS['raiz']='/render/';
 ?>
-<link rel="STYLESHEET" type="text/css" href="themes/css/estilos.css"></link>
+<link rel="STYLESHEET" type="text/css" href="themes/css/estilos.css" media="screen" />
+<link href="estilosmovil.css" rel="stylesheet" type="text/css" media="handheld" />
 
 
 </head>
