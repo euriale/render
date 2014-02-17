@@ -55,6 +55,9 @@ function getCountry($ip_address){
 				$miinput = new input('text','id="email" name="email" class="input"','','');
 				$miinput->crearInput();
 				
+
+		echo '</div>		
+		<div class="cajaminidoble">';		
 				$milabel = new label('telefono','Teléfono','','');
 				$milabel->crearLabel();
 				$miinput = new input('text','id="telefono" name="telefono" class="input"','','');
@@ -64,19 +67,8 @@ function getCountry($ip_address){
 				$milabel->crearLabel();
 				$miinput = new input('text','id="empresa" name="empresa" class="input"','','');
 				$miinput->crearInput();
-		echo '</div>		
-		<div class="cajaminidoble">';		
-				$milabel = new label('aplicacion','Aplicación','','');
-				$milabel->crearLabel();
-				$miselect = new select('aplicacion','id="aplicacion"',"aplicaciones","aplicaciones","idaplicaciones",'','activo=1 and (idioma="" or idioma="'.$_SESSION['idioma'].'") ','');
-				$miselect->crearSelect();
-				echo '<div id="otraaplic">';
-					$milabel = new label('otraaplicacion','Indica la aplicaci&oacute;n que usas','','');
-					$milabel->crearLabel();
-					$miinput = new input('text','id="otraaplicacion" name="otraaplicacion" class="input"','','');
-					$miinput->crearInput();
-				echo '</div>';
-				echo '<div id="versiones"></div>';
+				
+				
 				$milabel = new label('consulta','Envía tu pregunta',1,'');
 				$milabel->crearLabel();
 				$miarea = new area('consulta','','','');

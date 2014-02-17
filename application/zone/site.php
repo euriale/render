@@ -1,6 +1,6 @@
 <?php
 if (isset($_GET['r1']) && ($_GET['r1']=='aplicacion' || $_GET['r1']=='servicios')){
-	$urlinicio=$GLOBALS['raiz'];
+	$urlinicio=$GLOBALS['raiz']."index.php#ventajas";
 	$clase="";
 }else {
 	$urlinicio="#ventajas";
