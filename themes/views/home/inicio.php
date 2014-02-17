@@ -7,11 +7,11 @@
 <div id="ventajas"></div> 
 <div class="primeracaja">
 	<div class="cajamini">
-		<h4><a href="#ventajas" class="ancla">Por qué usar Render Drive</a></h4>
+		<h4><a href="#pq" class="ancla">Por qué usar Render Drive</a></h4>
 		<div class="txt15centro"><strong>Ventajas de renderizar en la nube</strong></div>
 		<div class="imagencaja"><img src="themes/img/logos/cpd.png"></div>
 		<div class="txt15"> Realice más rápido tareas intensivas en computación, en cualquier momento y en cualquier sitio. </div>
-		<div class="link"><a href="#ventajas" class="ancla">Saber más&nbsp;&nbsp;<img src="themes/img/redpointer.png"></a></div>
+		<div class="link"><a href="#pq" class="ancla">Saber más&nbsp;&nbsp;<img src="themes/img/redpointer.png"></a></div>
 		
 	</div>
 	<div class="cajamini">
