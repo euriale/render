@@ -24,7 +24,7 @@ if (isset($_GET['r1']) && ($_GET['r1']=='aplicacion' || $_GET['r1']=='servicios'
 		<li><a href="<?php echo $GLOBALS['raiz']; ?>"><?php echo INICIO; ?></a></li>
 		<li>
 	
-		<a href="<?php echo $urlinicio; ?>" class="<?php echo $clase; ?>" >¿Por qué Render Drive?</a></li>
+		<a href="<?php echo $urlinicio; ?>" class="<?php echo $clase; ?>" >Por qué Render Drive</a></li>
 		<li><a href="aplicacion">Aplicación</a></li>
 		<li><a href="servicios">Servicios</a></li>
 		<li><a href="#contacto" class="ancla">Contacto</a></li>
@@ -49,7 +49,7 @@ require_once(__SITE_PATH.'/'.$ccontroller);
 	<div class="txtnaranja16"><a href="<?php echo $GLOBALS['raiz']; ?>" title="Uso Maya" Alt="Uso Maya">Render Drive</a></div>
 	<ul>
 		<li><a href="<?php echo $GLOBALS['raiz']; ?>" title="Por qué trabajar con Render Drive" Alt="Por qué trabajar con Render Drive">Por qué trabajar con Render Drive</a></li>
-		<li><a href="<?php echo $GLOBALS['raiz']; ?>" title="Render Drive - Reducción de tiempos" Alt="Render Drive - Reducción de tiempos"">Reducción de tiempos</a></li>
+		<li><a href="<?php echo $GLOBALS['raiz']; ?>" title="Render Drive - Reducción de tiempos" Alt="Render Drive - Reducción de tiempos">Reducción de tiempos</a></li>
 		<li><a href="<?php echo $GLOBALS['raiz']; ?>" title="Render Drive - Reducción de costes" Alt="Render Drive - Reducción de costes">Reducción de costes</a></li>
 		<li><a href="<?php echo $GLOBALS['raiz']; ?>" title="Render Drive - Confianza y disponibilidada" Alt="Render Drive - Confianza y disponibilidada">Confianza y disponibilidad</a></li>
 		<li><a href="<?php echo $GLOBALS['raiz']; ?>" title="Render Drive - Contacto" Alt="Render Drive - Contacto">Contacto</a></li>
