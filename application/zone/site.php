@@ -82,9 +82,9 @@ require_once(__SITE_PATH.'/'.$ccontroller);
 	<div class="txtnaranja16">Síguenos</div>
 	<ul>
 		<li><a href=""><div class="imgpie"><img src="themes/img/logos/facebook.png" width="20px;"></div> Facebook</a></li>
-		<li><a href=""><div class="imgpie"><img src="themes/img/logos/linkedin.png" width="20px;"></div> Linkedin</a></li>
-		<li><a href=""><div class="imgpie"><img src="themes/img/logos/twitter.png" width="20px;"></div> Twitter</a></li>
-		<li><a href=""><div class="imgpie"><img src="themes/img/logos/google.png" width="20px;"></div> Google+</a></li>
+		<li><a href="http://www.linkedin.com/company/render-drive"><div class="imgpie"><img src="themes/img/logos/linkedin.png" width="20px;"></div> Linkedin</a></li>
+		<li><a href="http://twitter.com/RenderDrive"><div class="imgpie"><img src="themes/img/logos/twitter.png" width="20px;"></div> Twitter</a></li>
+		<li><a href="https://plus.google.com/111768518376940670621/posts"><div class="imgpie"><img src="themes/img/logos/google.png" width="20px;"></div> Google+</a></li>
 	</ul>
 	<ul><li><div class="fb-like" data-href="http://www.renderdrive.com" data-layout="button" data-action="like" data-show-faces="true" data-share="false"></div></li></ul>
 </div>
