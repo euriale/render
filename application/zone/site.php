@@ -1,14 +1,29 @@
-<?php
-if (isset($_GET['r1']) && ($_GET['r1']=='aplicacion' || $_GET['r1']=='servicios')){
-	$urlinicio=$GLOBALS['raiz']."index.php#ventajas";
-	$clase="";
-}else {
-	$urlinicio="#ventajas";
-	$clase="ancla";
-} 	
+<?php 
+if (!isset($_GET['r1'])){
+	$enlaceinicio='#';
+	$classinicio='ancla';
+	$enlaceaplicacion='';
+	$classaplicacion='';
+	$enlaceservicios='';
+	$classservicios='';
+} else if (isset($_GET['r1']) && $_GET['r1']=='aplicacion') {
+	$enlaceinicio=$GLOBALS['raiz'];
+	$classinicio='';
+	$enlaceaplicacion='';
+	$classaplicacion='ancla';
+	$enlaceservicios='';
+	$classservicios='';
+} else if (isset($_GET['r1']) && $_GET['r1']=='servicios') {
+	$enlaceinicio=$GLOBALS['raiz'];
+	$classinicio='ancla';
+	$enlaceaplicacion='';
+	$classaplicacion='';
+	$enlaceservicios='';
+	$classservicios='ancla';
+}
 ?>
 
-
+<div id="inicio"></div>
 <div id="cabecera">
 	<div class="logo">
 		<h1><a href="<?php echo $GLOBALS['raiz']; ?>">Render <span class="drive">Drive</span></a></h1>	
@@ -22,12 +37,9 @@ if (isset($_GET['r1']) && ($_GET['r1']=='aplicacion' || $_GET['r1']=='servicios'
 	
    <ul class="navigation">
 		<li><a href="<?php echo $GLOBALS['raiz']; ?>"><?php echo INICIO; ?></a></li>
-		<li>
-	
-		<a href="<?php echo $urlinicio; ?>" class="<?php echo $clase; ?>" >Por qué Render Drive</a></li>
 		<li><a href="aplicacion">Aplicación</a></li>
 		<li><a href="servicios">Servicios</a></li>
-		<li><a href="#contacto" class="ancla">Contacto</a></li>
+		
 		
    </ul>		
    </div>
@@ -46,7 +58,7 @@ require_once(__SITE_PATH.'/'.$ccontroller);
 
 
 <div class="cajapie">
-	<div class="txtnaranja16"><a href="<?php echo $GLOBALS['raiz']; ?>" title="Uso Maya" Alt="Uso Maya">Render Drive</a></div>
+	<div class="txtnaranja16"><a href="#inicio" title="Render Drive" Alt="Uso Maya">Render Drive</a></div>
 	<ul>
 		<li><a href="<?php echo $GLOBALS['raiz']; ?>" title="Por qué trabajar con Render Drive" Alt="Por qué trabajar con Render Drive">Por qué trabajar con Render Drive</a></li>
 		<li><a href="<?php echo $GLOBALS['raiz']; ?>" title="Render Drive - Reducción de tiempos" Alt="Render Drive - Reducción de tiempos">Reducción de tiempos</a></li>
