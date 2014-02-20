@@ -1,6 +1,7 @@
 <div id="tarifas"></div> 
 <div class="cajamediapagina">
-<div class="titulo">Tarifas</div>  
+<div class="titulo">Tarifas </div>  
+<div class="moneda"><div class="dolar">$</div> / <div class="euro">€</div></div>
 
 	<div class="cajamini">
 

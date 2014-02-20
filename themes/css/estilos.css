@@ -337,6 +337,17 @@ color:#FF8C00;
 .cajapie li img{
 	font: 13px 'Roboto','Open Sans',arial;
 }
+
+.moneda {
+font: bold 22px 'Roboto','Open Sans',arial;
+color:#FF8C00;
+}
+.seleccionada{
+text-decoration:underline;
+}
+.dolar,.euro{
+display:inline-block;
+}
 .tablatarifas{
 	width:60%;
 	margin:0 auto;
