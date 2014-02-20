@@ -1,0 +1,177 @@
+@charset "utf-8";
+/* CSS Document */
+html,body{
+	font-family:  'Open Sans',Arial,Helvetica,sans-serif;
+	height:100%;
+	margin:0;
+	background:#fff;
+	text-align:center;
+}
+#contenedor{
+	width: 960px;
+	border:1px solid red;
+}
+#cabecera{
+	display:none;
+
+}
+
+
+/*-------------------submenu-----------------*/
+.submenu{
+	display:none;
+	
+	
+}
+
+.dreta{
+	float:right;
+	margin-right:25px;
+}
+.idiomas{
+	float:right;
+	margin-right:2%;
+	margin-top:5px;
+}
+
+.idiomas a{
+	color:#000;
+	margin-left:5px;
+	float:left;
+	border:0;
+}
+
+.logo{
+	float:left;
+	display:inline-block;
+	margin-left:1em;
+	margin-top:-10px;
+}
+h1{
+	color:#000;
+}
+h1 a{
+	color:#000;
+	font: 1.2em 'Roboto','Open Sans',Arial,Helvetica,sans-serif;
+	margin:0;
+	text-decoration:none;
+}
+.drive{
+color:#fff;
+}
+h2{
+padding-top:2.2em;
+font-size: 3em;
+font-family: 'Roboto','Open Sans',Arial,Helvetica,sans-serif;
+color:#FF8C00;
+}
+
+h3{
+font: 18px 'Roboto','Open Sans',arial;
+color:#fff;
+margin:0 auto;
+padding-bottom:2em;
+max-width:70%;
+}
+
+h4 a{
+font: 1.5em 'Roboto','Open Sans',arial;
+color:#FF8C00;
+margin-bottom:0;
+text-decoration:none;
+}
+h4 a:hover{
+color:#444;
+}
+
+h5{
+font: 18px arial;
+color:#444;
+}
+h5 a{
+font: 18px arial;
+color:#444;
+}
+
+
+.slide,.slide2{
+	background-repeat:no-repeat;
+	background-image:url("../img/bkc.jpg");
+	height:45%;
+	background-size: 100% auto;
+	background-position:center bottom;
+	margin-top:0;
+}
+.slide2{
+	background-image:url("../img/mayas.jpg");
+}
+.primeracaja{
+min-height:48%;
+width:100%;
+display:inline-block;
+padding-bottom:35px;
+padding-top:55px;
+
+}
+.cajapagina{
+min-height:100%;
+width:100%;
+}
+.cajamediapagina{
+min-height:50%;
+width:100%;
+background:#f1f1f1;
+padding-top:55px;
+padding-bottom:35px;
+}
+
+.cajamini,.cajamini2{
+	display:inline-block;
+	width:320px;
+	height:25%;
+	padding:15px;
+	margin-left:10px;
+	margin-right:10px;
+	vertical-align: top;
+
+}
+.cajamini2{
+	text-align:left;
+}
+
+
+.cajaminidoble{
+	display:inline-block;
+	max-width:470px;
+	height:auto;
+	padding:15px;
+	margin-left:15px;
+	margin-right:15px;
+text-align:left;
+vertical-align: top;
+}
+.cajasimple{
+	display:inline-block;
+	max-width:940px;
+	height:auto;
+	padding:15px;
+	margin-left:15px;
+	margin-right:15px;
+text-align:left;
+vertical-align: top;
+}
+.link{
+text-align:left;
+}
+.link a{
+	font: 14px 'Roboto','Open Sans',arial;
+	color:#FF8C00;
+	text-decoration:none;
+	text-align:left;
+}
+
+.link a:hover{
+	font: 14px 'Roboto','Open Sans',arial;
+	color:#444;
+	text-decoration:underline;
+}
