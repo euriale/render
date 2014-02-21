@@ -70,9 +70,16 @@ function getCountry($ip_address){
 		<div class="cajaminidoble">';		
 				$milabel = new label('motivo','Motivo de la consulta',1,'');
 				$milabel->crearLabel();
-				echo '<div class="elementotext"><select name="motivo" class="" id="motivo"><option>-- Seleccionar --</option><option value="1">Consulta Técnica</option><option value="2">Facturación</option></select></div>';
+				echo '<div class="elementotext"><select name="motivo" class="" id="motivo">
+					<option>-- Seleccionar --</option>
+					<option value="informacion">Solicitar información</option>
+					<option value="tecnica">Consulta Técnica</option>
+					<option value="facturacion">Facturación</option>
+					<option value="sugerencias">Sugerencias</option>
+					</select>
+				</div>';
 				
-				$milabel = new label('consulta','Envía tu Consulta',1,'');
+				$milabel = new label('consulta','Escribe tu Consulta',1,'');
 				$milabel->crearLabel();
 				$miarea = new area('consulta','','','');
 				$miarea->crearArea();

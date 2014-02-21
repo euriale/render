@@ -18,7 +18,7 @@
 				Continuamente ampliamos el número de aplicaciones instaladas en nuestra máquinas, si usas otro software contacta con nosotros y nuestros técnicos adecuaran las máquinas a tu proyecto. </p>
 			</div>
 		</div>
-		<div class="cajaminidoble"><div class="foto"><img src="themes/img/logos/logoscolormaya.png"><br><img src="themes/img/logos/logoscolor.png"></div></div>
+		<div class="cajaminidoble"><img src="themes/img/logos/logoscolormaya.png"><br><img src="themes/img/logos/logoscolor.png"></div>
 
 <!--segunda -->
 		<div style="width:100%;height:40px;"></div>

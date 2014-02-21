@@ -23,8 +23,20 @@ $(document).ready(function () {
 			$("#diapo2").css("top", Math.round(s/parallax)  + "px");
 		});
 	});
-	
-	
+	/*--------------Tarifas------------*/
+	$("#rad1").click(function() {
+		$( this ).toggleClass( "radionoactivo" );
+		$("#rad2").toggleClass( "radionoactivo" );
+		$(".valord").toggleClass( "noactivo" );
+		$(".valore").toggleClass( "noactivo" );
+
+	});
+	$("#rad2").click(function() {
+		$( this ).toggleClass( "radionoactivo" );
+		$("#rad1").toggleClass( "radionoactivo" );
+		$(".valore").toggleClass( "noactivo" );
+		$(".valord").toggleClass( "noactivo" );
+	});
    
    /*-------ancla-----*/
             //nos desplazamos entre todos los divs

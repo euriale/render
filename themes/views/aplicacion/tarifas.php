@@ -1,14 +1,13 @@
 <div id="tarifas"></div> 
 <div class="cajamediapagina">
 <div class="titulo">Tarifas </div>  
-<div class="moneda"><div class="dolar">$</div> / <div class="euro">€</div></div>
+<div class="moneda"> <div id="rad1" class="radio"></div><div class="euro">€</div>&nbsp;&nbsp;<div id="rad2" class="radio radionoactivo"></div><div class="dolar">$</div></div>
 
 	<div class="cajamini">
 
 		<div class="tarifaup1">
-		
-			Prioridad Normal
-			<div class="muygrande">1.2 €</div>
+				Prioridad Normal
+			<div class="muygrande"><span class="valore">1.2 €</span><span class="valord noactivo">2.1 $</span></div>
 		</div>	
 		<div class="tarifadown1">
 			La mejor opción para renderizado en línea económico y altamente competitivo.
@@ -18,7 +17,7 @@
 				<div class="tarifaup2">
 			
 					Prioridad Alta
-					<div class="muygrande">3.4 €</div>
+					<div class="muygrande"><span class="valore">1.2 €</span><span class="valord noactivo">2.1 $</span></div>
 				</div>
 		<div class="tarifadown2">
 			La mejor opción para empresas. Una combinación económica y de renderizado prioritario.
@@ -28,7 +27,7 @@
 			<div class="tarifaup3">
 			
 				Prioridad Premium
-				<div class="muygrande">3.8 €</div>
+				<div class="muygrande"><span class="valore">1.2 €</span><span class="valord noactivo">2.1 $</span></div>
 			</div>	
 			<div class="tarifadown3">
 				Siempre primero. Prioridad absoluta en sus proyectos de renderizados. 				   

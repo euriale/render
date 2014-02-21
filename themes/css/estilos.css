@@ -366,9 +366,34 @@ color:#FF8C00;
 }
 
 .moneda {
-font: bold 22px 'Roboto','Open Sans',arial;
+font: bold 32px 'Roboto','Open Sans',arial;
 color:#FF8C00;
+width:130px;
+margin:0 auto;
 }
+.euro,.dolar{
+	display:inline-block;
+	width:24px;
+	height:30px;
+	text-align:left;
+	margin-left:3px;
+	vertical-align: top;
+}
+.radio{
+	background-repeat:no-repeat;
+	background-image:url("../img/radio.png");
+	width:25px;
+	height:25px;
+	display:inline-block;
+	cursor:pointer;
+}
+.radionoactivo{
+	background-image:url("../img/radiob.png");
+}
+.noactivo{
+	display:none;
+}
+
 .seleccionada{
 text-decoration:underline;
 }
@@ -405,13 +430,12 @@ margin-right:5px;
 .tarifaup1,.tarifaup2,.tarifaup3{
 padding-top:25px;
 background:#C9DE36;
-font: 18px 'Roboto','Open Sans',arial;
+font: bold 18px 'Roboto','Open Sans',arial;
 color:#fff;
 display:block-line;
 text-align:center;
-
-
 }
+
 .tarifaup2{
 background:#A2B51E;
 }
