@@ -46,13 +46,13 @@ if (!isset($_GET['r1'])){
 	$enlaceaplicacion='';
 	$classaplicacion='ancla';
 	$enlaceservicios='';
-	$classservicios='';
+	$classservicios=$GLOBALS['raiz'].'servicios';
 } else if (isset($_GET['r1']) && $_GET['r1']=='servicios') {
 	$enlaceinicio=$GLOBALS['raiz'];
 	$classinicio='';
-	$enlaceaplicacion='';
+	$enlaceaplicacion=$GLOBALS['raiz'].'aplicacion';
 	$classaplicacion='';
-	$enlaceservicios=$GLOBALS['raiz'].'aplicacion';
+	$enlaceservicios='';
 	$classservicios='ancla';
 }
 ?>
@@ -80,7 +80,7 @@ if (!isset($_GET['r1'])){
 </div>
 
 <div class="cajapie">
-	<div class="txtnaranja16"><a href="<?php echo $enlaceservicios; ?>#inicio" class="<?php echo $classservicios; ?>" title="Servicios Render" Alt="Servicios Render">Uso otras aplicaciones</a></div>
+	<div class="txtnaranja16"><a href="<?php echo $enlaceservicios; ?>#inicio" class="<?php echo $classservicios; ?>" title="Servicios Render" Alt="Servicios Render">Servicios Render</a></div>
 	<ul>
 		<li><a href="<?php echo $enlaceservicios; ?>#descripcion" class="<?php echo $classservicios; ?>" title="Servicios Render" Alt="Uso Maya">Uso otras aplicaciones</a></li>
 		<li><a href="<?php echo $enlaceservicios; ?>#tarifas" class="<?php echo $classservicios; ?>" title="Servicios Render - Tarifas" Alt="Servicios Render - Tarifas">Tarifas</a></li>
