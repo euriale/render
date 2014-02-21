@@ -69,7 +69,7 @@ if (!isset($_GET['r1'])){
 
 </div>
 <div class="cajapie">
-	<div class="txtnaranja16"><a href="<?php echo $enlaceaplicacion; ?>#descripcion" class="<?php echo $classaplicacion; ?>" title="Aplicación - Uso Maya" Alt="Aplicación Render - Uso Maya">Aplicación Render - Uso Maya</a></div>
+	<div class="txtnaranja16"><a href="<?php echo $enlaceaplicacion; ?>#descripcion" class="<?php echo $classaplicacion; ?>" title="Aplicación - Uso Maya" Alt="Aplicación Render - Uso Maya">Aplicación Render</a></div>
 	<ul>
 		<li><a href="<?php echo $enlaceaplicacion; ?>#descripcion" class="<?php echo $classaplicacion; ?>" title="Aplicación Render - Uso Maya" Alt="Aplicación Render - Uso Maya">Descripción</a></li>
 		<li><a href="<?php echo $enlaceaplicacion; ?>#tarifas" class="<?php echo $classaplicacion; ?>" title="Aplicación Render - Tarifas" Alt="Aplicación Render - Tarifas">Tarifas</a></li>
