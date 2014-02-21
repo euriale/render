@@ -83,9 +83,9 @@ if (!isset($_GET['r1'])){
 	<div class="txtnaranja16"><a href="<?php echo $enlaceservicios; ?>#inicio" class="<?php echo $classservicios; ?>" title="Servicios Render" Alt="Servicios Render">Uso otras aplicaciones</a></div>
 	<ul>
 		<li><a href="<?php echo $enlaceservicios; ?>#descripcion" class="<?php echo $classservicios; ?>" title="Servicios Render" Alt="Uso Maya">Uso otras aplicaciones</a></li>
-		<li><a href="<?php echo $enlaceaplicacion; ?>#tarifas" class="<?php echo $classaplicacion; ?>" title="Servicios Render - Tarifas" Alt="Servicios Render - Tarifas">Tarifas</a></li>
-		<li><a href="<?php echo $enlaceaplicacion; ?>#faqs" class="<?php echo $classaplicacion; ?>" title="Servicios Render - Faqs" Alt="Servicios Render - Faqs">FAQS</a></li>
-		<li><a href="<?php echo $enlaceaplicacion; ?>#contacto" class="<?php echo $classaplicacion; ?>" title="Servicios Render - Contacta" Alt="Servicios Render - Contacta">Contacto</a></li>
+		<li><a href="<?php echo $enlaceservicios; ?>#tarifas" class="<?php echo $classservicios; ?>" title="Servicios Render - Tarifas" Alt="Servicios Render - Tarifas">Tarifas</a></li>
+		<li><a href="<?php echo $enlaceservicios; ?>#faqs" class="<?php echo $classservicios; ?>" title="Servicios Render - Faqs" Alt="Servicios Render - Faqs">FAQS</a></li>
+		<li><a href="<?php echo $enlaceservicios; ?>#contacto" class="<?php echo $classservicios; ?>" title="Servicios Render - Contacta" Alt="Servicios Render - Contacta">Contacto</a></li>
 	</ul>
 
 </div>
