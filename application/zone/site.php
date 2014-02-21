@@ -45,8 +45,9 @@ if (!isset($_GET['r1'])){
 	$classinicio='';
 	$enlaceaplicacion='';
 	$classaplicacion='ancla';
-	$enlaceservicios='';
-	$classservicios=$GLOBALS['raiz'].'servicios';
+	$enlaceservicios=$GLOBALS['raiz'].'servicios';
+	$classservicios='';
+	
 } else if (isset($_GET['r1']) && $_GET['r1']=='servicios') {
 	$enlaceinicio=$GLOBALS['raiz'];
 	$classinicio='';
