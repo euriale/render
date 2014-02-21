@@ -1,13 +1,5 @@
 <div id="faqs"></div> 
 <div class="primeracaja">
-<div class="titulo">¿Tienes más dudas? </div>  
-<div class="cajasimple">
-<div class="faqanswer">
-
-Visita nuestras preguntas frecuentes, o contacta con nosotros para resolverla. 
-<br>
-Si quieres darte de alta como cliente y que te hagamos un presupuesto a medida sin compromiso, rellena nuestro formulario y un técnico se pondrá en contacto contigo. Estaremos encantados de atenderte.
-</div> </div> 
 	<div class="titulo">Preguntas Frecuentes</div>
 	
 <div class="cajaminidoble">

@@ -1,27 +1,4 @@
-<?php 
-if (!isset($_GET['r1'])){
-	$enlaceinicio='#';
-	$classinicio='ancla';
-	$enlaceaplicacion='';
-	$classaplicacion='';
-	$enlaceservicios='';
-	$classservicios='';
-} else if (isset($_GET['r1']) && $_GET['r1']=='aplicacion') {
-	$enlaceinicio=$GLOBALS['raiz'];
-	$classinicio='';
-	$enlaceaplicacion='';
-	$classaplicacion='ancla';
-	$enlaceservicios='';
-	$classservicios='';
-} else if (isset($_GET['r1']) && $_GET['r1']=='servicios') {
-	$enlaceinicio=$GLOBALS['raiz'];
-	$classinicio='ancla';
-	$enlaceaplicacion='';
-	$classaplicacion='';
-	$enlaceservicios='';
-	$classservicios='ancla';
-}
-?>
+
 
 <div id="inicio"></div>
 <div id="cabecera">
@@ -55,43 +32,66 @@ require_once(__SITE_PATH.'/'.$ccontroller);
 <div id="pie">
 <div class="auxcajapie">
 
-
+<?php 
+if (!isset($_GET['r1'])){
+	$enlaceinicio='';
+	$classinicio='ancla';
+	$enlaceaplicacion=$GLOBALS['raiz'].'aplicacion';
+	$classaplicacion='';
+	$enlaceservicios=$GLOBALS['raiz'].'servicios';
+	$classservicios='';
+} else if (isset($_GET['r1']) && $_GET['r1']=='aplicacion') {
+	$enlaceinicio=$GLOBALS['raiz'];
+	$classinicio='';
+	$enlaceaplicacion='';
+	$classaplicacion='ancla';
+	$enlaceservicios='';
+	$classservicios='';
+} else if (isset($_GET['r1']) && $_GET['r1']=='servicios') {
+	$enlaceinicio=$GLOBALS['raiz'];
+	$classinicio='';
+	$enlaceaplicacion='';
+	$classaplicacion='';
+	$enlaceservicios=$GLOBALS['raiz'].'aplicacion';
+	$classservicios='ancla';
+}
+?>
 
 <div class="cajapie">
-	<div class="txtnaranja16"><a href="#inicio" title="Render Drive" Alt="Uso Maya">Render Drive</a></div>
+	<div class="txtnaranja16"><a href="<?php echo $enlaceinicio; ?>#inicio" class="<?php echo $classinicio; ?>" title="Render Drive" Alt="Render Drive">Render Drive</a></div>
 	<ul>
-		<li><a href="<?php echo $GLOBALS['raiz']; ?>" title="Por qué trabajar con Render Drive" Alt="Por qué trabajar con Render Drive">Por qué trabajar con Render Drive</a></li>
-		<li><a href="<?php echo $GLOBALS['raiz']; ?>" title="Render Drive - Reducción de tiempos" Alt="Render Drive - Reducción de tiempos">Reducción de tiempos</a></li>
-		<li><a href="<?php echo $GLOBALS['raiz']; ?>" title="Render Drive - Reducción de costes" Alt="Render Drive - Reducción de costes">Reducción de costes</a></li>
-		<li><a href="<?php echo $GLOBALS['raiz']; ?>" title="Render Drive - Confianza y disponibilidada" Alt="Render Drive - Confianza y disponibilidada">Confianza y disponibilidad</a></li>
-		<li><a href="<?php echo $GLOBALS['raiz']; ?>" title="Render Drive - Contacto" Alt="Render Drive - Contacto">Contacto</a></li>
+		<li><a href="<?php echo $enlaceinicio; ?>#inicio" class="<?php echo $classinicio; ?>" title="Por qué trabajar con Render Drive" Alt="Por qué trabajar con Render Drive">Por qué trabajar con Render Drive</a></li>
+		<li><a href="<?php echo $enlaceinicio; ?>#tiempos" class="<?php echo $classinicio; ?>" title="Render Drive - Reducción de tiempos" Alt="Render Drive - Reducción de tiempos">Reducción de tiempos</a></li>
+		<li><a href="<?php echo $enlaceinicio; ?>#costes" class="<?php echo $classinicio; ?>" title="Render Drive - Reducción de costes" Alt="Render Drive - Reducción de costes">Reducción de costes</a></li>
+		<li><a href="<?php echo $enlaceinicio; ?>#confianza" class="<?php echo $classinicio; ?>" title="Render Drive - Confianza y disponibilidada" Alt="Render Drive - Confianza y disponibilidada">Confianza y disponibilidad</a></li>
+		<li><a href="<?php echo $enlaceinicio; ?>#contacto" class="<?php echo $classinicio; ?>" title="Render Drive - Contacto" Alt="Render Drive - Contacto">Contacto</a></li>
 	</ul>
 
 </div>
 <div class="cajapie">
-	<div class="txtnaranja16"><a href="<?php echo $GLOBALS['raiz']; ?>aplicacion" title="Aplicación - Uso Maya" Alt="Aplicación - Uso Maya">Uso Maya</a></div>
+	<div class="txtnaranja16"><a href="<?php echo $enlaceaplicacion; ?>#descripcion" class="<?php echo $classaplicacion; ?>" title="Aplicación - Uso Maya" Alt="Aplicación Render - Uso Maya">Aplicación Render - Uso Maya</a></div>
 	<ul>
-		<li><a href="<?php echo $GLOBALS['raiz']; ?>aplicacion" title="Aplicación - Uso Maya" Alt="Aplicación - Uso Maya">Uso Maya</a></li>
-		<li><a href="<?php echo $GLOBALS['raiz']; ?>aplicacion" title="Aplicación - Tarifas" Alt="Aplicación - Tarifas">Tarifas</a></li>
-		<li><a href="<?php echo $GLOBALS['raiz']; ?>aplicacion" title="Aplicación - Faqs" Alt="Aplicación - Faqs">FAQS</a></li>
-		<li><a href="<?php echo $GLOBALS['raiz']; ?>aplicacion" title="Aplicación - Contacta" Alt="Aplicación - Contacto">Contacto</a></li>
+		<li><a href="<?php echo $enlaceaplicacion; ?>#descripcion" class="<?php echo $classaplicacion; ?>" title="Aplicación Render - Uso Maya" Alt="Aplicación Render - Uso Maya">Descripción</a></li>
+		<li><a href="<?php echo $enlaceaplicacion; ?>#tarifas" class="<?php echo $classaplicacion; ?>" title="Aplicación Render - Tarifas" Alt="Aplicación Render - Tarifas">Tarifas</a></li>
+		<li><a href="<?php echo $enlaceaplicacion; ?>#faqs" class="<?php echo $classaplicacion; ?>" title="Aplicación Render - Faqs" Alt="Aplicación Render - Faqs">FAQS</a></li>
+		<li><a href="<?php echo $enlaceaplicacion; ?>#contacto" class="<?php echo $classaplicacion; ?>" title="Aplicación Render - Contacto" Alt="Aplicación Render - Contacto">Contacto</a></li>
 	</ul>
 
 </div>
 
 <div class="cajapie">
-	<div class="txtnaranja16"><a href="<?php echo $GLOBALS['raiz']; ?>no-maya" title="Uso Maya" Alt="Uso Maya">Uso otras aplicaciones</a></div>
+	<div class="txtnaranja16"><a href="<?php echo $enlaceservicios; ?>#inicio" class="<?php echo $classservicios; ?>" title="Servicios Render" Alt="Servicios Render">Uso otras aplicaciones</a></div>
 	<ul>
-		<li><a href="<?php echo $GLOBALS['raiz']; ?>servicios" title="Uso Maya" Alt="Uso Maya">Uso otras aplicaciones</a></li>
-		<li><a href="<?php echo $GLOBALS['raiz']; ?>servicios" title="Uso otro Software - Tarifas" Alt="Uso Maya - Tarifas">Tarifas</a></li>
-		<li><a href="<?php echo $GLOBALS['raiz']; ?>servicios" title="Uso Maya - Faqs" Alt="Uso Maya - Faqs">FAQS</a></li>
-		<li><a href="<?php echo $GLOBALS['raiz']; ?>servicios" title="Uso Maya - Contacta" Alt="Uso Maya - Contacta">Contacto</a></li>
+		<li><a href="<?php echo $enlaceservicios; ?>#descripcion" class="<?php echo $classservicios; ?>" title="Servicios Render" Alt="Uso Maya">Uso otras aplicaciones</a></li>
+		<li><a href="<?php echo $enlaceaplicacion; ?>#tarifas" class="<?php echo $classaplicacion; ?>" title="Servicios Render - Tarifas" Alt="Servicios Render - Tarifas">Tarifas</a></li>
+		<li><a href="<?php echo $enlaceaplicacion; ?>#faqs" class="<?php echo $classaplicacion; ?>" title="Servicios Render - Faqs" Alt="Servicios Render - Faqs">FAQS</a></li>
+		<li><a href="<?php echo $enlaceaplicacion; ?>#contacto" class="<?php echo $classaplicacion; ?>" title="Servicios Render - Contacta" Alt="Servicios Render - Contacta">Contacto</a></li>
 	</ul>
 
 </div>
 
 <div class="cajapie">
-	<div class="txtnaranja16">Síguenos</div>
+	<div class="txtnaranja16">Síguenos - Redes Sociales</div>
 	<ul>
 		<li><a href=""><div class="imgpie"><img src="themes/img/logos/facebook.png" width="20px;"></div> Facebook</a></li>
 		<li><a href="http://www.linkedin.com/company/render-drive"><div class="imgpie"><img src="themes/img/logos/linkedin.png" width="20px;"></div> Linkedin</a></li>

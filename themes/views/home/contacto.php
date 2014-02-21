@@ -49,6 +49,11 @@ function getCountry($ip_address){
 				$milabel->crearLabel();
 				$miinput = new input('text','id="apellidos" name="apellidos" class="input"','','');
 				$miinput->crearInput();
+				
+				$milabel = new label('empresa','Empresa','','');
+				$milabel->crearLabel();
+				$miinput = new input('text','id="empresa" name="empresa" class="input"','','');
+				$miinput->crearInput();
 
 				$milabel = new label('email','Email',1,'');
 				$milabel->crearLabel();
@@ -60,24 +65,14 @@ function getCountry($ip_address){
 				$miinput = new input('text','id="telefono" name="telefono" class="input"','','');
 				$miinput->crearInput();
 				
-				$milabel = new label('empresa','Empresa','','');
-				$milabel->crearLabel();
-				$miinput = new input('text','id="empresa" name="empresa" class="input"','','');
-				$miinput->crearInput();
+				
 		echo '</div>		
 		<div class="cajaminidoble">';		
-				$milabel = new label('aplicacion','Aplicación','','');
+				$milabel = new label('motivo','Motivo de la consulta',1,'');
 				$milabel->crearLabel();
-				$miselect = new select('aplicacion','id="aplicacion"',"aplicaciones","aplicaciones","idaplicaciones",'','activo=1 and (idioma="" or idioma="'.$_SESSION['idioma'].'") ','');
-				$miselect->crearSelect();
-				echo '<div id="otraaplic">';
-					$milabel = new label('otraaplicacion','Indica la aplicaci&oacute;n que usas','','');
-					$milabel->crearLabel();
-					$miinput = new input('text','id="otraaplicacion" name="otraaplicacion" class="input"','','');
-					$miinput->crearInput();
-				echo '</div>';
-				echo '<div id="versiones"></div>';
-				$milabel = new label('consulta','Envía tu pregunta',1,'');
+				echo '<div class="elementotext"><select name="motivo" class="" id="motivo"><option>-- Seleccionar --</option><option value="1">Consulta Técnica</option><option value="2">Facturación</option></select></div>';
+				
+				$milabel = new label('consulta','Envía tu Consulta',1,'');
 				$milabel->crearLabel();
 				$miarea = new area('consulta','','','');
 				$miarea->crearArea();

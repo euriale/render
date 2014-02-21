@@ -132,7 +132,7 @@ function getCountry($ip_address){
 				
 
 				
-				$milabel = new label('consulta','Envía tu consulta',1,'');
+				$milabel = new label('consulta','Envía tu Consulta',1,'');
 				$milabel->crearLabel();
 				$miarea = new area('consulta','','','');
 				$miarea->crearArea();
