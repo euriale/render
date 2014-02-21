@@ -177,7 +177,7 @@ color:#444;
 }
 
 
-.slide,.slide2{
+.slide,.slide2, .slide3{
 	background-repeat:no-repeat;
 	background-image:url("../img/bkc.jpg");
 	height:45%;
@@ -187,6 +187,11 @@ color:#444;
 }
 .slide2{
 	background-image:url("../img/mayas.jpg");
+}
+.slide3{
+	background-image:url("../img/tokio.jpg");
+		background-position:center top;
+
 }
 .primeracaja{
 min-height:48%;
@@ -281,11 +286,22 @@ text-align:left;
 .titulo{
 font: 2.1em 'Roboto','Open Sans',arial;
 color:#FF8C00;
+
+}
+.foto{
+border:solid 1px #ddd;
+padding:15px;
+background:#f1f1f1;
+}
+.tituloleft{
+font: 2.1em 'Roboto','Open Sans',arial;
+color:#FF8C00;
+text-align:left;
 }
 .textocontenido{
 font: 15px 'Roboto','Open Sans',arial;
 color:#444;
-text-align:left;
+text-align:justify;
 }
 .auxtexto{
 margin:0 auto;
