@@ -18,14 +18,15 @@
 				Continuamente ampliamos el número de aplicaciones instaladas en nuestra máquinas, si usas otro software contacta con nosotros y nuestros técnicos adecuaran las máquinas a tu proyecto. </p>
 			</div>
 		</div>
-		<div class="cajaminidoble"><br><br><div class="foto"><img src="themes/img/logos/logoscolormaya.png"><br><img src="themes/img/logos/logoscolor.png"></div></div>
+		<div class="cajaminidoble"><div class="foto"><img src="themes/img/logos/logoscolormaya.png"><br><img src="themes/img/logos/logoscolor.png"></div></div>
 
 <!--segunda -->
-		<div style="width:100%"></div>
-		<div class="cajaminidoble"><div class="tituloleft">Proceso </div> <img src="themes/img/rd.jpg" align="right" width="350px" class="foto"></div>
+		<div style="width:100%;height:40px;"></div>
+		<div class="cajaminidoble"> <img src="themes/img/rd.jpg" align="right" width="350px" class="foto"></div>
 		<div class="cajaminidoble">
+		<div class="tituloleft">Proceso </div>
 			<div class="textocontenido">
-			<br><br>
+		
 				<p>
 				Una vez te pongas en contacto con nosotros, te pediremos unos sencillos datos para crear tu cuenta de usuario en nuestro sistema, y te enviaremos por correo electrónico los datos de de conexión de nuestro ftp, para que subas tu proyecto. 
 				</p>
@@ -37,7 +38,7 @@
 		</div>
 
 <!--tercera -->
-		<div style="width:100%"></div>
+		<div style="width:100%;height:40px;"></div>
 		<div class="cajaminidoble"> 
 		<div class="tituloleft">Granja </div>
 			<div class="textocontenido">
@@ -46,13 +47,14 @@
 				Nuestra infraestructura está diseñada por profesionales para el render de imágenes y animaciones, con lo que el uso de nuestras máquinas está totalmente optimizado para obtener unos resultados eficaces y sin incidentes.  </p>
 			</div>
 		</div>
-		<div class="cajaminidoble"><br>	<br><img src="themes/img/moto.jpg" align="right" width="350px" class="foto"></div>
+		<div class="cajaminidoble"><img src="themes/img/moto.jpg" align="right" width="350px" class="foto"></div>
 <!--cuarta -->
-		<div style="width:100%"></div>
-		<div class="cajaminidoble">	<div class="tituloleft">Precio </div>  <img src="themes/img/teclado.jpg" align="right" width="350px" class="foto"></div>
+		<div style="width:100%;height:40px;"></div>
+		<div class="cajaminidoble">	 <img src="themes/img/teclado.jpg" align="right" width="350px" class="foto"></div>
 		<div class="cajaminidoble">
+			<div class="tituloleft">Precio </div> 
 			<div class="textocontenido">
-			<br><br>
+			
 			<p>
 			El precio final de renderizado depende de tu proyecto, se puede realizar una estimación lanzando un render de un frame, sabiendo el número  total de frames, y el tipo de procesador donde se ha lanzado la prueba nos dará una estimación.
 			</p>
