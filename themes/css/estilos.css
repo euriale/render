@@ -78,7 +78,7 @@ font:bold 1em 'Open Sans', arial;
 }
 .subnavigation{
 	display:inline-block;
-	margin-top:0px;
+	margin-top:6px;
 	margin-right:5%;
 	margin-bottom:0px;
 	padding-left:0;
@@ -197,7 +197,6 @@ color:#444;
 min-height:48%;
 width:100%;
 display:inline-block;
-padding-bottom:35px;
 padding-top:55px;
 
 }
@@ -210,7 +209,6 @@ min-height:50%;
 width:100%;
 background:#f1f1f1;
 padding-top:55px;
-padding-bottom:35px;
 }
 
 .cajamini,.cajamini2{
@@ -346,10 +344,20 @@ text-decoration:none;
 text-decoration:underline;
 }
 
-.txtnaranja18{
+.txtnaranja18,.verde1,.verde2,.verde3{
 font: bold 18px 'Roboto','Open Sans',arial;
 color:#FF8C00;
 }
+.verde1{
+color:#C9DE36;
+}
+.verde2{
+color:#A2B51E;
+}
+.verde3{
+color:#51910B;
+}
+
 
 .cajapie ul{
 	list-style-type: none;
@@ -365,13 +373,17 @@ color:#FF8C00;
 	font: 13px 'Roboto','Open Sans',arial;
 }
 
-.moneda {
+.moneda,.monedatab {
 font: bold 32px 'Roboto','Open Sans',arial;
 color:#FF8C00;
 width:130px;
 margin:0 auto;
 }
-.euro,.dolar{
+.monedatab {
+font: bold 20px 'Roboto','Open Sans',arial;
+}
+
+.euro,.dolar,.eurotab,.dolartab{
 	display:inline-block;
 	width:24px;
 	height:30px;
@@ -379,7 +391,7 @@ margin:0 auto;
 	margin-left:3px;
 	vertical-align: top;
 }
-.radio{
+.radio, .radiotab{
 	background-repeat:no-repeat;
 	background-image:url("../img/radio.png");
 	width:25px;
@@ -387,10 +399,15 @@ margin:0 auto;
 	display:inline-block;
 	cursor:pointer;
 }
-.radionoactivo{
+.radiotab{
+	background-size: 100%;
+	width:15px;
+	height:15px;
+}
+.radionoactivo,..radionoactivotab{
 	background-image:url("../img/radiob.png");
 }
-.noactivo{
+.noactivo, .noactivotab{
 	display:none;
 }
 
@@ -403,7 +420,7 @@ display:inline-block;
 .tablatarifas{
 	width:60%;
 	margin:0 auto;
-	margin-top:25px;
+	margin-top:5px;
 	margin-bottom:25px;
 
 }
@@ -555,6 +572,7 @@ select option:hover
 	margin:0 auto;
 	padding-left:20px;
 	padding-right:20px;
+	margin-bottom:35px;
 }
 
 .botonenvio:hover, .botonapp:hover{
@@ -601,3 +619,13 @@ select option:hover
 	float:left;
 	cursor:pointer;
  }
+ 
+ .abajo{
+
+	height:35px;
+	width:60px;
+	margin:0 auto;
+	margin-bottom:0;
+	
+ }
+ 

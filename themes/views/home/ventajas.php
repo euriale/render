@@ -24,7 +24,7 @@ Descubre las ventajas de usar nuestra granja de render.
 		<li class="txtp"><strong>Confianza y disponibilidad:</strong> Conocemos tus necesidades, por ello disponemos de un  equipo técnico y profesional para ayudarte en todo el proceso cuando lo necesites.</li>
 	 </ul>
  </div>
- </div> </div>
+ </div><div class="abajo"><a href="#contacto" class="ancla"><img src="themes/img/abajo2.jpg"></a></div> </div>
 
 
 

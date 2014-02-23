@@ -52,6 +52,6 @@
 
 
 </div>	
-	
+	<div class="abajo"><a href="#contacto" class="ancla"><img src="themes/img/abajo.jpg"></a></div>
 </div>
 

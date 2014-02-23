@@ -63,6 +63,6 @@
 			 </p>
 			</div>
 		</div>
-
+<div class="abajo"><a href="#tarifas" class="ancla"><img src="themes/img/abajo.jpg"></a></div>
 </div>
 

@@ -14,8 +14,8 @@
 	
    <ul class="navigation">
 		<li><a href="<?php echo $GLOBALS['raiz']; ?>"><?php echo INICIO; ?></a></li>
-		<li><a href="aplicacion">Aplicación</a></li>
-		<li><a href="servicios">Servicios</a></li>
+		<li><a href="aplicacion-render">Aplicación</a></li>
+		<li><a href="servicios-render">Servicios</a></li>
 		
 		
    </ul>		
@@ -36,22 +36,22 @@ require_once(__SITE_PATH.'/'.$ccontroller);
 if (!isset($_GET['r1'])){
 	$enlaceinicio='';
 	$classinicio='ancla';
-	$enlaceaplicacion=$GLOBALS['raiz'].'aplicacion';
+	$enlaceaplicacion=$GLOBALS['raiz'].'aplicacion-render';
 	$classaplicacion='';
-	$enlaceservicios=$GLOBALS['raiz'].'servicios';
+	$enlaceservicios=$GLOBALS['raiz'].'servicios-render';
 	$classservicios='';
-} else if (isset($_GET['r1']) && $_GET['r1']=='aplicacion') {
+} else if (isset($_GET['r1']) && $_GET['r1']=='aplicacion-render') {
 	$enlaceinicio=$GLOBALS['raiz'];
 	$classinicio='';
 	$enlaceaplicacion='';
 	$classaplicacion='ancla';
-	$enlaceservicios=$GLOBALS['raiz'].'servicios';
+	$enlaceservicios=$GLOBALS['raiz'].'servicios-render';
 	$classservicios='';
 	
-} else if (isset($_GET['r1']) && $_GET['r1']=='servicios') {
+} else if (isset($_GET['r1']) && $_GET['r1']=='servicios-render') {
 	$enlaceinicio=$GLOBALS['raiz'];
 	$classinicio='';
-	$enlaceaplicacion=$GLOBALS['raiz'].'aplicacion';
+	$enlaceaplicacion=$GLOBALS['raiz'].'aplicacion-render';
 	$classaplicacion='';
 	$enlaceservicios='';
 	$classservicios='ancla';
@@ -72,7 +72,7 @@ if (!isset($_GET['r1'])){
 <div class="cajapie">
 	<div class="txtnaranja16"><a href="<?php echo $enlaceaplicacion; ?>#descripcion" class="<?php echo $classaplicacion; ?>" title="Aplicación - Uso Maya" Alt="Aplicación Render - Uso Maya">Aplicación Render</a></div>
 	<ul>
-		<li><a href="<?php echo $enlaceaplicacion; ?>#descripcion" class="<?php echo $classaplicacion; ?>" title="Aplicación Render - Uso Maya" Alt="Aplicación Render - Uso Maya">Descripción</a></li>
+		<li><a href="<?php echo $enlaceaplicacion; ?>#descripcion" class="<?php echo $classaplicacion; ?>" title="Aplicación Render - Render en la nube" Alt="Aplicación Render - Uso Maya">Conoce nuestra aplicación</a></li>
 		<li><a href="<?php echo $enlaceaplicacion; ?>#tarifas" class="<?php echo $classaplicacion; ?>" title="Aplicación Render - Tarifas" Alt="Aplicación Render - Tarifas">Tarifas</a></li>
 		<li><a href="<?php echo $enlaceaplicacion; ?>#faqs" class="<?php echo $classaplicacion; ?>" title="Aplicación Render - Faqs" Alt="Aplicación Render - Faqs">FAQS</a></li>
 		<li><a href="<?php echo $enlaceaplicacion; ?>#contacto" class="<?php echo $classaplicacion; ?>" title="Aplicación Render - Contacto" Alt="Aplicación Render - Contacto">Contacto</a></li>
@@ -83,7 +83,7 @@ if (!isset($_GET['r1'])){
 <div class="cajapie">
 	<div class="txtnaranja16"><a href="<?php echo $enlaceservicios; ?>#inicio" class="<?php echo $classservicios; ?>" title="Servicios Render" Alt="Servicios Render">Servicios Render</a></div>
 	<ul>
-		<li><a href="<?php echo $enlaceservicios; ?>#descripcion" class="<?php echo $classservicios; ?>" title="Servicios Render" Alt="Uso Maya">Uso otras aplicaciones</a></li>
+		<li><a href="<?php echo $enlaceservicios; ?>#descripcion" class="<?php echo $classservicios; ?>" title="Servicios Render" Alt="Uso Maya">Conoce nuestros servicios</a></li>
 		<li><a href="<?php echo $enlaceservicios; ?>#tarifas" class="<?php echo $classservicios; ?>" title="Servicios Render - Tarifas" Alt="Servicios Render - Tarifas">Tarifas</a></li>
 		<li><a href="<?php echo $enlaceservicios; ?>#faqs" class="<?php echo $classservicios; ?>" title="Servicios Render - Faqs" Alt="Servicios Render - Faqs">FAQS</a></li>
 		<li><a href="<?php echo $enlaceservicios; ?>#contacto" class="<?php echo $classservicios; ?>" title="Servicios Render - Contacta" Alt="Servicios Render - Contacta">Contacto</a></li>

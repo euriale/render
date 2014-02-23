@@ -69,7 +69,7 @@ function getCountry($ip_address){
 				$miinput->crearInput();
 				
 				
-				$milabel = new label('consulta','Envía tu pregunta',1,'');
+				$milabel = new label('consulta','Escribe tu Consulta',1,'');
 				$milabel->crearLabel();
 				$miarea = new area('consulta','','','');
 				$miarea->crearArea();
@@ -77,10 +77,11 @@ function getCountry($ip_address){
 echo '</div>';
 				echo '<input type="button" id="envio" name="envio" class="botonenvio"  value="Enviar">';
 				$miformulario->cerrarFormulario();
+				echo '<div style="clear:both"></div>';
 				
 				?>
 				<div id="respuesta"><div class="iconclose" style="float:right;"></div><div style="clear:both"></div><div id="respuestaaux"></div></div>
-				<div style="clear:both"></div>
+				
 		
 		
 

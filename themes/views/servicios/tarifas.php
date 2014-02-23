@@ -54,7 +54,7 @@
 		Prioridad Premium: <span class="txtnaranja18">33,86€  </span> 
 		</span>
 </div>
-
+<div class="abajo"><a href="#faqs" class="ancla"><img src="themes/img/abajo2.jpg"></a></div>
 </div>	
 
 

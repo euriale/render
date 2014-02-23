@@ -15,27 +15,27 @@
 		
 	</div>
 	<div class="cajamini">
-		<h4><a href="aplicacion">Aplicación</a></h4>
+		<h4><a href="aplicacion-render">Aplicación</a></h4>
 		<div class="txt15centro"><strong>Uso Maya para mis Proyectos</strong></div>
 		<div class="imagencaja"><img src="themes/img/logos/logoscolormaya.png"></div>
 		<div class="txt15">	Regístrate ya y accede a nuestra aplicación.
 		<br>Si te das de alta hasta antes del 1 de Marzo te regalamos un <strong> 20% de descuento </strong>.</div>
 	
-		<div class="link"><a href="aplicacion">Saber más &nbsp;&nbsp;<img src="themes/img/redpointer.png"></a></div>
+		<div class="link"><a href="aplicacion-render">Saber más &nbsp;&nbsp;<img src="themes/img/redpointer.png"></a></div>
 	</div>
 	
 	<div class="cajamini">
-		<h4><a href="servicios">Servicios</a> </h4>
+		<h4><a href="servicios-render">Servicios</a> </h4>
 		<div class="txt15centro"><strong>Uso otro Software en mis Proyectos</strong></div>
 		<div class="imagencaja"><img src="themes/img/logos/logoscolor.png"></div>
 		<div class="txt15"> Trabajamos con Maya, Cinema 4D, 3ds Max,SoftImage, Blender, LightWave, After Effects.
 		</div>
 		
-		<div class="link"><a href="servicios">Saber más&nbsp;&nbsp;<img src="themes/img/redpointer.png"></a></div>
+		<div class="link"><a href="servicios-render">Saber más&nbsp;&nbsp;<img src="themes/img/redpointer.png"></a></div>
 
 	</div>
 	
-
+<div class="abajo"><a href="#pq" class="ancla"><img src="themes/img/abajo.jpg"></a></div>
 	</div>
 
 

@@ -47,7 +47,7 @@
 
 	<!--cuarta -->
 	<div style="width:100%;height:40px;"></div>
-	<div class="cajaminidoble"><img src="themes/img/robote.png" width="350px" class="foto">></div>
+	<div class="cajaminidoble"><img src="themes/img/robote.png" width="350px" class="foto"></div>
 	
 	<div class="cajaminidoble">	
 		<div class="tituloleft">Créditos</div>
@@ -70,5 +70,5 @@
 		</div>
 	</div>
 	<div class="cajaminidoble"><img src="themes/img/build.jpg" width="350px" class="foto"></div>
-
-
+<div class="abajo"><a href="#tarifas" class="ancla"><img src="themes/img/abajo.jpg"></a></div>
+</div>
