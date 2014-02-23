@@ -1,0 +1,14 @@
+modificaciones:
+
+css
+/*modificado mj*/
+	.tisu {background:#fff;}
+	h2 a{ text-transform:uppercase;	}
+	.row .three.columns 	{ width: 18%; }
+	.column, .columns { margin-right: 2.4%; float: left; min-height: 1px; position: relative; }
+
+ 
+loop-index.php
+
+"4=5"	
+
