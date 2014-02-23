@@ -24,11 +24,11 @@
 		<div style="width:100%;height:40px;"></div>
 		<div class="cajaminidoble"> <img src="themes/img/rd.jpg" align="right" width="350px" class="foto"></div>
 		<div class="cajaminidoble">
-		<div class="tituloleft">Quiero empezar: Pasos a seguir </div>
+		<div class="tituloleft">Tu trabajo estará renderizandose tras unos sencillos pasos </div>
 			<div class="textocontenido">
 		
 				<p>
-				Te creamos una cuenta ftp para que subas tu proyecto. Disponemos actualmente de 500/50 Mbps.
+				Te creamos una cuenta ftp para que subas tu proyecto. Disponemos de lineas de alta velocidad para la subida/bajada de ficheros 500/50 Mbps.
 				</p>
 				<p>
 				Procederemos a lanzar tu render con los parámetros que nos indiques, si tienes dudas un técnico te asesorará en este proceso. Conforme se vaya renderizando tu proyecto, tendrás acceso a tus datos a través de la cuenta ftp. 
@@ -49,19 +49,36 @@
 		<div class="cajaminidoble"><img src="themes/img/moto.jpg" align="right" width="350px" class="foto"></div>
 <!--cuarta -->
 		<div style="width:100%;height:40px;"></div>
-		<div class="cajaminidoble">	 <img src="themes/img/teclado.jpg" align="right" width="350px" class="foto"></div>
+		<div class="cajaminidoble">	 <img src="themes/img/profesional.jpg" align="right" width="350px" class="foto"></div>
 		<div class="cajaminidoble">
-			<div class="tituloleft">Precio </div> 
+			<div class="tituloleft">Garantía profesional </div> 
 			<div class="textocontenido">
-			
 			<p>
-			El precio final de renderizado depende de varios factores, número de frames, motores utlizados, etc. A continuación te mostramos unos ejemplos para que puedas hacer una estimación tu mismo.
+			No te la juegues, llevamos años renderizando proyectos, te asesoramos desde el primero momento 	
+			</p>
+			<p>Si 
+			</p>
+			<p>Disponemos de modelo productora, si necesitas renderizar una película te montamos un entorno de pruebas sin compromiso. 
+			</p>
+			<p>
+			
+			 </p>
+			</div>
+		</div>
+<!--quinta -->
+		<div style="width:100%;height:40px;"></div>
+		<div class="cajaminidoble">	 
+			<div class="tituloleft">Precios siempre competitivos </div> 
+			<div class="textocontenido">
+			<p>
+			El coste final de renderizado depende de varios factores, número de frames, motores utilizados, etc. A continuación te mostramos nuestras tarifas y unos ejemplos para que puedas hacer una estimación tu mismo. 
 			</p>
 			<p>
 			 Si tienes dudas, nos ponemos en contacto contigo y te ayudamos a realizar una estimación sin compromiso. 
 			 </p>
 			</div>
 		</div>
+		<div class="cajaminidoble"><img src="themes/img/teclado.jpg" align="right" width="350px" class="foto"></div>
 <div class="abajo"><a href="#tarifas" class="ancla"><img src="themes/img/abajo.jpg"></a></div>
 </div>
 
