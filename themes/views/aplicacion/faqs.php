@@ -5,50 +5,39 @@
 <div class="cajaminidoble">
 	<div class="faqsask" id="ask1"> ¿Cuáles son las ventajas de usar la aplicación? </div>
 	
-	<div class="faqanswer" id="ans1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tristique tellus sed arcu bibendum facilisis. Nullam bibendum, libero ut interdum porta, quam turpis mollis ante, sit amet lobortis nisi nulla vel lorem. Mauris pulvinar est a eleifend eleifend. Mauris varius vulputate metus, in aliquet lacus. </div>
+	<div class="faqanswer" id="ans1">Desde la aplicación tu controlas fácilmente todo el proceso de renderizado. Lanzas el render desde tu propio Maya, los ficheros comenzarán a sincronizarse automáticamente. Desde la página web de la aplicación verás el proceso de renderización de cada escena, controlaras el precio, podrás añadir créditos, contratar mas potencia, y todo desde un interfaz web.</div>
 
 
 	<div class="faqsask" id="ask2"> ¿Qué aplicaciones son compatibles?  </div>
 
-	<div class="faqanswer" id="ans2"> Donec mi nisi, feugiat ut varius non, luctus quis lacus. Mauris tincidunt aliquet facilisis. Integer pulvinar eros in est consequat feugiat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam erat volutpat. Curabitur vel neque eget metus posuere viverra. Ut euismod, dui et posuere ornare, purus magna varius felis, ac pulvinar lectus magna ac lorem. Quisque faucibus tellus at mi rhoncus auctor. Proin mollis leo turpis, at convallis lacus posuere ut. </div>
+	<div class="faqanswer" id="ans2"> Estrenaremos próximamente la aplicación con Maya, pero ya estamos trabajando para añadir 3ds Max y SoftImage. Poco a poco iremos integrando el software 3D mas utilizado. </div>
 	
 
 	<div class="faqsask" id="ask3"> ¿Mis créditos caducan? </div>
 	
-	<div class="faqanswer" id="ans3"> Sed tristique dolor euismod libero suscipit, non aliquet augue cursus. Nam mattis interdum porta. Quisque tincidunt vitae mauris ac consectetur. Suspendisse facilisis, magna nec scelerisque iaculis, arcu turpis faucibus justo, eget pulvinar velit est eu mauris.  </div>
+	<div class="faqanswer" id="ans3"> Los créditos que compres no caducan nunca. Si en alguna promoción te regalamos créditos que deban usados en un periodo de tiempo se te notificará.</div>
 	
 
-	<div class="faqsask" id="ask4"> ¿Es posible tener créditos negativos? </div>
 	
-	<div class="faqanswer" id="ans4"> Sed eleifend, eros eu suscipit aliquam, purus libero adipiscing lectus, tempor feugiat mauris quam sit amet sem. Sed neque neque, placerat nec nulla sed, gravida mollis libero. Suspendisse blandit vehicula mi vel molestie. Curabitur tempor libero vitae blandit posuere. </div>
-	
-
-	<div class="faqsask" id="ask5"> ¿Qué es un Ghz hora? </div>
-
-	<div class="faqanswer" id="ans5"> Donec porta neque in diam fringilla iaculis. Mauris faucibus, leo et luctus posuere, purus sem vulputate quam, eget varius lacus tortor et ipsum. Aliquam commodo dignissim purus non blandit. Praesent adipiscing venenatis hendrerit. Fusce facilisis iaculis turpis, sit amet condimentum ante tempor at. Quisque gravida cursus nisi dignissim porttitor. Nam posuere eros nec purus fermentum gravida. </div>
 	
 
 
 </div>
 <div class="cajaminidoble">
-	<div class="faqsask" id="ask6">  ¿Cómo se realiza el pago? </div>
+<div class="faqsask" id="ask4"> ¿Es posible tener créditos negativos? </div>
 	
-	<div class="faqanswer" id="ans6"> Integer non facilisis tellus. Donec adipiscing mi vel faucibus posuere. Cras cursus mattis arcu, eget molestie quam blandit at. Donec suscipit dictum ullamcorper. Maecenas feugiat, mi vel tincidunt rhoncus, diam risus congue augue, a consequat urna tellus id lorem. </div>
-	
-	<div class="faqsask" id="ask7">  ¿Dónde puedo obtener mis ficheros? </div>
-
-	<div class="faqanswer" id="ans7"> Phasellus laoreet, lorem vel pretium auctor, sem sapien placerat erat, eget commodo urna orci non ipsum. Pellentesque quis molestie nulla. Phasellus ultricies tempus est, sit amet congue eros accumsan eu. Curabitur varius blandit eros, quis volutpat risus dapibus non. Cras in bibendum sapien. Nullam fermentum arcu ligula, quis adipiscing elit facilisis at. Nulla facilisis diam at nibh egestas, in cursus libero hendrerit. Nullam et auctor nisl. Vestibulum et ligula ac purus ornare aliquet et ut dui.  </div>
+	<div class="faqanswer" id="ans4"> Si has comenzado a renderizar un proyecto y te quedas sin créditos, es posible que se termine de renderizar y tu cuenta quede con saldo negativo, correspondiente al coste de los créditos necesarios para finalizarlos. </div>
 	
 
-	<div class="faqsask" id="ask8"> ¿Además de Maya, habrá mas aplicaciones disponibles? </div>
+	<div class="faqsask" id="ask6">  ¿Cómo compro créditos? </div>
+	
+	<div class="faqanswer" id="ans6"> Desde la aplicación web tienes una sección para comprar créditos. Puedes usar tu tarjeta de crédito o a través de una cuenta de paypal. </div>
+	
+	<div class="faqsask" id="ask7">  Si tengo dudas sobre el uso de aplicación ¿que hago? </div>
 
-	<div class="faqanswer" id="ans8"> Nunc ultricies, purus vitae convallis vehicula, urna nunc imperdiet purus, vitae tincidunt enim nisl eu erat. In et justo a lorem pharetra ultrices. Maecenas ac blandit enim. Sed ac fermentum libero. Nunc sapien metus, venenatis quis accumsan ut, euismod sed leo.  </div>
+	<div class="faqanswer" id="ans7"> En el momento de publicar la aplicación, dispondrás de un tutorial con todos los pasos a seguir para renderizar tu trabajo. Además dispones de técnicos especializados que te asesorarán para resolver cualquier duda. Puedes utilizar el formulario que tienes a continuación para canalizar tus dudas. </div>
 	
 
-	<div class="faqsask" id="ask9">  Tengo mas dudas, ¿que hago? </div>
-
-	<div class="faqanswer" id="ans9">Maecenas blandit accumsan commodo. Duis arcu risus, mollis in tempor at, elementum et dui. Ut sodales aliquam nisl, vitae ultricies dui. Ut mauris dolor, elementum quis libero nec, sagittis aliquet metus. Pellentesque sagittis eros non mauris hendrerit, id varius erat interdum. Ut semper posuere tellus, volutpat ullamcorper magna venenatis dapibus.  </div>
-	
 
 
 </div>	
