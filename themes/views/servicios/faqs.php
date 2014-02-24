@@ -5,33 +5,23 @@
 <div class="cajaminidoble">
 	<div class="faqsask" id="ask1"> Uso otra aplicación que no aparece en la página</div>
 	
-	<div class="faqanswer" id="ans1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tristique tellus sed arcu bibendum facilisis. Nullam bibendum, libero ut interdum porta, quam turpis mollis ante, sit amet lobortis nisi nulla vel lorem. Mauris pulvinar est a eleifend eleifend. Mauris varius vulputate metus, in aliquet lacus. </div>
+	<div class="faqanswer" id="ans1"> Ponte en contacto con nosotros para determinar si tu aplicación se adapta a la infraestructura de nuestra granja. Si es así la preparemos para que puedas comenzar a renderizar tu proyecto cuanto antes. </div>
 
 
-	<div class="faqsask" id="ask2"> ¿Por qué no me dais un precio cerrado?	</div>
-
-	<div class="faqanswer" id="ans2"> Donec mi nisi, feugiat ut varius non, luctus quis lacus. Mauris tincidunt aliquet facilisis. Integer pulvinar eros in est consequat feugiat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam erat volutpat. Curabitur vel neque eget metus posuere viverra. Ut euismod, dui et posuere ornare, purus magna varius felis, ac pulvinar lectus magna ac lorem. Quisque faucibus tellus at mi rhoncus auctor. Proin mollis leo turpis, at convallis lacus posuere ut. </div>
+	<div class="faqsask" id="ask3"> ¿Me podéis enviar mi proyecto en un disco duro USB? </div>
 	
+	<div class="faqanswer" id="ans3"> Aunque disponemos de conexión de fibra para subida y bajada de ficheros 500/50 Mbs, si necesitas que te lo enviemos por mensajeria te lo haremos llegar en un pendrive o disco duro USB    </div>
+		
 
-	<div class="faqsask" id="ask3"> ¿Me podeis enviar mi proyecto por mensajería en un disco duro USB? </div>
-	
-	<div class="faqanswer" id="ans3"> Sed tristique dolor euismod libero suscipit, non aliquet augue cursus. Nam mattis interdum porta. Quisque tincidunt vitae mauris ac consectetur. Suspendisse facilisis, magna nec scelerisque iaculis, arcu turpis faucibus justo, eget pulvinar velit est eu mauris.  </div>
-	
+	<div class="faqsask" id="ask5"> Quiero renderizar una película ¿que ventajas obtengo?. </div>
 
-	<div class="faqsask" id="ask4"> Maecenas sed turpis viverra, interdum leo quis, iaculis mauris. </div>
-	
-	<div class="faqanswer" id="ans4"> Sed eleifend, eros eu suscipit aliquam, purus libero adipiscing lectus, tempor feugiat mauris quam sit amet sem. Sed neque neque, placerat nec nulla sed, gravida mollis libero. Suspendisse blandit vehicula mi vel molestie. Curabitur tempor libero vitae blandit posuere. </div>
-	
-
-	<div class="faqsask" id="ask5"> Nullam id mauris pulvinar, ultricies tellus ac, dignissim magna. </div>
-
-	<div class="faqanswer" id="ans5"> Donec porta neque in diam fringilla iaculis. Mauris faucibus, leo et luctus posuere, purus sem vulputate quam, eget varius lacus tortor et ipsum. Aliquam commodo dignissim purus non blandit. Praesent adipiscing venenatis hendrerit. Fusce facilisis iaculis turpis, sit amet condimentum ante tempor at. Quisque gravida cursus nisi dignissim porttitor. Nam posuere eros nec purus fermentum gravida. </div>
+	<div class="faqanswer" id="ans5"> Disponemos del modo productora, te preparamos una granja con las máquinas que necesites, y dispondrás de un frontal con un gestor de render para controlar todo el proyecto. Además obtendrás grandes descuentos, contacta con nosotros y un técnico te informará de todo el proceso . </div>
 	
 
 
 </div>
 <div class="cajaminidoble">
-	<div class="faqsask" id="ask6">  Donec iaculis risus ac enim condimentum tincidunt. </div>
+	<div class="faqsask" id="ask6"> Quiero las tarifas en otra moneda. </div>
 	
 	<div class="faqanswer" id="ans6"> Integer non facilisis tellus. Donec adipiscing mi vel faucibus posuere. Cras cursus mattis arcu, eget molestie quam blandit at. Donec suscipit dictum ullamcorper. Maecenas feugiat, mi vel tincidunt rhoncus, diam risus congue augue, a consequat urna tellus id lorem. </div>
 	
