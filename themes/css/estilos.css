@@ -404,7 +404,7 @@ font: bold 20px 'Roboto','Open Sans',arial;
 	width:15px;
 	height:15px;
 }
-.radionoactivo,..radionoactivotab{
+.radionoactivo,.radionoactivotab{
 	background-image:url("../img/radiob.png");
 }
 .noactivo, .noactivotab{
