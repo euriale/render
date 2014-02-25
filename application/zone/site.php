@@ -7,9 +7,9 @@
 	</div>	
 	<div class="dreta">	
 	<div class="idiomas">
-		<a href="<?php echo $GLOBALS['raiz'].'idioma/ES';?>"><img src="themes/img/sp.png" alt="" title=""></a>
-		<a href="<?php echo $GLOBALS['raiz'].'idioma/EN';?>"><img src="themes/img/uk.png" alt="" title=""></a>
-		<a href="<?php echo $GLOBALS['raiz'].'idioma/FR';?>"><img src="themes/img/fr.png" alt="" title=""></a>
+		<a href="<?php echo $GLOBALS['raiz'].'idioma/ES';?>"><img src="themes/img/sp.png" alt="" title="" border=0></a>
+		<a href="<?php echo $GLOBALS['raiz'].'idioma/EN';?>"><img src="themes/img/uk.png" alt="" title="" border=0></a>
+		<a href="<?php echo $GLOBALS['raiz'].'idioma/FR';?>"><img src="themes/img/fr.png" alt="" title="" border=0></a>
 	</div>
 	
    <ul class="navigation">
@@ -61,10 +61,11 @@ if (!isset($_GET['r1'])){
 <div class="cajapie">
 	<div class="txtnaranja16"><a href="<?php echo $enlaceinicio; ?>#inicio" class="<?php echo $classinicio; ?>" title="Render Drive" Alt="Render Drive">Render Drive</a></div>
 	<ul>
+		<li><a href="<?php echo $enlaceinicio; ?>#inicio" class="<?php echo $classinicio; ?>" title="Nuestros Servicios en Render Drive" Alt="Nuestros Servicios en Render Drive"> Nuestros Servicios</a></li>
 		<li><a href="<?php echo $enlaceinicio; ?>#inicio" class="<?php echo $classinicio; ?>" title="Por qué trabajar con Render Drive" Alt="Por qué trabajar con Render Drive">Por qué trabajar con Render Drive</a></li>
-		<li><a href="<?php echo $enlaceinicio; ?>#tiempos" class="<?php echo $classinicio; ?>" title="Render Drive - Reducción de tiempos" Alt="Render Drive - Reducción de tiempos">Reducción de tiempos</a></li>
+		<!--<li><a href="<?php echo $enlaceinicio; ?>#tiempos" class="<?php echo $classinicio; ?>" title="Render Drive - Reducción de tiempos" Alt="Render Drive - Reducción de tiempos">Reducción de tiempos</a></li>
 		<li><a href="<?php echo $enlaceinicio; ?>#costes" class="<?php echo $classinicio; ?>" title="Render Drive - Reducción de costes" Alt="Render Drive - Reducción de costes">Reducción de costes</a></li>
-		<li><a href="<?php echo $enlaceinicio; ?>#confianza" class="<?php echo $classinicio; ?>" title="Render Drive - Confianza y disponibilidada" Alt="Render Drive - Confianza y disponibilidada">Confianza y disponibilidad</a></li>
+		<li><a href="<?php echo $enlaceinicio; ?>#confianza" class="<?php echo $classinicio; ?>" title="Render Drive - Confianza y disponibilidada" Alt="Render Drive - Confianza y disponibilidada">Confianza y disponibilidad</a></li>-->
 		<li><a href="<?php echo $enlaceinicio; ?>#contacto" class="<?php echo $classinicio; ?>" title="Render Drive - Contacto" Alt="Render Drive - Contacto">Contacto</a></li>
 	</ul>
 
@@ -94,10 +95,10 @@ if (!isset($_GET['r1'])){
 <div class="cajapie">
 	<div class="txtnaranja16">Síguenos - Redes Sociales</div>
 	<ul>
-		<li><a href=""><div class="imgpie"><img src="themes/img/logos/facebook.png" width="20px;"></div> Facebook</a></li>
-		<li><a href="http://www.linkedin.com/company/render-drive"><div class="imgpie"><img src="themes/img/logos/linkedin.png" width="20px;"></div> Linkedin</a></li>
-		<li><a href="http://twitter.com/RenderDrive"><div class="imgpie"><img src="themes/img/logos/twitter.png" width="20px;"></div> Twitter</a></li>
-		<li><a href="https://plus.google.com/111768518376940670621/posts"><div class="imgpie"><img src="themes/img/logos/google.png" width="20px;"></div> Google+</a></li>
+		<li><a href=""><div class="imgpie"><img src="themes/img/logos/facebook.png" width="20px;"></div> Facebook</a><div style="clear:both"></div></li>
+		<li><a href="http://www.linkedin.com/company/render-drive"><div class="imgpie"><img src="themes/img/logos/linkedin.png" width="20px;"></div> Linkedin</a><div style="clear:both"></div></li>
+		<li><a href="http://twitter.com/RenderDrive"><div class="imgpie"><img src="themes/img/logos/twitter.png" width="20px;"></div> Twitter</a><div style="clear:both"></div></li>
+		<li><a href="https://plus.google.com/111768518376940670621/posts"><div class="imgpie"><img src="themes/img/logos/google.png" width="20px;"></div> Google+</a><div style="clear:both"></div></li>
 	</ul>
 	<ul><li><div class="fb-like" data-href="http://www.renderdrive.com" data-layout="button" data-action="like" data-show-faces="true" data-share="false"></div></li></ul>
 </div>
