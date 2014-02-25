@@ -50,7 +50,13 @@ $(document).ready(function () {
 				scrollTop: $(anchor).offset().top-110
 				}, 1000); 
 			}); 
-
+			
+	/*-----------Ancla externa----------------*/		
+	$(window).bind("load", function () {
+          //var urlHash = window.location.href.split("#")[1];
+		  //alert (urlHash);
+          //$('html,body').animate({ scrollTop: $('a[href="#' + urlHash + '"]').offset().top}, 1000);
+      });
 	
 	$("input").focus(function(){
 		$(this).css("border", "1px solid #5897FB");
