@@ -69,7 +69,7 @@ font:bold 1em 'Open Sans', arial;
 	width:100%;
 	position:fixed;
 	top:70px;
-	background:#000;
+	background:#444;
 	height:40px;
 	text-align:center;
 	z-index:5;
@@ -179,7 +179,7 @@ color:#444;
 
 .slide,.slide2, .slide3{
 	background-repeat:no-repeat;
-	background-image:url("../img/bkc.jpg");
+	background-image:url("../img/cpd2.jpg");
 	height:45%;
 	background-size: 100% auto;
 	background-position:center bottom;
@@ -189,7 +189,7 @@ color:#444;
 	background-image:url("../img/mayas.jpg");
 }
 .slide3{
-	background-image:url("../img/tokio.jpg");
+	background-image:url("../img/servicios.jpg");
 		background-position:center top;
 
 }
