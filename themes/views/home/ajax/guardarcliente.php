@@ -21,13 +21,15 @@ else $GLOBALS['raiz']='/render/';
 	if(isset($_GET['email'])) $email=$_GET['email'];
 	$pais='';
 	if(isset($_GET['pais'])) $pais=$_GET['pais'];
+	$telefono='';
+	if(isset($_GET['telefono'])) $telefono=$_GET['telefono'];
 		
 	$bd = new bd();
 	$query1 = new query('insert into clientes (nombre, apellidos,telefono,empresa,consulta,email,motivo,pais) values ("'.$nombre.'", "'.$apellidos.'","'.$telefono.'","'.$empresa.'","'.$consulta.'","'.$email.'","'.$motivo.'","'.$pais.'")',$bd);
 	
 	echo 'Su consulta se ha enviado correctamente. ';
 	
-/*---------------------Correo a info@renderdrive.com-----------------------*/
+/*---------------------Correo a info@renderdrive.com-----------------------
 $destinatario = 'info@renderdrive.com,mjlucena1@gmail.com,xavifernan@gmail.com';
 $asunto = "Consulta realizada en RenderDrive";
 $cuerpo = '
@@ -61,7 +63,7 @@ $cuerpo = '
 	$headers .= "Reply-To: info@renderdrive.com\r\n";
 
 
-mail($destinatario,$asunto,$cuerpo,$headers)
+mail($destinatario,$asunto,$cuerpo,$headers);*/
 
 
 ?> 

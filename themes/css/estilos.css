@@ -589,12 +589,11 @@ select option:hover
   }
   #respuesta{
  display:none;
-    background: none repeat scroll 0 0 #FF8C00;
+    background: #ddd;
     height: 100px;
-    margin: 0 auto;
-    position: absolute;
+    position: relative;
     width: 400px;
-    margin-top: -500px;
+   	margin: 0 auto;
 	border: 1px solid #FF8C00;
 	border-radius: 4px;
   -moz-border-radius: 4px;
@@ -604,9 +603,10 @@ select option:hover
 	opacity:0.9;
 	-moz-opacity:0.9; 
 	-webkit-opacity:0.9;
-	color:#fff;
-	font:16px arial;
+	color:#444;
+	font:24px arial;
 	padding-top:50px;
+	margin-top:-500px;
 	text-align:center;
 	
   }

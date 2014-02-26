@@ -45,6 +45,9 @@ else $GLOBALS['raiz']='/render/';
   js.src = "//connect.facebook.net/es_ES/all.js#xfbml=1";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
+
+<div id="respuesta"><div class="iconclose" style="float:right;"></div><div style="clear:both"></div><div id="respuestaaux"></div></div>
+				<div style="clear:both"></div>
 <?php
 	require_once(__SITE_PATH.'/controllers/Content.php');
 ?>
