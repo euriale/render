@@ -11,21 +11,19 @@ else $GLOBALS['raiz']='/render/';
 	if(isset($_GET['nombre'])) $nombre=$_GET['nombre'];
 	$apellidos='';
 	if(isset($_GET['apellidos'])) $apellidos=$_GET['apellidos'];
-	$telefono='';
-	if(isset($_GET['telefono'])) $telefono=$_GET['telefono'];
-	$idaplicacion='';
-	if(isset($_GET['idaplicacion'])) $idaplicacion=$_GET['idaplicacion'];
+	$empresa='';
+	if(isset($_GET['empresa'])) $empresa=$_GET['empresa'];
+	$motivo='';
+	if(isset($_GET['motivo'])) $motivo=$_GET['motivo'];
 	$consulta='';
 	if(isset($_GET['consulta'])) $consulta=$_GET['consulta'];
 	$email='';
 	if(isset($_GET['email'])) $email=$_GET['email'];
-	$otraaplicacion='';
-	if(isset($_GET['otraaplicacion'])) $otraaplicacion=$_GET['otraaplicacion'];
-	$versiones='';
-	if(isset($_GET['versiones'])) $versiones=$_GET['versiones'];
-	
+	$pais='';
+	if(isset($_GET['pais'])) $pais=$_GET['pais'];
+		
 	$bd = new bd();
-	$query1 = new query('insert into clientes (nombre, apellidos,telefono,idaplicacion,consulta,email,otraaplicacion,idversion) values ("'.$nombre.'", "'.$apellidos.'","'.$telefono.'","'.$idaplicacion.'","'.$consulta.'","'.$email.'","'.$otraaplicacion.'","'.$versiones.'")',$bd);
+	$query1 = new query('insert into clientes (nombre, apellidos,telefono,empresa,consulta,email,motivo,pais) values ("'.$nombre.'", "'.$apellidos.'","'.$telefono.'","'.$empresa.'","'.$consulta.'","'.$email.'","'.$motivo.'","'.$pais.'")',$bd);
 	
 	echo 'Su consulta se ha enviado correctamente. ';
 	
@@ -43,9 +41,9 @@ $cuerpo = '
 	Apellidos: '.$apellidos.'<br>
 	Email: '.$email.'<br>
 	Telefono: '.$telefono.'<br>
-	Idaplicaciones: '.$idaplicacion.'<br>
-	Versiones: '.$versiones.'<br>
-	Otra Aplicación: '.$otraaplicacion.'<br>
+	Empresa: '.$empresa.'<br>
+	Motivo: '.$motivo.'<br>	
+	País: '.$pais.'<br>
 	Consulta: '.$consulta.'<br>
 	</p>
 	</body>

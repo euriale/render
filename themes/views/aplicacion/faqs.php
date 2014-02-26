@@ -10,7 +10,7 @@
 
 	<div class="faqsask" id="ask2"> ¿Qué aplicaciones son compatibles?  </div>
 
-	<div class="faqanswer" id="ans2"> Estrenaremos próximamente la aplicación con Maya, pero ya estamos trabajando para añadir 3ds Max y SoftImage. Poco a poco iremos integrando el software 3D mas utilizado. </div>
+	<div class="faqanswer" id="ans2"> Estrenaremos próximamente la aplicación con Maya, pero ya estamos trabajando para añadir <strong>3ds Max</strong> y <strong>SoftImage</strong>. Poco a poco iremos integrando el software 3D mas utilizado. </div>
 	
 
 	<div class="faqsask" id="ask3"> ¿Mis créditos caducan? </div>
@@ -29,9 +29,9 @@
 	<div class="faqanswer" id="ans4"> Si has comenzado a renderizar un proyecto y te quedas sin créditos, es posible que se termine de renderizar y tu cuenta quede con saldo negativo, correspondiente al coste de los créditos necesarios para finalizarlos. </div>
 	
 
-	<div class="faqsask" id="ask6">  ¿Cómo compro créditos? </div>
+	<div class="faqsask" id="ask6">  ¿Cómo puedo comprar créditos? </div>
 	
-	<div class="faqanswer" id="ans6"> Desde la aplicación web tienes una sección para comprar créditos. Puedes usar tu tarjeta de crédito o a través de una cuenta de paypal. </div>
+	<div class="faqanswer" id="ans6"> Desde la aplicación web tienes una sección para comprar créditos. Puedes usar tarjeta de crédito o a través de una cuenta de PayPal. </div>
 	
 	<div class="faqsask" id="ask7">  Si tengo dudas sobre el uso de aplicación ¿que hago? </div>
 

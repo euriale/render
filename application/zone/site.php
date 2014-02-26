@@ -62,7 +62,7 @@ if (!isset($_GET['r1'])){
 	<div class="txtnaranja16"><a href="<?php echo $enlaceinicio; ?>#inicio" class="<?php echo $classinicio; ?>" title="Render Drive" Alt="Render Drive">Render Drive</a></div>
 	<ul>
 		<li><a href="<?php echo $enlaceinicio; ?>#inicio" class="<?php echo $classinicio; ?>" title="Nuestros Servicios en Render Drive" Alt="Nuestros Servicios en Render Drive"> Nuestros Servicios</a></li>
-		<li><a href="<?php echo $enlaceinicio; ?>#inicio" class="<?php echo $classinicio; ?>" title="Por qué trabajar con Render Drive" Alt="Por qué trabajar con Render Drive">Por qué trabajar con Render Drive</a></li>
+		<li><a href="<?php echo $enlaceinicio; ?>#pq" class="<?php echo $classinicio; ?>" title="Por qué trabajar con Render Drive" Alt="Por qué trabajar con Render Drive">Por qué trabajar con Render Drive</a></li>
 		<!--<li><a href="<?php echo $enlaceinicio; ?>#tiempos" class="<?php echo $classinicio; ?>" title="Render Drive - Reducción de tiempos" Alt="Render Drive - Reducción de tiempos">Reducción de tiempos</a></li>
 		<li><a href="<?php echo $enlaceinicio; ?>#costes" class="<?php echo $classinicio; ?>" title="Render Drive - Reducción de costes" Alt="Render Drive - Reducción de costes">Reducción de costes</a></li>
 		<li><a href="<?php echo $enlaceinicio; ?>#confianza" class="<?php echo $classinicio; ?>" title="Render Drive - Confianza y disponibilidada" Alt="Render Drive - Confianza y disponibilidada">Confianza y disponibilidad</a></li>-->

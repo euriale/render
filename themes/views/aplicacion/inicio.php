@@ -13,9 +13,9 @@
 	<div class="cajaminidoble">
 		<div class="tituloleft">Próximamente estrenamos aplicación</div>  
 		<div class="textocontenido">
-			<p>Hemos creado una aplicación que te ayudará a simplificar los pasos del renderizado de tu proyecto.Sólo tendrás que instalarte un plugin para Maya y un sincronizado desde nuestra web.</p>
+			<p>Hemos creado la aplicación que te ayudará a simplificar los pasos del renderizado de tu proyecto.Sólo tendrás que instalarte un plugin para Maya y un sincronizado desde nuestra web.</p>
 			<p>Desde tu propio Maya podrás configurar los valores de tu render: resolución, número de frames  motores, etc, y automáticamente el sincronizador subirá el proyecto a renderizar a la granja. </p>
-			<p>Desde la aplicación vía web, podrás visualizar el resultado de cada tarea y obtener una vista previa.</p>
+			<p>Desde la aplicación, vía web, podrás visualizar el resultado de cada tarea y obtener una vista previa.</p>
 		</div>
 	</div>
 	<div class="cajaminidoble"><img src="themes/img/25.jpg" width="350px" class="foto"></div>

@@ -28,7 +28,7 @@
 			<div class="textocontenido">
 		
 				<p>
-				Te creamos una cuenta ftp para que subas tu proyecto. Disponemos de lineas de alta velocidad para la subida/bajada de ficheros 500/50 Mbps.
+				Crearemos una cuenta ftp para que subas tu proyecto. Disponemos de lineas de alta velocidad para la subida/bajada de ficheros 500/50 Mbps.
 				</p>
 				<p>
 				Procederemos a lanzar tu render con los parámetros que nos indiques, si tienes dudas un técnico te asesorará en este proceso. Conforme se vaya renderizando tu proyecto, tendrás acceso a tus datos a través de la cuenta ftp. 
@@ -56,7 +56,7 @@
 			<p>
 			No te la juegues, llevamos años renderizando proyectos, te asesoramos desde el primero momento 	
 			</p>
-			<p>Si 
+			<p>
 			</p>
 			<p>Disponemos de modelo productora, si necesitas renderizar una película te montamos un entorno de pruebas sin compromiso. 
 			</p>

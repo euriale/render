@@ -53,9 +53,8 @@ $(document).ready(function () {
 			
 	/*-----------Ancla externa----------------*/		
 	$(window).bind("load", function () {
-          //var urlHash = window.location.href.split("#")[1];
-		  //alert (urlHash);
-          //$('html,body').animate({ scrollTop: $('a[href="#' + urlHash + '"]').offset().top}, 1000);
+          var urlHash = window.location.href.split("#")[1];
+		  if (urlHash!=undefined) $('html,body').animate({ scrollTop: $('a[href="#' + urlHash + '"]').offset().top-180}, 1000);
       });
 	
 	$("input").focus(function(){
@@ -110,6 +109,10 @@ $(document).ready(function () {
 		var empresa=$("#empresa").val();
 		var otraaplicacion=$("#otraaplicacion").val();
 		var versiones=$("#versionesaux").val();
+		var empresa=$("#empresa").val();
+		var pais=$("#pais").val();
+		var motivo=$("#motivo").val();
+		
 	
 		if (nombre=='') $("#nombre").css("border", "1px solid #FF0000");
 		if (email=='') $("#email").css("border", "1px solid #FF0000");
@@ -121,7 +124,7 @@ $(document).ready(function () {
 			$.ajax({
 				type: "GET",
 				url: pathaux,
-				data: "nombre="+nombre+"&apellidos="+apellidos+"&telefono="+telefono+"&empresa="+empresa+"&idaplicacion="+idaplicacion+"&consulta="+consulta+"&email="+email+"&otraaplicacion="+otraaplicacion+"&versiones="+versiones,
+				data: "nombre="+nombre+"&apellidos="+apellidos+"&telefono="+telefono+"&empresa="+empresa+"&idaplicacion="+idaplicacion+"&consulta="+consulta+"&email="+email+"&otraaplicacion="+otraaplicacion+"&versiones="+versiones+"&empresa="+empresa+"&pais="+pais+"&motivo="+motivo,
 				success: function(texto){
 						$('#respuestaaux').html(texto);
 				}
@@ -139,5 +142,8 @@ $(document).ready(function () {
 		$("#email").val('');
 		$("#otraaplicacion").val('');
 		$("#versionesaux").val('');
+		$("#motivo").val('0');
+		$("#empresa").val('');
+		
 	});
 	});
