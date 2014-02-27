@@ -69,19 +69,33 @@ function getCountry($ip_address){
 				$miinput->crearInput();
 				
 				
-				$milabel = new label('consulta','Escribe tu Consulta',1,'');
+				$milabel = new label('motivo','Motivo de la consulta','','');
 				$milabel->crearLabel();
-				$miarea = new area('consulta','','','');
-				$miarea->crearArea();
+				echo '<div class="elementotext"><select name="motivo" class="" id="motivo">
+					<option>-- Seleccionar --</option>
+					<option value="informacion_app">Solicitar información</option>
+					<option value="tecnica_app">Consulta Técnica</option>
+					<option value="facturacion_app">Facturación</option>
+					<option value="sugerencias_app">Sugerencias</option>
+					</select>
+				</div>';
+				
+				
 			
 echo '</div>';
+		echo '<div class="cajaformulario">';
+				$milabel = new label('consulta','Escribe tu Consulta',1,'');
+				$milabel->crearLabel();
+				$miarea = new area('consulta','class="textareaamplia"','','');
+				$miarea->crearArea();
+				
 				echo '<input type="button" id="envio" name="envio" class="botonenvio"  value="Enviar">';
 				$miformulario->cerrarFormulario();
 				echo '<div style="clear:both"></div>';
-				
+		echo '</div>';		
 				?>
-				<div id="respuesta"><div class="iconclose" style="float:right;"></div><div style="clear:both"></div><div id="respuestaaux"></div></div>
 				
+				<br><br><br>
 		
 		
 

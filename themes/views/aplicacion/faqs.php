@@ -10,7 +10,7 @@
 
 	<div class="faqsask" id="ask2"> ¿Qué aplicaciones son compatibles?  </div>
 
-	<div class="faqanswer" id="ans2"> Estrenaremos próximamente la aplicación con Maya, pero ya estamos trabajando para añadir <strong>3ds Max</strong> y <strong>SoftImage</strong>. Poco a poco iremos integrando el software 3D mas utilizado. </div>
+	<div class="faqanswer" id="ans2"> Estrenaremos próximamente la aplicación con <strong>Maya</strong>, pero ya estamos trabajando para añadir <strong>3ds Max</strong> y <strong>SoftImage</strong>. Poco a poco iremos integrando el software 3D mas utilizado. </div>
 	
 
 	<div class="faqsask" id="ask3"> ¿Mis créditos caducan? </div>

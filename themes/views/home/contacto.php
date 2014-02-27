@@ -68,7 +68,7 @@ function getCountry($ip_address){
 				
 		echo '</div>		
 		<div class="cajaminidoble">';		
-				$milabel = new label('motivo','Motivo de la consulta',1,'');
+				$milabel = new label('motivo','Motivo de la consulta','','');
 				$milabel->crearLabel();
 				echo '<div class="elementotext"><select name="motivo" class="" id="motivo">
 					<option>-- Seleccionar --</option>

@@ -37,9 +37,10 @@
 	
 	<table class="tablatarifas" cellspadding="4">
 		<th>Nº de slots</th><th>Reserva (Créditos / GHx x Hora)</th><th>Dedicados (Créditos/(GHz x Hora))</th>
-		<tr><td>1</td><td>0.0400</td><td><span class="valoretab">0.050 €</span><span class="valordtab noactivotab">0.040 $</span></td></tr>
-		<tr><td>5</td><td>0.0540</td><td><span class="valoretab">0.0600 €</span><span class="valordtab noactivotab">0.050 $</span></td></tr>
-		<tr><td>10</td><td>0.062</td><td><span class="valoretab">0.0700 €</span><span class="valordtab noactivotab">0.060 $</span></td></tr>
+		
+		<tr><td>1</td><td><span class="valore">0.050 €</span><span class="valord noactivo">0.040 $</span></td><td><span class="valore">0.050 €</span><span class="valord noactivo">0.040 $</span></td></tr>
+		<tr><td>5</td><td><span class="valore">0.050 €</span><span class="valord noactivo">0.050 $</span></td><td><span class="valore">0.0600 €</span><span class="valord noactivo">0.050 $</span></td></tr>
+		<tr><td>10</td><td><span class="valore">0.050 €</span><span class="valord noactivo">0.0520 $</span></td><td><span class="valore">0.0700 €</span><span class="valord noactivo">0.060 $</span></td></tr>
 
 	</table>
 	
@@ -49,17 +50,17 @@
  En mi máquina de 4 cores a 2.6 GHz el render lleva  2min por frame. 
  Hay 1000 frames para renderizar:<br><br>
 		<strong>4 cores * 2.6Ghz * 0.06€ * 2/60hr * 1000 frames</strong><br><br>
-		Prioridad <span class="verde1">Normal:</span><strong> 15,80€</strong>  <br>  
-		Prioridad <span class="verde2">Alta:</span>  <strong>23,86€ </strong> <br>  
-		Prioridad <span class="verde3">Premium:</span> <strong>33,86€ </strong>  
+		Prioridad <span class="verde1">Normal:</span><strong> <span class="valore">16.2 €</span><span class="valord noactivo">15,80$</span></strong>  <br>  
+		Prioridad <span class="verde2">Alta:</span>  <strong><span class="valore">24.2 €</span><span class="valord noactivo">25,80$</span></strong> <br>  
+		Prioridad <span class="verde3">Premium:</span> <strong><span class="valore">35.2 €</span><span class="valord noactivo">46,80$</span></strong>  
 		
 </div>
 <div class="cajaminidoble">
   Tengo que renderizar 600 frames que tardarán 20 min en un equipo de  4 cores a 2,6Ghz:<br><br>
 		<strong>4 cores * 2.6Ghz * 0.06€ * 20/60hr * 600 frames=</strong><br><br>
-		Prioridad <span class="verde1"> Normal:</span><strong>15,80€</strong>  <br>  
-		Prioridad <span class="verde2">Alta:</span>  <strong>23,86€</strong>  <br>  
-		Prioridad <span class="verde3">Premium:</span>  <strong>33,86€ </strong> 
+		Prioridad <span class="verde1"> Normal:</span><strong><span class="valore">15,80 €</span><span class="valord noactivo">13 $</span></strong>  <br>  
+		Prioridad <span class="verde2">Alta:</span>  <strong><span class="valore">23,86 €</span><span class="valord noactivo">20 $</span></strong>  <br>  
+		Prioridad <span class="verde3">Premium:</span>  <strong><span class="valore">33,86 € </span><span class="valord noactivo">31 $</span></strong> 
 		</span>
 </div>
 <div class="abajo"><a href="#faqs" class="ancla"><img src="themes/img/abajo2.jpg"></a></div>

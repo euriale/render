@@ -318,8 +318,20 @@ line-height:2;
 	width:100%;
 	margin-top:0;
 }
+.cajaformulario{
+	margin:0 auto;
+	padding:15px;
+	font: 14px 'Open Sans',arial;
+	color:#fff;
+	text-align:left;
+	vertical-align: top;
+	width:780px;
 
+}
+.textareaamplia{
 
+width:780px;
+}
 .cajapie{
 	display:inline-block;
 	width:220px;
@@ -481,7 +493,6 @@ color:#fff;
 font: bold 16px 'Open Sans',arial;
 color:#FF8C00;
 margin-top:25px;
-cursor:pointer;
 display:block;
 margin-bottom:15px;
 
@@ -591,7 +602,7 @@ select option:hover
  display:none;
     background: #ddd;
     height: 100px;
-    position: relative;
+    position: absolute;
     width: 400px;
    	margin: 0 auto;
 	border: 1px solid #FF8C00;
@@ -606,7 +617,7 @@ select option:hover
 	color:#444;
 	font:24px arial;
 	padding-top:50px;
-	margin-top:-500px;
+	z-index:1000;
 	text-align:center;
 	
   }

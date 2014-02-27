@@ -121,6 +121,11 @@ $(document).ready(function () {
 		if (nombre!='' && email!='' && consulta!=''){
 			var pathaux="themes/views/home/ajax/guardarcliente.php";
 			$("#respuesta").show();
+			
+			var topp=$("#contacto").offset().top;
+			$("#respuesta").css('top',topp+70);
+			$("#respuesta").css('left','40%');
+			
 			$.ajax({
 				type: "GET",
 				url: pathaux,
