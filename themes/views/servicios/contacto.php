@@ -125,7 +125,7 @@ function getCountry($ip_address){
 				$miinput = new input('text','id="t_frames" name="t_frames" class="input"','','');
 				$miinput->crearInput();
 				
-				$milabel = new label('tipo_equipo','Tiempo por Frames','','');
+				$milabel = new label('tipo_equipo','Equipo','','');
 				$milabel->crearLabel();
 				$miinput = new input('text','id="t_frames" name="t_frames" class="input"','','');
 				$miinput->crearInput();
