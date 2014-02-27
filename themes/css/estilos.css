@@ -33,7 +33,6 @@ html,body{
 	padding: 0 10px;
 	float:left;
 	text-align:left;
-	border-left:solid 1px #f1f1f1;
 	height:70px;
 	width:100px;
 
@@ -45,10 +44,18 @@ html,body{
 	height:70px;
 	width:100px;
 	cursor:pointer;
-	line-height:6;
+	line-height:4;
 
 }
 .navigation li:hover{
+	background:#FF8C00;
+	
+}
+.navigation li:hover{
+	background:#FF8C00;
+	
+}
+.actitem{
 	background:#FF8C00;
 	
 }
