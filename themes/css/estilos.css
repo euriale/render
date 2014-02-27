@@ -15,7 +15,8 @@ html,body{
 	width:100%;
 	position:fixed;
 	top:0;
-	background:#FF8C00;
+	/*background:#FF8C00;*/
+	background:#fff;
 	height:70px;
 	z-index:5;
 }
@@ -23,28 +24,34 @@ html,body{
 .navigation{
 	display:inline-block;
 	float:right;
-	margin-top:10px;
+	margin-top:0px;
+	height:70px;
 }
 .navigation li{
-	color:#fff;
+	color:#FF8C00;
 	display:block;
 	padding: 0 10px;
 	float:left;
 	text-align:left;
+	border-left:solid 1px #f1f1f1;
+	height:70px;
+	width:100px;
 
 }
 .navigation li a{
-	color:#fff;
+	color:#444;
 	text-decoration:none;
 	font:1em 'Open Sans', arial;
-
-}
-.navigation li a:hover,.active{
+	height:70px;
+	width:100px;
 	cursor:pointer;
-	color:#666;
+	line-height:6;
 
 }
-
+.navigation li:hover{
+	background:#FF8C00;
+	
+}
 /*-------------------submenu-----------------*/
 
 #breadcrum {
@@ -140,7 +147,8 @@ h1 a{
 	text-decoration:none;
 }
 .drive{
-color:#fff;
+/*color:#fff;*/
+color:#FF8C00;
 }
 h2{
 padding-top:2.2em;
@@ -179,7 +187,7 @@ color:#444;
 
 .slide,.slide2, .slide3{
 	background-repeat:no-repeat;
-	background-image:url("../img/cpd2.jpg");
+	background-image:url("../img/cpd2.png");
 	height:45%;
 	background-size: 100% auto;
 	background-position:center bottom;

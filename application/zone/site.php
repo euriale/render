@@ -11,16 +11,18 @@
 		<a href="<?php echo $GLOBALS['raiz'].'idioma/EN';?>"><img src="themes/img/uk.png" alt="" title="" border=0></a>
 		<a href="<?php echo $GLOBALS['raiz'].'idioma/FR';?>"><img src="themes/img/fr.png" alt="" title="" border=0></a>
 	</div>
+
 	
-   <ul class="navigation">
+	
+	
+   </div>
+	   <ul class="navigation">
 		<li><a href="<?php echo $GLOBALS['raiz']; ?>"><?php echo INICIO; ?></a></li>
 		<li><a href="aplicacion-render">Aplicación</a></li>
 		<li><a href="servicios-render">Servicios</a></li>
 		
 		
-   </ul>		
-   </div>
-
+   </ul>	
 </div>	
 
 <?php 
