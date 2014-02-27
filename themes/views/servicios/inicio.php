@@ -48,6 +48,23 @@
 		</div>
 		<div class="cajaminidoble"><img src="themes/img/moto.jpg" align="right" width="350px" class="foto"></div>
 <!--cuarta -->
+
+		<div style="width:100%;height:40px;"></div>
+		<div class="cajaminidoble"><img src="themes/img/teclado.jpg" align="right" width="350px" class="foto"></div>
+		<div class="cajaminidoble">	 
+			<div class="tituloleft">Precios siempre competitivos </div> 
+			<div class="textocontenido">
+			<p>
+			El coste final de renderizado depende de varios factores, número de frames, motores utilizados, etc. A continuación te mostramos nuestras tarifas y unos ejemplos para que puedas hacer una estimación tu mismo. 
+			</p>
+			<p>
+			 Si tienes dudas, nos ponemos en contacto contigo y te ayudamos a realizar una estimación sin compromiso. 
+			 </p>
+			</div>
+		</div>
+		
+
+<!--
 		<div style="width:100%;height:40px;"></div>
 		<div class="cajaminidoble">	 <img src="themes/img/profesional.jpg" align="right" width="350px" class="foto"></div>
 		<div class="cajaminidoble">
@@ -65,20 +82,8 @@
 			 </p>
 			</div>
 		</div>
-<!--quinta -->
-		<div style="width:100%;height:40px;"></div>
-		<div class="cajaminidoble">	 
-			<div class="tituloleft">Precios siempre competitivos </div> 
-			<div class="textocontenido">
-			<p>
-			El coste final de renderizado depende de varios factores, número de frames, motores utilizados, etc. A continuación te mostramos nuestras tarifas y unos ejemplos para que puedas hacer una estimación tu mismo. 
-			</p>
-			<p>
-			 Si tienes dudas, nos ponemos en contacto contigo y te ayudamos a realizar una estimación sin compromiso. 
-			 </p>
-			</div>
-		</div>
-		<div class="cajaminidoble"><img src="themes/img/teclado.jpg" align="right" width="350px" class="foto"></div>
+-->
+
 <div class="abajo"><a href="#tarifas" class="ancla"><img src="themes/img/abajo.jpg"></a></div>
 </div>
 
