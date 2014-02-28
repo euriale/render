@@ -352,6 +352,9 @@ line-height:2;
 	width:780px;
 
 }
+.datostecnicos,.datosconsulta{
+	display:none;
+}
 .textareaamplia{
 
 width:780px;
@@ -547,6 +550,15 @@ width:350px;
 	font:16px 'Open Sans',arial;
 }
 
+.inputcontacto{
+ height: 15px;
+ font:11px 'Open Sans',arial;
+ width:150px;
+
+}
+#labelito{
+ font:11px 'Open Sans',arial;
+}
 textarea{
 	width:370px;
 	height:120px;

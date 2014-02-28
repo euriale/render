@@ -70,6 +70,20 @@ $(document).ready(function () {
 		$(this).css("border", "1px solid #AAAAAA");
 	});
 	
+	/*--------Visibilidad formulario contacto de Servicios --------------------*/
+	
+	$("#motivo").change(function(){
+		var motivo=$(this).val();
+		alert(motivo);
+		if (motivo=='informacion_serv') $(".datosconsulta").show();
+		if (motivo=='presupuesto_serv'){ 
+			$(".datosconsulta").show();
+			$(".datostecnicos").show();
+		}
+		if (motivo=='tecnica_serv') $(".datosconsulta").show();
+		if (motivo=='facturacion_serv') $(".datosconsulta").show();
+		if (motivo=='sugerencias_serv') $(".datosconsulta").show();
+	});
 	
 	/* ---------------- Versiones de las aplicaciones en el formulario contacto------------------*/
 	

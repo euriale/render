@@ -58,9 +58,7 @@ function getCountry($ip_address){
 		
 		/* ----- Datos Técnicos ------------*/
 		
-				$milabel = new label('motivo','Motivo de la consulta',1,'');
-				$milabel->crearLabel();
-				echo '<div class="elementotext"><select name="motivo" class="" id="motivo"><option>-- Seleccionar --</option><option value="1">Consulta Técnica</option><option value="2">Presupuesto</option></select></div>';
+				echo '<div class="datostecnicos">';
 				
 				$milabel = new label('aplicacion','Aplicación','','');
 				$milabel->crearLabel();
@@ -85,17 +83,12 @@ function getCountry($ip_address){
 				$miinput = new input('text','id="plugin" name="plugin" class="input"','','');
 				$miinput->crearInput();
 				
-				$milabel = new label('tipo_equipo','Tipo de Equipo','','');
-				$milabel->crearLabel();
-				$miinput = new input('text','id="tipo_equipo" name="tipo_equipo" class="input"','','');
-				$miinput->crearInput();
+			
 				
-				$milabel = new label('procesador','Procesador','','');
-				$milabel->crearLabel();
-				$miinput = new input('text','id="procesador" name="procesador" class="input"','','');
-				$miinput->crearInput();
+
+			echo '</div>';	
 					
-		echo '</div>		
+		echo '</div>	
 		
 		
 		<div class="cajaminidoble">';	
@@ -109,12 +102,24 @@ function getCountry($ip_address){
 				$milabel->crearLabel();
 				$miinput = new input('text','id="empresa" name="empresa" class="input"','','');
 				$miinput->crearInput();
+				
+				$milabel = new label('motivo','Motivo de la consulta','','');
+				$milabel->crearLabel();
+				echo '<div class="elementotext"><select name="motivo" class="" id="motivo">
+					<option value="0">-- Seleccionar --</option>
+					<option value="informacion_serv">Solicitar información</option>
+					<option value="presupuesto_serv">Presupuesto</option>
+					<option value="tecnica_serv">Consulta Técnica</option>
+					<option value="facturacion_serv">Facturación</option>
+					<option value="sugerencias_serv">Sugerencias</option>
+					</select>
+				</div>';
 
 
 					/* ----- Datos Técnicos ------------*/
-				
-				echo '<br><br><br><br><br>';
-				
+			echo '<div class="datostecnicos">';	
+				echo '<br><br>';
+				echo '<div class="datostecnicos">';
 				$milabel = new label('num_frames','Número de Frames','','');
 				$milabel->crearLabel();
 				$miinput = new input('text','id="num_frames" name="num_frames" class="input"','','');
@@ -130,16 +135,31 @@ function getCountry($ip_address){
 				$miinput = new input('text','id="t_frames" name="t_frames" class="input"','','');
 				$miinput->crearInput();
 				
-
+				$milabel = new label('procesador','Procesador','','');
+				$milabel->crearLabel();
+				$miinput = new input('text','id="procesador" name="procesador" class="input"','','');
+				$miinput->crearInput();
 				
+				
+				echo '</div>';
+				
+		
+				
+				
+echo '</div>';
+echo '</div>';
+		echo '<div class="cajaformulario">';
+			echo '<div class="datosconsulta">';
 				$milabel = new label('consulta','Escribe tu Consulta',1,'');
 				$milabel->crearLabel();
-				$miarea = new area('consulta','','','');
+				$miarea = new area('consulta','class="textareaamplia"','','');
 				$miarea->crearArea();
-			
-echo '</div>';
+			echo '</div>';	
+				
 				echo '<input type="button" id="envio" name="envio" class="botonenvio"  value="Enviar">';
 				$miformulario->cerrarFormulario();
+				echo '<div style="clear:both"></div>';
+			
 				
 				?>
 				<div id="respuesta"><div class="iconclose" style="float:right;"></div><div style="clear:both"></div><div id="respuestaaux"></div></div>

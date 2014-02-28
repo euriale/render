@@ -1,8 +1,8 @@
 	
 <div class="slide2">
-	<h2>Aplicación para renderizar en la nube</h2>
-	<h3>Apúntate a continuación y te avisamos cuando la estrenemos obtendrás<strong> importantes descuentos</strong></h3>
-	<div style="text-align:center;margin-top:-25px;"><div class="botonapp">Avísame</div></div>
+	<h2>Render en la nube</h2>
+	<h3>Conoce nuestra aplicación para renderizar en la nube. <br>Déjanos tu email y te avisaremos cuando la estrenemos, obtendrás<strong> importantes descuentos</strong></h3>
+</div>
 	
 </div> 	
 <div id="descripcion"></div> 
@@ -16,6 +16,16 @@
 			<p>Hemos creado la aplicación que te ayudará a simplificar los pasos del renderizado de tu proyecto.Sólo tendrás que instalarte un plugin para Maya y un sincronizado desde nuestra web.</p>
 			<p>Desde tu propio Maya podrás configurar los valores de tu render: resolución, número de frames  motores, etc, y automáticamente el sincronizador subirá el proyecto a renderizar a la granja. </p>
 			<p>Desde la aplicación, vía web, podrás visualizar el resultado de cada tarea y obtener una vista previa.</p>
+			<p><strong>Déjanos tus datos y te avisaremos para que puedas conocer nuestra aplicación</strong></p>
+			<?php
+			
+				$miinput = new input('text','id="nombre" name="nombre" class="inputcontacto"','','');
+				$miinput->crearInput();
+				
+				
+				$miinput = new input('text','id="email" name="email" class="inputcontacto"','','');
+				$miinput->crearInput();
+			?>	
 		</div>
 	</div>
 	<div class="cajaminidoble"><img src="themes/img/25.jpg" width="350px" class="foto"></div>
