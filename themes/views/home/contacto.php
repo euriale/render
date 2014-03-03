@@ -89,7 +89,7 @@ echo '</div>';
 				$miformulario->cerrarFormulario();
 				
 				?>
-				
+				<br><br><br>
 		
 		
 

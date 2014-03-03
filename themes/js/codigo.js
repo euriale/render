@@ -137,6 +137,23 @@ $(document).ready(function () {
 				}
 			});
 	});
+	
+	/*-----------------Apuntate-----------------*/
+		$("#envioapuntate").click(function () {
+		var nombre=$(this).val();
+		var nombre=$(this).val();
+		var pathaux="themes/views/home/ajax/versiones.php";
+			$.ajax({
+				type: "GET",
+				url: pathaux,
+				data: "idaplicaciones="+valor,
+				success: function(texto){
+						$('#versiones').html(texto);
+				}
+			});
+	});
+	
+	
 	/* -------------visualiza input otras aplicaciones en caso de valor=='otros'----------------*/
 	$("#aplicacion").change(function () {
 		var valor=$(this).val();

@@ -556,10 +556,9 @@ width:350px;
 }
 
 .inputcontacto{
- height: 15px;
+ height: 20px;
+ width:225px;
  font:11px 'Open Sans',arial;
- width:150px;
-
 }
 #labelito{
  font:11px 'Open Sans',arial;
@@ -613,7 +612,7 @@ select option:hover
   color: #FFFFFF;
   }
 
-.botonenvio, .botonapp{
+.botonenvio, .botonapp, .botonapuntate{
 	width:125px;
 	padding-bottom:15px;
 	font:16px 'Open Sans',arial;
@@ -627,8 +626,16 @@ select option:hover
 	margin-bottom:35px;
 }
 
-.botonenvio:hover, .botonapp:hover{
+.botonenvio:hover, .botonapp:hover,.botonapuntate:hover{
 	background:#B4690D;
+}
+.botonapuntate{
+ width:65px;
+ font:14px 'Open Sans',arial;
+ padding-bottom:5px;
+ padding-left:5px;
+ padding-right:5px;
+ float:left;
 }
  .botonapp{
  width:175px;

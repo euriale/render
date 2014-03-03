@@ -18,13 +18,18 @@
 			<p>Desde la aplicación, vía web, podrás visualizar el resultado de cada tarea y obtener una vista previa.</p>
 			<p><strong>Déjanos tus datos y te avisaremos para que puedas conocer nuestra aplicación</strong></p>
 			<?php
-			
-				$miinput = new input('text','id="nombre" name="nombre" class="inputcontacto"','','');
+				echo '<div class="">Nombre y Apellidos</div>';
+				$miinput = new input('text','id="nombreapun" name="nombreapun" class="inputcontacto"','','');
 				$miinput->crearInput();
 				
-				
-				$miinput = new input('text','id="email" name="email" class="inputcontacto"','','');
+				echo '<div class="">Email</div>';
+				$miinput = new input('text','id="emailapun" name="emailapun" class="inputcontacto"','','');
 				$miinput->crearInput();
+				
+				echo '<input type="button" id="envioapuntate" name="envioapuntate" class="botonapuntate"  value="Enviar">';
+				echo '<div style="clear:both"></div>';
+				
+				
 			?>	
 		</div>
 	</div>
