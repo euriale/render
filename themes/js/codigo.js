@@ -37,7 +37,41 @@ $(document).ready(function () {
 		$(".valore").toggleClass( "noactivo" );
 		$(".valord").toggleClass( "noactivo" );
 	});
-   
+   	/*----------------Colores Menú------------------*/
+	$("#menuinicio").mouseover(function(){
+		$(".menuinicioa").css("color", "#fff");
+	});
+	$("#menuinicio").mouseout(function(){
+		$(".menuinicioa").css("color", "#FF8C00");
+		$("#actitem").css("color", "#FF8C00");
+	});
+	$("#menuapp").mouseover(function(){
+		$(".menuappa").css("color", "#fff");
+	});
+	$("#menuapp").mouseout(function(){
+		$(".menuappa").css("color", "#444");
+		$("#actitem").css("color", "#FF8C00");
+	});
+	$("#menuserv").mouseover(function(){
+		$(".menuserva").css("color", "#fff");
+	});
+	$("#menuserv").mouseout(function(){
+		$(".menuserva").css("color", "#444");
+		$("#actitem").css("color", "#FF8C00");
+	});
+	
+	$("#menuserv").click(function(){
+		var url = $(".menuserva").attr("href");
+		$(location).attr('href',url);
+	});
+	$("#menuapp").click(function(){
+		var url = $(".menuappa").attr("href");
+		$(location).attr('href',url);
+	});
+	$("#menuinicio").click(function(){
+		var url = $(".menuinicioa").attr("href");
+		$(location).attr('href',url);
+	});
    /*-------ancla-----*/
             //nos desplazamos entre todos los divs
            
@@ -70,11 +104,15 @@ $(document).ready(function () {
 		$(this).css("border", "1px solid #AAAAAA");
 	});
 	
+	
+
+	
+	
 	/*--------Visibilidad formulario contacto de Servicios --------------------*/
 	
 	$("#motivo").change(function(){
 		var motivo=$(this).val();
-		alert(motivo);
+		
 		if (motivo=='informacion_serv') $(".datosconsulta").show();
 		if (motivo=='presupuesto_serv'){ 
 			$(".datosconsulta").show();

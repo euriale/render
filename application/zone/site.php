@@ -17,14 +17,14 @@
 	
    </div>
 	   <ul class="navigation">
-		<li>
-			<a href="<?php echo $GLOBALS['raiz']; ?>" <?php if (!isset($_GET['r1'])) echo 'id="actitem"'; ?>><?php echo INICIO; ?>	</a>
+		<li id="menuinicio">
+			<a class="menuinicioa" href="<?php echo $GLOBALS['raiz']; ?>" <?php if (!isset($_GET['r1'])) echo 'id="actitem"'; ?>><?php echo INICIO; ?>	</a>
 		</li>
-		<li>
-			<a href="aplicacion-render" <?php if (isset($_GET['r1']) && $_GET['r1']=='aplicacion-render') echo 'id="actitem"'; ?> >Aplicación</a>
+		<li id="menuapp">
+			<a class="menuappa" href="aplicacion-render" <?php if (isset($_GET['r1']) && $_GET['r1']=='aplicacion-render') echo 'id="actitem"'; ?> >Aplicación</a>
 		</li>
-		<li>
-			<a href="servicios-render" <?php if (isset($_GET['r1']) && $_GET['r1']=='servicios-render') echo 'id="actitem"';?>>Servicios</a>
+		<li id="menuserv">
+			<a class="menuserva" href="servicios-render" <?php if (isset($_GET['r1']) && $_GET['r1']=='servicios-render') echo 'id="actitem"';?>>Servicios</a>
 		</li>
 		
 		

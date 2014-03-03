@@ -26,6 +26,10 @@ html,body{
 	margin-left:-150px;
 	margin-top:0px;
 	height:70px;
+	
+}
+.navigation ul{
+	cursor:pointer;
 }
 .navigation li{
 	color:#FF8C00;
@@ -36,6 +40,7 @@ html,body{
 	height:70px;
 	width:100px;
 	border-left:solid 1px #f1f1f1;
+	cursor:pointer;
 
 }
 .navigation li a{
