@@ -20,6 +20,15 @@ html,body{
 	height:70px;
 	z-index:5;
 }
+#cabecera2{
+	width:100%;
+	position:fixed;
+	top:0;
+	/*background:#FF8C00;*/
+	background:transparent;
+	height:70px;
+	z-index:5;
+}
 /*-------------------menu-----------------*/
 .navigation{
 	display:inline-block;
