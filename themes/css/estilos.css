@@ -219,9 +219,17 @@ color:#444;
 }
 .slide3{
 	background-image:url("../img/tokio.jpg");
-		background-position:center top;
+	background-position:center top;
 
 }
+.slide4{
+	 background-image:url("../img/Render_sala.jpg");
+	 background-size: 100% auto;
+	 background-repeat:no-repeat;
+	 background-position:center bottom;
+	 height:100%;
+	 
+	 }
 .primeracaja{
 min-height:48%;
 width:100%;
