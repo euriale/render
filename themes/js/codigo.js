@@ -139,14 +139,14 @@ $(document).ready(function () {
 	});
 	
 	/*-----------------Apuntate-----------------*/
-		$("#envioapuntate").click(function () {
-		var nombre=$(this).val();
-		var nombre=$(this).val();
-		var pathaux="themes/views/home/ajax/versiones.php";
+	$("#envioapuntate").click(function () {
+		var nombreapun=$(this).val();
+		var emailapun=$(this).val();
+		var pathaux="themes/views/aplicacion-render/ajax/apuntate.php";
 			$.ajax({
 				type: "GET",
 				url: pathaux,
-				data: "idaplicaciones="+valor,
+				data: "nombreapun="+nombreapun+",&emailapun="+emailapun,
 				success: function(texto){
 						$('#versiones').html(texto);
 				}
