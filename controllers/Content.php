@@ -9,9 +9,10 @@ function controller_exist($rcontroller){
 function f_controller ($rcontroller)
 { 
 	$ccontroller='controllers/'.$rcontroller.'Controller.php';
-	if 	(controller_exist($ccontroller))
+	if 	(controller_exist($ccontroller)) 
 	{	
-		require_once('application/zone/site.php'); 
+		if ($rcontroller=="aplicacion-app") require_once('application/zone/app.php');
+		else require_once('application/zone/site.php'); 
 		//require_once(__SITE_PATH.'/'.$ccontroller);
 		
 	}else{
