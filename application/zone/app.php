@@ -1,3 +1,4 @@
+<!--
 <div id="inicio"></div>
 <div id="cabecera2">
 	<div class="logo">
@@ -28,7 +29,7 @@
 		
    </ul>	
 </div>	
-
+-->
 <?php 
 require_once(__SITE_PATH.'/'.$ccontroller);
 ?>

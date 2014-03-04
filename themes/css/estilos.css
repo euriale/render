@@ -25,7 +25,7 @@ html,body{
 	position:fixed;
 	top:0;
 	/*background:#FF8C00;*/
-	background:transparent;
+	background:trasparent;
 	height:70px;
 	z-index:5;
 }
@@ -205,6 +205,7 @@ h4 a:hover{
 color:#444;
 }
 
+
 h5{
 font: 18px arial;
 color:#444;
@@ -213,7 +214,20 @@ h5 a{
 font: 18px arial;
 color:#444;
 }
+.app{
+color:#FF8C00;
+margin-bottom:0;
 
+font-size: 3em;
+font-family: 'Roboto','Open Sans',Arial,Helvetica,sans-serif;
+}
+.app2{
+color:#FFf;
+margin-bottom:1rem;
+padding-top:1rem;
+font-size: 3em;
+font-family: 'Roboto','Open Sans',Arial,Helvetica,sans-serif;
+}
 
 .slide,.slide2, .slide3{
 	background-repeat:no-repeat;
@@ -291,6 +305,17 @@ vertical-align: top;
 	margin-right:15px;
 text-align:left;
 vertical-align: top;
+}
+.cajaportada{
+margin-left:65%;
+margin-top:5px;
+vertical-align: center;
+padding:10px;
+paddin-left:10%;
+
+
+
+
 }
 .link{
 text-align:left;
