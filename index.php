@@ -32,8 +32,40 @@ else $GLOBALS['raiz']='/render/';
 ?>
 <link rel="STYLESHEET" type="text/css" href="themes/css/estilos.css" media="screen" />
 <!--<link href="estilosmovil.css" rel="stylesheet" type="text/css" media="handheld" />-->
+<!--calculadora-->
+ <link rel="stylesheet" href="themes/css/jquery-ui.css">
+<script src="themes/js/jquery-1.9.1.js"></script>
+<script src="themes/js/jquery-ui.js"></script>
 
-
+<style>
+	#eq span {
+		 float: left;
+		clear: left;
+		width: 300px;
+		margin: 15px;
+	}
+	 #cores, #mghz, #frames,#slots {
+		float: left;
+		clear: left;
+		width: 300px;
+		margin: 15px;
+	}
+	</style>
+	<script>
+	 $(function() {
+		$( "#cores, #mghz, #frames, #slots").slider({
+			orientation: "horizontal",
+			range: "min",
+			max: 255,
+			value: 127,
+			animate: true
+		});
+		$( "#cores" ).slider( "value", 255 );
+		$( "#mghz" ).slider( "value", 140 );
+		$( "#frames" ).slider( "value", 60 );
+		$( "#slots" ).slider( "value", 60 );
+		});
+	</script>
 </head>
 
 <body>

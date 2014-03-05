@@ -147,6 +147,7 @@ font:1em 'Open Sans', arial;
 .dreta{
 	float:right;
 	margin-right:25px;
+	width:70px;
 }
 .idiomas{
 	float:right;

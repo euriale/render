@@ -140,15 +140,15 @@ $(document).ready(function () {
 	
 	/*-----------------Apuntate-----------------*/
 	$("#envioapuntate").click(function () {
-		var nombreapun=$(this).val();
-		var emailapun=$(this).val();
-		var pathaux="themes/views/aplicacion-render/ajax/apuntate.php";
+		var nombreapun=$("#nombreapun").val();
+		var emailapun=$("#emailapun").val();
+		var pathaux="themes/views/aplicacion/ajax/apuntate.php";
 			$.ajax({
 				type: "GET",
 				url: pathaux,
 				data: "nombreapun="+nombreapun+",&emailapun="+emailapun,
 				success: function(texto){
-						$('#versiones').html(texto);
+						$('.apuntatediv').html(texto);
 				}
 			});
 	});

@@ -17,7 +17,9 @@
 			<p>Desde tu propio Maya podrás configurar los valores de tu render: resolución, número de frames  motores, etc, y automáticamente el sincronizador subirá el proyecto a renderizar a la granja. </p>
 			<p>Desde la aplicación, vía web, podrás visualizar el resultado de cada tarea y obtener una vista previa.</p>
 			<p><strong>Déjanos tus datos y te avisaremos para que puedas conocer nuestra aplicación</strong></p>
+			<div class="apuntatediv">
 			<?php
+			
 				echo '<div class="">Nombre y Apellidos</div>';
 				$miinput = new input('text','id="nombreapun" name="nombreapun" class="inputcontacto"','','');
 				$miinput->crearInput();
@@ -31,6 +33,7 @@
 				
 				
 			?>	
+			</div>
 		</div>
 	</div>
 	<div class="cajaminidoble"><img src="themes/img/25.jpg" width="350px" class="foto"></div>
