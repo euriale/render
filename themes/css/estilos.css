@@ -358,6 +358,12 @@ font: 2.1em 'Roboto','Open Sans',arial;
 color:#FF8C00;
 
 }
+
+.titulonaranja{
+font: 1.7em 'Roboto','Open Sans',arial;
+color:#FF8C00;
+text-align:center;
+}
 .foto{
 border:solid 1px #ccc;
 padding:15px;
@@ -530,7 +536,16 @@ margin-top:3px;
 float:left;
 margin-right:5px;
 }
+.tarifacal{
+padding-top:25px;
+background:#A2B51E;
+font: bold 40px 'Roboto','Open Sans',arial;
+color:#fff;
+display:block-line;
+text-align:center;
+width:500px;
 
+}
 .tarifaup1,.tarifaup2,.tarifaup3{
 padding-top:25px;
 background:#C9DE36;
@@ -543,6 +558,7 @@ text-align:center;
 .tarifaup2{
 background:#A2B51E;
 }
+
 .tarifaup3{
 background:#51910B;
 }
@@ -730,4 +746,56 @@ select option:hover
 	margin-bottom:0;
 	
  }
+ 
+ .txtcalcu, .txtcalcunum{
+ font:bold 12px 'Open Sans',arial;
+  float:left;
+  line-height:4;
+  text-align:right;
+  width:50px;
+ }
+ .txtcalcunum{
+   width:20px;
+ }
+ #caltotal{
+ background:#A2B51E;
+ height:40px;
+ text-align:center;
+ color:#fff;
+  font:bold 16px 'Open Sans',arial;
+  padding-top:15px;
+  width:75px;
+ }
+ 
+ 
+ .calculadora{
+ width:450px;
+ background:#fff;
+ padding:25px;
+ 
+ }
+ 
+ 
+	 #cores, #mghz, #frames,#slots {
+		float: left;
+	
+		width: 300px;
+		margin: 15px;
+	}
+
+	
+	#cores .ui-slider-range, #mghz .ui-slider-range, #frames .ui-slider-range, #slots .ui-slider-range { 
+		background: #39ad00; /* Old browsers */
+		background: #ffffff; /* Old browsers */
+		background: -moz-linear-gradient(left,  #ffffff 0%, #39ad00 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffffff), color-stop(100%,#39ad00)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(left,  #ffffff 0%,#39ad00 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(left,  #ffffff 0%,#39ad00 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(left,  #ffffff 0%,#39ad00 100%); /* IE10+ */
+		background: linear-gradient(to right,  #ffffff 0%,#39ad00 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#39ad00',GradientType=1 ); /* IE6-9 */
+
+ }
+
+	</style>
  

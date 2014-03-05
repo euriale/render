@@ -220,4 +220,121 @@ $(document).ready(function () {
 		$("#empresa").val('');
 		
 	});
+	
+	
+	/*----------------------Calculadora-------------*/
+		 $(function() {
+		$("#cores").slider({
+			orientation: "horizontal",
+			range: "min",
+			max: 50,
+			value: 1,
+			slide: refreshSwatchCores,
+			change: refreshSwatchCores
+		});
+		$("#mghz").slider({
+			orientation: "horizontal",
+			range: "min",
+			max: 50,
+			value: 1,
+			slide: refreshSwatchMghz,
+			change: refreshSwatchMghz
+		});
+		$("#frames").slider({
+			orientation: "horizontal",
+			range: "min",
+			max: 50,
+			value: 1,
+			slide: refreshSwatchFrames,
+			change: refreshSwatchFrames
+		});
+		$("#slots").slider({
+			orientation: "horizontal",
+			range: "min",
+			max: 50,
+			value: 1,
+			slide: refreshSwatchSlot,
+			change: refreshSwatchSlot
+		});
+		$( "#cores" ).slider( "value", 1 );
+		$( "#mghz" ).slider( "value", 1 );
+		$( "#frames" ).slider( "value", 1 );
+		$( "#slots" ).slider( "value", 1 );
+		});
+		
+		function refreshSwatchSlot() {
+			var slots = $( "#slots" ).slider( "value" );
+			var mghz = $( "#mghz" ).slider( "value" );
+			var frames = $( "#frames" ).slider( "value" );
+			var cores = $( "#cores" ).slider( "value" );
+			
+			$("#elemslots").text(slots);
+			
+			var total= format(slots*mghz*frames*cores);
+			$("#caltotal").text(total);
+			
+		}
+		function refreshSwatchMghz() {
+			var slots = $( "#slots" ).slider( "value" );
+			var mghz = $( "#mghz" ).slider( "value" );
+			var frames = $( "#frames" ).slider( "value" );
+			var cores = $( "#cores" ).slider( "value" );
+			
+			$("#elemmghz").text(mghz);
+			
+			var total= format(slots*mghz*frames*cores);
+			$("#caltotal").text(total);
+			
+		}
+		function refreshSwatchFrames() {
+			var slots = $( "#slots" ).slider( "value" );
+			var mghz = $( "#mghz" ).slider( "value" );
+			var frames = $( "#frames" ).slider( "value" );
+			var cores = $( "#cores" ).slider( "value" );
+			
+			$("#elemframes").text(frames);
+			
+			var total= format(slots*mghz*frames*cores);
+			$("#caltotal").text(total);
+			
+		}
+		function refreshSwatchCores() {
+			var slots = $( "#slots" ).slider( "value" );
+			var mghz = $( "#mghz" ).slider( "value" );
+			var frames = $( "#frames" ).slider( "value" );
+			var cores = $( "#cores" ).slider( "value" );
+			
+			$("#elemcores").text(cores);
+			
+			var total= format(slots*mghz*frames*cores);
+			
+			$("#caltotal").text(total);
+			
+		}
+	
 	});
+	
+	
+/*------------formateo de  los puntos de miles --------------*/	
+function format(valor) {
+    var nums = new Array();
+    var simb = "."; //Éste es el separador
+    valor = valor.toString();
+    valor = valor.replace(/\D/g, "");   //Ésta expresión regular solo permitira ingresar números
+    nums = valor.split(""); //Se vacia el valor en un arreglo
+    var long = nums.length - 1; // Se saca la longitud del arreglo
+    var patron = 3; //Indica cada cuanto se ponen las comas
+    var prox = 2; // Indica en que lugar se debe insertar la siguiente coma
+    var res = "";
+ 
+    while (long > prox) {
+        nums.splice((long - prox),0,simb); //Se agrega la coma
+        prox += patron; //Se incrementa la posición próxima para colocar la coma
+    }
+ 
+    for (var i = 0; i <= nums.length-1; i++) {
+        res += nums[i]; //Se crea la nueva cadena para devolver el valor formateado
+    }
+ 
+    return res;
+}
