@@ -66,13 +66,7 @@
 <div class="abajo"><a href="#faqs" class="ancla"><img src="themes/img/abajo2.jpg"></a></div>
 
 
-<!--calculadora   <p class="ui-state-default ui-corner-all ui-helper-clearfix" style="padding:4px;">
-<span class="ui-icon ui-icon-pencil" style="float:left; margin:-2px 5px 0 0;"></span>
-Simple Colorpicker
-</p>
-<div id="red"></div>
-<div id="green"></div>
-<div id="blue"></div>-->
+<!--calculadora   https://jqueryui.com/slider/#colorpicker-->
 
 <p class="ui-state-default ui-corner-all" style="padding:4px;margin-top:4em;">
 	<span class="ui-icon ui-icon-signal" style="float:left; margin:-2px 5px 0 0;"></span>
