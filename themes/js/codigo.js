@@ -270,7 +270,7 @@ $(document).ready(function () {
 			
 			$("#elemslots").text(slots);
 			
-			var total= format(slots*mghz*frames*cores);
+			var total= format(slots*mghz*frames*cores)+' €';
 			$("#caltotal").text(total);
 			
 		}
@@ -282,7 +282,7 @@ $(document).ready(function () {
 			
 			$("#elemmghz").text(mghz);
 			
-			var total= format(slots*mghz*frames*cores);
+			var total= format(slots*mghz*frames*cores)+' €';
 			$("#caltotal").text(total);
 			
 		}
@@ -294,7 +294,7 @@ $(document).ready(function () {
 			
 			$("#elemframes").text(frames);
 			
-			var total= format(slots*mghz*frames*cores);
+			var total= format(slots*mghz*frames*cores)+' €';
 			$("#caltotal").text(total);
 			
 		}
@@ -306,7 +306,7 @@ $(document).ready(function () {
 			
 			$("#elemcores").text(cores);
 			
-			var total= format(slots*mghz*frames*cores);
+			var total= format(slots*mghz*frames*cores)+' €';
 			
 			$("#caltotal").text(total);
 			

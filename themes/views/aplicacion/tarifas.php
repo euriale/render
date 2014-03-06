@@ -42,10 +42,10 @@
 		
 		
 		<p>
-		<div class="txtcalcu">Cores</div><div id="cores"></div><div id="elemcores" class="txtcalcunum">1</div><div style="clear:both;"></div>
-		<div class="txtcalcu">MgHz</div><div id="mghz"></div><div id="elemmghz" class="txtcalcunum">1</div><div style="clear:both;"></div>
-		<div class="txtcalcu">Frames</div><div id="frames"></div><div id="elemframes" class="txtcalcunum">1</div><div style="clear:both;"></div>
-		<div class="txtcalcu">Slots</div><div id="slots"></div><div id="elemslots" class="txtcalcunum">1</div><div style="clear:both;"></div>
+		<div class="txtcalcu">Cores:</div><div id="elemcores" class="txtcalcunum">1</div><div id="cores"></div><div style="clear:both;"></div>
+		<div class="txtcalcu">MgHz:</div><div id="elemmghz" class="txtcalcunum">1</div><div id="mghz"></div><div style="clear:both;"></div>
+		<div class="txtcalcu">Frames:</div><div id="elemframes" class="txtcalcunum">1</div><div id="frames"></div><div style="clear:both;"></div>
+		<div class="txtcalcu">Slots:</div><div id="elemslots" class="txtcalcunum">1</div><div id="slots"></div><div style="clear:both;"></div>
 	</p>
 	<div class="txtcalcu" id="caltotal">1</div>
 	<div style="clear:both;"></div>

@@ -466,7 +466,7 @@ color:#51910B;
 	font: 13px 'Roboto','Open Sans',arial;
 }
 
-.moneda,.monedatab {
+.moneda,.monedatab, .monedab {
 font: bold 32px 'Roboto','Open Sans',arial;
 color:#FF8C00;
 width:130px;
@@ -475,7 +475,9 @@ margin:0 auto;
 .monedatab {
 font: bold 20px 'Roboto','Open Sans',arial;
 }
-
+.monedab{
+float:left;
+}
 .euro,.dolar,.eurotab,.dolartab{
 	display:inline-block;
 	width:24px;
@@ -752,7 +754,7 @@ select option:hover
   float:left;
   line-height:4;
   text-align:right;
-  width:50px;
+  width:75px;
  }
  .txtcalcunum{
    width:20px;
@@ -764,7 +766,7 @@ select option:hover
  color:#fff;
   font:bold 16px 'Open Sans',arial;
   padding-top:15px;
-  width:75px;
+  width:85px;
  }
  
  
