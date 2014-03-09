@@ -18,8 +18,8 @@
 		<h4><a href="aplicacion-render">Aplicación</a></h4>
 		<div class="txt15centro"><strong>Uso Maya para mis Proyectos</strong></div>
 		<div class="imagencaja"><img src="themes/img/logos/logoscolormaya.png" title="Render Maya" alt="Render Maya"></div>
-		<div class="txt15">	Regístrate ya y accede a nuestra aplicación.
-		<br>Si te das de alta hasta antes del 1 de Marzo te regalamos un <strong> 20% de descuento </strong>.</div>
+		<div class="txt15">	Regístrate ya y accede a nuestra aplicación. Ahora con <strong> 20% de descuento </strong>
+		Disfruta de los mejores precios .</div>
 	
 		<div class="link"><a href="aplicacion-render">Saber más &nbsp;&nbsp;<img src="themes/img/redpointer.png"></a></div>
 	</div>

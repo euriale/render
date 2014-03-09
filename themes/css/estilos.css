@@ -215,6 +215,12 @@ h5 a{
 font: 18px arial;
 color:#444;
 }
+.enlace
+{font: 'Roboto','Open Sans',arial;
+color:#FF8C00;
+margin-bottom:0;
+text-decoration:none;
+}
 .app{
 color:#FF8C00;
 margin-bottom:0;
