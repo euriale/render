@@ -28,7 +28,7 @@
 			<div class="textocontenido">
 		
 				<p>
-				Tras darte de alta en nuetra aplicación, te enviaremos los datos de una cuenta ftp para que subas tu proyecto. Disponemos de lineas de alta velocidad para la subida/bajada de ficheros 500/50 Mbps.
+				Crearemos una cuenta ftp para que subas tu proyecto. Disponemos de lineas de alta velocidad para la subida/bajada de ficheros 500/50 Mbps.
 				</p>
 				<p>
 				Procederemos a lanzar tu render con los parámetros que nos indiques, si tienes dudas un técnico te asesorará en este proceso. Conforme se vaya renderizando tu proyecto, tendrás acceso a tus datos a través de la cuenta ftp. 
@@ -55,7 +55,7 @@
 			<div class="tituloleft">Precios siempre competitivos </div> 
 			<div class="textocontenido">
 			<p>
-			El coste final de renderizado depende de varios factores, número de frames, motores utilizados, etc. A continuación te mostramos una calculadora que te dará una estimación del coste de tu proyecto. El coste de 50 € de configuración está incluido en los resultados mostrados.
+			El coste final de renderizado depende de varios factores, número de frames, motores utilizados, etc. A continuación te mostramos nuestras tarifas y unos ejemplos para que puedas hacer una estimación tu mismo. 
 			</p>
 			<p>
 			 Si tienes dudas, nos ponemos en contacto contigo y te ayudamos a realizar una estimación sin compromiso. 

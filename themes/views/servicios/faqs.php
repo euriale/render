@@ -21,23 +21,19 @@
 
 </div>
 <div class="cajaminidoble">
-	<div class="faqsask" id="ask6"> Quiero las tarifas en otra moneda. </div>
+	<div class="faqsask" id="ask6"> ¿Por qué es mas barato renderizar con la aplicación?. </div>
 	
-	<div class="faqanswer" id="ans6"> Integer non facilisis tellus. Donec adipiscing mi vel faucibus posuere. Cras cursus mattis arcu, eget molestie quam blandit at. Donec suscipit dictum ullamcorper. Maecenas feugiat, mi vel tincidunt rhoncus, diam risus congue augue, a consequat urna tellus id lorem. </div>
+	<div class="faqanswer" id="ans6"> Con la aplicación el proceso de renderizado es automático y eso nos permite reducir aún mas los precios, como por ejemplo el precio de configuración, en esta modalidad no se te aplica. Estamos trabajando para ir añadiendo el softare mas habitual, no obstante ponemos a tu disposición ofertas con lo que nuestros precios son siempre competitivos.  </div>
 	
-	<div class="faqsask" id="ask7">  Fusce imperdiet dui eu mauris vehicula, in faucibus tellus posuere. </div>
+	<div class="faqsask" id="ask7">¿Los precios incluyen el IVA? </div>
 
-	<div class="faqanswer" id="ans7"> Phasellus laoreet, lorem vel pretium auctor, sem sapien placerat erat, eget commodo urna orci non ipsum. Pellentesque quis molestie nulla. Phasellus ultricies tempus est, sit amet congue eros accumsan eu. Curabitur varius blandit eros, quis volutpat risus dapibus non. Cras in bibendum sapien. Nullam fermentum arcu ligula, quis adipiscing elit facilisis at. Nulla facilisis diam at nibh egestas, in cursus libero hendrerit. Nullam et auctor nisl. Vestibulum et ligula ac purus ornare aliquet et ut dui.  </div>
-	
-
-	<div class="faqsask" id="ask8"> Cras ullamcorper sapien nec porttitor ullamcorper. </div>
-
-	<div class="faqanswer" id="ans8"> Nunc ultricies, purus vitae convallis vehicula, urna nunc imperdiet purus, vitae tincidunt enim nisl eu erat. In et justo a lorem pharetra ultrices. Maecenas ac blandit enim. Sed ac fermentum libero. Nunc sapien metus, venenatis quis accumsan ut, euismod sed leo.  </div>
+	<div class="faqanswer" id="ans7"> Todos los precios que te mostramos en la web son precios sin IVA.  </div>
 	
 
-	<div class="faqsask" id="ask9">  Nam luctus sem quis mi malesuada, eget fringilla ipsum blandit. </div>
+	<div class="faqsask" id="ask8"> ¿Que es el precio de configuración? </div>
 
-	<div class="faqanswer" id="ans9">Maecenas blandit accumsan commodo. Duis arcu risus, mollis in tempor at, elementum et dui. Ut sodales aliquam nisl, vitae ultricies dui. Ut mauris dolor, elementum quis libero nec, sagittis aliquet metus. Pellentesque sagittis eros non mauris hendrerit, id varius erat interdum. Ut semper posuere tellus, volutpat ullamcorper magna venenatis dapibus.  </div>
+	<div class="faqanswer" id="ans8"> Para poder lanzar tu trabajo adaptamos nuestro entorno a tu proyecto: versiones específicas de tu software 3D, motores de ilumuación, plugins etc. Además dispondrás de un técnico especializado que lanzará tu proyecto. Todo este proceso de adaptación de la granja a tu proyecto tiene un coste de 50€.</div>
+	
 	
 
 
