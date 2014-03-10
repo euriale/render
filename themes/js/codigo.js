@@ -271,7 +271,7 @@ $(document).ready(function () {
 			$("#elemslots").text(slots);
 			
 			var total= format(slots*mghz*frames*cores);
-			$("#caltotal").text(total);
+			$("#caltotaleuro").text(total);
 			
 		}
 		function refreshSwatchMghz() {
@@ -283,7 +283,7 @@ $(document).ready(function () {
 			$("#elemmghz").text(mghz);
 			
 			var total= format(slots*mghz*frames*cores);
-			$("#caltotal").text(total);
+			$("#caltotaleuro").text(total);
 			
 		}
 		function refreshSwatchFrames() {
@@ -295,7 +295,7 @@ $(document).ready(function () {
 			$("#elemframes").text(frames);
 			
 			var total= format(slots*mghz*frames*cores);
-			$("#caltotal").text(total);
+			$("#caltotaleuro").text(total);
 			
 		}
 		function refreshSwatchCores() {
@@ -308,7 +308,7 @@ $(document).ready(function () {
 			
 			var total= format(slots*mghz*frames*cores);
 			
-			$("#caltotal").text(total);
+			$("#caltotaleuro").text(total);
 			
 		}
 	

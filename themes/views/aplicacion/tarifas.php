@@ -47,6 +47,7 @@
 		<div class="txtcalcu">Frames</div><div id="frames"></div><div id="elemframes" class="txtcalcunum">1</div><div style="clear:both;"></div>
 		<div class="txtcalcu">Slots</div><div id="slots"></div><div id="elemslots" class="txtcalcunum">1</div><div style="clear:both;"></div>
 	</p>
+	<div class="txtcalcu" id="caltotaleuro">1</div>
 	<div class="txtcalcu" id="caltotal">1</div>
 	<div style="clear:both;"></div>
 	</div>
