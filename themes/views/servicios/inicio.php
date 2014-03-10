@@ -46,11 +46,11 @@
 				Te asignaremos las máquinas necesarias para tener tu renderizado a tiempo y dispondrás de un técnico especializado para ayudarte en cada momento. </p>
 			</div>
 		</div>
-		<div class="cajaminidoble"><img src="themes/img/moto.jpg" align="right" width="350px" class="foto"></div>
+		<div class="cajaminidoble"><img src="themes/img/teclado.jpg" align="right" width="350px" class="foto"></div>
 <!--cuarta -->
 
 		<div style="width:100%;height:40px;"></div>
-		<div class="cajaminidoble"><img src="themes/img/teclado.jpg" align="right" width="350px" class="foto"></div>
+		<div class="cajaminidoble"><img src="themes/img/moto.jpg" align="right" width="350px" class="foto"></div>
 		<div class="cajaminidoble">	 
 			<div class="tituloleft">Precios siempre competitivos </div> 
 			<div class="textocontenido">
