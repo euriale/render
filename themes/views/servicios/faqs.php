@@ -32,7 +32,7 @@
 
 	<div class="faqsask" id="ask8"> ¿Que es el precio de configuración? </div>
 
-	<div class="faqanswer" id="ans8"> Para poder lanzar tu trabajo adaptamos nuestro entorno a tu proyecto: versiones específicas de tu software 3D, motores de ilumuación, plugins etc. Además dispondrás de un técnico especializado que lanzará tu proyecto. Todo este proceso de adaptación de la granja a tu proyecto tiene un coste de 50€.</div>
+	<div class="faqanswer" id="ans8"> Para poder lanzar tu trabajo adaptamos nuestro entorno a tu proyecto: versiones específicas de tu software 3D, motores de iluminación, plugins etc. Además dispondrás de un técnico especializado que lanzará tu proyecto. Todo este proceso de adaptación de la granja a tu proyecto tiene un coste de 50€.</div>
 	
 	
 
