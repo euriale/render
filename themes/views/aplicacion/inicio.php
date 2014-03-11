@@ -13,9 +13,9 @@
 	<div class="cajaminidoble">
 		<div class="tituloleft">Próximamente estrenamos aplicación</div>  
 		<div class="textocontenido">
-			<p>Hemos creado la aplicación que te ayudará a simplificar los pasos del renderizado de tu proyecto.Sólo tendrás que instalarte un plugin para Maya y un sincronizado desde nuestra web.</p>
-			<p>Desde tu propio Maya podrás configurar los valores de tu render: resolución, número de frames  motores, etc, y automáticamente el sincronizador subirá el proyecto a renderizar a la granja. </p>
-			<p>Desde la aplicación, vía web, podrás visualizar el resultado de cada tarea y obtener una vista previa.</p>
+			<p>Hemos creado una aplicación que te ayudará a simplificar los pasos del renderizado de tu proyecto. Sólo tendrás que instalarte un plugin para Maya y un sincronizador desde nuestra web.</p>
+			<p>En tu propio Maya podrás lanzar tu render contra nuestra granja y automáticamente el sincronizador subirá el proyecto y comenzará a renderizarlo. </p>
+			<p>Podrás visualizar el resultado de cada tarea y obtener una vista previa.</p>
 			<p><strong>Déjanos tus datos y te avisaremos para que puedas conocer nuestra aplicación</strong></p>
 			<div class="apuntatediv">
 			<?php
@@ -62,12 +62,13 @@
 	<!--tercera -->
 	<div style="width:100%;height:40px;"></div>
 	<div class="cajaminidoble">	
-		<div class="tituloleft">Créditos</div>
+		<div class="tituloleft">Sistema de créditos</div>
 		<div class="textocontenido">
 			<p>El Crédito es nuestra moneda de cambio del sistema. Consumirás créditos por los servicios que el sistema te ofrece.</p>
 			<p>A través de nuestra plataforma realizas la compra de créditos vía PayPal o a tarjeta Visa. 
 			El precio de un crédito es de un 1€. </p>
-			<p>Aprovecha nuestras ofertas para obtener importantes descuentos. Los créditos que compres no caducarán nunca.</p>
+			<p>Si necesitas renderizar tu proyecto muy rápido y te sobran créditos podrás utilizar posteriormente en cualquier modalidad.
+			<p>Aprovecha nuestras ofertas para obtener importantes descuentos.</p>
 		</div>
 	</div>		
 		<div class="cajaminidoble"><img src="themes/img/robote.png" width="350px" class="foto"></div>
@@ -79,7 +80,7 @@
 	<div class="cajaminidoble">	
 		<div class="tituloleft">Precios siempre competitivos</div>
 		<div class="textocontenido">
-		El coste final de renderizado depende de varios factores, número de frames, motores utilizados, etc. A continuación te mostramos nuestras tarifas y unos ejemplos para que puedas hacer una estimación tu mismo. 
+		El coste final de renderizado depende de varios factores, número de frames, motores utilizados, etc. A continuación te mostramos una calculadora que te dará una estimación del coste de tu proyecto.
 			</p>
 		<p>
 			 Si tienes dudas, nos ponemos en contacto contigo y te ayudamos a realizar una estimación sin compromiso. 

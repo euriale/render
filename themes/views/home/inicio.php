@@ -10,7 +10,7 @@
 		<h4><a href="#pq" class="ancla">Por qué usar Render Drive</a></h4>
 		<div class="txt15centro"><strong>Ventajas de renderizar en la nube</strong></div>
 		<div class="imagencaja"><img src="themes/img/logos/cpd.png" title="Servicios Render" alt="Servicios Render"></div>
-		<div class="txt15"> Realice más rápido tareas intensivas en computación, en cualquier momento y en cualquier sitio. </div>
+		<div class="txt15"> Realice más rápido tareas intensivas en computación, en cualquier momento y en cualquier sitio sin gastos de inversión. </div>
 		<div class="link"><a href="#pq" class="ancla">Saber más&nbsp;&nbsp;<img src="themes/img/redpointer.png"></a></div>
 		
 	</div>
@@ -18,8 +18,8 @@
 		<h4><a href="aplicacion-render">Aplicación</a></h4>
 		<div class="txt15centro"><strong>Uso Maya para mis Proyectos</strong></div>
 		<div class="imagencaja"><img src="themes/img/logos/logoscolormaya.png" title="Render Maya" alt="Render Maya"></div>
-		<div class="txt15">	Regístrate ya y accede a nuestra aplicación.
-		<br>Si te das de alta hasta antes del 1 de Marzo te regalamos un <strong> 20% de descuento </strong>.</div>
+		<div class="txt15">	Regístrate ya y accede a nuestra aplicación. Ahora con <strong> 20% de descuento </strong>
+		Disfruta de los mejores precios .</div>
 	
 		<div class="link"><a href="aplicacion-render">Saber más &nbsp;&nbsp;<img src="themes/img/redpointer.png"></a></div>
 	</div>
@@ -28,7 +28,7 @@
 		<h4><a href="servicios-render">Servicios</a> </h4>
 		<div class="txt15centro"><strong>Uso otro Software en mis Proyectos</strong></div>
 		<div class="imagencaja"><img src="themes/img/logos/logoscolor.png" title="Servicios Render" alt="Servicios Render"></div>
-		<div class="txt15"> Trabajamos con Maya, Cinema 4D, 3ds Max,SoftImage, Blender, LightWave, After Effects.
+		<div class="txt15"> Trabajamos con Maya, Cinema 4D, 3ds Max,SoftImage, Blender, LightWave, After Effects..
 		</div>
 		
 		<div class="link"><a href="servicios-render">Saber más&nbsp;&nbsp;<img src="themes/img/redpointer.png"></a></div>

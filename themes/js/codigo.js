@@ -232,14 +232,7 @@ $(document).ready(function () {
 			slide: refreshSwatchCores,
 			change: refreshSwatchCores
 		});
-		$("#mghz").slider({
-			orientation: "horizontal",
-			range: "min",
-			max: 50,
-			value: 1,
-			slide: refreshSwatchMghz,
-			change: refreshSwatchMghz
-		});
+
 		$("#frames").slider({
 			orientation: "horizontal",
 			range: "min",
@@ -248,66 +241,95 @@ $(document).ready(function () {
 			slide: refreshSwatchFrames,
 			change: refreshSwatchFrames
 		});
-		$("#slots").slider({
+		$("#temp").slider({
 			orientation: "horizontal",
 			range: "min",
 			max: 50,
 			value: 1,
-			slide: refreshSwatchSlot,
-			change: refreshSwatchSlot
-		});
-		$( "#cores" ).slider( "value", 1 );
-		$( "#mghz" ).slider( "value", 1 );
-		$( "#frames" ).slider( "value", 1 );
-		$( "#slots" ).slider( "value", 1 );
+			slide: refreshSwatchTemp,
+			change: refreshSwatchTemp
 		});
 		
-		function refreshSwatchSlot() {
-			var slots = $( "#slots" ).slider( "value" );
-			var mghz = $( "#mghz" ).slider( "value" );
+		$("#slots").slider({
+			orientation: "horizontal",
+			range: "min",
+			max: 200,
+			value: 1,
+			slide: refreshSwatchSlots,
+			change: refreshSwatchSlots
+		});
+		$("#tmax").slider({
+			orientation: "horizontal",
+			range: "min",
+			max: 50,
+			value: 1,
+			slide: refreshSwatchTmax,
+			change: refreshSwatchTmax
+		});
+		$( "#cores" ).slider( "value", 1 );
+		$( "#frames" ).slider( "value", 1 );
+		$( "#temp" ).slider( "value", 1 );
+		$( "#slots" ).slider( "value", 1 );
+		$( "#tmax" ).slider( "value", 1 );
+		});
+		
+		function refreshSwatchTemp() {
+			var temp = $( "#temp" ).slider( "value" );
 			var frames = $( "#frames" ).slider( "value" );
 			var cores = $( "#cores" ).slider( "value" );
 			
-			$("#elemslots").text(slots);
+			$("#elemtemp").text(temp);
 			
-			var total= format(slots*mghz*frames*cores);
-			$("#caltotaleuro").text(total);
-			
-		}
-		function refreshSwatchMghz() {
-			var slots = $( "#slots" ).slider( "value" );
-			var mghz = $( "#mghz" ).slider( "value" );
-			var frames = $( "#frames" ).slider( "value" );
-			var cores = $( "#cores" ).slider( "value" );
-			
-			$("#elemmghz").text(mghz);
-			
-			var total= format(slots*mghz*frames*cores);
-			$("#caltotaleuro").text(total);
+			var pc= cores*3;
+			var tc= pc*frames*temp;
+			$("#tc").text(format(tc));
+			var nhorasmin= tc/4000;
+			$("#nhorasmin").text(nhorasmin);
+			var nhorasmax= tc/200;
+			$("#nhorasmax").text(nhorasmax);
+
+			var total= format(temp*frames*cores)+' €';
+			$("#caltotal").text(total);
+
 			
 		}
 		function refreshSwatchFrames() {
-			var slots = $( "#slots" ).slider( "value" );
-			var mghz = $( "#mghz" ).slider( "value" );
+			var temp = $( "#temp" ).slider( "value" );
 			var frames = $( "#frames" ).slider( "value" );
 			var cores = $( "#cores" ).slider( "value" );
 			
 			$("#elemframes").text(frames);
 			
-			var total= format(slots*mghz*frames*cores);
-			$("#caltotaleuro").text(total);
+			var pc=cores*3;
+			var tc= pc*frames*temp;
+			$("#tc").text(format(tc));
+			var nhorasmin= tc/4000;
+			$("#nhorasmin").text(nhorasmin);
+			var nhorasmax= tc/200;
+			$("#nhorasmax").text(nhorasmax);
+
+			var total= format(temp*frames*cores)+' €';
+			$("#caltotal").text(total);
+
 			
 		}
 		function refreshSwatchCores() {
-			var slots = $( "#slots" ).slider( "value" );
-			var mghz = $( "#mghz" ).slider( "value" );
+			var temp = $( "#temp" ).slider( "value" );
 			var frames = $( "#frames" ).slider( "value" );
 			var cores = $( "#cores" ).slider( "value" );
 			
 			$("#elemcores").text(cores);
 			
-			var total= format(slots*mghz*frames*cores);
+			var pc= cores*3;
+			$("#pc").text(format(pc));
+			var tc= pc*frames*temp;
+			$("#tc").text(format(tc));
+			var nhorasmin= tc/4000;
+			$("#nhorasmin").text(nhorasmin);
+			var nhorasmax= tc/200;
+			$("#nhorasmax").text(nhorasmax);
 			
+			var total= format(temp*frames*cores)+' €';
 			$("#caltotaleuro").text(total);
 			
 		}
@@ -335,6 +357,6 @@ function format(valor) {
     for (var i = 0; i <= nums.length-1; i++) {
         res += nums[i]; //Se crea la nueva cadena para devolver el valor formateado
     }
- 
+	
     return res;
 }

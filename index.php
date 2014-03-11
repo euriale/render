@@ -1,11 +1,11 @@
 <?php
 if(isset($_GET['r1']) && $_GET['r1']=='idioma') header ("Location: ../controllers/direct/idioma.php?r2=".$_GET['r2']);
 
-session_start();  
+session_start();
 if (!isset($_SESSION['idioma'])){
-    $idioma =substr($_SERVER["HTTP_ACCEPT_LANGUAGE"],0,2); 
-	$_SESSION['idioma']=$idioma;
-} 
+    $idioma =substr($_SERVER["HTTP_ACCEPT_LANGUAGE"],0,2);
+$_SESSION['idioma']=$idioma;
+}
 $idiomaaux=$_SESSION['idioma'];
 $idiomaaux=strtoupper ($idiomaaux);
 require_once("themes/langs/".$idiomaaux.".php");
