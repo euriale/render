@@ -1,0 +1,3782 @@
+﻿/**************************************//* PARÁMETROS DE CONFIGURACIÓN        *//**************************************//*****************************************//* Variables panel superior con el home  *//*****************************************//***************************************//* Variables content del BannerMasterPage*//***************************************//***************************************//* Variables panel "pnlEdit            *//***************************************//**************************************//* Variables generales                *//**************************************//****************************************//******Variables textbox para radupload**//****************************************//****************************************//******Variables para repeaters        **//****************************************//****************************************//******Variables para promociones      **//****************************************//**************************************//* CSS RESET                          *//**************************************/html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  font-weight: lighter;
+}
+strong {
+  font-weight: bold;
+}
+b {
+  font-weight: bold;
+}
+body {
+  line-height: 1;
+  overflow: hidden;
+}
+ol, ul {
+  list-style: none;
+}
+a:focus {
+  outline: 0;
+}
+html, body {
+  height: 100%;
+}
+img {
+  vertical-align: middle;
+}
+/**************************************//* GENERALES                          *//**************************************/body {
+  font-family: Arial;
+  font-size: 12px;
+  background-color: #F3F2F4;
+}
+form {
+  height: 100%;
+}
+/*******************************************************//*                PÁGINAS MAESTRAS                     *//*******************************************************//**************************************//* COMUNES                            *//**************************************/.pnlSeparator {
+  height: 2px;
+  background-color: #666666;
+  margin: 4px 8px;
+  display: none;
+}
+.pnlCompleteSize {
+  height: 100%;
+  width: 100%;
+  background-image: url("../../img/Background/Background_abstract_Demo_3d_2200x1200.png");
+  background-repeat: no-repeat;
+}
+.navMenu {
+  font-size: 14.4px;
+}
+.navMenu .navMenuItem .navMenuItemLink {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+.navMenu .navMenuItem .navMenuItemLink :link,
+.navMenu .navMenuItem .navMenuItemLink :visited,
+.navMenu .navMenuItem .navMenuItemLink :hover,
+.navMenu .navMenuItem .navMenuItemLink :active {
+  text-decoration: none;
+}
+.rounderBorder {
+  border: 1px solid #666666;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  padding: 20px;
+  border-radius: 15px;
+}
+/**************************************//* CABECERA                           *//**************************************/.pnlHeader {
+  overflow: hidden !important;
+  background-color: #293e6b;
+}
+.pnlHeader .pnlHeaderMargin {
+  margin: 5px;
+}
+.pnlHeaderRegister {
+  overflow: hidden !important;
+  background-color: #293e6b;
+  position: relative;
+  float: left;
+  z-index: 0;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.pnlHeaderRegister .pnlHeaderMargin {
+  margin: 5px;
+}
+.divOverOpacityPnlHeader {
+  position: relative;
+  z-index: 2;
+  height: 60px;
+}
+/**** LOGO ****/.pnlLogo {
+  float: left;
+}
+.pnlLogoBannerMasterPage {
+  float: right;
+}
+.resellerLogo {
+  background-image: url("../../img/Logo/Logo_demo_258x60.png");
+}
+.bannerMasterPageResellerLogo {
+  background-image: url("../../img/Logo/Logo_demo_258x60_WhiteLetters_Transparent.png");
+}
+/**** MIGAS DE PAN ****/.pnlBreadcrumbs {
+  float: left;
+  margin: 10px 10px;
+  font-size: 13.2px;
+}
+.pnlBreadcrumbs .navMenu .navMenuItem {
+  float: left;
+  margin: 2px 5px;
+}
+.pnlBreadcrumbs .navMenu .navMenuItem .navMenuItemLink {
+  color: #96c51b;
+}
+.pnlBreadcrumbs .breadcrumbItem {
+  float: left;
+  margin-top: 10px;
+}
+.pnlBreadcrumbs .imgBreadcrumbs {
+  float: left;
+  margin-top: 7px;
+  background-image: url("../../img/Icon/Icon_Play_8x8.png");
+}
+/**** PANEL DE INFORMACIÓN DE LOGIN ****//*****************************************//* Variables control de login            *//*****************************************/.pnlLoggedUserActions {
+  float: right;
+  width: 400px;
+  height: 45px;
+  font-size: 13.2px;
+  color: #96c51b;
+}
+.pnlLoggedUserActions .pnlLoggedUserActionsMargin {
+  margin: 3px 3px 0 0;
+  height: 50px;
+  border: 1px solid #666666;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  background-color: white;
+  opacity: 0.7;
+}
+.pnlLoggedUserActions .userLogged1Column {
+  float: left;
+  margin: 0 10px;
+  text-align: right;
+  with: 80%;
+  margin-top: 0px;
+}
+.pnlLoggedUserActions .userLogged1Column p {
+  font-weight: bold;
+}
+.pnlLoggedUserActions .userLogged1Column .lnkUser {
+  width: 140px;
+  float: none;
+  line-height: 25px;
+  vertical-align: middle;
+  text-align: left;
+  color: #5e82ab;
+}
+.pnlLoggedUserActions .userLogged2Column {
+  border-radius: 15px;
+  float: left;
+  width: 80%;
+  margin: 3px 3px 0 0;
+}
+.pnlLoggedUserActions .buttonExit {
+  float: left;
+  margin: 3px 3px 0 0;
+}
+/**************************************//* CONTENIDO O CUERPO                 *//**************************************/.pnlContent {
+  float: left;
+  width: 100%;
+}
+.pnlContent .bar {
+  background: #96c51b;
+  width: 95%;
+}
+.pnlContentMarginFloatingPanel {
+  width: 98%;
+  margin: auto;
+}
+/****   PANEL LATERAL IZQUIERDO   ****//*****************************************//* Variables panel lateral izquierdo     *//*****************************************/.pnlMainMenu {
+  width: 185px;
+  overflow: hidden !important;
+}
+.pnlMainMenu .pnlMainMenuMargin {
+  background-color: #293e6b;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  filter: alpha(opacity=60);
+  -moz-opacity: .6;
+  opacity: .6;
+}
+.pnlMainMenu .buttonKendo {
+  margin-top: 10px;
+  text-align: center;
+}
+.pnlMainMenu .navMenu {
+  margin-top: 30px;
+}
+.pnlContactLogo {
+  margin: 10% 0 0 40%;
+}
+.divOverOpacityMenu {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.pnlFlagCountry {
+  width: 250px;
+  position: absolute;
+  float: right;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-right: 2%;
+  margin-left: 74%;
+  background-color: transparent;
+}
+.pnlFlagCountry .rounderBorder {
+  border: 1px solid #666666;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  padding: 20px;
+  border-radius: 15px;
+  z-index: 2;
+  height: 15px;
+}
+.pnlFlagCountry .label {
+  line-height: 30px;
+  float: left;
+  margin-right: 10px;
+  width: 20%;
+  color: #293e6b;
+}
+.pnlFlagCountry .inputLarge {
+  width: 65%;
+  float: left;
+}
+.pnlFlagCountry .img {
+  padding-top: 8px;
+  padding-left: 9px;
+  vertical-align: middle;
+}
+.rounderWithoutBorder {
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  padding: 20px;
+  border-radius: 15px;
+  z-index: 0;
+  background-color: #96c51b;
+  visibility: visible;
+  filter: alpha(opacity=20);
+  -moz-opacity: .2;
+  opacity: .2;
+  height: 30px;
+}
+.pnlFlagCountryOpacity {
+  width: 250px;
+  position: absolute;
+  float: right;
+  margin-top: 5.1%;
+  margin-bottom: 5%;
+  margin-right: 2%;
+  margin-left: 74.1%;
+}
+/****   PANEL LATERAL DERECHO   ****//****Variables para estilos de notificaciones **/.divOverOpacityInformationArea {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.pnlInformationArea {
+  width: 240px;
+  /*** Detalle de Notificaciones ***/
+}
+.pnlInformationArea .pnlInformationAreaMargin {
+  background-color: #293e6b;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  filter: alpha(opacity=40);
+  -moz-opacity: .4;
+  opacity: .4;
+}
+.pnlInformationArea .notificationAreaOpacity {
+  moz-border-radius: 15px;
+  -khtml-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: grey;
+  background: white;
+  filter: alpha(opacity=30);
+  -moz-opacity: 0.3;
+  opacity: 0.3;
+  position: absolute;
+  height: 280px;
+  width: 95%;
+  margin-top: 5px;
+  padding: 3px;
+}
+.pnlInformationArea .notificationArea {
+  width: 90%;
+  position: absolute;
+  height: 280px;
+  margin: 10px;
+}
+.pnlInformationArea .notificationTitle {
+  padding: 10px 0px 3px 0px;
+  width: 100%;
+}
+.pnlInformationArea .notificationTitle .title {
+  font-size: 14.4px;
+  color: #293e6b;
+  display: inline-block;
+  font-weight: bold;
+  float: left;
+}
+.pnlInformationArea .notificationTitle .lnkTitle {
+  color: #293e6b;
+  text-decoration: none;
+  font-weight: bold;
+  float: right;
+}
+.pnlInformationArea .notificationTitle hr {
+  background-color: white;
+  border-color: White;
+  border-style: none;
+}
+.pnlInformationArea .subTitle {
+  color: #293e6b;
+  font-weight: bold;
+  float: left;
+  padding-bottom: 3px;
+}
+.pnlInformationArea .notificationOpacity {
+  moz-border-radius: 15px 0px 0px 15px;
+  -khtml-border-radius: 15px 0px 0px 15px;
+  -webkit-border-radius: 15px 0px 0px 15px;
+  border-radius: 15px 0px 0px 15px;
+  border-style: solid;
+  border-width: 1px;
+  filter: alpha(opacity=20);
+  -moz-opacity: 0.2;
+  opacity: 0.2;
+  position: absolute;
+  height: 20px;
+  width: 99%;
+}
+.pnlInformationArea .semiCircle {
+  moz-border-radius: 15px 0px 0px 15px;
+  -khtml-border-radius: 15px 0px 0px 15px;
+  -webkit-border-radius: 15px 0px 0px 15px;
+  border-radius: 15px 0px 0px 15px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  margin: 0px;
+  padding: 0px;
+  float: left;
+}
+.pnlInformationArea .lblSemiCircle {
+  padding-top: 2px;
+  padding-left: 4px;
+  float: left;
+}
+.pnlInformationArea .notificationBody {
+  width: 100%;
+  position: absolute;
+}
+.pnlInformationArea .notificationContent {
+  padding: 3px;
+  margin-left: 20px;
+  position: absolute;
+  height: 20px;
+  width: 80%;
+  font-weight: bold;
+}
+.pnlInformationArea .notificationContent .labelNotificationTitle {
+  margin-left: 12px;
+}
+.pnlInformationArea .lnkNotificationTitle {
+  text-decoration: none;
+  color: black;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.pnlInformationArea .notificationRepeaterBody {
+  height: 200px;
+  overflow: auto;
+  position: absolute;
+  width: 100%;
+}
+.pnlInformationArea .notificationSeverityUrgent .divNotificationOpacity {
+  border-color: red;
+  background: red;
+}
+.pnlInformationArea .notificationSeverityUrgent .divBackGroundColor {
+  background: red;
+}
+.pnlInformationArea .notificationSeverityHight .divNotificationOpacity {
+  border-color: orange;
+  background: orange;
+}
+.pnlInformationArea .notificationSeverityHight .divBackGroundColor {
+  background: orange;
+}
+.pnlInformationArea .notificationSeverityMedium .divNotificationOpacity {
+  border-color: #5e82ab;
+  background: #5e82ab;
+}
+.pnlInformationArea .notificationSeverityMedium .divBackGroundColor {
+  background: #5e82ab;
+}
+.pnlInformationArea .notificationSeverityLow .divNotificationOpacity {
+  border-color: #598f94;
+  background: #598f94;
+}
+.pnlInformationArea .notificationSeverityLow .divBackGroundColor {
+  background: #598f94;
+}
+.pnlInformationArea .modalBackgroundNotificationDetail {
+  filter: alpha(opacity=40);
+  -moz-opacity: 0.4;
+  opacity: 0.4;
+  height: 100%;
+  background-color: #999999;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+}
+.pnlInformationArea .divOverOpacityPnlNotificationDetail {
+  position: fixed;
+  left: 35%;
+  top: 30%;
+  width: 30%;
+  height: 170px;
+  overflow: auto;
+  background: #293e6b;
+  -moz-border-radius: 9px;
+  -webkit-border-radius: 9px;
+  border-radius: 9px;
+  overflow: hidden;
+}
+.pnlInformationArea .notificationDetailContainerOpacity {
+  filter: alpha(opacity=20);
+  -moz-opacity: 0.2;
+  opacity: 0.2;
+  min-height: 10px;
+  height: 170px;
+  padding: 0px;
+  -moz-border-radius: 9px;
+  -webkit-border-radius: 9px;
+  border-radius: 9px;
+  position: absolute;
+  width: 100%;
+}
+.pnlInformationArea .notificationDetailContainer {
+  height: 100%;
+  min-height: 10px;
+  padding: px;
+  -moz-border-radius: 9px;
+  -webkit-border-radius: 9px;
+  border-radius: 9px;
+  position: absolute;
+  width: 100%;
+}
+.pnlInformationArea .notificationDetailTop {
+  position: absolute;
+  height: 25px;
+  width: 100%;
+  margin: 0px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #598f94;
+  -moz-border-radius: 9px 9px 0px 0px;
+  -webkit-border-radius: 9px 9px 0px 0px;
+  border-radius: 9px 9px 0px 0px;
+  padding: 0px;
+}
+.pnlInformationArea .notificationDetailTop .divContentTitle {
+  width: 97%;
+  margin: 5px;
+}
+.pnlInformationArea .notificationDetailBody {
+  position: absolute;
+  width: 100%;
+}
+.pnlInformationArea .notificationDetailBody .divContentDetail {
+  margin: 5px;
+  height: 90px;
+  position: absolute;
+  width: 95%;
+  overflow: auto;
+  padding: 3px;
+  border-width: 1px;
+  border-style: solid;
+  -moz-border-radius: 9px;
+  -webkit-border-radius: 9px;
+  border-radius: 9px;
+  border-color: #666666;
+}
+.pnlInformationArea .notificationDetailBody .divContentDetail .lblNotificationDetail {
+  margin-left: 8px;
+  margin-bottom: 1px;
+}
+.pnlInformationArea .divNotificationButton {
+  width: 97%;
+  bottom: 0;
+  position: absolute;
+  margin: 4px;
+}
+/*** FIN AREA NOTIFICACIONES ***//******* Admin Home ************/.divTemplatesAdminHome {
+  display: none;
+  margin: 10px;
+  padding: 10px;
+}
+.homeTemplateContent {
+  width: 93%;
+  margin-left: 10px;
+  float: left;
+}
+.lnkLinkInTitle {
+  color: #96c51b;
+  float: left;
+  margin-left: 15px;
+}
+.divOuterBoxTextValue100 {
+  width: 100% !important;
+  z-index: 0;
+}
+.divOuterBoxTextValueMedium {
+  width: 30% !important;
+  z-index: 0;
+}
+.divOuterBoxTextValue {
+  position: relative;
+  width: 17%;
+  float: left;
+  margin-right: 10px;
+  padding: 0px;
+  z-index: 0;
+}
+.divOuterBoxTextValue .divOpacity {
+  position: absolute;
+  -moz-border-radius: 15px 0px 0px 15px;
+  -webkit-border-radius: 15px 0px 0px 15px;
+  border-radius: 15px 0px 0px 15px;
+  border: 1px solid transparent;
+  background-color: #96c51b;
+  filter: alpha(opacity=20);
+  -moz-opacity: .2;
+  opacity: .2;
+  width: 70%;
+  z-index: 1;
+  height: 25px;
+  margin: 8px auto;
+  padding-right: 3px;
+}
+.divOuterBoxTextValue .divOverOpacity {
+  position: relative;
+  z-index: 2;
+  border: 1px solid #293e6b;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  height: 25px;
+  margin: 8px auto;
+  overflow: hidden;
+}
+.divOuterBoxTextValue .divOverOpacity .labelTitle {
+  width: 70%;
+  float: left;
+  line-height: 25px;
+  vertical-align: middle;
+  text-align: right;
+  padding-right: 3px;
+  color: #293e6b;
+}
+.divOuterBoxTextValue .divOverOpacity .labelDetail {
+  width: 20%;
+  float: right;
+  line-height: 25px;
+  vertical-align: middle;
+  text-align: center;
+  padding-right: 5px;
+  color: #293e6b;
+}
+.divTableAdminHomeVerticalScroll {
+  max-height: 100px;
+  overflow-y: auto;
+}
+.divTableAdminHome {
+  width: 95%;
+  border: 1px solid #293e6b;
+  padding: 5px;
+  background-color: transparent;
+  overflow: auto;
+  white-space: nowrap;
+  -moz-border-radius: 15px;
+  -khtml-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+}
+.divTableAdminHome .labelDefault {
+  float: none;
+}
+.divTableAdminHome .labelColumnContent {
+  line-height: 25px;
+  vertical-align: middle;
+  text-align: left;
+}
+.divTableAdminHomeLeft {
+  width: 70%;
+  border: 1px solid #293e6b;
+  padding: 5px;
+  background-color: transparent;
+  overflow: auto;
+  white-space: nowrap;
+  -moz-border-radius: 15px;
+  -khtml-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px 0px 0px 15px;
+  float: left;
+}
+.divTableAdminHomeLeft .labelDefault {
+  float: none;
+}
+.divTableAdminHomeLeft .labelColumnContent {
+  line-height: 25px;
+  vertical-align: middle;
+  text-align: left;
+}
+.divTableAdminHomeRight {
+  border: solid #293e6b;
+  border-width: 1px 1px 1px 0px;
+  padding: 5px;
+  background-color: transparent;
+  overflow: auto;
+  white-space: nowrap;
+  -moz-border-radius: 15px;
+  -khtml-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 0px 15px 15px 0px;
+}
+.divTableAdminHomeRight .labelDefault {
+  float: none;
+}
+.divTableAdminHomeRight .labelColumnContent {
+  line-height: 25px;
+  vertical-align: middle;
+  text-align: left;
+}
+.columnHeader {
+  border-bottom: 1px solid #C5C5C5;
+}
+.columnContent {
+  width: 20%;
+  margin: -2px !important;
+  display: inline-block;
+}
+.columnContent68 {
+  width: 68%;
+  display: inline-block;
+}
+.columnContent15 {
+  width: 15%;
+  display: inline-block;
+}
+.divContentDetailJobsInState {
+  width: 98%;
+  height: 84%;
+  overflow: auto;
+  white-space: nowrap;
+}
+.modalContainerJobsInState {
+  position: relative;
+  z-index: 5;
+  width: 70%;
+  min-height: 10px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  -moz-border-radius: 9px;
+  -webkit-border-radius: 9px;
+  border-radius: 9px;
+}
+.modalTopJobsInState {
+  width: 100%;
+  padding: 4px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-color: #C5C5C5;
+  text-align: center;
+  margin-bottom: 4px;
+}
+.modalBodyJobsInState {
+  width: 100%;
+  height: 88%;
+}
+.marginFirstElement {
+  margin-left: 15px;
+}
+.marginSecondElement {
+  margin-left: 30px;
+}
+.marginThirdElement {
+  margin-left: 45px;
+}
+.marginFourthElement {
+  margin-left: 60px;
+}
+.modalBackgroundJobsInState {
+  filter: alpha(opacity=40);
+  -moz-opacity: 0.4;
+  opacity: 0.4;
+  height: 100%;
+  background-color: #999999;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.divOverOpacityPnlJobsInState {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  overflow: hidden;
+}
+.divButtonClosePnlJobsInState {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 6px;
+}
+/**********Fin Admin Home *****//********* Reseller HOME *******/.divResellerSalesData {
+  width: 50%;
+  float: left;
+  margin-top: 60px;
+}
+/*** Customer HOME ************//*** Estilos del div con detalle del proyecto **/.lnkActionProjectHome {
+  margin-left: 5px;
+}
+.projectSearchOptions {
+  float: left;
+  width: 60%;
+  padding: 5px;
+  margin-bottom: 8px;
+}
+.projectSearchOptions .selectSortType {
+  float: left;
+  width: 50%;
+}
+.projectSearchOptions .checNoEnd {
+  float: right;
+  width: 50%;
+  text-align: right;
+  padding-top: 5px;
+}
+.divProjectDetail {
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-right: 5px;
+  width: 100%;
+}
+.divTemplateProjectHome {
+  display: none;
+  margin: 10px;
+  padding: 10px;
+}
+.divProjectProgressBar {
+  width: 30%;
+  height: 20px !important;
+  float: left;
+}
+.divProjectProgressBar.ui-progressbar .ui-widget-header {
+  background: #96c51b !important;
+}
+.divProjectProgressBar.ui-widget-content {
+  background: #e4eaf1 !important;
+}
+.labelEstimatedDate {
+  margin-left: 140px;
+  float: left;
+  line-height: 25px;
+  vertical-align: middle;
+  text-align: right;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.projectHomeTemplateContent {
+  width: 93%;
+  margin-left: 5px;
+  float: left;
+}
+.divBorderHome {
+  padding: 10px;
+  border-top: 1px solid #293e6b;
+}
+.divProjectNoResult {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 5px;
+  float: left;
+}
+.projectHomeDetailOpacity {
+  moz-border-radius: 15px 15px 15px 15px;
+  -khtml-border-radius: 15px 15px 15px 15px;
+  -webkit-border-radius: 15px 15px 15px 15px;
+  border-radius: 15px 15px 15px 15px;
+  border: 1px solid #666666;
+  filter: alpha(opacity=20);
+  -moz-opacity: 0.2;
+  opacity: 0.2;
+  position: absolute;
+  height: 100px;
+  background: #293e6b;
+  padding: 3px;
+  width: 90%;
+}
+.projectHomeDetailContent {
+  padding: 3px;
+  height: 100px;
+  width: 100%;
+}
+.divGrid50Percent {
+  width: 50% !important;
+  float: left;
+}
+.divProjectHomeChart {
+  width: 50%;
+  float: left;
+}
+.divProjectHomeChartScroll {
+  overflow: auto;
+  width: 50% !important;
+}
+.labelProjectHomeChart {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  float: left;
+  line-height: 25px;
+  vertical-align: middle;
+  text-align: right;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.divHomeProjectName {
+  width: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  float: left;
+  height: 25px;
+  margin-right: 10px;
+  white-space: nowrap;
+  padding-left: 15px;
+}
+.labelDefaultEllipsis {
+  line-height: 25px;
+  vertical-align: middle;
+  text-align: left;
+  height: 25px;
+}
+.divHomeProjectAction {
+  margin-left: 10px;
+  float: left;
+  margin-top: 4px;
+}
+.divCustomerHomeSummaryData {
+  width: 45%;
+  float: left;
+  margin-top: 90px;
+  margin-left: 20px;
+}
+.divOuterBoxCustomerHome {
+  position: relative;
+  width: 90%;
+  float: left;
+  margin-right: 10px;
+  padding: 0px;
+  z-index: 0;
+}
+.divOuterBoxCustomerHome .divOpacity {
+  position: absolute;
+  -moz-border-radius: 15px 0px 0px 15px;
+  -webkit-border-radius: 15px 0px 0px 15px;
+  border-radius: 15px 0px 0px 15px;
+  border: 1px solid transparent;
+  background-color: #96c51b;
+  filter: alpha(opacity=20);
+  -moz-opacity: .2;
+  opacity: .2;
+  width: 60%;
+  z-index: 1;
+  height: 25px;
+  margin: 8px auto;
+  padding-right: 3px;
+}
+.divOuterBoxCustomerHome .divOverOpacity {
+  position: relative;
+  z-index: 2;
+  border: 1px solid #293e6b;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  height: 25px;
+  margin: 8px auto;
+  overflow: hidden;
+}
+.divOuterBoxCustomerHome .divOverOpacity .labelTitle {
+  width: 60%;
+  float: left;
+  line-height: 25px;
+  vertical-align: middle;
+  text-align: right;
+  padding-right: 3px;
+  color: #293e6b;
+}
+.divOuterBoxCustomerHome .divOverOpacity .labelDetail {
+  width: 26%;
+  float: right;
+  line-height: 25px;
+  vertical-align: middle;
+  text-align: center;
+  padding-right: 5px;
+  color: #293e6b;
+}
+.divClearOuterBoxCustomerHome {
+  height: auto;
+  margin-top: 0px;
+  clear: both;
+  margin-left: 20px;
+}
+.divNewJobButton {
+  -moz-box-shadow: -2px 2px 0px 2px #666666;
+  -webkit-box-shadow: -2px 2px 0px 2px #666666;
+  /*box-shadow: h-shadow v-shadow blur spread color inset;*/
+  box-shadow: 0px 0px 1px 1px #666666;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e4eaf1), color-stop(1, #96c51b));
+  background: -moz-linear-gradient(center top, #e4eaf1 5%, #96c51b 100%);
+  background-color: #96c51b;
+  -webkit-border-top-left-radius: 10px;
+  -moz-border-radius-topleft: 10px;
+  border-top-left-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
+  -moz-border-radius-topright: 10px;
+  border-top-right-radius: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+  -moz-border-radius-bottomright: 10px;
+  border-bottom-right-radius: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  -moz-border-radius-bottomleft: 10px;
+  border-bottom-left-radius: 10px;
+  text-indent: 0;
+  border: 2px solid #666666;
+  display: inline-block;
+  color: white;
+  height: 25px;
+  line-height: 25px;
+  width: 140px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  float: right;
+  cursor: pointer;
+}
+.divNewJobButton a {
+  text-decoration: none;
+  color: #293e6b;
+  font-weight: bold;
+}
+.divNewJobButton:hover {
+  /*background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, @corporate_color_blue), color-stop(1, @color_blue_light) );
+	background:-moz-linear-gradient( center top, @corporate_color_blue 5%, @color_blue_light 100% );*/
+  background-color: #96c51b;
+  border: 2px solid black;
+  display: inline-block;
+  filter: alpha(opacity=60);
+  -moz-opacity: .6;
+  opacity: .6;
+  /*color: @neutral_color_black;*/
+  cursor: pointer;
+  font-weight: bold;
+}
+.divNewJobButton:hover a {
+  text-decoration: none;
+  color: #293e6b;
+  font-weight: bold;
+}
+.divNewJobButton:active {
+  position: relative;
+  top: 1px;
+}
+/******* FIN HOME ***//****   PANEL CENTRAL   ****//*****************************************//* Variables panel lateral izquierdo     *//*****************************************/.pnlPageContent {
+  height: 100%;
+  overflow: auto;
+}
+.pnlPageContent .pnlPageContentMargin {
+  background-color: white;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  filter: alpha(opacity=80);
+  -moz-opacity: 0.7;
+  opacity: 0.7;
+}
+.divOverOpacity {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+.BodyBannerMasterPage {
+  background-image: url("../../img/Background/Background_abstract_Demo_3d_2200x1200.png");
+  background-repeat: no-repeat;
+}
+.pnlBannerMasterPageContent {
+  float: left;
+  width: 100%;
+}
+.pnlOpacityBannerMasterPage {
+  position: absolute;
+  background-color: white;
+  filter: alpha(opacity=80);
+  -moz-opacity: .7;
+  opacity: .7;
+  width: 100%;
+  z-index: 1;
+  height: 100%;
+}
+.divOverOpacityBannerMasterPage {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.divOuterBannerMasterPage {
+  position: relative;
+  width: 100%;
+  float: left;
+  z-index: 0;
+  height: 100%;
+}
+/**************************************//* PIE                                *//**************************************/.pnlFooter {
+  display: none;
+}
+/**************************************//* UTILES                             *//**************************************/.clearfix:after {
+  visibility: hidden;
+  display: block;
+  content: " ";
+  clear: both;
+  height: 0px;
+  font: 0px/0px Arial, Helvetica, sans-serif;
+  font-size: 0px;
+  line-height: 0px;
+}
+* html .clearfix {
+  zoom: 1;
+}
+/* IE6 */*:first-child + html .clearfix {
+  zoom: 1;
+}
+/* IE7 *//***************************************//* ESTILOS COMUNES A TODAS LAS PÁGINAS *//***************************************//* Estilo de contenedores de controles */.pnlCustomerRegistration {
+  margin: 0 3%;
+}
+.pnlEditData {
+  width: 98%;
+  margin: 5px;
+}
+.pnlEditData .divContent {
+  float: left;
+  width: 100%;
+}
+.pnlEditData .divTermsAndConditions {
+  overflow: auto;
+  height: 400px;
+  padding-right: 10px;
+}
+.pnlEditData .divModalWithVerticalScroll {
+  height: 475px;
+  overflow-y: scroll;
+}
+.divContentBorder {
+  border: 2px black solid;
+  width: 90%;
+  margin: 10px 20px;
+}
+.divWidth99 {
+  width: 99% !important;
+}
+.divModalWithVerticalScroll {
+  height: 475px;
+  overflow-y: scroll;
+}
+/*Estilo para contenedores de controles según el número de columnas*/.divOneColumn {
+  width: 100%;
+  float: left;
+  margin-top: 10px;
+}
+.divOneColumnNoTopMargin {
+  width: 100%;
+  float: left;
+}
+.divTwoColumnNoHeight {
+  width: 50%;
+  margin-top: 10px;
+  float: left;
+}
+.marginLeftSizeLabelDefault {
+  margin-left: 140px;
+}
+.divHeightAuto {
+  height: auto !important;
+}
+.divWordWrap {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.divTwoColumn {
+  width: 50%;
+  float: left;
+  margin-top: 10px;
+  height: 25px;
+}
+.divTwoColumn img {
+  padding-right: 5px;
+  vertical-align: middle;
+}
+.divThreeColumn {
+  width: 33%;
+  float: left;
+  margin-top: 10px;
+  height: 25px;
+}
+.divThreeColumn .inputDefault {
+  width: 39%;
+  float: left;
+}
+.div25Percentage {
+  width: 25%;
+  float: left;
+  margin-top: 10px;
+  padding-left: 15px;
+}
+.divFourColumn {
+  width: 15%;
+  float: left;
+  margin-top: 10px;
+  padding-left: 15px;
+}
+.div150pxColumn {
+  width: 140px;
+  float: left;
+  margin-top: 10px;
+  padding-left: 15px;
+}
+.divFiveColumn {
+  width: 10%;
+  float: left;
+  margin-top: 10px;
+  padding-left: 15px;
+}
+.divColumnMedium {
+  width: 30%;
+  float: left;
+  margin-top: 10px;
+  height: 25px;
+}
+.divActions {
+  width: 95%;
+  margin: 10px 40px;
+}
+.divActions img {
+  padding-right: 5px;
+  vertical-align: middle;
+}
+.divActions a {
+  text-decoration: none;
+}
+.divLeft48 {
+  float: left;
+  width: 48%;
+}
+.divRight49 {
+  float: right;
+  width: 49%;
+}
+.div20Percentage {
+  width: 20%;
+  float: left;
+  margin-top: 10px;
+}
+.div23Percentage {
+  width: 23%;
+  float: left;
+  margin-top: 10px;
+}
+.div30 {
+  width: 30px;
+}
+.div30PercentageRoundBorder {
+  width: 30%;
+  float: left;
+  margin-top: 10px;
+  border-color: #293e6b;
+  border-style: solid;
+  border-width: 1px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  margin-left: 15px;
+  -moz-border-radius: 9px;
+  -khtml-border-radius: 9px;
+  -webkit-border-radius: 9px;
+  border-radius: 9px;
+}
+.div40Percentage {
+  width: 40%;
+}
+.div65Percentage {
+  width: 65%;
+  float: left;
+  margin-top: 10px;
+}
+.div75Percentage {
+  width: 75%;
+  float: left;
+  margin-top: 10px;
+}
+.div85Percentage {
+  width: 85%;
+  float: left;
+}
+.divActionsWithoutMargin {
+  width: 95%;
+}
+.divActionsWithoutMargin img {
+  padding-right: 2px;
+  vertical-align: middle;
+}
+.divActionsWithoutMargin a {
+  text-decoration: none;
+}
+.divTopBottomMargin15 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.divVerticalActions {
+  vertical-align: middle;
+}
+.divVerticalActions img {
+  vertical-align: middle;
+  margin: 10px 0px;
+}
+.divVerticalActions a {
+  text-decoration: none;
+}
+.divActionsAlignRight {
+  text-align: right;
+}
+.divActionsAlignLeft {
+  text-align: left;
+}
+.divFontWeightBold {
+  font-weight: bold;
+}
+.textAlignCenter {
+  text-align: center;
+}
+.divCenter {
+  height: 25px;
+  line-height: 25px;
+  vertical-align: middle;
+}
+.divLineBreak {
+  clear: both;
+}
+.divCheck {
+  float: left;
+  width: 50%;
+}
+.divCheckLabelBoldRight {
+  margin-left: 20%;
+  padding-top: 3px;
+  float: right;
+  margin-right: 25px;
+}
+.divCheckLabelBoldRight label {
+  width: 55px;
+  line-height: 20px;
+  float: left;
+  font-weight: bold;
+  text-align: right;
+}
+.divCheckLabelBoldLeftWithPadding {
+  margin-left: 85px;
+  padding-top: 3px;
+  margin-right: 25px;
+}
+.divCheckLabelBoldLeftWithPadding label {
+  width: 55px;
+  line-height: 20px;
+  float: left;
+  font-weight: bold;
+  text-align: right;
+  padding-right: 15px;
+}
+.divIconLeft {
+  float: left;
+  padding: 3px;
+}
+.floatLeft {
+  float: left;
+}
+.floatRight {
+  float: right;
+}
+.noDisplay {
+  display: none;
+}
+.display {
+  display: block;
+}
+.divMarginTop3px {
+  margin-top: 3px;
+}
+.divMarginTop10px {
+  margin-top: 10px;
+}
+.divMarginTop5px {
+  margin-top: 5px !important;
+}
+.divMarginBottom3px {
+  margin-bottom: 3px;
+}
+.divMarginBottom10px {
+  margin-bottom: 10px !important;
+}
+.divMarginLeft15px {
+  margin-left: 15px;
+}
+.divMarginLeft10px {
+  margin-left: 10px;
+}
+.divMarginLeft20px {
+  margin-left: 20px;
+}
+.divMarginLeft5px {
+  margin-left: 5px;
+}
+.divMarginLeft150px {
+  margin-left: 150px;
+}
+.divMarginBottom8 {
+  margin-bottom: 8px;
+}
+.divMaringBottom3 {
+  margin-bottom: 3px;
+}
+.divIpSeparatorDetail {
+  width: 5px;
+  padding-right: 15px;
+  padding-left: 15px;
+  height: 5px;
+}
+.borderRoundGray {
+  border: 1px solid #293e6b;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+}
+.divMarginTop8 {
+  margin-top: 8px;
+}
+.divMarginTop12 {
+  margin-top: 12px;
+}
+.divMarginTop15 {
+  margin-top: 15px;
+}
+.divWidth85 {
+  width: 85%;
+}
+.divPadding10 {
+  padding: 10px;
+}
+.divPadding5 {
+  padding: 5px;
+}
+.divPadding1 {
+  padding: 1px;
+}
+.divPaddingTop10 {
+  padding-top: 10px;
+}
+.divWidth60 {
+  width: 60%;
+}
+.divWidth30 {
+  width: 30%;
+}
+.divWidth70 {
+  width: 70%;
+}
+.divWidth80 {
+  width: 80% !important;
+}
+.divLabelEllipse {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 25px;
+  white-space: nowrap;
+}
+.divPasswordFeatures {
+  margin: 20px;
+  float: left;
+}
+/* Estilo para título principal de las Páginas*/.pnlHomeLogo {
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-left: 5px;
+  background-color: transparent;
+}
+.pnlHomeLogo .logo {
+  vertical-align: bottom;
+  background-image: url("../../img/Icon/Icon_Home_32x32.png");
+}
+.pnlHomeLogo .logoWithBreadCrumb {
+  vertical-align: bottom;
+  float: left;
+  background-image: url("../../img/Icon/Icon_Home_32x32.png");
+}
+.pnlHomeLogo .logoTitle {
+  color: #96c51b;
+  font-size: 16.5px;
+  vertical-align: bottom;
+  font-weight: bold;
+}
+.pnlHomeLogo .labelInfo {
+  padding-left: 10px;
+}
+.pnlHomeLogo hr {
+  background: #96c51b;
+}
+.pnlHomeLogo .hrUnderBreadCrumb {
+  width: 100%;
+  float: left;
+  margin: 0px;
+}
+.pnlHelp {
+  margin-top: 10px;
+}
+/* Estilo de títulos por contenetor */.labelTitlePanelBar {
+  color: #96c51b;
+  font-weight: bold;
+  float: left;
+  margin: 0px;
+  padding: 0px;
+  font-size: 14.4px;
+}
+.hrTitlePanelBar {
+  background: #96c51b;
+  background-color: #96c51b;
+  color: #96c51b;
+  width: 100%;
+  float: left;
+  margin: 0px;
+  padding: 0px;
+}
+.divTitle {
+  margin-left: 15px;
+  clear: both;
+}
+.divTitle .labelTitle {
+  color: #96c51b;
+  font-weight: bold;
+  float: left;
+  margin-top: 10px;
+  font-size: 14.4px;
+}
+.divTitle .labelTitleMargin3px {
+  color: #96c51b;
+  font-weight: bold;
+  float: left;
+  margin-top: 10px;
+  font-size: 14.4px;
+  margin-left: 10px;
+}
+.divTitle hr {
+  background: #96c51b;
+  float: left;
+  width: 100%;
+}
+.divTitle .hr95 {
+  width: 95%;
+}
+.divTitle .lnkBack {
+  color: #96c51b;
+  font-weight: bold;
+  margin-left: 10px;
+  float: right;
+  padding-top: 10px;
+  vertical-align: bottom;
+  text-align: right;
+  text-decoration: none;
+}
+.divTitle .lnkTitle {
+  float: left;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.divTitle .literalMarginLeft {
+  margin-left: 2px;
+}
+.divTitleModalWindow {
+  margin-left: 0px;
+  clear: both;
+}
+.divTitleModalWindow .labelTitle {
+  color: #96c51b;
+  font-weight: bold;
+  float: left;
+  margin-top: 10px;
+  font-size: 12px;
+}
+.divTitleModalWindow hr {
+  background: corporate_color_blue;
+  float: left;
+  width: 100%;
+}
+.divTitleModalWindow .lnkBack {
+  color: #96c51b;
+  font-weight: bold;
+  margin-left: 10px;
+  float: right;
+  padding-top: 10px;
+  vertical-align: bottom;
+  text-align: right;
+  text-decoration: none;
+}
+/* Estilo de subtítulos por contenetor */.divSubtitle {
+  margin-left: 20px;
+  clear: both;
+}
+.divSubtitle .labelSubtitle {
+  font-weight: bold;
+  float: left;
+  margin-top: 10px;
+  font-size: 12.6px;
+}
+.divSubtitle hr {
+  background: #96c51b;
+  float: left;
+  width: 100%;
+}
+/* Estilos Radio Buttons  */.divRadioButton {
+  margin: 10px;
+}
+.inputRadioButton {
+  vertical-align: middle;
+  display: inline;
+}
+.labelRadioButton {
+  vertical-align: middle;
+  font-weight: bold;
+}
+.divRadioButtonDefinitionDescription {
+  margin: 10px;
+  float: left;
+  width: 100%;
+}
+.divRadioButtonDefinition {
+  width: 15%;
+  float: left;
+}
+.divRadioButtonDescription {
+  width: 85%;
+  float: left;
+}
+.divTopBottomMargin {
+  margin: 10px 0px;
+  float: left;
+  width: 100%;
+}
+/* Estilo que define el posicionamiento de botones submit */.divButton {
+  width: 100%;
+  text-align: center;
+  float: left;
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+.divButton30WidthWithoutPadding {
+  width: 30%;
+  text-align: center;
+  float: left;
+}
+.divButtonRefresh {
+  text-align: left;
+  margin: 5px auto;
+}
+.divButtonModalWindow {
+  width: 100%;
+  text-align: center;
+  float: left;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  bottom: 0;
+  position: fixed;
+}
+.divButtonToMargin60 {
+  width: 100%;
+  text-align: center;
+  float: left;
+  padding-top: 60px;
+  padding-bottom: 5px;
+}
+.divButtonLeft {
+  width: 100%;
+  padding-top: 25px;
+}
+/*Estilo para labels*/.labelLinkDefaul {
+  float: left;
+  height: 25px;
+  line-height: 25px;
+  vertical-align: middle;
+  text-align: right;
+  padding-right: 15px;
+}
+.labelDefaultTiny {
+  width: 65px;
+  float: left;
+  line-height: 25px;
+  vertical-align: middle;
+  text-align: right;
+  padding-right: 15px;
+  color: #293e6b;
+}
+.labelDefaultSmall {
+  width: 100px;
+  float: left;
+  line-height: 25px;
+  vertical-align: middle;
+  text-align: right;
+  padding-right: 15px;
+  color: #293e6b;
+}
+.labelDefault {
+  width: 140px;
+  float: left;
+  line-height: 25px;
+  vertical-align: middle;
+  text-align: right;
+  padding-right: 15px;
+  color: #293e6b;
+}
+.labelDefaultLarge {
+  width: 200px;
+  float: left;
+  line-height: 25px;
+  vertical-align: middle;
+  text-align: right;
+  padding-right: 15px;
+  color: #293e6b;
+}
+.labelDefaultLeft {
+  width: 140px;
+  float: left;
+  line-height: 25px;
+  vertical-align: left;
+  text-align: left;
+  padding-left: 15px;
+}
+.labelDefaultLeftNoMargin {
+  width: 140px;
+  float: left;
+  line-height: 25px;
+  vertical-align: left;
+  text-align: left;
+}
+.labelDefaultNoColor {
+  width: 140px;
+  float: left;
+  line-height: 25px;
+  vertical-align: middle;
+  text-align: right;
+  padding-right: 15px;
+}
+.labelWithoutWidth {
+  float: left;
+  line-height: 25px;
+  vertical-align: middle;
+  text-align: right;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.labelLarge {
+  width: 180px;
+}
+.label300px {
+  width: 300px;
+}
+.label30px {
+  width: 30px;
+}
+.label40px {
+  width: 40px;
+}
+.label60px {
+  width: 60px;
+}
+.label90px {
+  width: 90px;
+}
+.label120px {
+  width: 120px;
+}
+.label200px {
+  width: 200px;
+}
+.labelExtraLarge {
+  width: 240px;
+  float: left;
+  height: 25px;
+  line-height: 25px;
+  vertical-align: middle;
+  text-align: right;
+  padding-right: 15px;
+}
+.labelDefaultModalWindow {
+  width: 130px;
+  float: left;
+  height: 25px;
+  line-height: 25px;
+  vertical-align: middle;
+  text-align: right;
+  padding-right: 15px;
+}
+.labelDefaultModalWindowWithDiv16 {
+  width: 105px;
+  float: left;
+  height: 25px;
+  line-height: 25px;
+  vertical-align: middle;
+  text-align: right;
+}
+.divForlabelModalWindowWithIcon16 {
+  width: 114px;
+  float: left;
+  vertical-align: middle;
+  text-align: right;
+  padding-right: 15px;
+}
+.labelSize90 {
+  width: 90px;
+  float: left;
+}
+.labelSmall {
+  width: 75px;
+  float: left;
+}
+.labelDetail {
+  width: 50%;
+  text-align: left;
+  padding-right: 14px;
+}
+.labelDetailLarge {
+  width: 70%;
+  text-align: left;
+}
+.labelPaddingTop {
+  padding-top: 5px;
+}
+.labelDetailExtraLarge {
+  width: 90%;
+  text-align: left;
+}
+.labelDetailExtraLargeRight {
+  width: 90%;
+  text-align: right;
+}
+.labelDetailSmall {
+  width: 55px;
+  text-align: left;
+}
+.labelWithMarginLeftRight {
+  float: left;
+  height: 25px;
+  line-height: 25px;
+  vertical-align: middle;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.labelWithMarginLeftRight1px {
+  float: left;
+  height: 25px;
+  line-height: 25px;
+  vertical-align: middle;
+  margin-left: 1px;
+  margin-right: 1px;
+}
+.labelWithoutMarginLeft {
+  float: right;
+  height: 25px;
+  line-height: 25px;
+  vertical-align: middle;
+}
+.labelTitleText {
+  width: auto !important;
+  text-align: left;
+  padding: 0px 15px;
+}
+.labelTitleBlue {
+  color: #96c51b;
+  font-weight: bold;
+  float: left;
+  margin-top: 10px;
+  font-size: 12px;
+}
+.labelText {
+  width: 100%;
+  text-align: left;
+  padding: 10px 0px 0px 15px;
+}
+.labelText80 {
+  width: 80%;
+  text-align: left;
+  padding: 10px 0px 0px 15px;
+}
+.labelBold {
+  font-weight: bold;
+}
+.labelItalic {
+  font-style: italic;
+}
+.labelBlue {
+  color: #96c51b;
+}
+.labelRed {
+  color: red;
+}
+.labelLetterSmall {
+  font-size: 10.8px;
+}
+.labelNonRelevantInfo {
+  font-style: italic;
+  color: grey;
+}
+.labelAsterisk {
+  font-size: 15px;
+  vertical-align: middle;
+}
+.errorLabel {
+  color: red;
+  text-align: center;
+  display: inline;
+  font-size: 10.8px;
+  font-style: italic;
+}
+.OKLabel {
+  color: green;
+  text-align: center;
+  display: inline;
+  font-size: 10.8px;
+  font-style: italic;
+}
+.labelBlue {
+  color: #5e82ab;
+}
+.labelTextAlignLeft {
+  text-align: left !important;
+}
+/*Estilo para input*/.inputDefault {
+  width: 40%;
+  float: left;
+}
+.inputDefault50 {
+  width: 50%;
+  float: left;
+}
+.inputTiny {
+  width: 5%;
+  float: left;
+}
+.inputSmall {
+  width: 10%;
+  float: left;
+}
+.inputMedium {
+  width: 20%;
+  float: left;
+}
+.inputLarge {
+  width: 70%;
+  float: left;
+}
+.input90Percentage {
+  width: 90%;
+}
+.inputLargeModalWindow {
+  width: 70%;
+  float: left;
+}
+.inputOneColumnSmall {
+  width: 25%;
+}
+.inputMultiline {
+  overflow: auto;
+  width: 100%;
+  resize: none;
+}
+.inputDateTime {
+  width: 20%;
+  margin-right: 4px;
+}
+.inputDateTime25 {
+  width: 25%;
+  margin-right: 4px;
+  float: left;
+}
+.inputDateTime30 {
+  width: 30%;
+  margin-right: 4px;
+  float: left;
+}
+.inputTimePicker20 {
+  width: 20%;
+  margin-right: 4px;
+  float: left;
+}
+.inputDateTime35 {
+  width: 35%;
+  margin-right: 4px;
+}
+.inputDateTimeWithoutPadding span.k-datepicker {
+  padding-left: 0px !important;
+}
+.inputDateTimeFloatingPanels {
+  width: 30%;
+  margin-right: 4px;
+}
+.inputSelect {
+  width: 40%;
+  float: left;
+}
+/* Estilos para input checks */.check {
+  margin-top: 4px;
+}
+.check30px {
+  margin-top: 4px;
+  width: 30px;
+}
+.checkWithTextDefault {
+  width: 20%;
+  float: left;
+  margin-top: 10px;
+  height: 25px;
+}
+.divCheckBox {
+  margin: 10px;
+}
+.divCheckBoxInternationalValidation {
+  text-align: right;
+  width: 140px !important;
+  padding-right: 15px;
+  margin-top: 3px;
+}
+/* Estilos para links */.lnkNoDecoration {
+  text-decoration: none;
+}
+.lnkToggle {
+  float: left;
+  margin-top: 5px;
+  text-decoration: none;
+}
+.lnkCloseDiv {
+  color: #96c51b;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  float: right;
+}
+.lnkDefault {
+  color: #96c51b;
+  text-decoration: none;
+  margin-left: 10px;
+  width: 170px;
+}
+.lnkBlueColorDecoration {
+  color: #96c51b;
+  margin-left: 10px;
+  height: 25px;
+  line-height: 25px;
+  vertical-align: middle;
+}
+.lnkImage {
+  margin-left: 10px;
+  float: left;
+}
+.lnkDisabled {
+  z-index: -1;
+  filter: alpha(opacity=50);
+  -moz-opacity: .5;
+  opacity: .5;
+}
+.linkRedColor {
+  color: red;
+}
+.linkCorporateColor {
+  color: #96c51b;
+}
+.WizardSynchonizerTools {
+  float: right;
+  margin-top: 9px;
+  margin-right: 33px;
+}
+.HomeRenderTools {
+  width: 20% !important;
+  float: right !important;
+  margin-bottom: 5px !important;
+}
+.imageBorder {
+  border-width: 1px;
+  border-style: dotted;
+  border-color: #598f94;
+}
+/* Pestañas */.divTabStrip .li {
+  padding: 0px !important;
+}
+.divTabStrip .divTabs {
+  border-top-style: none !important;
+  border-left-style: none !important;
+  border-right-style: none !important;
+  border-bottom-style: none !important;
+}
+.divTabStrip .k-state-default {
+  background: #293e6b;
+}
+.tabStripBackGroundNone {
+  background: none !important;
+}
+/* Estilos para tablas o grids*/.divHeaderTable {
+  padding-right: 15px;
+}
+.divTable {
+  width: 95%;
+  margin: 10px 10px 25px;
+  border: 1px solid #293e6b;
+  padding: 5px;
+  background-color: transparent;
+  -moz-border-radius: 15px;
+  -khtml-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+}
+.divTable .labelDefault {
+  float: none;
+}
+.divTable .k-widget {
+  border-width: 1px;
+}
+.divTableLateral910 {
+  width: 85%;
+  margin: 10px 10px 25px;
+  border: 1px solid #C5C5C5;
+  padding: 5px;
+  -moz-border-radius: 15px;
+  -khtml-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+}
+.divTableLateral910 .labelDefault {
+  float: none;
+}
+.divTableLateral910 .k-widget {
+  border-width: 1px;
+}
+.divTableLateral110 {
+  width: 20px;
+  margin: 10px 25px;
+  float: left;
+}
+.divTableLateral110 .labelDefault {
+  float: none;
+}
+.divTableModalWindow {
+  border: 1px solid #C5C5C5;
+  padding: 5px;
+  -moz-border-radius: 15px;
+  -khtml-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+}
+.divTableModalWindow .k-widget {
+  border-width: 1px;
+}
+.divTableModalWindowServer {
+  border: 1px solid #C5C5C5;
+  float: left;
+  width: 70%;
+  padding-bottom: 10px;
+  -moz-border-radius: 15px;
+  -khtml-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+}
+/* Crop de imagen */.photoCrop {
+  float: left;
+  border: 1px solid #666666;
+  width: 150px;
+  height: 80px;
+  overflow: hidden;
+  color: #666666;
+  margin: 0 auto;
+}
+/* Estilos para fieldset */.fieldsetDefault {
+  border-color: #293e6b;
+  border-style: solid;
+  border-width: 1px;
+  width: 95%;
+  float: left;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  margin-left: 15px;
+}
+.fieldsetRoundBorder {
+  border-color: #293e6b;
+  border-style: solid;
+  border-width: 1px;
+  width: 95%;
+  float: left;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  margin-left: 15px;
+  -moz-border-radius: 9px;
+  -khtml-border-radius: 9px;
+  -webkit-border-radius: 9px;
+  border-radius: 9px;
+}
+.fieldsetPreviewImages {
+  border-color: #293e6b;
+  border-style: solid;
+  border-width: 1px;
+  float: left;
+  margin-top: 10px;
+  padding: 10px;
+  margin-left: 5px;
+}
+/*** Estilos para li ****/.liPadding3 {
+  padding: 3px;
+}
+/*********************************************************//* Estilos botones de promociones                        *//*********************************************************/.floatLeft {
+  float: left;
+}
+.divGrillPromotions {
+  width: 815px !important;
+  margin-left: 60px;
+  margin-top: 90px;
+}
+.divButtonPromotion {
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  /*padding: 30px 30px;*/
+  margin: 0px 60px 60px 0px;
+  min-height: 75px;
+  height: 75px;
+  /* Alto del botón */
+  width: 160px;
+  /* Ancho del botón */
+  display: table;
+  cursor: pointer;
+  box-shadow: /* Sombras interna */inset 0 10px 15px rgba(255, 255, 255, 0.35), inset 0 -10px 15px rgba(0, 0, 0, 0.15), inset 10px 0 15px rgba(0, 0, 0, 0.05), inset -10px 0 15px rgba(0, 0, 0, 0.05), 0px/* Sombra externa *//* sombra gris aura 0px 0px 4px 6px rgba(0,0,0,.3); *//* sombra verde 6px 10px 4px 0px rgba(0,119,52,0.3); *//* sombra verde aura */ 0px 4px 6px rgba(0, 119, 52, 0.3);
+  color: white;
+  background-color: #0088cc;
+  float: left;
+}
+.divButtonPromotion:hover {
+  box-shadow: inset 0 5px 30px rgba(0, 0, 0, 0.2);
+  background-size: 55%;
+}
+.divFontTitlePromotion {
+  margin: 5px 0px;
+  font-weight: bold;
+  font-size: 18px;
+  text-shadow: 0.1em 0.1em 0.1em black;
+  width: 170px;
+}
+.divFontCreditsWithBonusPromotion {
+  margin: 5px 0px;
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: 0.1em 0.1em 0.1em black;
+}
+.divFontCreditsWithBonusPromotion span {
+  font-size: 20px;
+  font-weight: bold;
+}
+.divFontSmallPromotion {
+  margin: 3px 0px 0px 0px;
+  font-size: 13px;
+  text-align: left;
+}
+.divFontSmallPromotion .labelLetterSmall {
+  font-size: 10.8px !important;
+}
+.divInputCenter {
+  margin-top: 13px;
+}
+.labelLeft5px {
+  margin-top: 13px;
+  margin-left: 5px;
+}
+.InputPromotion {
+  width: 50%;
+  margin-top: 10px;
+}
+.inputTextRight {
+  text-align: right;
+}
+.divSeparator {
+  height: 3px;
+}
+.divVerticalSeparator {
+  width: 15px;
+  float: left;
+  height: 5px;
+}
+.divPromotionType {
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  padding: 0px 0px 10px 0px;
+  border-radius: 20px;
+  text-align: center;
+  display: table;
+  color: white;
+  width: 98%;
+  margin: 5px 0px 5px 20px;
+}
+.divPromotionDate {
+  text-align: left;
+  /*margin-left: 30px;*/
+}
+.divPromotionType1 {
+  background-color: #596a8e;
+}
+.labelPromotionType1 {
+  color: #596a8e;
+}
+.divPromotionType2 {
+  background-color: #0088cc;
+}
+.labelPromotionType2 {
+  color: #0088cc;
+}
+.divPromotionType3 {
+  background-color: #293e6b;
+}
+.labelPromotionType3 {
+  color: #293e6b;
+}
+.divFreePurchaseKit {
+  margin: 20px 0px 0px 60px;
+  background-color: #5ca5d8;
+}
+.PromotionActive {
+  color: #666666;
+}
+.PromotionDeactivated {
+  color: #b2b2b2;
+}
+/*********************************************************//* Estilos para página de permisos
+/*********************************************************/.div45Percentage {
+  width: 45%;
+}
+.divExternalRepeaterPermissions {
+  width: 40%;
+  float: left;
+  margin-left: 20px;
+}
+.divInternalRepeaterPermissions {
+  margin-left: 15px;
+}
+/**********************************************************//* Estilos para cabecera tabla página ResellerDiscount *//**********************************************************/.divOneColumn4Table {
+  margin-bottom: 5px;
+}
+.divFirstColumn {
+  width: 75%;
+  text-align: right;
+  float: left;
+}
+.divFirstColumn .labelDefaultSpecial {
+  font-weight: bold;
+  height: 25px;
+  line-height: 25px;
+  padding-right: 15px;
+  vertical-align: middle;
+}
+.divSecondColumn {
+  width: 14%;
+  float: left;
+  padding-right: 15px;
+}
+.divThirdColumn {
+  width: 9%;
+  float: left;
+  text-align: center;
+}
+/**************************************//* Estilos para pagina de facturacion *//**************************************/.divBillingHeader {
+  width: 95%;
+  float: left;
+  margin-bottom: 15px;
+  margin-right: 1px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+}
+.divBillingHeader .divHeaderColumn {
+  width: 30%;
+  float: left;
+  text-align: center;
+  padding: 10px;
+}
+.divBillingHeader label {
+  width: 100%;
+}
+.divBillingData {
+  width: 95%;
+  float: left;
+  margin-bottom: 15px;
+}
+.divBillingData .divColumnLeft {
+  width: 60%;
+  float: left;
+  padding: 10px;
+  height: 7em;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+}
+.divBillingData .divColumnLeft .divRow {
+  float: left;
+  width: 100%;
+  padding-bottom: 4px;
+}
+.divBillingData .divColumnLeft .labelRow {
+  float: left;
+  width: 20%;
+  font-weight: bold;
+}
+.divBillingData .divColumnRight {
+  width: 33%;
+  float: right;
+  padding: 10px;
+  height: 7em;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+}
+.divBillingData .divColumnRight .divRow {
+  float: left;
+  width: 100%;
+  padding-bottom: 4px;
+}
+.divBillingData .divColumnRight .labelRow {
+  float: left;
+  width: 40%;
+  font-weight: bold;
+}
+.divBillingSummaryHeader {
+  width: 95%;
+  float: left;
+  border-style: solid;
+  border-width: 1px 1px 0px 1px;
+  border-color: #293e6b;
+}
+.divBillingSummary {
+  width: 95%;
+  float: left;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #293e6b;
+}
+.divBillingSummary .divBillingSummaryBody {
+  width: 100%;
+  height: 14em;
+  float: left;
+  overflow: auto;
+}
+.divBillingSummary .divBillingDetailSummaryBody {
+  width: 100%;
+  height: 25em;
+  float: left;
+  overflow: auto;
+}
+.divBillingSummary .divSummaryBodyTitle {
+  padding: 10px;
+}
+.divHeaderRepeaterBill {
+  float: left;
+  width: 98%;
+  margin: 10px 10px 10px 10px;
+}
+.divBodyRepeaterBill {
+  float: left;
+  width: 98%;
+  margin: 10px 10px 0 10px;
+}
+.divRepeaterFooterTotalsBill {
+  float: left;
+  width: 90%;
+  text-align: right;
+}
+.divRepeaterFooterRowTotalBill {
+  width: 30%;
+  float: right;
+}
+.divRepeaterRowBill {
+  float: left;
+  width: 30%;
+}
+.divRepeaterRowRightBill {
+  float: left;
+  width: 30%;
+  text-align: right;
+}
+.divHeaderRepeaterBillDetail {
+  float: left;
+  width: 98%;
+  margin: 2px 10px 10px 10px;
+}
+.divBodyRepeaterBillDetail {
+  float: left;
+  width: 98%;
+  margin: 10px 10px 0px 10px;
+}
+.divRepeaterFooterTotalsBillDetail {
+  float: left;
+  width: 90%;
+  text-align: right;
+}
+.divRepeaterFooterRowTotalBillDetail {
+  width: 15%;
+  float: right;
+}
+.divRepeaterRowBillDetail {
+  float: left;
+  width: 13%;
+}
+.divRepeaterRowRightBillDetail {
+  float: left;
+  width: 12%;
+  text-align: right;
+}
+.divRepeaterRowBillDetailPurchaseState {
+  float: left;
+  width: 6%;
+  text-align: right;
+}
+.divCheckPurchaseState {
+  float: left;
+  clear: both;
+  margin-top: 8px;
+  margin-bottom: 5px;
+  margin-left: 15px;
+  text-align: right;
+}
+.divBillActions {
+  margin-top: 15px;
+}
+.divBillActions img {
+  padding-bottom: 5px;
+  padding-right: 5px;
+  vertical-align: middle;
+}
+.divBillActions a {
+  text-decoration: none;
+}
+/**************************************//* PÁGINA DE LOGIN                    *//**************************************/.tickText {
+  padding-left: 10px;
+}
+.tickText input {
+  padding: 0;
+  margin: 0;
+  vertical-align: bottom;
+}
+.tickText label {
+  padding-left: 5px;
+}
+.textCenter {
+  text-align: center;
+}
+.pnlPageLoginContentMargin {
+  background-color: white;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  filter: alpha(opacity=30);
+  -moz-opacity: .3;
+  opacity: .3;
+  float: left;
+}
+.pnlBackgroundContentLogin {
+  background-image: url("../../img/Background/BackgroundLogin_Demo_1.4.png");
+  background-repeat: no-repeat;
+  height: 100%;
+  background-color: white;
+}
+.pnlBackgroundContentLogin .pnlLoginContainer {
+  background-color: #293e6b;
+  float: left;
+  position: relative;
+  margin: auto;
+  left: 10%;
+  top: 5%;
+  width: 400px;
+  padding: 20px;
+  border-radius: 15px;
+}
+.pnlBackgroundContentLogin .pnlLoginContainer .rounderBorder {
+  border: 1px solid #666666;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  padding: 20px;
+  border-radius: 15px;
+}
+.pnlBackgroundContentLogin .pnlLoginContainer .divButtonLogin {
+  width: 100%;
+  text-align: center;
+  float: left;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.pnlBackgroundContentLogin .pnlLoginContainer .lnkLogin {
+  color: #96c51b;
+  text-decoration: none;
+  font-weight: bold;
+}
+.pnlBackgroundContentLogin .pnlLoginContainer .literalTitle {
+  color: #96c51b;
+  text-align: center;
+  font-weight: bold;
+  font-size: 15.6px;
+  margin-bottom: 5px;
+}
+.pnlBackgroundContentLogin .pnlLoginContainer .pnlLoginContent {
+  margin: 20px;
+}
+.pnlBackgroundContentLogin .pnlLoginContainer .pnlLoginContent ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.pnlBackgroundContentLogin .pnlLoginContainer .pnlLoginContent ul li {
+  line-height: 170%;
+  text-decoration: none;
+}
+.pnlBackgroundContentLogin .pnlLoginContainer .pnlLoginContent ul li input {
+  width: 90%;
+  margin: 0;
+}
+.pnlBackgroundContentLogin .pnlLoginContainer .pnlLoginContent ul li label {
+  display: inline-block;
+  text-align: left;
+}
+.pnlBackgroundContentLogin .pnlLoginContainer .literalDefault {
+  color: white;
+}
+/***********//* CAPTCHA *//***********/.captcha {
+  width: 340px;
+  margin-top: 10px;
+  border: 1px solid #666666;
+  bottom: 0;
+  left: 0;
+  margin: 5px;
+  overflow: hidden;
+  right: 0;
+  top: 0;
+  padding: 15px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  margin: 10px auto;
+}
+.captcha .pnlCaptchaImg {
+  float: left;
+}
+.captcha .pnlCaptchaEnterWords {
+  margin-top: 15px;
+  float: left;
+}
+.captcha .pnlCaptchaEnterWords .recaptcha_only_if_image {
+  float: left;
+  font-weight: bold;
+  text-align: right;
+  width: auto;
+  padding-top: 4px;
+}
+.captcha .pnlCaptchaEnterWords .inputContent {
+  width: auto;
+  float: right;
+}
+.captcha .pnlCaptchaEnterWords .pnlCaptchaButton {
+  clear: right;
+}
+/*********************************//* Ordenación de granjas y slots *//*********************************/.divMovementBetweenFarms {
+  width: 95%;
+  margin: 20px auto;
+}
+.divSortFarm {
+  height: 300px;
+  border: 1px solid #293e6b;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding: 15px;
+  margin-top: 15px;
+  overflow: auto;
+}
+.divTreeActions {
+  width: 20px;
+  margin: 200px  25px 10px;
+  float: left;
+}
+.divTreeFarmPanel {
+  float: left;
+  width: 45%;
+}
+.labelTextFarm {
+  text-align: left;
+  padding: 0px;
+}
+/*** Estilos pagina de Slots **/.divTreeSlot {
+  width: 95%;
+  border: 1px solid #293e6b;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  margin: 8px auto;
+  padding: 8px;
+  overflow: auto;
+  height: 300px;
+  background-color: transparent;
+}
+.divSlotDetail {
+  width: 98%;
+  border: 1px solid #293e6b;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  margin: 8px auto;
+  padding-bottom: 8px;
+  background-color: transparent;
+}
+.TreeSlotPadding {
+  padding: padding: 15px 15px 15px 0px;
+}
+.divWithBorderElement {
+  width: 90%;
+  border: 1px solid #293e6b;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  margin: 8px auto;
+  overflow: hidden;
+}
+.divWithBorderElement .labelBorderRight {
+  border-right: 1px solid #293e6b;
+  margin-right: 3px;
+}
+.divWithBorderElementOpacityInLabel {
+  position: absolute;
+  -moz-border-radius: 15px 0px 0px 15px;
+  -webkit-border-radius: 15px 0px 0px 15px;
+  border-radius: 15px 0px 0px 15px;
+  z-index: 0;
+  background-color: #96c51b;
+  filter: alpha(opacity=20);
+  -moz-opacity: .2;
+  opacity: .2;
+  width: 140px;
+  height: 25px;
+  padding-right: 16px;
+  margin-top: 9px;
+}
+.labelAlignRight {
+  text-align: right;
+}
+.labelWidth50 {
+  width: 50%;
+}
+.divWithBorder {
+  width: 90%;
+  border: 1px solid #293e6b;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  margin: 8px auto;
+  padding-bottom: 8px;
+  overflow: auto;
+}
+.divWithBorder .divFourColumn {
+  width: 20%;
+  float: left;
+  margin-top: 10px;
+  padding-left: 15px;
+}
+.divWithBorder .bar {
+  background: #96c51b;
+  width: 95%;
+  clear: both;
+}
+.divBorder {
+  border: 1px solid #293e6b;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  margin: 8px auto;
+  padding-bottom: 8px;
+  overflow: auto;
+}
+.divMargin {
+  margin: 5px;
+  padding: 5px;
+  width: 93%;
+  float: left;
+}
+.divRoundBorder {
+  border: 1px solid #293e6b;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.divFloatLeft {
+  float: left;
+}
+.divFloatRight {
+  float: right;
+}
+.divLeft30Percentage {
+  width: 35%;
+  float: left;
+}
+.divLeft35Percentage {
+  width: 35%;
+  float: left;
+}
+.divRight60Percentage {
+  width: 65%;
+  float: left;
+}
+.ulArrowIconMarginLeft {
+  list-style-image: url("../../img/Icon/Icon_Play_8x8.png");
+  float: left;
+  margin: 10px 20px;
+}
+.divAutoCalculateSlotActionMode {
+  border: 1px solid #293e6b;
+  padding: 10px 5px 10px 10px;
+  margin-top: 5px;
+}
+/*** Estilo div tokens notificaciones ****/.divOverOpacityPnlValidateTokens {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.modalContainerTokens {
+  width: 350px;
+  min-height: 10px;
+  height: auto;
+  background-color: white;
+  -moz-border-radius: 9px;
+  -webkit-border-radius: 9px;
+  border-radius: 9px;
+  border-width: 1px;
+  border-style: solid;
+}
+.modalTopTokens {
+  width: 344px;
+  padding: 4px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-color: #C5C5C5;
+  text-align: center;
+}
+.modalBodyTokens {
+  padding: 14px;
+  min-height: 10px;
+  height: 100px;
+  overflow: auto;
+}
+.divNotifiertoken {
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-right: 5px;
+}
+.divTemplateNotifier {
+  display: none;
+  margin: 10px;
+  padding: 10px;
+}
+/**** Estilos div tokens tipos comandos ********/.modalBodyTokensCommandType {
+  padding: 3px !important;
+  height: 50px !important;
+}
+.modalContainerTokensCommandType {
+  width: 400px !important;
+}
+.modalTopTokensCommandType {
+  width: 98%  !important;
+}
+/*** Estilos Validation Summary: Pendiente de Todavia hay que definirlos. ***/.errors {
+  padding: 15px;
+}
+.errors ul {
+  list-style-image: url("../../img/Icon/Icon_Play_8x8.png");
+  float: left;
+}
+.paragraphModal {
+  padding: 15px;
+  margin-right: 10px;
+}
+.modalBackground {
+  filter: alpha(opacity=40);
+  -moz-opacity: 0.4;
+  opacity: 0.4;
+  height: 100%;
+  background-color: #999999;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+}
+.divOverOpacityPnlValidate {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+.modalContainer {
+  width: 350px;
+  min-height: 10px;
+  height: auto;
+  margin: 100px auto;
+  background-color: white;
+  -moz-border-radius: 9px;
+  -webkit-border-radius: 9px;
+  border-radius: 9px;
+}
+.modalTop {
+  width: 344px;
+  padding: 4px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-color: #C5C5C5;
+  text-align: center;
+}
+.modalBody {
+  padding-left: 14px;
+  width: 100%;
+  min-height: 10px;
+  height: auto;
+}
+.modalParagraphBody {
+  padding: 15px;
+  min-height: 10px;
+  height: auto;
+  text-align: justify;
+}
+.modalParagraphBodySlots {
+  padding: 15px;
+  min-height: 10px;
+  height: auto;
+  text-align: justify;
+}
+.modalParagraphBodySlots .br {
+  margin-bottom: 10px !important;
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+}
+.divButtonValidation {
+  width: 100%;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 10px;
+}
+.required {
+  background-color: #e4eaf1 !important;
+}
+.expand-padding {
+  padding: 1px 0px 1px 0px !important;
+}
+/*******************************//* Estilos de Scrollbar        *//*******************************//********************//* Ejemplo 1        *//********************/::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+/*******************************//* Estilos Chart ProgressBar   *//*******************************/.divChartProgressBar {
+  float: left;
+  width: 200px;
+  margin: 6px;
+  padding: 0px;
+}
+/*******************************//* Estilos Para la leyenda de  *//*colores de los grids		   *//*******************************/.divLegendPanel {
+  width: 95%;
+  margin: 10px 10px 0px;
+}
+.lnkLegendDefault {
+  color: #96c51b;
+  text-decoration: none;
+  margin-left: 10px;
+  text-align: right;
+  float: right;
+}
+.divLegend {
+  float: left;
+  width: 80%;
+  border: 1px solid #C5C5C5;
+  padding: 5px;
+  -moz-border-radius: 15px;
+  -khtml-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+}
+.divLegendElement {
+  width: 30% !important;
+  float: left;
+}
+.divLegendElement .labelLegend {
+  margin-left: 10px;
+}
+/*******************************//* Estilos para circulos con   *//* fondo de color  (para estados*//* trabajos y tareas.      		   
+/*******************************/.circle {
+  float: left;
+  border-radius: 50px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -khtml-border-radius: 50px;
+  width: 10px;
+  height: 10px;
+}
+.circleRed {
+  background: red;
+}
+.circleBlack {
+  background: black;
+}
+.circleGray {
+  background: gray;
+}
+.circleGreen {
+  background: green;
+}
+.circleLightGreen {
+  background: lightGreen;
+}
+.circleYellow {
+  background: yellow;
+}
+.circleBlue {
+  background: blue;
+}
+.circleOrange {
+  background: orange;
+}
+.circleBrown {
+  background: brown;
+}
+.circlePurple {
+  background: purple;
+}
+.circleDarkGoldenRod {
+  background: DarkGoldenRod;
+}
+.circleRosyBrown {
+  background: RosyBrown;
+}
+.circleSteelBlue {
+  background: SteelBlue;
+}
+.circleLightBlue {
+  background: lightBlue;
+}
+.circleLightRed {
+  background: lightCoral;
+}
+.circleTurquoise {
+  background: Turquoise;
+}
+/*******************************//* Estilos para el div que 
+/* contiene 
+/* FileExplorer de Telerik        		   
+/*******************************/.modalFileExplorer-background {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  opacity: .50;
+  -webkit-opacity: .5;
+  -moz-opacity: .5;
+  filter: alpha(opacity=50);
+  z-index: 1000;
+}
+.modalFileExplorer-content {
+  display: none;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid #C5C5C5;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  height: 260px;
+  width: 550px;
+  margin: -120px 0 0;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  z-index: 1000;
+}
+#modalFileExplorer-background.active, #modalFileExplorer-content.active {
+  display: block;
+}
+.divFileExplorerLayer {
+  height: auto;
+  min-height: 10px;
+  background-color: white;
+  border-radius: 9px;
+}
+.divFileExplorerButton {
+  text-align: center;
+  padding: 0px 5px 5px 5px;
+}
+/***********************************************//* Estilos para página de gestión de Proyectos *//***********************************************/.divFieldSetColumnThreeColumnFistColumn {
+  width: 10%;
+  float: left;
+  margin-top: 10px;
+  height: 25px;
+}
+.divFieldSetColumnThreeColumn {
+  width: 45%;
+  float: left;
+  margin-top: 10px;
+}
+.divFieldSetColumnThreeColumn .labelDefault {
+  width: 30%;
+}
+.divFieldSetColumnThreeColumn .inputLarge {
+  width: 60%;
+  float: left;
+}
+.divDisabled {
+  filter: alpha(opacity=50);
+  -moz-opacity: .5;
+  opacity: .5;
+}
+.divEnabled {
+  filter: alpha(opacity=100);
+}
+/************************************************//* Estilos para página de validación de Registro*//************************************************/.divRegisterValidationResult {
+  background-color: white;
+  float: left;
+  position: relative;
+  margin: auto;
+  left: 30%;
+  top: 10%;
+  right: 30%;
+  width: 40%;
+  height: 30%;
+  border-color: #c5c5c5;
+  border-style: solid;
+  border-width: 1px;
+  -moz-border-radius: 9px;
+  -webkit-border-radius: 9px;
+  border-radius: 9px;
+}
+.divRegisterValidationResult .divRegisterValidationContent {
+  padding: 5%;
+}
+/************************************************//* Estilos para página de error del sistema     *//************************************************/.labelTextWithTabulation {
+  width: 95%;
+  text-align: left;
+  padding: 10px 0px 0px 30px;
+}
+.labelTextWithoutTabulation {
+  width: 95%;
+  text-align: left;
+  padding: 10px 0px 0px 15px;
+}
+/***********************************************************//* Estilos para página de edición de usuarios de cliente   *//***********************************************************/.divFloatingPageThreeColumnFistColumn {
+  width: 20%;
+  float: left;
+  margin-top: 10px;
+  height: 25px;
+}
+.divFloatingPageThreeColumnFistColumn .checkWithTextDefault {
+  width: 90%;
+}
+.divFloatingPageThreeColumnOneColumn {
+  width: 40%;
+  float: left;
+  margin-top: 10px;
+  height: 25px;
+}
+.divFloatingPageThreeColumnOneColumn .labelDefault {
+  width: 30%;
+}
+.divFloatingPageThreeColumnOneColumn .inputLarge {
+  width: 60%;
+  float: left;
+}
+.divFloatingPageThreeColumnTwoColumn {
+  width: 80%;
+  float: left;
+  margin-top: 10px;
+  height: 25px;
+}
+.divFloatingPageThreeColumnTwoColumn .labelDefault {
+  width: 30%;
+}
+.divFloatingPageThreeColumnTwoColumn .inputLarge {
+  width: 60%;
+  float: left;
+}
+.divFloatingPageThreeColumnOneColumnRigth {
+  float: right;
+  margin-right: 7px;
+  height: 25px;
+  text-align: right;
+}
+.divFloatingPageThreeColumnOneColumnRigth .lnkImage {
+  float: right;
+  margin-top: 4px;
+}
+.divFloatingPageThreeColumnOneColumnRigth .labelDefault {
+  width: auto;
+  line-height: 25px;
+  vertical-align: middle;
+  text-align: right;
+  padding-right: 15px;
+}
+/*********** Estilos para Repeater de divisas ***************/.divCurrencyRepeater {
+  border: 1px solid #293e6b;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  width: 45%;
+  height: 120px;
+  overflow: auto;
+  margin-left: 155px;
+}
+/************ Estilo para slider de jquery ******************/.sliderContent {
+  margin-left: 8px;
+  margin-top: 6px;
+}
+.slider300 {
+  width: 300px;
+}
+.sliderInputText {
+  margin-left: 15px;
+  float: left;
+  width: 6%;
+}
+.ui-slider-legend {
+  margin-top: 1px;
+}
+.divLegendSlots {
+  float: left;
+}
+.loadingSlot {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.loadingSlotNoMargin {
+  text-align: center;
+  vertial-align: middle;
+}
+.imgLoadging {
+  vertical-align: middle;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.ui-slider .ui-slider-range {
+  z-index: 0 !important;
+  background: transparent !important;
+}
+.ui-slider .ui-slider-handle {
+  z-index: 0 !important;
+}
+.ui-slider .ui-slider-handle {
+  cursor: default;
+  -moz-border-radius: 15px;
+  -khtml-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  height: 2em;
+  width: 2em;
+}
+.divSliderLegendElement {
+  float: left;
+  clear: both;
+}
+.divSliderLegendElement .labelLegend {
+  margin-left: 10px;
+}
+.divSliderLegend {
+  float: left;
+  width: 80%;
+  margin-top: 20px;
+  border: 1px solid #C5C5C5;
+  padding: 5px;
+  -moz-border-radius: 15px;
+  -khtml-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+}
+.lnkQuestion {
+  color: #96c51b;
+  text-decoration: none;
+  vertical-align: middle;
+  font-weight: bold;
+}
+.divQuestion {
+  float: left;
+  border-radius: 50px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -khtml-border-radius: 50px;
+  border-color: #96c51b;
+  border-style: solid;
+  border-width: 1px;
+  text-align: center;
+  width: 16px;
+  height: 16px;
+  margin-left: 9px;
+  margin-top: 3px;
+  cursor: pointer;
+}
+/********** Estilo del iframe de kendo para evitar doble scroll en Chrome **********/.k-content-frame {
+  display: block;
+}
+/******* Estilo para el control RadUpload ********************/.customRadUpload.RadUpload .ruBrowse {
+  background-image: url("../../img/Icon/Icon_Folder_24x24.png") !important;
+}
+.customRadUpload.RadUpload .ruFakeInput {
+  padding: .3em .2em !important;
+  -moz-border-radius: 9px !important;
+  -webkit-border-radius: 9px !important;
+  border-radius: 9px !important;
+  font-family: inherit !important;
+  border-style: solid !important;
+  -webkit-appearance: none !important;
+  border-color: #293e6b;
+}
+.customRadUpload.RadUpload .ruFileWrap {
+  height: auto !important;
+}
+.licenseRadUpload.RadUpload, .RadUploadProgressArea {
+  width: auto !important;
+}
+.licenseRadUpload.RadUpload .ruFileWrap {
+  width: 200px !important;
+}
+/******* Estilo para applet fileSelector. ********************/.appletFileSelector {
+  vertical-align: middle;
+  height: 30px;
+  float: left;
+  margin-left: 5px;
+}
+/********** Clases para filas del repeater Descuentos ************/.rptAltRow {
+  background: none repeat scroll 0 0 #e9e9eb;
+}
+.rptRowHeader {
+  width: 100%;
+  float: left;
+  border-bottom: 1px solid #C5C5C5;
+}
+.rptRow {
+  width: 100%;
+  float: left;
+}
+.rptcolumn70 {
+  width: 70%;
+  float: left;
+  padding: 2px;
+  text-align: left;
+}
+.rptColumn100px {
+  width: 100px;
+  float: left;
+  padding: 2px;
+  text-align: left;
+}
+.rptColumn40 {
+  width: 40%;
+  float: left;
+  padding: 2px;
+  text-align: left;
+}
+.rptColumn50 {
+  width: 50%;
+  float: left;
+  padding: 2px;
+  text-align: left;
+}
+.rptMarginLeft {
+  margin-left: 2px;
+}
+.rptColumn20 {
+  width: 20%;
+  float: left;
+  padding: 2px;
+  text-align: left;
+}
+.rptColumn15 {
+  width: 15%;
+  float: left;
+  padding: 2px;
+  text-align: left;
+}
+.rptColumn25 {
+  width: 25%;
+  float: left;
+  padding: 2px;
+  text-align: left;
+}
+.rptColumn30 {
+  width: 30%;
+  float: left;
+  padding: 2px;
+  text-align: left;
+}
+.rptColumn15AlignCenter {
+  width: 15%;
+  float: left;
+  padding: 2px;
+  text-align: center;
+}
+.rptcolumnRight13 {
+  width: 13%;
+  float: right;
+  text-align: right;
+  margin: 0px;
+  padding: 2px 20px 2px 2px;
+}
+.rptContent {
+  height: 330px;
+  width: 100%;
+  overflow: auto;
+}
+.rptContentHeightAuto {
+  width: 100%;
+  overflow: auto;
+}
+/*********************************//* Relación entre Licencias      *//*********************************/.divAssociatedLicensesMovement {
+  width: 95%;
+}
+.divSortLicenses {
+  height: 200px;
+  border: 1px solid #293e6b;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding: 15px;
+  margin-top: 15px;
+  overflow: auto;
+}
+.divTreeLicensesPanel {
+  float: left;
+  width: 45%;
+}
+.labelTextLicense {
+  text-align: left;
+  padding: 0px;
+}
+.divLicensesTreeActions {
+  width: 20px;
+  margin: 110px  25px 10px;
+  float: left;
+}
+.lnkLicenseRepeater {
+  color: #2E2E2E;
+  text-decoration: none;
+  margin-left: 10px;
+  width: 170px;
+}
+.lnkLicenseRepeaterSelected {
+  background-color: #A8C3C5;
+  color: #2E2E2E;
+  text-decoration: none;
+  margin-left: 10px;
+  width: 170px;
+}
+/*******************************************************//***** Estilos pagina registro cliente				 ****//*******************************************************/.divCheckSameFiscalData {
+  margin-left: 15px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+/***********************************************************//******** Estilo para radSlider del grid *******************//***********************************************************/.RadSliderGrid {
+  width: 90px;
+}
+span.RadSliderTwoColumnLeft {
+  width: 50%;
+  text-align: left;
+}
+span.RadSliderTwoColumnRight {
+  width: 50%;
+  text-align: right;
+  float: right;
+}
+/***********************************************************//****************** Loading Panel Styles *******************//***********************************************************/.DivLoading {
+  height: 100%;
+  width: 98%;
+  z-index: 5;
+  margin: 0 auto;
+}
+.loaderPanel {
+  position: absolute;
+  border: 2px solid #666666;
+  padding: 15px;
+  background: #FFFFFF;
+  width: 190px;
+  height: 20px;
+  top: 50%;
+  margin-top: -20px;
+  left: 50%;
+  margin-left: -90px;
+  -moz-box-shadow: 2px 2px 1px #888;
+  -webkit-box-shadow: 2px 2px 1px #888;
+  box-shadow: 2px 2px 1px #888;
+  color: #000000;
+  font-weight: bold;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+}
+.loaderBackground {
+  background-color: #8C8C8C;
+  opacity: 0.25;
+  filter: alpha(opacity = 25);
+  -moz-opacity: 0.25;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+.loaderContainer {
+  position: absolute;
+  z-index: 10;
+  overflow: hidden;
+  top: 0px;
+  left: 0px;
+  display: none;
+}
+.imgHover:hover {
+  box-shadow: inset 0 0 18px #96c51b;
+}
+.imagesHorizontalScroller ul {
+  white-space: nowrap !important;
+  overflow-x: auto !important;
+  overflot-y: hidden !important;
+}
+.imagesHorizontalScroller li {
+  list-style: none !important;
+  display: inline !important;
+  height: 30px !important;
+  margin-right: 2px !important;
+}
+.divTemplates {
+  display: none;
+  margin: 10px;
+  padding: 10px;
+}
+.noPaddingLeft {
+  padding-left: 0px !important;
+}
+/*** Estilos capa modal generica con altura fija***/.divModalBackground {
+  filter: alpha(opacity=40);
+  -moz-opacity: 0.4;
+  opacity: 0.4;
+  height: 100%;
+  background-color: #999999;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.divModalOverOpacity {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  overflow: hidden;
+}
+.divModalContainer {
+  position: relative;
+  z-index: 5;
+  width: 70%;
+  min-height: 10px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  -moz-border-radius: 9px;
+  -webkit-border-radius: 9px;
+  border-radius: 9px;
+}
+.divModalTop {
+  width: 100%;
+  padding: 4px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-color: #293e6b;
+  text-align: center;
+  margin-bottom: 4px;
+}
+.divModalBody {
+  width: 100%;
+  height: 88%;
+}
+.divModalButtonClose {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 6px;
+}
+/*** Fin Estilos capa modal generica con altura fija ***//*******************************************************//***** Estilos pagina admin configuration			 ****//*******************************************************/.scopeTabStripTabs.k-tabstrip-items li {
+  border-width: 1px 1px;
+  margin: 0px 10px;
+  border-radius: 9px;
+  text-align: center;
+  width: 30%;
+  background-color: transparent;
+}
+.scopeTabStripTabs.k-tabstrip-items li .k-link span {
+  font-weight: bold;
+}
+.scopeTabStripTabs.k-tabstrip-items li.k-state-hover {
+  background-color: #96c51b;
+  cursor: pointer;
+}
+.scopeTabStripTabs.k-tabstrip-items li.k-state-active {
+  background-color: rgba(150, 197, 27, 0.3) !important;
+  cursor: pointer;
+}
+.parameters .divContent {
+  height: 360px;
+  overflow: auto;
+}
+.parameters .labelDefault {
+  width: 250px;
+}
+.parameters .inputDefault {
+  width: 60%;
+}
+.parameters .divButton {
+  position: absolute;
+  bottom: 10px;
+  width: 95%;
+}
+/*** Fin Estilos pagina admin configuration ***//*** Fin Estilos capa modal generica con altura fija ***/.cursorDefault {
+  cursor: default !important;
+}
+.cursorPointer {
+  cursor: pointer !important;
+}
+/*** Estilo para botón de ayuda ***/.lnkHelpText {
+  color: #96c51b;
+  text-decoration: none;
+  font-weight: bold;
+}
+.helpImage {
+  background-image: url("../../img/Icon/Icon_Help_SGCM_SQUARE_24x24.png");
+}
+.labelWithMarginLeftRight5pxBottom {
+  float: left;
+  height: 25px;
+  line-height: 40px;
+  vertical-align: bottom;
+  margin-left: 5px;
+  margin-right: 4px;
+}
+/**** Estilo pagina gestion Reseller  ***/.divResellerFrameworkTab {
+  height: 220px !important;
+  margin-left: 20px;
+}
+/***Fin Estilo pagina gestion Reseller ***//*** Estilos pagina gestion de reservas administrador **/.divLabelEditPanel {
+  float: left;
+  width: 140px;
+  margin-right: 10px;
+  padding: 10px 10px 10px 0px;
+}
+.lnkActionsPowerRequest {
+  margin: 2px;
+}
+.divAdminReservingSlotsAvailable {
+  margin-top: 0px !important;
+  width: 45%;
+  margin-right: 10px;
+}
+/** Fin estilos pagina gestion de reservas administrador **//****************************************//******Variables para cupones      **//****************************************//*** Estilos para el grid de cupones **/.IssuanceCouponActive {
+  color: #666666;
+}
+.IssuanceCouponDeactivated {
+  color: #b2b2b2;
+}
+.hrFloatLeft {
+  float: left;
+  margin-left: 10px;
+}
+/**************************************************************************//************ Estilos para la capa de aceptación de Cookies ***************//**************************************************************************/.pnlAcceptCookiesMessage {
+  position: absolute;
+  width: 650px;
+  float: left;
+}
+.labelAcceptCookiesMessage {
+  float: left;
+  margin-left: 10px;
+  line-height: 30px;
+}
+.labelAcceptCookiesMessageLoginPageColor {
+  color: #293e6b;
+}
+.labelAcceptCookiesMessageRegisterPageColor {
+  color: white;
+}
+.pnlAcceptCookiesNoBorder {
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  padding: 10px;
+  border-radius: 0 0 10px;
+  z-index: 0;
+  background-color: #96c51b;
+  visibility: visible;
+  height: 10px;
+}
+.pnlAcceptCookiesNoBorderLoginPageOpacity {
+  filter: alpha(opacity=20);
+  -moz-opacity: .2;
+  opacity: .2;
+}
+.pnlAcceptCookiesNoBorderRegisterPageOpacity {
+  filter: alpha(opacity=80);
+  -moz-opacity: .8;
+  opacity: .8;
+}
+.pnlAcceptCookiesOpacity {
+  width: 650px;
+  position: absolute;
+  float: left;
+}
