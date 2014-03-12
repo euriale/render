@@ -228,6 +228,7 @@ $(document).ready(function () {
 			orientation: "horizontal",
 			range: "min",
 			max: 50,
+			min:1,
 			value: 1,
 			slide: refreshSwatchCores,
 			change: refreshSwatchCores
@@ -236,8 +237,9 @@ $(document).ready(function () {
 		$("#frames").slider({
 			orientation: "horizontal",
 			range: "min",
+			min:1,
 			max: 50,
-			value: 1,
+ 			value: 1,
 			slide: refreshSwatchFrames,
 			change: refreshSwatchFrames
 		});
@@ -245,6 +247,7 @@ $(document).ready(function () {
 			orientation: "horizontal",
 			range: "min",
 			max: 50,
+			min:1,
 			value: 1,
 			slide: refreshSwatchTemp,
 			change: refreshSwatchTemp
@@ -253,7 +256,8 @@ $(document).ready(function () {
 		$("#slots").slider({
 			orientation: "horizontal",
 			range: "min",
-			max: 200,
+			max: 20,
+			min:1,
 			value: 1,
 			slide: refreshSwatchSlots,
 			change: refreshSwatchSlots
@@ -261,8 +265,8 @@ $(document).ready(function () {
 		$("#tmax").slider({
 			orientation: "horizontal",
 			range: "min",
-			max: 50,
-			value: 1,
+			max: 500,
+			min:1,
 			slide: refreshSwatchTmax,
 			change: refreshSwatchTmax
 		});
@@ -270,8 +274,9 @@ $(document).ready(function () {
 		$( "#frames" ).slider( "value", 1 );
 		$( "#temp" ).slider( "value", 1 );
 		$( "#slots" ).slider( "value", 1 );
-		$( "#tmax" ).slider( "value", 1 );
 		});
+		
+
 		
 		function refreshSwatchTemp() {
 			var temp = $( "#temp" ).slider( "value" );
@@ -283,11 +288,19 @@ $(document).ready(function () {
 			var pc= cores*3;
 			var tc= pc*frames*temp;
 			$("#tc").text(format(tc));
-			var nhorasmin= tc/4000;
-			$("#nhorasmin").text(nhorasmin);
-			var nhorasmax= tc/200;
-			$("#nhorasmax").text(nhorasmax);
 
+			var nhorasmin=tc/4000;
+			var nhorasminred=Math.ceil(nhorasmin);
+			$("#nhorasmin").text(nhorasmin+' '+nhorasminred);
+			
+			var nhorasmax=tc/200;
+			var nhoramaxred=Math.ceil(nhorasmax);
+			$("#nhorasmax").text(nhorasmax+' '+nhoramaxred);
+			
+			
+			$( "#tmax" ).slider( "value", nhoramaxred );		
+			
+			
 			var total= format(temp*frames*cores)+' €';
 			$("#caltotal").text(total);
 
@@ -303,11 +316,18 @@ $(document).ready(function () {
 			var pc=cores*3;
 			var tc= pc*frames*temp;
 			$("#tc").text(format(tc));
-			var nhorasmin= tc/4000;
-			$("#nhorasmin").text(nhorasmin);
-			var nhorasmax= tc/200;
-			$("#nhorasmax").text(nhorasmax);
+			
+			var nhorasmin=tc/4000;
+			var nhorasminred=Math.ceil(nhorasmin);
+			$("#nhorasmin").text(nhorasmin+' '+nhorasminred);
+			
+			var nhorasmax=tc/200;
+			var nhoramaxred=Math.ceil(nhorasmax);
+			$("#nhorasmax").text(nhorasmax+' '+nhoramaxred);
 
+
+			$( "#tmax" ).slider( "value", nhoramaxred );
+			
 			var total= format(temp*frames*cores)+' €';
 			$("#caltotal").text(total);
 
@@ -324,14 +344,36 @@ $(document).ready(function () {
 			$("#pc").text(format(pc));
 			var tc= pc*frames*temp;
 			$("#tc").text(format(tc));
-			var nhorasmin= tc/4000;
-			$("#nhorasmin").text(nhorasmin);
-			var nhorasmax= tc/200;
-			$("#nhorasmax").text(nhorasmax);
+			
+			var nhorasmin=tc/4000;
+			var nhorasminred=Math.ceil(nhorasmin);
+			$("#nhorasmin").text(nhorasmin+' '+nhorasminred);
+			
+			var nhorasmax=tc/200;
+			var nhoramaxred=Math.ceil(nhorasmax);
+			$("#nhorasmax").text(nhorasmax+' '+nhoramaxred);
+			
+	
+			$( "#tmax" ).slider( "value", nhoramaxred );
 			
 			var total= format(temp*frames*cores)+' €';
 			$("#caltotaleuro").text(total);
 			
+		}
+		function refreshSwatchTmax() {
+			var tmax = $( "#tmax" ).slider( "value" );
+			$("#elemtmax").text(tmax);
+
+			var total= format(temp*frames*cores)+' €';
+			$("#caltotaleuro").text(total);
+		}
+		
+		function refreshSwatchSlots() {
+			var slots = $( "#slots" ).slider( "value" );
+			$("#elemslots").text(slots);
+
+			var total= format(temp*frames*cores)+' €';
+			$("#caltotaleuro").text(total);
 		}
 	
 	});

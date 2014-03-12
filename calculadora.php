@@ -83,7 +83,7 @@ define ('__SITE_PATH', $site_path);
 		
 		
 		<div class="txtcalcu">T. Max:</div>
-		<div id="elemtmax" class="txtcalcunum">1</div>
+		<div id="elemtmax" class="txtcalcunum">200</div>
 		<div id="tmax"></div>
 		<div style="clear:both;"></div>
 		
