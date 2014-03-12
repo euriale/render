@@ -64,7 +64,7 @@ Descubre las ventajas de usar nuestra granja de render.
 	
 	 
  
- </div><div class="abajo"><a href="#contacto" class="ancla"><img src="themes/img/abajo2.jpg"></a></div> 
+<div class="abajo"><a href="#contacto" class="ancla"><img src="themes/img/abajo2.jpg"></a></div>  </div>
 
 
 
