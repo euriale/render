@@ -269,6 +269,7 @@ $(document).ready(function () {
 			min:1,
 			slide: refreshSwatchTmax,
 			change: refreshSwatchTmax
+			
 		});
 		$( "#cores" ).slider( "value", 1 );
 		$( "#frames" ).slider( "value", 1 );
@@ -297,7 +298,7 @@ $(document).ready(function () {
 			var nhoramaxred=Math.ceil(nhorasmax);
 			$("#nhorasmax").text(nhorasmax+' '+nhoramaxred);
 			
-			
+			cargaTmax(nhorasminred,nhoramaxred);
 			$( "#tmax" ).slider( "value", nhoramaxred );		
 			
 			
@@ -325,7 +326,7 @@ $(document).ready(function () {
 			var nhoramaxred=Math.ceil(nhorasmax);
 			$("#nhorasmax").text(nhorasmax+' '+nhoramaxred);
 
-
+			cargaTmax(nhorasminred,nhoramaxred);
 			$( "#tmax" ).slider( "value", nhoramaxred );
 			
 			var total= format(temp*frames*cores)+' €';
@@ -353,7 +354,7 @@ $(document).ready(function () {
 			var nhoramaxred=Math.ceil(nhorasmax);
 			$("#nhorasmax").text(nhorasmax+' '+nhoramaxred);
 			
-	
+			cargaTmax(nhorasminred,nhoramaxred);
 			$( "#tmax" ).slider( "value", nhoramaxred );
 			
 			var total= format(temp*frames*cores)+' €';
@@ -379,6 +380,32 @@ $(document).ready(function () {
 	});
 	
 	
+function cargaTmax(min,max,valor){
+	/*
+		$.ajax({
+			type: "GET",
+			url: "controllers/direct/cargatmax.php",
+			data: "min="+min+"&max="+max,
+			success: function(texto){
+					$('#auxtmax').html(texto);
+			}
+		});
+		*/
+		
+		$("#tmax").slider("destroy");
+		$("#tmax").slider({
+			range: "min",
+			min: min, // min value
+			max: max, // max value
+			step: 0.1,
+			value: valor, // default value of slider
+			slide: function(event, ui) {
+				$("#amount").val(ui.value);
+			}
+		});
+
+}
+
 /*------------formateo de  los puntos de miles --------------*/	
 function format(valor) {
     var nums = new Array();
