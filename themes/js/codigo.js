@@ -229,7 +229,7 @@ $(document).ready(function () {
 			range: "min",
 			max: 50,
 			min:1,
-			value: 1,
+			value:1,
 			slide: refreshSwatchCores,
 			change: refreshSwatchCores
 		});
@@ -256,9 +256,9 @@ $(document).ready(function () {
 		$("#slots").slider({
 			orientation: "horizontal",
 			range: "min",
-			max: 20,
+			max:20,
 			min:1,
-			value: 1,
+			value:20,
 			slide: refreshSwatchSlots,
 			change: refreshSwatchSlots
 		});
@@ -267,6 +267,7 @@ $(document).ready(function () {
 			range: "min",
 			max: 500,
 			min:1,
+			value:1,
 			slide: refreshSwatchTmax,
 			change: refreshSwatchTmax
 			
@@ -274,7 +275,7 @@ $(document).ready(function () {
 		$( "#cores" ).slider( "value", 1 );
 		$( "#frames" ).slider( "value", 1 );
 		$( "#temp" ).slider( "value", 1 );
-		$( "#slots" ).slider( "value", 1 );
+		$( "#slots" ).slider( "value",20 );
 		});
 		
 
@@ -298,7 +299,7 @@ $(document).ready(function () {
 			var nhoramaxred=Math.ceil(nhorasmax);
 			$("#nhorasmax").text(nhorasmax+' '+nhoramaxred);
 			
-			cargaTmax(nhorasminred,nhoramaxred);
+			
 			$( "#tmax" ).slider( "value", nhoramaxred );		
 			
 			
@@ -326,7 +327,7 @@ $(document).ready(function () {
 			var nhoramaxred=Math.ceil(nhorasmax);
 			$("#nhorasmax").text(nhorasmax+' '+nhoramaxred);
 
-			cargaTmax(nhorasminred,nhoramaxred);
+			
 			$( "#tmax" ).slider( "value", nhoramaxred );
 			
 			var total= format(temp*frames*cores)+' €';
@@ -341,7 +342,7 @@ $(document).ready(function () {
 			
 			$("#elemcores").text(cores);
 			
-			var pc= cores*3;
+			var pc=cores*3;
 			$("#pc").text(format(pc));
 			var tc= pc*frames*temp;
 			$("#tc").text(format(tc));
@@ -354,7 +355,7 @@ $(document).ready(function () {
 			var nhoramaxred=Math.ceil(nhorasmax);
 			$("#nhorasmax").text(nhorasmax+' '+nhoramaxred);
 			
-			cargaTmax(nhorasminred,nhoramaxred);
+			
 			$( "#tmax" ).slider( "value", nhoramaxred );
 			
 			var total= format(temp*frames*cores)+' €';
@@ -369,10 +370,21 @@ $(document).ready(function () {
 			$("#caltotaleuro").text(total);
 		}
 		
-		function refreshSwatchSlots() {
+
+			function refreshSwatchSlots() {
 			var slots = $( "#slots" ).slider( "value" );
 			$("#elemslots").text(slots);
 
+			var tc= pc*frames*temp;
+			$("#tc").text(format(tc));
+			
+			var nslots=tc/(slots*200);
+			var nslotsred=Math.ceil(nslots);
+				
+			//$( "#tmax" ).slider( "value", nslots );
+			$("#elemslots").text(slots);
+			$("#nnslots").text(nslotsred);
+			
 			var total= format(temp*frames*cores)+' €';
 			$("#caltotaleuro").text(total);
 		}

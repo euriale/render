@@ -69,15 +69,16 @@ define ('__SITE_PATH', $site_path);
 		
 		Formulas Summus:<br>
 		<div style="display:inline-block">Num horas min.(TC/PotSummus max (200*20)):</div><div id="nhorasmin" style="display:inline-block">3</div><br>
-		<div style="display:inline-block">Num horas max.(TC/PotSummus min (200*1)):</div><div id="nhorasmax" style="display:inline-block">3</div><br>
-		
+		<div style="display:inline-block">Num horas max.(TC/PotSummus min (200*1)):</div><div id="nhorasmax" style="display:inline-block">3</div><br><br><br>
+		Al mover los slots:<br>
+		<div style="display:inline-block">Num de slots * 200:</div><div id="nnslots" style="display:inline-block">0</div><br>
 	</p>
 	<hr>
 	
 	Summus
 	<p>
 		<div class="txtcalcu">Slots:</div>
-		<div id="elemslots" class="txtcalcunum">1</div>
+		<div id="elemslots" class="txtcalcunum">20</div>
 		<div id="slots"></div>
 		<div style="clear:both;"></div>
 		
