@@ -371,14 +371,20 @@ $(document).ready(function () {
 		}
 		
 
-			function refreshSwatchSlots() {
-			var slots = $( "#slots" ).slider( "value" );
-			$("#elemslots").text(slots);
-
+		function refreshSwatchSlots() {
+			var temp = $( "#temp" ).slider( "value" );
+			var frames = $( "#frames" ).slider( "value" );
+			var cores = $( "#cores" ).slider( "value" );
+			var pc=cores*3;
 			var tc= pc*frames*temp;
-			$("#tc").text(format(tc));
 			
-			var nslots=tc/(slots*200);
+			
+
+			
+			
+			var aux=slots*200;
+			
+			var nslots=tc/aux;
 			var nslotsred=Math.ceil(nslots);
 				
 			//$( "#tmax" ).slider( "value", nslots );
