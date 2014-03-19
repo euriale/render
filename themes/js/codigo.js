@@ -118,9 +118,19 @@ $(document).ready(function () {
 			$(".datosconsulta").show();
 			$(".datostecnicos").show();
 		}
-		if (motivo=='tecnica_serv') $(".datosconsulta").show();
-		if (motivo=='facturacion_serv') $(".datosconsulta").show();
-		if (motivo=='sugerencias_serv') $(".datosconsulta").show();
+		if (motivo=='tecnica_serv'){
+			$(".datosconsulta").show();
+			$(".datostecnicos").hide();
+		}	
+		if (motivo=='facturacion_serv'){
+			$(".datosconsulta").show();
+			$(".datostecnicos").hide();
+			
+			}
+		if (motivo=='sugerencias_serv'){ 
+			$(".datosconsulta").show();
+			$(".datostecnicos").hide();
+		}
 	});
 	
 	/* ---------------- Versiones de las aplicaciones en el formulario contacto------------------*/
@@ -178,9 +188,14 @@ $(document).ready(function () {
 		var empresa=$("#empresa").val();
 		var otraaplicacion=$("#otraaplicacion").val();
 		var versiones=$("#versionesaux").val();
-		var empresa=$("#empresa").val();
 		var pais=$("#pais").val();
 		var motivo=$("#motivo").val();
+		var motor=$("#motor").val();
+		var plugin=$("#plugin").val();
+		var equipo=$("#equipo").val();
+		var procesador=$("#procesador").val();
+		var numframes=$("#numframes").val();
+		var tframes=$("#tframes").val();
 		
 	
 		if (nombre=='') $("#nombre").css("border", "1px solid #FF0000");
@@ -198,7 +213,7 @@ $(document).ready(function () {
 			$.ajax({
 				type: "GET",
 				url: pathaux,
-				data: "nombre="+nombre+"&apellidos="+apellidos+"&telefono="+telefono+"&empresa="+empresa+"&idaplicacion="+idaplicacion+"&consulta="+consulta+"&email="+email+"&otraaplicacion="+otraaplicacion+"&versiones="+versiones+"&empresa="+empresa+"&pais="+pais+"&motivo="+motivo,
+				data: "nombre="+nombre+"&apellidos="+apellidos+"&telefono="+telefono+"&empresa="+empresa+"&idaplicacion="+idaplicacion+"&consulta="+consulta+"&email="+email+"&otraaplicacion="+otraaplicacion+"&versiones="+versiones+"&empresa="+empresa+"&pais="+pais+"&motivo="+motivo+"&motor="+motor+"&plugin="+plugin+"&equipo="+equipo+"&procesador="+procesador+"&numframes="+numframes+"&tframes="+tframes,
 				success: function(texto){
 						$('#respuestaaux').html(texto);
 				}

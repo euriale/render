@@ -54,7 +54,7 @@ function getCountry($ip_address){
 				$miinput = new input('text','id="email" name="email" class="input"','','');
 				$miinput->crearInput();
 				
-				echo '<br><br>';
+				echo '<br>';
 		
 		/* ----- Datos Técnicos ------------*/
 		
@@ -118,7 +118,7 @@ function getCountry($ip_address){
 
 					/* ----- Datos Técnicos ------------*/
 			echo '<div class="datostecnicos">';	
-				echo '<br><br>';
+				echo '<br>';
 				echo '<div class="datostecnicos">';
 				$milabel = new label('num_frames','Número de Frames','','');
 				$milabel->crearLabel();

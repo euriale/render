@@ -391,6 +391,11 @@ margin-left:15%;
 margin-right:15%;
 margin-top:20px;
 }
+.auxtexto2{
+margin:0 auto;
+max-width:980px;
+margin-top:20px;
+}
 
 li{
 line-height:2;

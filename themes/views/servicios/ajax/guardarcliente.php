@@ -24,6 +24,9 @@ else $GLOBALS['raiz']='/render/';
 	$versiones='';
 	if(isset($_GET['versiones'])) $versiones=$_GET['versiones'];
 	
+	
+
+	
 	$bd = new bd();
 	$query1 = new query('insert into clientes (nombre, apellidos,telefono,idaplicacion,consulta,email,otraaplicacion,idversion) values ("'.$nombre.'", "'.$apellidos.'","'.$telefono.'","'.$idaplicacion.'","'.$consulta.'","'.$email.'","'.$otraaplicacion.'","'.$versiones.'")',$bd);
 	

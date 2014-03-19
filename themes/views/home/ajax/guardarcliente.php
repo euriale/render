@@ -23,6 +23,26 @@ else $GLOBALS['raiz']='/render/';
 	if(isset($_GET['pais'])) $pais=$_GET['pais'];
 	$telefono='';
 	if(isset($_GET['telefono'])) $telefono=$_GET['telefono'];
+	$idaplicacion='';
+	if(isset($_GET['idaplicacion'])) $idaplicacion=$_GET['idaplicacion'];	
+		$otraaplicacion='';
+	if(isset($_GET['otraaplicacion'])) $otraaplicacion=$_GET['otraaplicacion'];	
+	$versiones='';
+	if(isset($_GET['versiones'])) $versiones=$_GET['versiones'];
+	$motor='';
+	if(isset($_GET['motor'])) $telefono=$_GET['motor'];
+	$plugin='';
+	if(isset($_GET['plugin'])) $plugin=$_GET['plugin'];	
+	$equipo='';
+	if(isset($_GET['equipo'])) $equipo=$_GET['equipo'];	
+	$procesador='';
+	if(isset($_GET['procesador'])) $procesador=$_GET['procesador'];	
+	$numframes='';
+	if(isset($_GET['numframes'])) $numframes=$_GET['numframes'];	
+	$tframes='';
+	if(isset($_GET['tframes'])) $tframes=$_GET['tframes'];		
+		
+	
 		
 	$bd = new bd();
 	$query1 = new query('insert into clientes (nombre, apellidos,telefono,empresa,consulta,email,motivo,pais) values ("'.$nombre.'", "'.$apellidos.'","'.$telefono.'","'.$empresa.'","'.$consulta.'","'.$email.'","'.$motivo.'","'.$pais.'")',$bd);
