@@ -43,9 +43,9 @@ else $GLOBALS['raiz']='/render/';
 	if(isset($_GET['tframes'])) $tframes=$_GET['tframes'];		
 		
 	
-		
+
 	$bd = new bd();
-	$query1 = new query('insert into clientes (nombre, apellidos,telefono,empresa,consulta,email,motivo,pais) values ("'.$nombre.'", "'.$apellidos.'","'.$telefono.'","'.$empresa.'","'.$consulta.'","'.$email.'","'.$motivo.'","'.$pais.'")',$bd);
+	$query1 = new query('insert into clientes (nombre, apellidos,telefono,empresa,consulta,email,motivo,pais, idaplicacion,otraaplicacion,idversion,motor,plugin,equipo,procesador,numframes,tframes) values ("'.$nombre.'", "'.$apellidos.'","'.$telefono.'","'.$empresa.'","'.$consulta.'","'.$email.'","'.$motivo.'","'.$pais.'","'.$idaplicacion.'","'.$otraaplicacion.'","'.$versiones.'","'.$motor.'","'.$plugin.'","'.$equipo.'","'.$procesador.'","'.$numframes.'","'.$tframes.'")',$bd);
 	
 	echo 'La consulta se ha enviado correctamente. ';
 	

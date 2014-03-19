@@ -147,7 +147,7 @@ font:1em 'Open Sans', arial;
 .dreta{
 	float:right;
 	margin-right:25px;
-	width:70px;
+	width:250px;
 }
 .idiomas{
 	float:right;
@@ -160,6 +160,23 @@ font:1em 'Open Sans', arial;
 	margin-left:5px;
 	float:left;
 	border:0;
+}
+
+.renderapp{
+background: none repeat scroll 0 0 #FF8C00;
+    border: 1px solid #F1F1F1;
+    float: right;
+    height: 25px;
+    margin-top: 10px;
+    padding-top: 8px;
+    width: 150px;
+}
+
+.renderapp a{ 
+	color:#fff;
+	font:bold 13px 'Open Sans', arial;
+	text-decoration:none;
+	
 }
 
 .logo{

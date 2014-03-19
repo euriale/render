@@ -221,7 +221,7 @@ $(document).ready(function () {
 		}
 	});
 	
-		$('.iconclose').click(function () {
+	$('.iconclose').click(function () {
 		$("#respuesta").hide();
 		$("#nombre").val('');
 		$("#apellidos").val('');
@@ -233,6 +233,13 @@ $(document).ready(function () {
 		$("#versionesaux").val('');
 		$("#motivo").val('0');
 		$("#empresa").val('');
+		$("#motor").val('');
+		$("#plugin").val('');
+		$("#equipo").val('');
+		$("#procesador").val('');
+		$("#numframes").val('');
+		$("#tframes").val('');
+		$(".datostecnicos").hide();
 		
 	});
 	
