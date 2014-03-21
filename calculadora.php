@@ -105,6 +105,7 @@ define ('__SITE_PATH', $site_path);
 			var tc= pc*frames*temp;
 			$("#tc").text(format(tc));
 
+				
 			var nhorasmin=tc/4000;
 			var nhorasminred=Math.ceil(nhorasmin);
 			$("#nhorasmin").text(nhorasmin+' '+nhorasminred);
@@ -181,6 +182,7 @@ define ('__SITE_PATH', $site_path);
 			$("#tmax").slider( "option", "max", topemax );
 			$("#elemtmaxmax").text('Max '+topemax);
 			$("#elemtmaxmin").text('Min ' +topemin);
+			
 		}
 		
 		/*----APP-----*/
@@ -319,14 +321,8 @@ html,body{
 
 #cores .ui-slider-range, #frames .ui-slider-range, #temp .ui-slider-range,#slots .ui-slider-range,#tmax .ui-slider-range { 
 	background: #47717A; /* Old browsers */
-	background: #ffffff; /* Old browsers */
-	background: -moz-linear-gradient(left,  #ffffff 0%, #47717A 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffffff), color-stop(100%,#47717A)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(left,  #ffffff 0%,#47717A 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(left,  #ffffff 0%,#47717A 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(left,  #ffffff 0%,#47717A 100%); /* IE10+ */
-	background: linear-gradient(to right,  #ffffff 0%,#47717A 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#47717A',GradientType=1 ); /* IE6-9 */
+	
+
  }
 
 .cajaminidoble{
