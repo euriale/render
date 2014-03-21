@@ -371,7 +371,7 @@ $(document).ready(function () {
 		}
 		
 
-			function refreshSwatchSlots() {
+		function refreshSwatchSlots() {
 			var slots = $( "#slots" ).slider( "value" );
 			$("#elemslots").text(slots);
 
