@@ -13,7 +13,7 @@
 		<a href="<?php echo $GLOBALS['raiz'].'idioma/FR';?>"><img src="themes/img/fr.png" alt="" title="" border=0></a>
 	</div>
 	<div style="clear:both"></div>
-	<div class="renderapp"><a href="" target="_blank">Ir a la APP Render</a></div>
+	<div class="renderapp"><a href="http://farm.renderdrive.com" target="_blank">Ir a la APP Render</a></div>
 	
 	
    </div>

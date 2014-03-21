@@ -290,14 +290,14 @@ $(document).ready(function () {
 			max: 500,
 			min:1,
 			value:1,
-			slide: refreshSwatchTmax,
+			slide: refreshSwatchTmax2,
 			change: refreshSwatchTmax
 			
 		});
 		$( "#cores" ).slider( "value", 1 );
 		$( "#frames" ).slider( "value", 1 );
 		$( "#temp" ).slider( "value", 1 );
-		$( "#slots" ).slider( "value",20 );
+		$( "#slots" ).slider( "value",1 );
 		});
 		
 
@@ -321,7 +321,7 @@ $(document).ready(function () {
 			var nhoramaxred=Math.ceil(nhorasmax);
 			$("#nhorasmax").text(nhorasmax+' '+nhoramaxred);
 			
-			
+			reiniciatmax(nhoramaxred,nhorasminred);
 			$( "#tmax" ).slider( "value", nhoramaxred );		
 			
 			
@@ -349,7 +349,7 @@ $(document).ready(function () {
 			var nhoramaxred=Math.ceil(nhorasmax);
 			$("#nhorasmax").text(nhorasmax+' '+nhoramaxred);
 
-			
+			reiniciatmax(nhoramaxred,nhorasminred);
 			$( "#tmax" ).slider( "value", nhoramaxred );
 			
 			var total= format(temp*frames*cores)+' €';
@@ -377,19 +377,51 @@ $(document).ready(function () {
 			var nhoramaxred=Math.ceil(nhorasmax);
 			$("#nhorasmax").text(nhorasmax+' '+nhoramaxred);
 			
-			
+			reiniciatmax(nhoramaxred,nhorasminred);
 			$( "#tmax" ).slider( "value", nhoramaxred );
 			
 			var total= format(temp*frames*cores)+' €';
 			$("#caltotaleuro").text(total);
 			
 		}
+		/*----Reinicio tiempo-----*/
+		function reiniciatmax(topemax,topemin){
+			$("#tmax").slider( "option", "max", topemax );
+			$("#elemtmaxmax").text(topemax);
+			$("#elemtmaxmin").text(topemin);
+		}
+		
+		/*----APP-----*/
+		
 		function refreshSwatchTmax() {
 			var tmax = $( "#tmax" ).slider( "value" );
 			$("#elemtmax").text(tmax);
 
 			var total= format(temp*frames*cores)+' €';
 			$("#caltotaleuro").text(total);
+			
+		
+		}
+		
+		function refreshSwatchTmax2() {
+			var tmax = $( "#tmax" ).slider( "value" );
+			$("#elemtmax").text(tmax);
+
+			var total= format(temp*frames*cores)+' €';
+			$("#caltotaleuro").text(total);
+			
+			var temp = $( "#temp" ).slider( "value" );
+			var frames = $( "#frames" ).slider( "value" );
+			var cores = $( "#cores" ).slider( "value" );
+			var pc=cores*3;
+
+			var tc= pc*frames*temp;
+			
+			var tmaxslots=((tc/tmax)/200);
+			var tmaxslotsred=Math.ceil(tmaxslots);
+			$( "#slots" ).slider( "value", tmaxslotsred );
+			
+			
 		}
 		
 
@@ -403,18 +435,15 @@ $(document).ready(function () {
 
 			var tc= pc*frames*temp;
 			
-			
-
-			
-			
 			var aux=slots*200;
 			
 			var nslots=tc/aux;
 			var nslotsred=Math.ceil(nslots);
-				
-			//$( "#tmax" ).slider( "value", nslots );
+			
+			
+			$( "#tmax" ).slider( "value", nslotsred );
 			$("#elemslots").text(slots);
-			$("#nnslots").text(nslotsred);
+			$("#nnslots").text(slots);
 			
 			var total= format(temp*frames*cores)+' €';
 			$("#caltotaleuro").text(total);
@@ -423,31 +452,7 @@ $(document).ready(function () {
 	});
 	
 	
-function cargaTmax(min,max,valor){
-	/*
-		$.ajax({
-			type: "GET",
-			url: "controllers/direct/cargatmax.php",
-			data: "min="+min+"&max="+max,
-			success: function(texto){
-					$('#auxtmax').html(texto);
-			}
-		});
-		*/
-		
-		$("#tmax").slider("destroy");
-		$("#tmax").slider({
-			range: "min",
-			min: min, // min value
-			max: max, // max value
-			step: 0.1,
-			value: valor, // default value of slider
-			slide: function(event, ui) {
-				$("#amount").val(ui.value);
-			}
-		});
 
-}
 
 /*------------formateo de  los puntos de miles --------------*/	
 function format(valor) {
