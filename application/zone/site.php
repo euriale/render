@@ -6,13 +6,14 @@
 		<h1><a href="<?php echo $GLOBALS['raiz']; ?>">Render <span class="drive">Drive</span></a></h1>	
 	</div>	
 	<div class="dreta">	
+	
 	<div class="idiomas">
 		<a href="<?php echo $GLOBALS['raiz'].'idioma/ES';?>"><img src="themes/img/sp.png" alt="" title="" border=0></a>
 		<a href="<?php echo $GLOBALS['raiz'].'idioma/EN';?>"><img src="themes/img/uk.png" alt="" title="" border=0></a>
 		<a href="<?php echo $GLOBALS['raiz'].'idioma/FR';?>"><img src="themes/img/fr.png" alt="" title="" border=0></a>
 	</div>
-
-	
+	<div style="clear:both"></div>
+	<div class="renderapp"><a href="" target="_blank">Ir a la APP Render</a></div>
 	
 	
    </div>

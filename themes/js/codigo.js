@@ -118,9 +118,19 @@ $(document).ready(function () {
 			$(".datosconsulta").show();
 			$(".datostecnicos").show();
 		}
-		if (motivo=='tecnica_serv') $(".datosconsulta").show();
-		if (motivo=='facturacion_serv') $(".datosconsulta").show();
-		if (motivo=='sugerencias_serv') $(".datosconsulta").show();
+		if (motivo=='tecnica_serv'){
+			$(".datosconsulta").show();
+			$(".datostecnicos").hide();
+		}	
+		if (motivo=='facturacion_serv'){
+			$(".datosconsulta").show();
+			$(".datostecnicos").hide();
+			
+			}
+		if (motivo=='sugerencias_serv'){ 
+			$(".datosconsulta").show();
+			$(".datostecnicos").hide();
+		}
 	});
 	
 	/* ---------------- Versiones de las aplicaciones en el formulario contacto------------------*/
@@ -178,9 +188,14 @@ $(document).ready(function () {
 		var empresa=$("#empresa").val();
 		var otraaplicacion=$("#otraaplicacion").val();
 		var versiones=$("#versionesaux").val();
-		var empresa=$("#empresa").val();
 		var pais=$("#pais").val();
 		var motivo=$("#motivo").val();
+		var motor=$("#motor").val();
+		var plugin=$("#plugin").val();
+		var equipo=$("#equipo").val();
+		var procesador=$("#procesador").val();
+		var numframes=$("#numframes").val();
+		var tframes=$("#tframes").val();
 		
 	
 		if (nombre=='') $("#nombre").css("border", "1px solid #FF0000");
@@ -198,7 +213,7 @@ $(document).ready(function () {
 			$.ajax({
 				type: "GET",
 				url: pathaux,
-				data: "nombre="+nombre+"&apellidos="+apellidos+"&telefono="+telefono+"&empresa="+empresa+"&idaplicacion="+idaplicacion+"&consulta="+consulta+"&email="+email+"&otraaplicacion="+otraaplicacion+"&versiones="+versiones+"&empresa="+empresa+"&pais="+pais+"&motivo="+motivo,
+				data: "nombre="+nombre+"&apellidos="+apellidos+"&telefono="+telefono+"&empresa="+empresa+"&idaplicacion="+idaplicacion+"&consulta="+consulta+"&email="+email+"&otraaplicacion="+otraaplicacion+"&versiones="+versiones+"&empresa="+empresa+"&pais="+pais+"&motivo="+motivo+"&motor="+motor+"&plugin="+plugin+"&equipo="+equipo+"&procesador="+procesador+"&numframes="+numframes+"&tframes="+tframes,
 				success: function(texto){
 						$('#respuestaaux').html(texto);
 				}
@@ -206,7 +221,7 @@ $(document).ready(function () {
 		}
 	});
 	
-		$('.iconclose').click(function () {
+	$('.iconclose').click(function () {
 		$("#respuesta").hide();
 		$("#nombre").val('');
 		$("#apellidos").val('');
@@ -218,6 +233,13 @@ $(document).ready(function () {
 		$("#versionesaux").val('');
 		$("#motivo").val('0');
 		$("#empresa").val('');
+		$("#motor").val('');
+		$("#plugin").val('');
+		$("#equipo").val('');
+		$("#procesador").val('');
+		$("#numframes").val('');
+		$("#tframes").val('');
+		$(".datostecnicos").hide();
 		
 	});
 	
@@ -374,11 +396,20 @@ $(document).ready(function () {
 		function refreshSwatchSlots() {
 			var slots = $( "#slots" ).slider( "value" );
 			$("#elemslots").text(slots);
+			var temp = $( "#temp" ).slider( "value" );
+			var frames = $( "#frames" ).slider( "value" );
+			var cores = $( "#cores" ).slider( "value" );
+			var pc=cores*3;
 
 			var tc= pc*frames*temp;
-			$("#tc").text(format(tc));
 			
-			var nslots=tc/(slots*200);
+			
+
+			
+			
+			var aux=slots*200;
+			
+			var nslots=tc/aux;
 			var nslotsred=Math.ceil(nslots);
 				
 			//$( "#tmax" ).slider( "value", nslots );

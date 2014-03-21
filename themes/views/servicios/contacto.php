@@ -54,7 +54,7 @@ function getCountry($ip_address){
 				$miinput = new input('text','id="email" name="email" class="input"','','');
 				$miinput->crearInput();
 				
-				echo '<br><br>';
+				echo '<br>';
 		
 		/* ----- Datos Técnicos ------------*/
 		
@@ -118,21 +118,21 @@ function getCountry($ip_address){
 
 					/* ----- Datos Técnicos ------------*/
 			echo '<div class="datostecnicos">';	
-				echo '<br><br>';
+				echo '<br>';
 				echo '<div class="datostecnicos">';
-				$milabel = new label('num_frames','Número de Frames','','');
+				$milabel = new label('numframes','Número de Frames','','');
 				$milabel->crearLabel();
-				$miinput = new input('text','id="num_frames" name="num_frames" class="input"','','');
+				$miinput = new input('text','id="numframes" name="numframes" class="input"','','');
 				$miinput->crearInput();
 				
-				$milabel = new label('t_frames','Tiempo por Frames','','');
+				$milabel = new label('tframes','Tiempo por Frames','','');
 				$milabel->crearLabel();
-				$miinput = new input('text','id="t_frames" name="t_frames" class="input"','','');
+				$miinput = new input('text','id="tframes" name="tframes" class="input"','','');
 				$miinput->crearInput();
 				
-				$milabel = new label('tipo_equipo','Equipo','','');
+				$milabel = new label('equipo','Equipo','','');
 				$milabel->crearLabel();
-				$miinput = new input('text','id="t_frames" name="t_frames" class="input"','','');
+				$miinput = new input('text','id="equipo" name="equipo" class="input"','','');
 				$miinput->crearInput();
 				
 				$milabel = new label('procesador','Procesador','','');

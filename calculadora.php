@@ -77,17 +77,20 @@ define ('__SITE_PATH', $site_path);
 	
 	Summus
 	<p>
-		<div class="txtcalcu">Slots:</div>
-		<div id="elemslots" class="txtcalcunum">20</div>
-		<div id="slots"></div>
-		<div style="clear:both;"></div>
-		
-		<div id="auxtmax">
+	    <div id="auxtmax">
 		<div class="txtcalcu">T. Max:</div>
 		<div id="elemtmax" class="txtcalcunum">200</div>
 		<div id="tmax"></div>
 		</div>
 		<div style="clear:both;"></div>
+		
+		
+		<div class="txtcalcu">Slots:</div>
+		<div id="elemslots" class="txtcalcunum">20</div>
+		<div id="slots"></div>
+		<div style="clear:both;"></div>
+		
+		
 		
 	</p>	
 	<div class="txtcalcu" id="caltotal">1</div></div>

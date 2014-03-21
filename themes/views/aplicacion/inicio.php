@@ -16,24 +16,8 @@
 			<p>Hemos creado una aplicación que te ayudará a simplificar los pasos del renderizado de tu proyecto. Sólo tendrás que instalarte un plugin para Maya y un sincronizador desde nuestra web.</p>
 			<p>En tu propio Maya podrás lanzar tu render contra nuestra granja y automáticamente el sincronizador subirá el proyecto y comenzará a renderizarlo. </p>
 			<p>Podrás visualizar el resultado de cada tarea y obtener una vista previa.</p>
-			<p><strong>Déjanos tus datos y te avisaremos para que puedas conocer nuestra aplicación</strong></p>
-			<div class="apuntatediv">
-			<?php
+			<p><strong>Prueba nuestra aplicación, clica <a href="http://" style="color:#FF8C00;">aqui</a></strong></p>
 			
-				echo '<div class="">Nombre y Apellidos</div>';
-				$miinput = new input('text','id="nombreapun" name="nombreapun" class="inputcontacto"','','');
-				$miinput->crearInput();
-				
-				echo '<div class="">Email</div>';
-				$miinput = new input('text','id="emailapun" name="emailapun" class="inputcontacto"','','');
-				$miinput->crearInput();
-				
-				echo '<input type="button" id="envioapuntate" name="envioapuntate" class="botonapuntate"  value="Enviar">';
-				echo '<div style="clear:both"></div>';
-				
-				
-			?>	
-			</div>
 		</div>
 	</div>
 	<div class="cajaminidoble"><img src="themes/img/25.jpg" width="350px" class="foto"></div>
