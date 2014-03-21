@@ -22,18 +22,354 @@ define ('__SITE_PATH', $site_path);
 <META charset="ISO 8859-1">
 <title>Render Drive - Servicios de Render Online</title>
 <script src="themes/js/jquery.js"></script>
-<script language="javascript" src="themes/js/codigo.js" charset="ISO-8859-1"></script>
+<!--<script language="javascript" src="themes/js/codigo.js" charset="ISO-8859-1"></script>-->
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Roboto:300&amp;subset=latin-ext' rel='stylesheet'>
 
 
-<link rel="STYLESHEET" type="text/css" href="themes/css/estilos.css" media="screen" />
-<!--<link href="estilosmovil.css" rel="stylesheet" type="text/css" media="handheld" />-->
+<!--<link rel="STYLESHEET" type="text/css" href="themes/css/estilos.css" media="screen" />
+<link href="estilosmovil.css" rel="stylesheet" type="text/css" media="handheld" />-->
+
 <!--calculadora-->
  <link rel="stylesheet" href="themes/css/jquery-ui.css">
 <script src="themes/js/jquery-1.9.1.js"></script>
 <script src="themes/js/jquery-ui.js"></script>
 
+<script>
+	/*----------------------Calculadora-------------*/
+	$(document).ready(function () {
+		 $(function() {
+		$("#cores").slider({
+			orientation: "horizontal",
+			range: "min",
+			max: 50,
+			min:1,
+			value:1,
+			slide: refreshSwatchCores,
+			change: refreshSwatchCores
+		});
 
+		$("#frames").slider({
+			orientation: "horizontal",
+			range: "min",
+			min:1,
+			max: 50,
+ 			value: 1,
+			slide: refreshSwatchFrames,
+			change: refreshSwatchFrames
+		});
+		$("#temp").slider({
+			orientation: "horizontal",
+			range: "min",
+			max: 50,
+			min:1,
+			value: 1,
+			slide: refreshSwatchTemp,
+			change: refreshSwatchTemp
+		});
+		
+		$("#slots").slider({
+			orientation: "horizontal",
+			range: "min",
+			max:20,
+			min:1,
+			value:20,
+			slide: refreshSwatchSlots,
+			change: refreshSwatchSlots
+		});
+		$("#tmax").slider({
+			orientation: "horizontal",
+			range: "min",
+			max: 500,
+			min:1,
+			value:1,
+			slide: refreshSwatchTmax2,
+			change: refreshSwatchTmax
+			
+		});
+		$( "#cores" ).slider( "value", 1 );
+		$( "#frames" ).slider( "value", 1 );
+		$( "#temp" ).slider( "value", 1 );
+		$( "#slots" ).slider( "value",1 );
+		});
+		
+
+		
+		function refreshSwatchTemp() {
+			var temp = $( "#temp" ).slider( "value" );
+			var frames = $( "#frames" ).slider( "value" );
+			var cores = $( "#cores" ).slider( "value" );
+			
+			$("#elemtemp").text(temp);
+			
+			var pc= cores*3;
+			var tc= pc*frames*temp;
+			$("#tc").text(format(tc));
+
+			var nhorasmin=tc/4000;
+			var nhorasminred=Math.ceil(nhorasmin);
+			$("#nhorasmin").text(nhorasmin+' '+nhorasminred);
+			
+			var nhorasmax=tc/200;
+			var nhoramaxred=Math.ceil(nhorasmax);
+			$("#nhorasmax").text(nhorasmax+' '+nhoramaxred);
+			
+			reiniciatmax(nhoramaxred,nhorasminred);
+			$( "#tmax" ).slider( "value", nhoramaxred );		
+			
+			
+			var total= format(temp*frames*cores)+' €';
+			$("#caltotal").text(total);
+
+			
+		}
+		function refreshSwatchFrames() {
+			var temp = $( "#temp" ).slider( "value" );
+			var frames = $( "#frames" ).slider( "value" );
+			var cores = $( "#cores" ).slider( "value" );
+			
+			$("#elemframes").text(frames);
+			
+			var pc=cores*3;
+			var tc= pc*frames*temp;
+			$("#tc").text(format(tc));
+			
+			var nhorasmin=tc/4000;
+			var nhorasminred=Math.ceil(nhorasmin);
+			$("#nhorasmin").text(nhorasmin+' '+nhorasminred);
+			
+			var nhorasmax=tc/200;
+			var nhoramaxred=Math.ceil(nhorasmax);
+			$("#nhorasmax").text(nhorasmax+' '+nhoramaxred);
+
+			reiniciatmax(nhoramaxred,nhorasminred);
+			$( "#tmax" ).slider( "value", nhoramaxred );
+			
+			var total= format(temp*frames*cores)+' €';
+			$("#caltotal").text(total);
+
+			
+		}
+		function refreshSwatchCores() {
+			var temp = $( "#temp" ).slider( "value" );
+			var frames = $( "#frames" ).slider( "value" );
+			var cores = $( "#cores" ).slider( "value" );
+			
+			$("#elemcores").text(cores);
+			
+			var pc=cores*3;
+			$("#pc").text(format(pc));
+			var tc= pc*frames*temp;
+			$("#tc").text(format(tc));
+			
+			var nhorasmin=tc/4000;
+			var nhorasminred=Math.ceil(nhorasmin);
+			$("#nhorasmin").text(nhorasmin+' '+nhorasminred);
+			
+			var nhorasmax=tc/200;
+			var nhoramaxred=Math.ceil(nhorasmax);
+			$("#nhorasmax").text(nhorasmax+' '+nhoramaxred);
+			
+			reiniciatmax(nhoramaxred,nhorasminred);
+			$( "#tmax" ).slider( "value", nhoramaxred );
+			
+			var total= format(temp*frames*cores)+' €';
+			$("#caltotaleuro").text(total);
+			
+		}
+		/*----Reinicio tiempo-----*/
+		function reiniciatmax(topemax,topemin){
+			$("#tmax").slider( "option", "max", topemax );
+			$("#elemtmaxmax").text('Max '+topemax);
+			$("#elemtmaxmin").text('Min ' +topemin);
+		}
+		
+		/*----APP-----*/
+		
+		function refreshSwatchTmax() {
+			var tmax = $( "#tmax" ).slider( "value" );
+			$("#elemtmax").text(tmax);
+
+			var total= format(temp*frames*cores)+' €';
+			$("#caltotaleuro").text(total);
+			
+		
+		}
+		
+		function refreshSwatchTmax2() {
+			var tmax = $( "#tmax" ).slider( "value" );
+			$("#elemtmax").text(tmax);
+
+			var total= format(temp*frames*cores)+' €';
+			$("#caltotaleuro").text(total);
+			
+			var temp = $( "#temp" ).slider( "value" );
+			var frames = $( "#frames" ).slider( "value" );
+			var cores = $( "#cores" ).slider( "value" );
+			var pc=cores*3;
+
+			var tc= pc*frames*temp;
+			
+			var tmaxslots=((tc/tmax)/200);
+			var tmaxslotsred=Math.ceil(tmaxslots);
+			$( "#slots" ).slider( "value", tmaxslotsred );
+			
+			
+		}
+		
+
+		function refreshSwatchSlots() {
+			var slots = $( "#slots" ).slider( "value" );
+			$("#elemslots").text(slots);
+			var temp = $( "#temp" ).slider( "value" );
+			var frames = $( "#frames" ).slider( "value" );
+			var cores = $( "#cores" ).slider( "value" );
+			var pc=cores*3;
+
+			var tc= pc*frames*temp;
+			
+			var aux=slots*200;
+			
+			var nslots=tc/aux;
+			var nslotsred=Math.ceil(nslots);
+			
+			
+			$( "#tmax" ).slider( "value", nslotsred );
+			$("#elemslots").text(slots);
+			$("#nnslots").text(slots);
+			
+			var total= format(temp*frames*cores)+' €';
+			$("#caltotaleuro").text(total);
+		}
+	
+	});
+	
+	
+
+
+/*------------formateo de  los puntos de miles --------------*/	
+function format(valor) {
+    var nums = new Array();
+    var simb = "."; //Éste es el separador
+    valor = valor.toString();
+    valor = valor.replace(/\D/g, "");   //Ésta expresión regular solo permitira ingresar números
+    nums = valor.split(""); //Se vacia el valor en un arreglo
+    var long = nums.length - 1; // Se saca la longitud del arreglo
+    var patron = 3; //Indica cada cuanto se ponen las comas
+    var prox = 2; // Indica en que lugar se debe insertar la siguiente coma
+    var res = "";
+ 
+    while (long > prox) {
+        nums.splice((long - prox),0,simb); //Se agrega la coma
+        prox += patron; //Se incrementa la posición próxima para colocar la coma
+    }
+ 
+    for (var i = 0; i <= nums.length-1; i++) {
+        res += nums[i]; //Se crea la nueva cadena para devolver el valor formateado
+    }
+	
+    return res;
+}
+
+</script>
+
+<style>
+html,body{
+	font-family:arial;
+	height:100%;
+	margin:0;
+	background:#fff;
+	text-align:center;
+}
+.txtcalcu, .txtcalcunum{
+	font:14px arial;
+	float:left;
+	color:#444;
+	margin-left:5px;
+}
+ 
+.txtcalcunum{
+	width:20px;
+	font:bold 14px arial;
+}
+ 
+#caltotal{
+	background:#47717A;
+	height:40px;
+	text-align:center;
+	color:#fff;
+	font:bold 16px arial;
+	padding-top:15px;
+	width:85px;
+	margin-top:25px;
+ }
+ 
+ .calculadora{
+	width:550px;
+	background:#fff;
+
+}
+ 
+#cores, #frames,#temp,#slots,#tmax {
+	float: left;
+	width: 300px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+	margin-top:5px;
+}
+
+#cores .ui-slider-range, #frames .ui-slider-range, #temp .ui-slider-range,#slots .ui-slider-range,#tmax .ui-slider-range { 
+	background: #47717A; /* Old browsers */
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(left,  #ffffff 0%, #47717A 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffffff), color-stop(100%,#47717A)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  #ffffff 0%,#47717A 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  #ffffff 0%,#47717A 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  #ffffff 0%,#47717A 100%); /* IE10+ */
+	background: linear-gradient(to right,  #ffffff 0%,#47717A 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#47717A',GradientType=1 ); /* IE6-9 */
+ }
+
+.cajaminidoble{
+	display:inline-block;
+	max-width:470px;
+	height:auto;
+	padding:15px;
+	margin-left:15px;
+	margin-right:15px;
+	text-align:left;
+	vertical-align: top;
+}
+
+.tarifacal{
+	padding-top:25px;
+	background:#47717A;
+	font: bold 40px arial;
+	color:#fff;
+	display:block-line;
+	text-align:center;
+	width:500px;
+}
+.txtazul{
+	color:#47717A;
+	font:bold 14px arial;
+	margin-top:25px;
+}
+.cajaazul{
+	background:#B6C1C7;
+	width:450px;
+
+
+padding:25px;
+}
+
+.min,.max{
+	color:#fff;
+	float:left;
+	font:bold 12px arial;
+	margin-left:15px;
+	line-height:2;
+}
+</style>
 </head>
 
 <body>
@@ -43,25 +379,34 @@ define ('__SITE_PATH', $site_path);
 		</div>
 	<div class="calculadora">
 		
-		Cliente
-	<p>
-		<div class="txtcalcu">Cores:</div>
-		<div id="elemcores" class="txtcalcunum">1</div>
-		<div id="cores"></div>
+		<div class="txtazul">Indica los datos de tu equipo y tu proyecto.</div>
 		
-		<div style="clear:both;"></div>
-		
-		<div class="txtcalcu">Frames:</div>
-		<div id="elemframes" class="txtcalcunum">1</div>
-		<div id="frames"></div>
-		<div style="clear:both;"></div>
-		
-		
-		<div class="txtcalcu">Tframe:</div>
-		<div id="elemtemp" class="txtcalcunum">1</div>
-		<div id="temp"></div>
-		<div style="clear:both;"></div>
-		
+		<div class="cajaazul">
+
+			<div class="txtcalcu">Número de Cores en tu equipo:</div>
+			<div id="elemcores" class="txtcalcunum">1</div>
+			<div style="clear:both;"></div>
+			
+			<div class="min">Min 1 </div><div id="cores"></div><div class="max">Max 50 </div>
+			
+			<div style="clear:both;"></div>
+			
+			<div class="txtcalcu">Número de Frames de tu proyecto:</div>
+			<div id="elemframes" class="txtcalcunum">1</div>
+			<div style="clear:both;"></div>
+			
+			<div class="min">Min 1 </div><div id="frames"></div><div class="max">Max 50 </div>
+			<div style="clear:both;"></div>
+			
+			
+			<div class="txtcalcu">Tiempo que tardas en renderizar un frame: (hora)</div>
+			<div id="elemtemp" class="txtcalcunum">1</div>
+			<div style="clear:both;"></div>
+			
+			<div class="min">Min 1 </div><div id="temp"></div><div class="max">Max 50 </div>
+			<div style="clear:both;"></div>
+		</div>
+		<!--
 		Formulas Cliente:<br>
 		<div style="display:inline-block">Potencia Cliente(Cores*3GHz)(Pc):</div><div id="pc" style="display:inline-block">3</div><br>
 		<div style="display:inline-block">Trabajo Cliente(Pc*Frames*Tframe)(TC):</div><div id="tc" style="display:inline-block">0</div>
@@ -72,29 +417,29 @@ define ('__SITE_PATH', $site_path);
 		<div style="display:inline-block">Num horas max.(TC/PotSummus min (200*1)):</div><div id="nhorasmax" style="display:inline-block">3</div><br><br><br>
 		Al mover los slots:<br>
 		<div style="display:inline-block">Num de slots * 200:</div><div id="nnslots" style="display:inline-block">0</div><br>
-	</p>
+
 	<hr>
-	
-	Summus
-	<p>
-	    <div id="auxtmax">
-		<div class="txtcalcu">T. Max:</div>
-		<div id="elemtmax" class="txtcalcunum">200 </div><div style="clear:both;"></div>
-		<div class="txtcalcunum">&nbsp;&nbsp;Min:</div><div id="elemtmaxmin" class="txtcalcunum">0</div>
-		<div id="tmax"></div>
-		<div class="txtcalcunum"> Max:</div><div id="elemtmaxmax" class="txtcalcunum">0</div>
-		</div>
-		<div style="clear:both;"></div>
+	-->
+
+	<div class="txtazul">Indica la configuración que necesitas.</div>
 		
-		
-		<div class="txtcalcu">Slots:</div>
-		<div id="elemslots" class="txtcalcunum">20</div>
-		<div id="slots"></div>
-		<div style="clear:both;"></div>
-		
-		
-		
-	</p>	
+		<div class="cajaazul">
+
+			<div class="txtcalcu">Tiempo Máximo (horas): </div>
+			<div id="elemtmax" class="txtcalcunum">200 </div>
+			<div style="clear:both;"></div>
+			<div class="min" id="elemtmaxmin">Min 1</div><div id="tmax"></div><div class="max" id="elemtmaxmax">Max</div>
+
+			<div style="clear:both;"></div>
+			
+			
+			<div class="txtcalcu">Número de Slots (200 GgHz): </div>
+			<div id="elemslots" class="txtcalcunum">20</div>
+			<div style="clear:both;"></div>
+			
+			<div class="min">Min 1</div><div id="slots"></div><div class="max">Max 20</div>
+			<div style="clear:both;"></div>
+		</div>	
 	<div class="txtcalcu" id="caltotal">1</div></div>
 	<div style="clear:both;"></div>
 	</div>
