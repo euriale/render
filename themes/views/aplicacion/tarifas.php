@@ -1,6 +1,6 @@
 <div id="tarifas"></div> 
 <div class="cajamediapagina">
-<div class="titulo">Tarifas </div>  
+<div class="titulo">Calculadora </div>  
 <div class="moneda"> <div id="rad1" class="radio"></div><div class="euro">€</div>&nbsp;&nbsp;<div id="rad2" class="radio radionoactivo"></div><div class="dolar">$</div></div>
 
 	<div class="cajamini">

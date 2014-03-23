@@ -4,10 +4,10 @@
 <div class="auxtexto2">
 <div class="textocontenido">
 <p>
-Debido a la complejidad de la software 3D es necesaria una gran cantidad de horas para renderizar un proyecto. Además supone una gran inversión disponer de el equipamiento destinado a esta tarea, gastos en licencias, costes de energía y refrigeración, mantenimiento...
+Debido a la complejidad del software 3D es necesaria una gran cantidad de horas para renderizar un proyecto. Además, supone una gran inversión disponer de el equipamiento destinado a esta tarea, gastos en licencias, costes de energía y refrigeración, mantenimiento, etc.
 </p>
 <p>
-Descubre las ventajas de usar nuestra granja de render.
+Te indicamos a continuación las claves para que descubras las ventajas de trabajar con nosotros:
 </div></div>
 
 <!--primera -->
@@ -19,7 +19,7 @@ Descubre las ventajas de usar nuestra granja de render.
 				<p>Te ofrecemos<strong> toda la potencia que necesitas</strong> para renderizar tu proyecto de forma rápida y sencilla.
 	Disponemos de máquinas basadas en tecnologías punteras en el mercado, dedicadas en exclusiva al renderizado y con la infraestructura diseñada para el cálculo masivo de datos.
  </p>
- <p>Si tienes que entregar tu proyecto en un plazo breve de tiempo, te asignaremos las máquinas necesarias para tener tu renderizado a tiempo y dispondrás de un técnico especializado para ayudarte en cada momento. </p>
+ <p>Si tienes que entregar tu proyecto en un breve plazo, te asignaremos las máquinas necesarias para tener tu renderizado a tiempo y dispondrás de un técnico especializado para ayudarte en cada momento. </p>
 				
 			</div>
 		</div>
@@ -33,7 +33,7 @@ Descubre las ventajas de usar nuestra granja de render.
 			<div class="textocontenido">
 		
 				<p>
-				Realizamos un presupuesto de <strong>pago por uso</strong>. Únicamente pagas por el uso de la graja consiguiendo un gran ahorro económico comparado con montar tu propia infraestructura.  Olvídate de inversiones en:
+				Te proporcionamos un servicio de <strong>pago por uso</strong>. Únicamente pagas por el uso de la graja consiguiendo un gran ahorro económico comparado con montar tu propia infraestructura.  Olvídate de inversiones en:
 				</p>
 				<ul>
 				<li class="txt">Compra, mantenimiento  y actualizaciones de equipos</li>

@@ -16,7 +16,7 @@
 			<p>Hemos creado una aplicación que te ayudará a simplificar los pasos del renderizado de tu proyecto. Sólo tendrás que instalarte un plugin para Maya y un sincronizador desde nuestra web.</p>
 			<p>En tu propio Maya podrás lanzar tu render contra nuestra granja y automáticamente el sincronizador subirá el proyecto y comenzará a renderizarlo. </p>
 			<p>Podrás visualizar el resultado de cada tarea y obtener una vista previa.</p>
-			<p><strong>Prueba nuestra aplicación, clica <a href="http://farm.renderdrive.com"  style="color:#FF8C00;" target="_blank">aqui</a></strong></p>
+			<p><strong>Prueba nuestra aplicación, haz clic <a href="http://farm.renderdrive.com"  style="color:#FF8C00;" target="_blank">aquí</a></strong></p>
 			
 		</div>
 	</div>
@@ -28,7 +28,7 @@
 	<div class="cajaminidoble">	
 		<div class="tituloleft">Versiones, motores y plugins más habituales </div>  
 		<div class="textocontenido">
-			<p>Podrás lanzar trabajos de <strong>Maya </strong> desde la versión <strong> 2014</strong>,  hasta la  <strong> 2011</strong>. En cuanto a motores trabajamos con  <strong>Vray</strong>, <strong>MentalRay</strong>, <strong>Arnold</strong>, y <strong>Maxwell</strong>. Y los plugins <strong>Vue 11.5</strong> y <strong>Realflow</strong>.</p>
+			<p>Podrás lanzar trabajos de <strong>Maya </strong> desde la versión <strong> 2014</strong> hasta la <strong> 2011</strong>. En cuanto a motores trabajamos con  <strong>Vray</strong>, <strong>MentalRay</strong>, <strong>Arnold</strong>, y <strong>Maxwell</strong>. Y los plugins <strong>Vue 11.5</strong> y <strong>Realflow</strong>.</p>
 			<p>Si usas otros motores o plugins contacta con nosotros.</p>
 			<!-- Estamos trabajando para añadir 3D Max en breve -->
 		</div>
