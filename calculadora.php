@@ -52,7 +52,7 @@ define ('__SITE_PATH', $site_path);
 			orientation: "horizontal",
 			range: "min",
 			min:1,
-			max: 50,
+			max:10000,
  			value: 1,
 			slide: refreshSwatchFrames,
 			change: refreshSwatchFrames
@@ -100,6 +100,7 @@ define ('__SITE_PATH', $site_path);
 			var cores = $( "#cores" ).slider( "value" );
 			
 			$("#elemtemp").text(temp);
+			$("#tempinput").val(temp);
 			
 			var pc= cores*3;
 			var tc= pc*frames*temp;
@@ -128,7 +129,8 @@ define ('__SITE_PATH', $site_path);
 			var frames = $( "#frames" ).slider( "value" );
 			var cores = $( "#cores" ).slider( "value" );
 			
-			$("#elemframes").text(frames);
+			$("#elemframes").text(format(frames));
+			$("#framesinput").val(format(frames));
 			
 			var pc=cores*3;
 			var tc= pc*frames*temp;
@@ -156,6 +158,7 @@ define ('__SITE_PATH', $site_path);
 			var cores = $( "#cores" ).slider( "value" );
 			
 			$("#elemcores").text(cores);
+			$("#coreinput").val(cores);
 			
 			var pc=cores*3;
 			$("#pc").text(format(pc));
@@ -189,7 +192,8 @@ define ('__SITE_PATH', $site_path);
 		
 		function refreshSwatchTmax() {
 			var tmax = $( "#tmax" ).slider( "value" );
-			$("#elemtmax").text(tmax);
+			$("#elemtmax").text(format(tmax));
+			$("#tmaxinput").val(format(tmax));
 
 			var total= format(temp*frames*cores)+' €';
 			$("#caltotaleuro").text(total);
@@ -199,7 +203,8 @@ define ('__SITE_PATH', $site_path);
 		
 		function refreshSwatchTmax2() {
 			var tmax = $( "#tmax" ).slider( "value" );
-			$("#elemtmax").text(tmax);
+			$("#elemtmax").text(format(tmax));
+			$("#tmaxinput").val(format(tmax));
 
 			var total= format(temp*frames*cores)+' €';
 			$("#caltotaleuro").text(total);
@@ -222,6 +227,8 @@ define ('__SITE_PATH', $site_path);
 		function refreshSwatchSlots() {
 			var slots = $( "#slots" ).slider( "value" );
 			$("#elemslots").text(slots);
+			$("#slotsinput").val(slots);
+			
 			var temp = $( "#temp" ).slider( "value" );
 			var frames = $( "#frames" ).slider( "value" );
 			var cores = $( "#cores" ).slider( "value" );
@@ -235,6 +242,7 @@ define ('__SITE_PATH', $site_path);
 			var nslotsred=Math.ceil(nslots);
 			
 			
+			
 			$( "#tmax" ).slider( "value", nslotsred );
 			$("#elemslots").text(slots);
 			$("#nnslots").text(slots);
@@ -242,7 +250,27 @@ define ('__SITE_PATH', $site_path);
 			var total= format(temp*frames*cores)+' €';
 			$("#caltotaleuro").text(total);
 		}
-	
+		
+	 $( "#tempinput" ).change(function() {
+		var valor= $( "#tempinput" ).val();
+		$( "#temp" ).slider( "value", valor );
+	});	
+	$( "#coreinput" ).change(function() {
+		var valor= $( "#coreinput" ).val();
+		$( "#cores" ).slider( "value", valor );
+	});	
+	$( "#framesinput" ).change(function() {
+		var valor= $( "#framesinput" ).val();
+		$( "#frames" ).slider( "value", valor );
+	});	
+	$( "#tmaxinput" ).change(function() {
+		var valor= $( "#tmaxinput" ).val();
+		$( "#tmax" ).slider( "value", valor );
+	});	
+	$( "#slotsinput" ).change(function() {
+		var valor= $( "#slotsinput" ).val();
+		$( "#slots" ).slider( "value", valor );
+	});	
 	});
 	
 	
@@ -306,7 +334,7 @@ html,body{
  }
  
  .calculadora{
-	width:550px;
+	width:650px;
 	background:#fff;
 
 }
@@ -343,7 +371,7 @@ html,body{
 	color:#fff;
 	display:block-line;
 	text-align:center;
-	width:500px;
+	width:570px;
 }
 .txtazul{
 	color:#47717A;
@@ -352,7 +380,7 @@ html,body{
 }
 .cajaazul{
 	background:#B6C1C7;
-	width:450px;
+	width:540px;
 
 
 padding:25px;
@@ -364,6 +392,13 @@ padding:25px;
 	font:bold 12px arial;
 	margin-left:15px;
 	line-height:2;
+}
+.inputscal{
+	width:50px;
+	margin-left:15px;
+}
+.eleminput{
+float:right;
 }
 </style>
 </head>
@@ -383,7 +418,7 @@ padding:25px;
 			<div id="elemcores" class="txtcalcunum">1</div>
 			<div style="clear:both;"></div>
 			
-			<div class="min">Min 1 </div><div id="cores"></div><div class="max">Max 50 </div>
+			<div class="min">Min 1 </div><div id="cores"></div><div class="max">Max 50 </div><div class="eleminput"><input type="text" value="1" name="coreinput" id="coreinput" class="inputscal"></div>
 			
 			<div style="clear:both;"></div>
 			
@@ -391,7 +426,7 @@ padding:25px;
 			<div id="elemframes" class="txtcalcunum">1</div>
 			<div style="clear:both;"></div>
 			
-			<div class="min">Min 1 </div><div id="frames"></div><div class="max">Max 50 </div>
+			<div class="min">Min 1 </div><div id="frames"></div><div class="max">Max 10.000 </div><div class="eleminput"><input type="text" value="1" name="framesinput" id="framesinput" class="inputscal"></div>
 			<div style="clear:both;"></div>
 			
 			
@@ -399,7 +434,7 @@ padding:25px;
 			<div id="elemtemp" class="txtcalcunum">1</div>
 			<div style="clear:both;"></div>
 			
-			<div class="min">Min 1 </div><div id="temp"></div><div class="max">Max 50 </div>
+			<div class="min">Min 1 </div><div id="temp"></div><div class="max">Max 50 </div><div class="eleminput"><input type="text" value="1" name="tempinput" id="tempinput" class="inputscal"></div>
 			<div style="clear:both;"></div>
 		</div>
 		<!--
@@ -424,7 +459,7 @@ padding:25px;
 			<div class="txtcalcu">Tiempo Máximo (horas): </div>
 			<div id="elemtmax" class="txtcalcunum">200 </div>
 			<div style="clear:both;"></div>
-			<div class="min" id="elemtmaxmin">Min 1</div><div id="tmax"></div><div class="max" id="elemtmaxmax">Max</div>
+			<div class="min" id="elemtmaxmin">Min 1</div><div id="tmax"></div><div class="max" id="elemtmaxmax">Max</div><div class="eleminput"><input type="text" value="1" name="tmaxinput" id="tmaxinput" class="inputscal"></div>
 
 			<div style="clear:both;"></div>
 			
@@ -433,7 +468,7 @@ padding:25px;
 			<div id="elemslots" class="txtcalcunum">20</div>
 			<div style="clear:both;"></div>
 			
-			<div class="min">Min 1</div><div id="slots"></div><div class="max">Max 20</div>
+			<div class="min">Min 1</div><div id="slots"></div><div class="max">Max 20</div><div class="eleminput"><input type="text" value="1" name="slotsinput" id="slotsinput" class="inputscal"></div>
 			<div style="clear:both;"></div>
 		</div>	
 	<div class="txtcalcu" id="caltotal">1</div></div>
