@@ -41,30 +41,31 @@ define ('__SITE_PATH', $site_path);
 		$("#cores").slider({
 			orientation: "horizontal",
 			range: "min",
-			max: 50,
+			max: 64,
 			min:1,
 			value:1,
-			slide: refreshSwatchCores,
 			change: refreshSwatchCores
+		
 		});
 
 		$("#frames").slider({
 			orientation: "horizontal",
 			range: "min",
-			min:1,
+			min:0,
 			max:10000,
+			step:1,
  			value: 1,
-			slide: refreshSwatchFrames,
 			change: refreshSwatchFrames
+			
 		});
 		$("#temp").slider({
 			orientation: "horizontal",
 			range: "min",
-			max: 50,
+			max: 300,
 			min:1,
 			value: 1,
-			slide: refreshSwatchTemp,
 			change: refreshSwatchTemp
+
 		});
 		
 		$("#slots").slider({
@@ -74,7 +75,7 @@ define ('__SITE_PATH', $site_path);
 			min:1,
 			value:20,
 			slide: refreshSwatchSlots,
-			change: refreshSwatchSlots
+			change: calculotarifa
 		});
 		$("#tmax").slider({
 			orientation: "horizontal",
@@ -108,19 +109,19 @@ define ('__SITE_PATH', $site_path);
 
 				
 			var nhorasmin=tc/4000;
-			var nhorasminred=Math.ceil(nhorasmin);
+			var nhorasminred=Math.ceil(nhorasmin/60);
 			$("#nhorasmin").text(nhorasmin+' '+nhorasminred);
 			
 			var nhorasmax=tc/200;
-			var nhoramaxred=Math.ceil(nhorasmax);
+		
+			var nhoramaxred=Math.ceil(nhorasmax/60);
 			$("#nhorasmax").text(nhorasmax+' '+nhoramaxred);
 			
 			reiniciatmax(nhoramaxred,nhorasminred);
 			$( "#tmax" ).slider( "value", nhoramaxred );		
 			
-			
-			var total= format(temp*frames*cores)+' €';
-			$("#caltotal").text(total);
+			calculototal();
+		
 
 			
 		}
@@ -137,19 +138,18 @@ define ('__SITE_PATH', $site_path);
 			$("#tc").text(format(tc));
 			
 			var nhorasmin=tc/4000;
-			var nhorasminred=Math.ceil(nhorasmin);
+			var nhorasminred=Math.ceil(nhorasmin/60);
 			$("#nhorasmin").text(nhorasmin+' '+nhorasminred);
 			
 			var nhorasmax=tc/200;
-			var nhoramaxred=Math.ceil(nhorasmax);
+			var nhoramaxred=Math.ceil(nhorasmax/60);
 			$("#nhorasmax").text(nhorasmax+' '+nhoramaxred);
 
 			reiniciatmax(nhoramaxred,nhorasminred);
 			$( "#tmax" ).slider( "value", nhoramaxred );
 			
-			var total= format(temp*frames*cores)+' €';
-			$("#caltotal").text(total);
-
+		
+			calculototal();
 			
 		}
 		function refreshSwatchCores() {
@@ -166,11 +166,11 @@ define ('__SITE_PATH', $site_path);
 			$("#tc").text(format(tc));
 			
 			var nhorasmin=tc/4000;
-			var nhorasminred=Math.ceil(nhorasmin);
+			var nhorasminred=Math.ceil(nhorasmin/60);
 			$("#nhorasmin").text(nhorasmin+' '+nhorasminred);
 			
 			var nhorasmax=tc/200;
-			var nhoramaxred=Math.ceil(nhorasmax);
+			var nhoramaxred=Math.ceil(nhorasmax/60);
 			$("#nhorasmax").text(nhorasmax+' '+nhoramaxred);
 			
 			reiniciatmax(nhoramaxred,nhorasminred);
@@ -179,12 +179,15 @@ define ('__SITE_PATH', $site_path);
 			var total= format(temp*frames*cores)+' €';
 			$("#caltotaleuro").text(total);
 			
+			calculototal();
+			
 		}
 		/*----Reinicio tiempo-----*/
 		function reiniciatmax(topemax,topemin){
+		
 			$("#tmax").slider( "option", "max", topemax );
-			$("#elemtmaxmax").text('Max '+topemax);
-			$("#elemtmaxmin").text('Min ' +topemin);
+			$("#elemtmaxmax").text('Max '+format(topemax));
+			$("#elemtmaxmin").text('Min ' +format(topemin));
 			
 		}
 		
@@ -192,13 +195,13 @@ define ('__SITE_PATH', $site_path);
 		
 		function refreshSwatchTmax() {
 			var tmax = $( "#tmax" ).slider( "value" );
+			//var tmax=tmax/60;
 			$("#elemtmax").text(format(tmax));
 			$("#tmaxinput").val(format(tmax));
-
-			var total= format(temp*frames*cores)+' €';
-			$("#caltotaleuro").text(total);
-			
 		
+
+			
+			calculototal();
 		}
 		
 		function refreshSwatchTmax2() {
@@ -219,7 +222,7 @@ define ('__SITE_PATH', $site_path);
 			var tmaxslots=((tc/tmax)/200);
 			var tmaxslotsred=Math.ceil(tmaxslots);
 			$( "#slots" ).slider( "value", tmaxslotsred );
-			
+			calculototal();
 			
 		}
 		
@@ -249,6 +252,7 @@ define ('__SITE_PATH', $site_path);
 			
 			var total= format(temp*frames*cores)+' €';
 			$("#caltotaleuro").text(total);
+			calculototal();
 		}
 		
 	 $( "#tempinput" ).change(function() {
@@ -271,9 +275,33 @@ define ('__SITE_PATH', $site_path);
 		var valor= $( "#slotsinput" ).val();
 		$( "#slots" ).slider( "value", valor );
 	});	
+	
 	});
+	function calculototal(){
+			var temp = $( "#temp" ).slider( "value" );
+			var frames = $( "#frames" ).slider( "value" );
+			var cores = $( "#cores" ).slider( "value" );
+			var tarifa = $( "#tarifa" ).val();
+			
+			var total=cores*3*tarifa*frames*(temp/60);
+			var total=Math.ceil(total)+' Créditos';
+			$("#caltotal").text(total);
+		//cores*Velocidad_core_media*tarifa(creditos/GHzh)*frames*horas/frame
+	}
 	
 	
+	function calculotarifa(){
+		var slots = $( "#slots" ).slider( "value" );
+		var pathaux="controllers/ajax/calculotarifa.php";
+			$.ajax({
+				type: "GET",
+				url: pathaux,
+				data: "slots="+slots,
+				success: function(texto){
+						$('#tarifaaux').html(texto);
+				}
+			});
+	}
 
 
 /*------------formateo de  los puntos de miles --------------*/	
@@ -371,7 +399,7 @@ html,body{
 	color:#fff;
 	display:block-line;
 	text-align:center;
-	width:570px;
+	width:610px;
 }
 .txtazul{
 	color:#47717A;
@@ -380,7 +408,7 @@ html,body{
 }
 .cajaazul{
 	background:#B6C1C7;
-	width:540px;
+	width:560px;
 
 
 padding:25px;
@@ -418,7 +446,7 @@ float:right;
 			<div id="elemcores" class="txtcalcunum">1</div>
 			<div style="clear:both;"></div>
 			
-			<div class="min">Min 1 </div><div id="cores"></div><div class="max">Max 50 </div><div class="eleminput"><input type="text" value="1" name="coreinput" id="coreinput" class="inputscal"></div>
+			<div class="min">Min 1 </div><div id="cores"></div><div class="max">Max 64 </div><div class="eleminput"><input type="text" value="1" name="coreinput" id="coreinput" class="inputscal"></div>
 			
 			<div style="clear:both;"></div>
 			
@@ -430,11 +458,11 @@ float:right;
 			<div style="clear:both;"></div>
 			
 			
-			<div class="txtcalcu">Tiempo que tardas en renderizar un frame: (hora)</div>
+			<div class="txtcalcu">Tiempo que tardas en renderizar un frame: ( Minutos )</div>
 			<div id="elemtemp" class="txtcalcunum">1</div>
 			<div style="clear:both;"></div>
 			
-			<div class="min">Min 1 </div><div id="temp"></div><div class="max">Max 50 </div><div class="eleminput"><input type="text" value="1" name="tempinput" id="tempinput" class="inputscal"></div>
+			<div class="min">Min 1 </div><div id="temp"></div><div class="max">Max 300 </div><div class="eleminput"><input type="text" value="1" name="tempinput" id="tempinput" class="inputscal"></div>
 			<div style="clear:both;"></div>
 		</div>
 		<!--
@@ -456,7 +484,7 @@ float:right;
 		
 		<div class="cajaazul">
 
-			<div class="txtcalcu">Tiempo Máximo (horas): </div>
+			<div class="txtcalcu">Tiempo Máximo ( Horas ): </div>
 			<div id="elemtmax" class="txtcalcunum">200 </div>
 			<div style="clear:both;"></div>
 			<div class="min" id="elemtmaxmin">Min 1</div><div id="tmax"></div><div class="max" id="elemtmaxmax">Max</div><div class="eleminput"><input type="text" value="1" name="tmaxinput" id="tmaxinput" class="inputscal"></div>
@@ -476,6 +504,7 @@ float:right;
 	</div>
 </div>	
 
- 
+ <div id="tarifaaux"><input type="hidden" id="tarifa" value="0"></div>
+
 </body>
 </html>
