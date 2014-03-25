@@ -93,7 +93,36 @@ define ('__SITE_PATH', $site_path);
 		$( "#slots" ).slider( "value",1 );
 		});
 		
-
+		function refreshSwatchCores() {
+			var temp = $( "#temp" ).slider( "value" );
+			var frames = $( "#frames" ).slider( "value" );
+			var cores = $( "#cores" ).slider( "value" );
+			
+			$("#elemcores").text(cores);
+			$("#coreinput").val(cores);
+			
+			var pc=cores*3;
+			$("#pc").text(format(pc));
+			var tc= pc*frames*temp;
+			$("#tc").text(format(tc));
+			
+			var nhorasmin=tc/4000;
+			var nhorasminred=Math.ceil(nhorasmin/60);
+			$("#nhorasmin").text(nhorasmin+' min '+nhorasminred+ ' horas ');
+			
+			var nhorasmax=tc/200;
+			var nhoramaxred=Math.ceil(nhorasmax/60);
+			$("#nhorasmax").text(nhorasmax+' min '+nhoramaxred+ ' horas');
+			
+			reiniciatmax(nhoramaxred,nhorasminred);
+			$( "#tmax" ).slider( "value", nhoramaxred );
+			
+			var total= format(temp*frames*cores)+' €';
+			$("#caltotaleuro").text(total);
+			
+			calculototal();
+			
+		}
 		
 		function refreshSwatchTemp() {
 			var temp = $( "#temp" ).slider( "value" );
@@ -110,12 +139,12 @@ define ('__SITE_PATH', $site_path);
 				
 			var nhorasmin=tc/4000;
 			var nhorasminred=Math.ceil(nhorasmin/60);
-			$("#nhorasmin").text(nhorasmin+' '+nhorasminred);
+			$("#nhorasmin").text(nhorasmin+' min '+nhorasminred+' horas');
 			
 			var nhorasmax=tc/200;
 		
 			var nhoramaxred=Math.ceil(nhorasmax/60);
-			$("#nhorasmax").text(nhorasmax+' '+nhoramaxred);
+			$("#nhorasmax").text(nhorasmax+' min '+nhoramaxred+ ' horas');
 			
 			reiniciatmax(nhoramaxred,nhorasminred);
 			$( "#tmax" ).slider( "value", nhoramaxred );		
@@ -139,11 +168,11 @@ define ('__SITE_PATH', $site_path);
 			
 			var nhorasmin=tc/4000;
 			var nhorasminred=Math.ceil(nhorasmin/60);
-			$("#nhorasmin").text(nhorasmin+' '+nhorasminred);
+			$("#nhorasmin").text(nhorasmin+' min '+nhorasminred+' horas');
 			
 			var nhorasmax=tc/200;
 			var nhoramaxred=Math.ceil(nhorasmax/60);
-			$("#nhorasmax").text(nhorasmax+' '+nhoramaxred);
+			$("#nhorasmax").text(nhorasmax+' min '+nhoramaxred+' horas');
 
 			reiniciatmax(nhoramaxred,nhorasminred);
 			$( "#tmax" ).slider( "value", nhoramaxred );
@@ -152,36 +181,7 @@ define ('__SITE_PATH', $site_path);
 			calculototal();
 			
 		}
-		function refreshSwatchCores() {
-			var temp = $( "#temp" ).slider( "value" );
-			var frames = $( "#frames" ).slider( "value" );
-			var cores = $( "#cores" ).slider( "value" );
-			
-			$("#elemcores").text(cores);
-			$("#coreinput").val(cores);
-			
-			var pc=cores*3;
-			$("#pc").text(format(pc));
-			var tc= pc*frames*temp;
-			$("#tc").text(format(tc));
-			
-			var nhorasmin=tc/4000;
-			var nhorasminred=Math.ceil(nhorasmin/60);
-			$("#nhorasmin").text(nhorasmin+' '+nhorasminred);
-			
-			var nhorasmax=tc/200;
-			var nhoramaxred=Math.ceil(nhorasmax/60);
-			$("#nhorasmax").text(nhorasmax+' '+nhoramaxred);
-			
-			reiniciatmax(nhoramaxred,nhorasminred);
-			$( "#tmax" ).slider( "value", nhoramaxred );
-			
-			var total= format(temp*frames*cores)+' €';
-			$("#caltotaleuro").text(total);
-			
-			calculototal();
-			
-		}
+
 		/*----Reinicio tiempo-----*/
 		function reiniciatmax(topemax,topemin){
 		
@@ -209,9 +209,6 @@ define ('__SITE_PATH', $site_path);
 			$("#elemtmax").text(format(tmax));
 			$("#tmaxinput").val(format(tmax));
 
-			var total= format(temp*frames*cores)+' €';
-			$("#caltotaleuro").text(total);
-			
 			var temp = $( "#temp" ).slider( "value" );
 			var frames = $( "#frames" ).slider( "value" );
 			var cores = $( "#cores" ).slider( "value" );
@@ -244,14 +241,10 @@ define ('__SITE_PATH', $site_path);
 			var nslots=tc/aux;
 			var nslotsred=Math.ceil(nslots);
 			
-			
-			
 			$( "#tmax" ).slider( "value", nslotsred );
 			$("#elemslots").text(slots);
 			$("#nnslots").text(slots);
 			
-			var total= format(temp*frames*cores)+' €';
-			$("#caltotaleuro").text(total);
 			calculototal();
 		}
 		
@@ -278,14 +271,27 @@ define ('__SITE_PATH', $site_path);
 	
 	});
 	function calculototal(){
-			var temp = $( "#temp" ).slider( "value" );
+			var tmax = $( "#tmax" ).slider( "value" );
 			var frames = $( "#frames" ).slider( "value" );
+			var cores = $( "#cores" ).slider( "value" );
 			var cores = $( "#cores" ).slider( "value" );
 			var tarifa = $( "#tarifa" ).val();
 			
-			var total=cores*3*tarifa*frames*(temp/60);
+			
+			var total=cores*3*tarifa*frames*tmax;
 			var total=Math.ceil(total)+' Créditos';
 			$("#caltotal").text(total);
+			$("#totaltotal").text(total);
+			
+			/*----visualización de formula----*/
+			$( "#corestotal" ).text(cores);
+			$( "#tarifatotal" ).text(tarifa);
+			$( "#framestotal" ).text(frames);
+			$( "#tiempoframetotal" ).text(tmax);
+			
+			/*------*/
+			
+		
 		//cores*Velocidad_core_media*tarifa(creditos/GHzh)*frames*horas/frame
 	}
 	
@@ -465,20 +471,8 @@ float:right;
 			<div class="min">Min 1 </div><div id="temp"></div><div class="max">Max 300 </div><div class="eleminput"><input type="text" value="1" name="tempinput" id="tempinput" class="inputscal"></div>
 			<div style="clear:both;"></div>
 		</div>
-		<!--
-		Formulas Cliente:<br>
-		<div style="display:inline-block">Potencia Cliente(Cores*3GHz)(Pc):</div><div id="pc" style="display:inline-block">3</div><br>
-		<div style="display:inline-block">Trabajo Cliente(Pc*Frames*Tframe)(TC):</div><div id="tc" style="display:inline-block">0</div>
-		<br><br>
 		
-		Formulas Summus:<br>
-		<div style="display:inline-block">Num horas min.(TC/PotSummus max (200*20)):</div><div id="nhorasmin" style="display:inline-block">3</div><br>
-		<div style="display:inline-block">Num horas max.(TC/PotSummus min (200*1)):</div><div id="nhorasmax" style="display:inline-block">3</div><br><br><br>
-		Al mover los slots:<br>
-		<div style="display:inline-block">Num de slots * 200:</div><div id="nnslots" style="display:inline-block">0</div><br>
-
-	<hr>
-	-->
+	
 
 	<div class="txtazul">Indica la configuración que necesitas.</div>
 		
@@ -506,5 +500,22 @@ float:right;
 
  <div id="tarifaaux"><input type="hidden" id="tarifa" value="0"></div>
 
+		Formulas Cliente:<br>
+		<div style="display:inline-block">Potencia Cliente(Cores*3GHz)(Pc):</div><div id="pc" style="display:inline-block">3</div><br>
+		<div style="display:inline-block">Trabajo Cliente(Pc*Frames*Tframe)(TC):</div><div id="tc" style="display:inline-block">0</div>
+		<br><br>
+		
+		Formulas Summus:<br>
+		<div style="display:inline-block">Num horas min.(TC/PotSummus max (200*20)):</div><div id="nhorasmin" style="display:inline-block">3</div><br>
+		<div style="display:inline-block">Num horas max.(TC/PotSummus min (200*1)):</div><div id="nhorasmax" style="display:inline-block">3</div><br><br><br>
+				
+		<br><br>
+		Cálculo Precio (créditos):
+		
+		Cores*Velocidad_core(3)*tarifa(dinámico BBDD)* frames * horas/frame<br>
+		<div id="corestotal" style="display:inline-block"></div> * 3 *<div id="tarifatotal" style="display:inline-block"></div> * <div id="framestotal" style="display:inline-block"></div> * <div id="tiempoframetotal" style="display:inline-block"></div>
+		= <div id="totaltotal" style="display:inline-block"></div>
+
+	<hr>
 </body>
 </html>
