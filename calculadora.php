@@ -240,8 +240,13 @@ define ('__SITE_PATH', $site_path);
 			
 			var nslots=tc/aux;
 			var nslotsred=Math.ceil(nslots);
+
 			
 			$( "#tmax" ).slider( "value", nslotsred );
+			
+			
+			
+			
 			$("#elemslots").text(slots);
 			$("#nnslots").text(slots);
 			
@@ -307,6 +312,7 @@ define ('__SITE_PATH', $site_path);
 						$('#tarifaaux').html(texto);
 				}
 			});
+			calculototal();
 	}
 
 
