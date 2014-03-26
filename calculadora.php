@@ -37,6 +37,7 @@ define ('__SITE_PATH', $site_path);
 <script>
 	/*----------------------Calculadora-------------*/
 	$(document).ready(function () {
+		
 		 $(function() {
 		$("#cores").slider({
 			orientation: "horizontal",
@@ -87,6 +88,7 @@ define ('__SITE_PATH', $site_path);
 			change: refreshSwatchTmax
 			
 		});
+		calculototal();
 		$( "#cores" ).slider( "value", 1 );
 		$( "#frames" ).slider( "value", 1 );
 		$( "#temp" ).slider( "value", 1 );
@@ -103,15 +105,15 @@ define ('__SITE_PATH', $site_path);
 			
 			var pc=cores*3;
 			$("#pc").text(format(pc));
-			var tc= pc*frames*temp;
+			var tc= pc*frames*(temp/60);
 			$("#tc").text(format(tc));
 			
 			var nhorasmin=tc/4000;
-			var nhorasminred=Math.ceil(nhorasmin/60);
+			var nhorasminred=Math.ceil(nhorasmin);
 			$("#nhorasmin").text(nhorasmin+' min '+nhorasminred+ ' horas ');
 			
 			var nhorasmax=tc/200;
-			var nhoramaxred=Math.ceil(nhorasmax/60);
+			var nhoramaxred=Math.ceil(nhorasmax);
 			$("#nhorasmax").text(nhorasmax+' min '+nhoramaxred+ ' horas');
 			
 			reiniciatmax(nhoramaxred,nhorasminred);
@@ -133,17 +135,17 @@ define ('__SITE_PATH', $site_path);
 			$("#tempinput").val(temp);
 			
 			var pc= cores*3;
-			var tc= pc*frames*temp;
+			var tc= pc*frames*(temp/60);
 			$("#tc").text(format(tc));
 
 				
 			var nhorasmin=tc/4000;
-			var nhorasminred=Math.ceil(nhorasmin/60);
+			var nhorasminred=Math.ceil(nhorasmin);
 			$("#nhorasmin").text(nhorasmin+' min '+nhorasminred+' horas');
 			
 			var nhorasmax=tc/200;
 		
-			var nhoramaxred=Math.ceil(nhorasmax/60);
+			var nhoramaxred=Math.ceil(nhorasmax);
 			$("#nhorasmax").text(nhorasmax+' min '+nhoramaxred+ ' horas');
 			
 			reiniciatmax(nhoramaxred,nhorasminred);
@@ -163,15 +165,15 @@ define ('__SITE_PATH', $site_path);
 			$("#framesinput").val(format(frames));
 			
 			var pc=cores*3;
-			var tc= pc*frames*temp;
+			var tc= pc*frames*(temp/60);
 			$("#tc").text(format(tc));
 			
 			var nhorasmin=tc/4000;
-			var nhorasminred=Math.ceil(nhorasmin/60);
+			var nhorasminred=Math.ceil(nhorasmin);
 			$("#nhorasmin").text(nhorasmin+' min '+nhorasminred+' horas');
 			
 			var nhorasmax=tc/200;
-			var nhoramaxred=Math.ceil(nhorasmax/60);
+			var nhoramaxred=Math.ceil(nhorasmax);
 			$("#nhorasmax").text(nhorasmax+' min '+nhoramaxred+' horas');
 
 			reiniciatmax(nhoramaxred,nhorasminred);
@@ -214,7 +216,7 @@ define ('__SITE_PATH', $site_path);
 			var cores = $( "#cores" ).slider( "value" );
 			var pc=cores*3;
 
-			var tc= pc*frames*temp;
+			var tc= pc*frames*(temp/60);
 			
 			var tmaxslots=((tc/tmax)/200);
 			var tmaxslotsred=Math.ceil(tmaxslots);
@@ -234,7 +236,7 @@ define ('__SITE_PATH', $site_path);
 			var cores = $( "#cores" ).slider( "value" );
 			var pc=cores*3;
 
-			var tc= pc*frames*temp;
+			var tc= pc*frames*(temp/60);
 			
 			var aux=slots*200;
 			
@@ -276,25 +278,31 @@ define ('__SITE_PATH', $site_path);
 		calculototal();
 	});	
 	
+	
 	});
 	function calculototal(){
-			var tmax = $( "#tmax" ).slider( "value" );
-			var frames = $( "#frames" ).slider( "value" );
-			var cores = $( "#cores" ).slider( "value" );
-			var cores = $( "#cores" ).slider( "value" );
+			
 			var tarifa = $( "#tarifa" ).val();
 			
+			var tmax = $( "#tmax" ).slider( "value" );
+			var temp = $( "#temp" ).slider( "value" );
+			var frames = $( "#frames" ).slider( "value" );
+			var cores = $( "#cores" ).slider( "value" );
 			
-			var total=cores*3*tarifa*frames*tmax;
+						
+			var pc= cores*3;
+			var tc= pc*frames*(temp/60);
+		
+			
+			var total=tc*tarifa;
 			var total=Math.ceil(total)+' Créditos';
 			$("#caltotal").text(total);
 			$("#totaltotal").text(total);
 			
 			/*----visualización de formula----*/
-			$( "#corestotal" ).text(cores);
+			$( "#tctotal" ).text(tc);
 			$( "#tarifatotal" ).text(tarifa);
-			$( "#framestotal" ).text(frames);
-			$( "#tiempoframetotal" ).text(tmax);
+			
 			
 			/*------*/
 			
@@ -307,6 +315,8 @@ define ('__SITE_PATH', $site_path);
 		var slots = $( "#slots" ).slider( "value" );
 		var pathaux="controllers/ajax/calculotarifa.php";
 			$.ajax({
+				async:false,   
+                cache:false,   
 				type: "GET",
 				url: pathaux,
 				data: "slots="+slots,
@@ -316,6 +326,7 @@ define ('__SITE_PATH', $site_path);
 				
 			});
 			
+			//calculototal();
 			
 	}
 
@@ -508,11 +519,11 @@ float:right;
 	</div>
 </div>	
 
- <div id="tarifaaux"><input type="text" id="tarifa" value="0"></div>
+ <div id="tarifaaux"><input type="text" id="tarifa" value=""></div>
 
 		Formulas Cliente:<br>
 		<div style="display:inline-block">Potencia Cliente(Cores*3GHz)(Pc):</div><div id="pc" style="display:inline-block">3</div><br>
-		<div style="display:inline-block">Trabajo Cliente(Pc*Frames*Tframe)(TC):</div><div id="tc" style="display:inline-block">0</div>
+		<div style="display:inline-block">Trabajo Cliente(Pc*Frames*(Tframe/60))(TC):</div><div id="tc" style="display:inline-block">0</div>
 		<br><br>
 		
 		Formulas Summus:<br>
@@ -522,8 +533,8 @@ float:right;
 		<br><br>
 		Cálculo Precio (créditos):
 		
-		Cores*Velocidad_core(3)*tarifa(dinámico BBDD)* frames * horas/frame<br>
-		<div id="corestotal" style="display:inline-block"></div> * 3 *<div id="tarifatotal" style="display:inline-block"></div> * <div id="framestotal" style="display:inline-block"></div> * <div id="tiempoframetotal" style="display:inline-block"></div>
+		TC*Tarifa<br>
+		<div id="tctotal" style="display:inline-block"></div>*<div id="tarifatotal" style="display:inline-block"></div> 
 		= <div id="totaltotal" style="display:inline-block"></div>
 		
 		
