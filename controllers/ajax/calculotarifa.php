@@ -12,7 +12,7 @@ $tarifa->devuelve_tarifa();
 $valor=$tarifa->getValor();
 
 
-echo '<input type="hidden" id="tarifa" value="'.$valor.'">';
+echo '<input type="text" id="tarifa" value="'.$valor.'">';
 
 ?>
 

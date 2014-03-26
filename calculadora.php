@@ -74,8 +74,8 @@ define ('__SITE_PATH', $site_path);
 			max:20,
 			min:1,
 			value:20,
-			slide: refreshSwatchSlots,
-			change: calculotarifa
+			change: refreshSwatchSlots
+		
 		});
 		$("#tmax").slider({
 			orientation: "horizontal",
@@ -238,18 +238,18 @@ define ('__SITE_PATH', $site_path);
 			
 			var aux=slots*200;
 			
-			var nslots=tc/aux;
-			var nslotsred=Math.ceil(nslots);
-
-			
-			$( "#tmax" ).slider( "value", nslotsred );
 			
 			
+			var nuevotiempo=tc/aux;
+			var nuevotiempored=Math.ceil(nuevotiempo/60);
+			//$("#auxauxaux").text(nuevotiempored);
 			
-			
+			$( "#tmax" ).slider( "value", nuevotiempored );
+						
 			$("#elemslots").text(slots);
 			$("#nnslots").text(slots);
 			
+			calculotarifa();
 			calculototal();
 		}
 		
@@ -272,6 +272,8 @@ define ('__SITE_PATH', $site_path);
 	$( "#slotsinput" ).change(function() {
 		var valor= $( "#slotsinput" ).val();
 		$( "#slots" ).slider( "value", valor );
+		calculotarifa();
+		calculototal();
 	});	
 	
 	});
@@ -311,8 +313,10 @@ define ('__SITE_PATH', $site_path);
 				success: function(texto){
 						$('#tarifaaux').html(texto);
 				}
+				
 			});
-			calculototal();
+			
+			
 	}
 
 
@@ -504,7 +508,7 @@ float:right;
 	</div>
 </div>	
 
- <div id="tarifaaux"><input type="hidden" id="tarifa" value="0"></div>
+ <div id="tarifaaux"><input type="text" id="tarifa" value="0"></div>
 
 		Formulas Cliente:<br>
 		<div style="display:inline-block">Potencia Cliente(Cores*3GHz)(Pc):</div><div id="pc" style="display:inline-block">3</div><br>
@@ -521,6 +525,8 @@ float:right;
 		Cores*Velocidad_core(3)*tarifa(dinámico BBDD)* frames * horas/frame<br>
 		<div id="corestotal" style="display:inline-block"></div> * 3 *<div id="tarifatotal" style="display:inline-block"></div> * <div id="framestotal" style="display:inline-block"></div> * <div id="tiempoframetotal" style="display:inline-block"></div>
 		= <div id="totaltotal" style="display:inline-block"></div>
+		
+		
 
 	<hr>
 </body>
