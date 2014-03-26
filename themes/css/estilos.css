@@ -776,56 +776,97 @@ select option:hover
 	margin-bottom:0;
 	
  }
+
+.txtcalcu, .txtcalcunum{
+	font:14px arial;
+	float:left;
+	color:#444;
+	margin-left:5px;
+}
  
- .txtcalcu, .txtcalcunum{
- font:bold 12px 'Open Sans',arial;
-  float:left;
-  line-height:4;
-  text-align:right;
-  width:75px;
- }
- .txtcalcunum{
-   width:20px;
- }
- #caltotal{
- background:#A2B51E;
- height:40px;
- text-align:center;
- color:#fff;
-  font:bold 16px 'Open Sans',arial;
-  padding-top:15px;
-  width:85px;
- }
+.txtcalcunum{
+	width:20px;
+	font:bold 14px arial;
+}
  
+#caltotal{
+	background:#47717A;
+	height:40px;
+	text-align:center;
+	color:#fff;
+	font:bold 16px arial;
+	padding-top:15px;
+	width:85px;
+	margin-top:25px;
+ }
  
  .calculadora{
- width:550px;
- background:#fff;
- padding:25px;
- 
- }
- 
- 
-	 #cores, #frames,#temp,#slots,#tmax {
-		float: left;
+	width:650px;
 	
-		width: 300px;
-		margin: 15px;
-	}
+}
+ 
+#cores, #frames,#temp,#slots,#tmax,#mghz {
+	float: left;
+	width: 300px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+	margin-top:5px;
+}
 
+#cores .ui-slider-range,#mghz .ui-slider-range, #frames .ui-slider-range, #temp .ui-slider-range,#slots .ui-slider-range,#tmax .ui-slider-range { 
+	background: #FF8C00; /* Old browsers */
 	
-	#cores .ui-slider-range, #frames .ui-slider-range, #temp .ui-slider-range,#slots .ui-slider-range,#tmax .ui-slider-range { 
-		background: #39ad00; /* Old browsers */
-		background: #ffffff; /* Old browsers */
-		background: -moz-linear-gradient(left,  #ffffff 0%, #39ad00 100%); /* FF3.6+ */
-		background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffffff), color-stop(100%,#39ad00)); /* Chrome,Safari4+ */
-		background: -webkit-linear-gradient(left,  #ffffff 0%,#39ad00 100%); /* Chrome10+,Safari5.1+ */
-		background: -o-linear-gradient(left,  #ffffff 0%,#39ad00 100%); /* Opera 11.10+ */
-		background: -ms-linear-gradient(left,  #ffffff 0%,#39ad00 100%); /* IE10+ */
-		background: linear-gradient(to right,  #ffffff 0%,#39ad00 100%); /* W3C */
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#39ad00',GradientType=1 ); /* IE6-9 */
 
  }
+
+.cajaminidoble{
+	display:inline-block;
+	max-width:470px;
+	height:auto;
+	padding:15px;
+	margin-left:15px;
+	margin-right:15px;
+	text-align:left;
+	vertical-align: top;
+}
+
+.tarifacal{
+	padding-top:25px;
+	background:#FF8C00;
+	font: bold 40px arial;
+	color:#fff;
+	display:block-line;
+	text-align:center;
+	width:610px;
+}
+.txtazul{
+	color:#FF8C00;
+	font:bold 14px arial;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+.cajaazul{
+	background:#fff;
+	width:560px;
+
+
+padding:25px;
+}
+
+.min,.max{
+	color:#444;
+	float:left;
+	font:bold 12px arial;
+	margin-left:15px;
+	line-height:2;
+}
+.inputscal{
+	width:50px;
+	margin-left:15px;
+}
+.eleminput{
+float:right;
+}
 
 	</style>
  

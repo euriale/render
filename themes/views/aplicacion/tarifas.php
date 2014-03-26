@@ -1,58 +1,131 @@
 <div id="tarifas"></div> 
 <div class="cajamediapagina">
-<div class="titulo">Calculadora </div>  
-<div class="moneda"> <div id="rad1" class="radio"></div><div class="euro">€</div>&nbsp;&nbsp;<div id="rad2" class="radio radionoactivo"></div><div class="dolar">$</div></div>
+<div class="titulo">Tarifas </div>  
 
-	<div class="cajamini">
-
-		<div class="tarifaup2">
-				<div class="muygrande"><span class="valore">1.2 €</span><span class="valord noactivo">2.1 $</span></div>
-		</div>	
-		<div class="tarifadown1">
-			  Tengo que renderizar 600 frames que tardarán 20 min en un equipo de  4 cores a 2,6Ghz
-		</div>	
-	</div>
-	<div class="cajamini">
-				<div class="tarifaup2">
-		 			<div class="muygrande"><span class="valore">1.2 €</span><span class="valord noactivo">2.1 $</span></div>
-				</div>
-		<div class="tarifadown2">
-			 En mi máquina de 4 cores a 2.6 GHz el render lleva  2min por frame. 
- Hay 1000 frames para renderizar
-		</div>					
-	</div>
-	
-	<div style="clear:both;"></div>
-	<!--
-	<table class="tablatarifas" cellspadding="4">
-		<th>Nº de slots</th><th>Reserva (Créditos / GHx x Hora)</th><th>Dedicados (Créditos/(GHz x Hora))</th>
-		
-		<tr><td>1</td><td><span class="valore">0.050 €</span><span class="valord noactivo">0.040 $</span></td><td><span class="valore">0.050 €</span><span class="valord noactivo">0.040 $</span></td></tr>
-		<tr><td>5</td><td><span class="valore">0.050 €</span><span class="valord noactivo">0.050 $</span></td><td><span class="valore">0.0600 €</span><span class="valord noactivo">0.050 $</span></td></tr>
-		<tr><td>10</td><td><span class="valore">0.050 €</span><span class="valord noactivo">0.0520 $</span></td><td><span class="valore">0.0700 €</span><span class="valord noactivo">0.060 $</span></td></tr>
-
-	</table>-->
-
-<!--calculadora -->
 <div class="cajaminidoble">
 <div class="tarifacal">
 			Calcula tu presupuesto
 		</div>
 	<div class="calculadora">
 		
+	
 		
-		<p>
-		<div class="txtcalcu">Cores:</div><div id="elemcores" class="txtcalcunum">1</div><div id="cores"></div><div style="clear:both;"></div>
-		<div class="txtcalcu">MgHz:</div><div id="elemmghz" class="txtcalcunum">1</div><div id="mghz"></div><div style="clear:both;"></div>
-		<div class="txtcalcu">Frames:</div><div id="elemframes" class="txtcalcunum">1</div><div id="frames"></div><div style="clear:both;"></div>
-		<div class="txtcalcu">Slots:</div><div id="elemslots" class="txtcalcunum">1</div><div id="slots"></div><div style="clear:both;"></div>
-	</p>
-	<div class="txtcalcu" id="caltotaleuro">1</div>
+		<div class="cajaazul">
+	<div class="txtazul">Indica los datos de tu equipo y tu proyecto.</div>
+			<div class="txtcalcu">Número de Cores en tu equipo:</div>
+			<div id="elemcores" class="txtcalcunum">1</div>
+			<div style="clear:both;"></div>
+			
+			<div class="min">Min 1 </div><div id="cores"></div><div class="max">Max 64 </div><div class="eleminput"><input type="text" value="1" name="coreinput" id="coreinput" class="inputscal"></div>
+			
+			<div style="clear:both;"></div>
+			
+			<div class="txtcalcu">MgHz:</div>
+			<div id="elemmghz" class="txtcalcunum">1</div>
+			<div style="clear:both;"></div>
+			
+			<div class="min">Min 1 </div><div id="mghz"></div><div class="max">Max 64 </div><div class="eleminput"><input type="text" value="1" name="mghzinput" id="mghzinput" class="inputscal"></div>
+			
+			<div style="clear:both;"></div>
+			
+			<div class="txtcalcu">Número de Frames de tu proyecto:</div>
+			<div id="elemframes" class="txtcalcunum">1</div>
+			<div style="clear:both;"></div>
+			
+			<div class="min">Min 1 </div><div id="frames"></div><div class="max">Max 10.000 </div><div class="eleminput"><input type="text" value="1" name="framesinput" id="framesinput" class="inputscal"></div>
+			<div style="clear:both;"></div>
+			
+			
+			<div class="txtcalcu">Tiempo que tardas en renderizar un frame: ( Minutos )</div>
+			<div id="elemtemp" class="txtcalcunum">1</div>
+			<div style="clear:both;"></div>
+			
+			<div class="min">Min 1 </div><div id="temp"></div><div class="max">Max 300 </div><div class="eleminput"><input type="text" value="1" name="tempinput" id="tempinput" class="inputscal"></div>
+			<div style="clear:both;"></div>
+		</div>
+		
+
+<!--
+	<div class="txtazul">Indica la configuración que necesitas.</div>
+		
+		<div class="cajaazul">
+
+			<div class="txtcalcu">Tiempo Máximo ( Horas ): </div>
+			<div id="elemtmax" class="txtcalcunum">200 </div>
+			<div style="clear:both;"></div>
+			<div class="min" id="elemtmaxmin">Min 1</div><div id="tmax"></div><div class="max" id="elemtmaxmax">Max</div><div class="eleminput"><input type="text" value="1" name="tmaxinput" id="tmaxinput" class="inputscal"></div>
+
+			<div style="clear:both;"></div>
+			
+			
+			<div class="txtcalcu">Número de Slots (200 GgHz): </div>
+			<div id="elemslots" class="txtcalcunum">20</div>
+			<div style="clear:both;"></div>
+			
+			<div class="min">Min 1</div><div id="slots"></div><div class="max">Max 20</div><div class="eleminput"><input type="text" value="1" name="slotsinput" id="slotsinput" class="inputscal"></div>
+			<div style="clear:both;"></div>
+		</div>	
 	<div class="txtcalcu" id="caltotal">1</div>
+	-->
+	</div>
+	
 	<div style="clear:both;"></div>
 	</div>
-</div>	
 
+		<div style="clear:both;"></div>
+
+	<div class="cajamini">
+
+		<div class="tarifaup1">
+				Prioridad Normal
+			<div class="muygrande"><span class="valore" id="totnormal">1.2 €</span><span class="valord noactivo">2.1 $</span></div>
+		</div>	
+		<div class="tarifadown1">
+			La mejor opción para renderizado en línea económico y altamente competitivo.
+		</div>	
+	</div>
+	<div class="cajamini">
+				<div class="tarifaup2">
+			
+					Prioridad Alta
+					<div class="muygrande"><span class="valore" id="totalta">1.2 €</span><span class="valord noactivo">2.1 $</span></div>
+				</div>
+		<div class="tarifadown2">
+			La mejor opción para empresas. Una combinación económica y de renderizado prioritario.
+		</div>					
+	</div>
+	<div class="cajamini">
+			<div class="tarifaup3">
+			
+				Prioridad Premium
+				<div class="muygrande"><span class="valore"  id="totpremium">1.2 €</span><span class="valord noactivo">2.1 $</span></div>
+			</div>	
+			<div class="tarifadown3">
+				Siempre primero. Prioridad absoluta en sus proyectos de renderizados. 				   
+			</div>	
+	</div>
+	
+	<div style="clear:both;"></div>
+	
+	
+Formulas Cliente:<br>
+		<div style="display:inline-block">Potencia Cliente(Cores*3GHz)(Pc):</div><div id="pc" style="display:inline-block">3</div><br>
+		<div style="display:inline-block">Trabajo Cliente(Pc*Frames*(Tframe/60))(TC):</div><div id="tc" style="display:inline-block">0</div>
+		<br><br>
+		
+		Formulas Summus:<br>
+		<div style="display:inline-block">Num horas min.(TC/PotSummus max (200*20)):</div><div id="nhorasmin" style="display:inline-block">3</div><br>
+		<div style="display:inline-block">Num horas max.(TC/PotSummus min (200*1)):</div><div id="nhorasmax" style="display:inline-block">3</div><br><br><br>
+				
+		<br><br>
+		Cálculo Precio (créditos):
+		
+		TC*Tarifa<br>
+		<div id="tctotal" style="display:inline-block"></div>*<div id="tarifatotal" style="display:inline-block"></div> 
+		= <div id="totaltotal" style="display:inline-block"></div>
+		
+		
+<br>
 <div class="abajo"><a href="#faqs" class="ancla"><img src="themes/img/abajo2.jpg"></a></div>
 </div>	
 

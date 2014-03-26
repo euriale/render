@@ -141,12 +141,12 @@ define ('__SITE_PATH', $site_path);
 				
 			var nhorasmin=tc/4000;
 			var nhorasminred=Math.ceil(nhorasmin);
-			$("#nhorasmin").text(nhorasmin+' min '+nhorasminred+' horas');
+			$("#nhorasmin").text(nhorasmin+' = '+nhorasminred+' horas');
 			
 			var nhorasmax=tc/200;
 		
 			var nhoramaxred=Math.ceil(nhorasmax);
-			$("#nhorasmax").text(nhorasmax+' min '+nhoramaxred+ ' horas');
+			$("#nhorasmax").text(nhorasmax+' = '+nhoramaxred+ ' horas');
 			
 			reiniciatmax(nhoramaxred,nhorasminred);
 			$( "#tmax" ).slider( "value", nhoramaxred );		
@@ -200,9 +200,6 @@ define ('__SITE_PATH', $site_path);
 			//var tmax=tmax/60;
 			$("#elemtmax").text(format(tmax));
 			$("#tmaxinput").val(format(tmax));
-		
-
-			
 			calculototal();
 		}
 		
