@@ -76,7 +76,11 @@
 <div class="cajaminidoble">
 <div class="textocontenido">
 <p>
- Si quieres hacerte una idea de lo que te costaría 
+ Para hacerte una primera idea de lo que costaría renderizar en nuestras máquinas puedes utilizar nuestra calculadora. <br>
+ Visita nuestra APP para ver las ofertas que te ofrecemos. 
+
+ 
+ 
 </p>
 
 </div>
