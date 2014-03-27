@@ -24,7 +24,7 @@
 			<div id="elemghz" class="txtcalcunum">1</div>
 			<div style="clear:both;"></div>
 			
-			<div class="min">Min 1 </div><div id="ghz"></div><div class="max">Max 3.6 </div><div class="eleminput"><input type="text" value="1" name="ghzinput" id="ghzinput" class="inputscal"></div>
+			<div class="min">Min 1 </div><div id="ghz"></div><div class="max">Max 3.9 </div><div class="eleminput"><input type="text" value="1" name="ghzinput" id="ghzinput" class="inputscal"></div>
 			
 			<div style="clear:both;"></div>
 			
@@ -91,7 +91,7 @@
 
 		<div class="tarifaup1">
 				<strong>Prioridad Normal</strong>
-			<div class="muygrande"><span class="valore" id="totnormal">1.2 €</span><span class="valord noactivo">2.1 $</span></div>
+			<div class="muygrande"><span class="valore" id="totnormal2">1.2 €</span><span class="valord noactivo">2.1 $</span></div>
 			<div class="tiempos" id="tiempo1"></div>
 		</div>	
 		<div class="tarifadown1">
@@ -102,7 +102,7 @@
 				<div class="tarifaup2">
 			
 					<strong>Prioridad Alta</strong>
-					<div class="muygrande"><span class="valore" id="totalta">1.2 €</span><span class="valord noactivo">2.1 $</span></div>
+					<div class="muygrande"><span class="valore" id="totalta2">1.2 €</span><span class="valord noactivo">2.1 $</span></div>
 					<div class="tiempos" id="tiempo2"></div>
 				</div>
 		<div class="tarifadown2">
@@ -113,7 +113,7 @@
 			<div class="tarifaup3">
 			
 				<strong>Prioridad Premium</strong>
-				<div class="muygrande"><span class="valore"  id="totpremium">1.2 €</span><span class="valord noactivo">2.1 $</span></div>
+				<div class="muygrande"><span class="valore"  id="totpremium2">1.2 €</span><span class="valord noactivo">2.1 $</span></div>
 				<div class="tiempos" id="tiempo3"></div>
 			</div>	
 			<div class="tarifadown3">

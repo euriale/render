@@ -262,7 +262,7 @@ $(document).ready(function () {
 			orientation: "horizontal",
 			range: "min",
 			step: 0.1,
-			max: 3.6,
+			max: 3.9,
 			min:1,
 			value:1,
 			change: refreshSwatchghz
@@ -565,9 +565,9 @@ $(document).ready(function () {
 			var totalpremium=Math.ceil(totalpremium);
 			var totalalta=Math.ceil(totalalta);
 			
-			var totalnormal=format(totalnormal)+' Créditos';
-			var totalpremium=format(totalpremium)+' Créditos';
-			var totalalta=format(totalalta)+' Créditos';
+			var totalnormal=format(totalnormal);
+			var totalpremium=format(totalpremium);
+			var totalalta=format(totalalta);
 			
 			
 					
@@ -586,10 +586,12 @@ $(document).ready(function () {
 			
 			
 			
-			$("#totnormal").text(totalnormal);
-			$("#totalta").text(totalalta);
-			$("#totpremium").text(totalpremium);
-			
+			$("#totnormal").text(totalnormal+' Créditos');
+			$("#totalta").text(totalalta+' Créditos');
+			$("#totpremium").text(totalpremium+' Créditos');
+			$("#totnormal2").text(totalnormal+' €');
+			$("#totalta2").text(totalalta+' €');
+			$("#totpremium2").text(totalpremium+' €');
 			//$("#totaltotal").text(total);
 			
 			/*----visualización de formula----*/
