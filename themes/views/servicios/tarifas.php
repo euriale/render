@@ -76,9 +76,8 @@
 <div class="cajaminidoble">
 <div class="textocontenido">
 <p>
- Para hacerte una primera idea de lo que costaría renderizar en nuestras máquinas puedes utilizar nuestra calculadora. <br>
- Visita nuestra APP para ver las ofertas que te ofrecemos. 
-
+ Utiliza nuestra calculadora para obtener un coste aproximado del render de tu proyecto . <br>
+Estas tarifas son sin promociones, ponte en <strong><a href="#contacto" class="enlace">contacto</a> </strong> con nosotros y obten importantes descuentos. 
  
  
 </p>
