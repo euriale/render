@@ -76,8 +76,8 @@
 <div class="cajaminidoble">
 <div class="textocontenido">
 <p>
- Para hacerte una primera idea de lo que costaría renderizar en nuestras máquinas puedes utilizar nuestra calculadora. <br>
- Visita nuestra APP para ver las ofertas que te ofrecemos. 
+ Utiliza nuestra calculadora para obtener un coste aproximado del render de tu proyecto . <br>
+ Estas tarifas son sin promociones, date de alta en la <strong><a href="http://farm.renderdrive.com" class="enlace">Aplicación</a> </strong> y obten importantes descuentos. 
 
  
  
