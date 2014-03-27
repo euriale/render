@@ -578,7 +578,7 @@ width:500px;
 }
 .tarifaup1,.tarifaup2,.tarifaup3{
 padding-top:25px;
-background:#C9DE36;
+background:#999;
 font: bold 18px 'Roboto','Open Sans',arial;
 color:#fff;
 display:block-line;
@@ -586,17 +586,18 @@ text-align:center;
 }
 
 .tarifaup2{
-background:#A2B51E;
+background:#555;
 }
 
 .tarifaup3{
-background:#51910B;
+background:#222;
 }
 .tarifadown1,.tarifadown2,.tarifadown3{
 padding:25px;
 background:#fff;
-font: 18px 'Roboto','Open Sans',arial;
+font: 15px 'Roboto','Open Sans',arial;
 color:#444;
+height:55px;
 
 }
 .tarifadown2{
@@ -606,7 +607,7 @@ background:#fff;
 background:#fff;
 }
 .muygrande{
-font: bold 50px 'Roboto','Open Sans',arial;
+font: bold 30px 'Roboto','Open Sans',arial;
 color:#fff;
 }
 
@@ -805,39 +806,29 @@ select option:hover
 	
 }
  
-#cores, #frames,#temp,#slots,#tmax,#mghz {
+#cores, #frames,#temp,#slots,#tmax,#ghz {
 	float: left;
-	width: 300px;
+	width: 250px;
 	margin-bottom: 20px;
-	margin-left: 20px;
+	margin-left: 10px;
 	margin-top:5px;
 }
 
-#cores .ui-slider-range,#mghz .ui-slider-range, #frames .ui-slider-range, #temp .ui-slider-range,#slots .ui-slider-range,#tmax .ui-slider-range { 
+#cores .ui-slider-range,#ghz .ui-slider-range, #frames .ui-slider-range, #temp .ui-slider-range,#slots .ui-slider-range,#tmax .ui-slider-range { 
 	background: #FF8C00; /* Old browsers */
 	
 
  }
 
-.cajaminidoble{
-	display:inline-block;
-	max-width:470px;
-	height:auto;
-	padding:15px;
-	margin-left:15px;
-	margin-right:15px;
-	text-align:left;
-	vertical-align: top;
-}
 
 .tarifacal{
 	padding-top:25px;
 	background:#FF8C00;
-	font: bold 40px arial;
+	font: bold 30px arial;
 	color:#fff;
 	display:block-line;
 	text-align:center;
-	width:610px;
+	width:500px;
 }
 .txtazul{
 	color:#FF8C00;
@@ -847,17 +838,16 @@ select option:hover
 }
 .cajaazul{
 	background:#fff;
-	width:560px;
-
-
-padding:25px;
+	width:480px;
+	padding:10px;
 }
 
 .min,.max{
 	color:#444;
 	float:left;
 	font:bold 12px arial;
-	margin-left:15px;
+	margin-right:5px;
+	margin-left:5px;
 	line-height:2;
 }
 .inputscal{
@@ -868,5 +858,5 @@ padding:25px;
 float:right;
 }
 
-	</style>
+
  

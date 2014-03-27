@@ -20,11 +20,11 @@
 			
 			<div style="clear:both;"></div>
 			
-			<div class="txtcalcu">MgHz:</div>
-			<div id="elemmghz" class="txtcalcunum">1</div>
+			<div class="txtcalcu">GHz:</div>
+			<div id="elemghz" class="txtcalcunum">1</div>
 			<div style="clear:both;"></div>
 			
-			<div class="min">Min 1 </div><div id="mghz"></div><div class="max">Max 64 </div><div class="eleminput"><input type="text" value="1" name="mghzinput" id="mghzinput" class="inputscal"></div>
+			<div class="min">Min 1 </div><div id="ghz"></div><div class="max">Max 3.6 </div><div class="eleminput"><input type="text" value="1" name="ghzinput" id="ghzinput" class="inputscal"></div>
 			
 			<div style="clear:both;"></div>
 			
@@ -42,6 +42,8 @@
 			
 			<div class="min">Min 1 </div><div id="temp"></div><div class="max">Max 300 </div><div class="eleminput"><input type="text" value="1" name="tempinput" id="tempinput" class="inputscal"></div>
 			<div style="clear:both;"></div>
+			
+		
 		</div>
 		
 
@@ -71,14 +73,22 @@
 	
 	<div style="clear:both;"></div>
 	</div>
+<div class="cajaminidoble">
+<div class="textocontenido">
+<p>
+ Si quieres hacerte una idea de lo que te costaría 
+</p>
 
+</div>
+</div>
 		<div style="clear:both;"></div>
 
 	<div class="cajamini">
 
 		<div class="tarifaup1">
-				Prioridad Normal
+				<strong>Prioridad Normal</strong>
 			<div class="muygrande"><span class="valore" id="totnormal">1.2 €</span><span class="valord noactivo">2.1 $</span></div>
+			<div class="tiempos" id="tiempo1"></div>
 		</div>	
 		<div class="tarifadown1">
 			La mejor opción para renderizado en línea económico y altamente competitivo.
@@ -87,8 +97,9 @@
 	<div class="cajamini">
 				<div class="tarifaup2">
 			
-					Prioridad Alta
+					<strong>Prioridad Alta</strong>
 					<div class="muygrande"><span class="valore" id="totalta">1.2 €</span><span class="valord noactivo">2.1 $</span></div>
+					<div class="tiempos" id="tiempo2"></div>
 				</div>
 		<div class="tarifadown2">
 			La mejor opción para empresas. Una combinación económica y de renderizado prioritario.
@@ -97,8 +108,9 @@
 	<div class="cajamini">
 			<div class="tarifaup3">
 			
-				Prioridad Premium
+				<strong>Prioridad Premium</strong>
 				<div class="muygrande"><span class="valore"  id="totpremium">1.2 €</span><span class="valord noactivo">2.1 $</span></div>
+				<div class="tiempos" id="tiempo3"></div>
 			</div>	
 			<div class="tarifadown3">
 				Siempre primero. Prioridad absoluta en sus proyectos de renderizados. 				   
@@ -107,7 +119,7 @@
 	
 	<div style="clear:both;"></div>
 	
-	
+	<!--
 Formulas Cliente:<br>
 		<div style="display:inline-block">Potencia Cliente(Cores*3GHz)(Pc):</div><div id="pc" style="display:inline-block">3</div><br>
 		<div style="display:inline-block">Trabajo Cliente(Pc*Frames*(Tframe/60))(TC):</div><div id="tc" style="display:inline-block">0</div>
@@ -122,10 +134,10 @@ Formulas Cliente:<br>
 		
 		TC*Tarifa<br>
 		<div id="tctotal" style="display:inline-block"></div>*<div id="tarifatotal" style="display:inline-block"></div> 
-		= <div id="totaltotal" style="display:inline-block"></div>
+		= <div id="totaltotal" style="display:inline-block"></div><div id="auxitemp1"></div>
 		
 		
-<br>
+<br>-->
 <div class="abajo"><a href="#faqs" class="ancla"><img src="themes/img/abajo2.jpg"></a></div>
 </div>	
 

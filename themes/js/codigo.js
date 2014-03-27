@@ -258,13 +258,14 @@ $(document).ready(function () {
 			change: refreshSwatchCores
 		
 		});
-		$("#mghz").slider({
+		$("#ghz").slider({
 			orientation: "horizontal",
 			range: "min",
-			max: 64,
+			step: 0.1,
+			max: 3.6,
 			min:1,
 			value:1,
-			change: refreshSwatchMghz
+			change: refreshSwatchghz
 		
 		});
 
@@ -309,7 +310,7 @@ $(document).ready(function () {
 		});
 		calculototal();
 		$( "#cores" ).slider( "value", 1 );
-		$( "#mghz" ).slider( "value", 1 );
+		$( "#ghz" ).slider( "value", 1 );
 		$( "#frames" ).slider( "value", 1 );
 		$( "#temp" ).slider( "value", 1 );
 		$( "#slots" ).slider( "value",1 );
@@ -323,9 +324,9 @@ $(document).ready(function () {
 			$("#elemcores").text(cores);
 			$("#coreinput").val(cores);
 			
-			var mghz = $( "#mghz" ).slider( "value" );
+			var ghz = $( "#ghz" ).slider( "value" );
 						
-			var pc= cores*mghz;
+			var pc= cores*ghz;
 			$("#pc").text(format(pc));
 			var tc= pc*frames*(temp/60);
 			$("#tc").text(format(tc));
@@ -347,17 +348,18 @@ $(document).ready(function () {
 			calculototal();
 			
 		}
-		function refreshSwatchMghz() {
+		function refreshSwatchghz() {
 			var temp = $( "#temp" ).slider( "value" );
 			var frames = $( "#frames" ).slider( "value" );
 			var cores = $( "#cores" ).slider( "value" );
+			var ghz = $( "#ghz" ).slider( "value" );
 			
-			$("#elemcores").text(cores);
-			$("#coreinput").val(cores);
+			$("#elemghz").text(ghz);
+			$("#ghzinput").val(ghz);
 			
-			var mghz = $( "#mghz" ).slider( "value" );
+			
 						
-			var pc= cores*mghz;
+			var pc= cores*ghz;
 			$("#pc").text(format(pc));
 			var tc= pc*frames*(temp/60);
 			$("#tc").text(format(tc));
@@ -388,9 +390,9 @@ $(document).ready(function () {
 			$("#elemtemp").text(temp);
 			$("#tempinput").val(temp);
 			
-			var mghz = $( "#mghz" ).slider( "value" );
+			var ghz = $( "#ghz" ).slider( "value" );
 						
-			var pc= cores*mghz;
+			var pc= cores*ghz;
 			var tc= pc*frames*(temp/60);
 			$("#tc").text(format(tc));
 
@@ -420,7 +422,9 @@ $(document).ready(function () {
 			$("#elemframes").text(format(frames));
 			$("#framesinput").val(format(frames));
 			
-			var pc=cores*3;
+			var ghz = $( "#ghz" ).slider( "value" );
+						
+			var pc= cores*ghz;
 			var tc= pc*frames*(temp/60);
 			$("#tc").text(format(tc));
 			
@@ -467,7 +471,9 @@ $(document).ready(function () {
 			var temp = $( "#temp" ).slider( "value" );
 			var frames = $( "#frames" ).slider( "value" );
 			var cores = $( "#cores" ).slider( "value" );
-			var pc=cores*3;
+			var ghz = $( "#ghz" ).slider( "value" );
+						
+			var pc= cores*ghz;
 
 			var tc= pc*frames*(temp/60);
 			
@@ -487,14 +493,15 @@ $(document).ready(function () {
 			var temp = $( "#temp" ).slider( "value" );
 			var frames = $( "#frames" ).slider( "value" );
 			var cores = $( "#cores" ).slider( "value" );
-			var pc=cores*3;
+			var ghz = $( "#ghz" ).slider( "value" );
+						
+			var pc= cores*ghz;
 
 			var tc= pc*frames*(temp/60);
 			
 			var aux=slots*200;
 			
-			
-			
+						
 			var nuevotiempo=tc/aux;
 			var nuevotiempored=Math.ceil(nuevotiempo/60);
 			//$("#auxauxaux").text(nuevotiempored);
@@ -516,9 +523,9 @@ $(document).ready(function () {
 		var valor= $( "#coreinput" ).val();
 		$( "#cores" ).slider( "value", valor );
 	});	
-	$( "#mghzinput" ).change(function() {
-		var valor= $( "#mghzinput" ).val();
-		$( "#mghz" ).slider( "value", valor );
+	$( "#ghzinput" ).change(function() {
+		var valor= $( "#ghzinput" ).val();
+		$( "#ghz" ).slider( "value", valor );
 	});	
 	$( "#framesinput" ).change(function() {
 		var valor= $( "#framesinput" ).val();
@@ -545,29 +552,50 @@ $(document).ready(function () {
 			var temp = $( "#temp" ).slider( "value" );
 			var frames = $( "#frames" ).slider( "value" );
 			var cores = $( "#cores" ).slider( "value" );
-			var mghz = $( "#mghz" ).slider( "value" );
+			var ghz = $( "#ghz" ).slider( "value" );
 						
-			var pc= cores*mghz;
+			var pc= cores*ghz;
 			var tc= pc*frames*(temp/60);
 		
 			
 			var totalnormal=tc*0.0400;
 			var totalalta=tc*0.0620;
 			var totalpremium=tc*0.0710;
-			var totalnormal=Math.ceil(totalnormal)+' Créditos';
-			var totalpremium=Math.ceil(totalpremium)+' Créditos';
-			var totalalta=Math.ceil(totalalta)+' Créditos';
+			var totalnormal=Math.ceil(totalnormal);
+			var totalpremium=Math.ceil(totalpremium);
+			var totalalta=Math.ceil(totalalta);
+			
+			var totalnormal=format(totalnormal)+' Créditos';
+			var totalpremium=format(totalpremium)+' Créditos';
+			var totalalta=format(totalalta)+' Créditos';
+			
+			
+					
+						
+			var nuevotiempo1=tc/200;
+			var nuevotiempo2=tc/2000;
+			var nuevotiempo3=tc/4000;
+			
+			var nuevotiempored1=Math.ceil(nuevotiempo1);
+			var nuevotiempored2=Math.ceil(nuevotiempo2);
+			var nuevotiempored3=Math.ceil(nuevotiempo3);
+			
+			$("#tiempo1").text(nuevotiempored1+' Horas');
+			$("#tiempo2").text(nuevotiempored2+' Horas');
+			$("#tiempo3").text(nuevotiempored3+' Horas');
+			
+			
 			
 			$("#totnormal").text(totalnormal);
 			$("#totalta").text(totalalta);
 			$("#totpremium").text(totalpremium);
 			
-			$("#totaltotal").text(total);
+			//$("#totaltotal").text(total);
 			
 			/*----visualización de formula----*/
 			$( "#tctotal" ).text(tc);
 			$( "#tarifatotal" ).text(tarifa);
-			
+			$( "#auxitemp1" ).text(nuevotiempo1);
 			
 			/*------*/
 			
