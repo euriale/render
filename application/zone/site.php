@@ -106,7 +106,7 @@ if (!isset($_GET['r1'])){
 <div class="cajapie">
 	<div class="txtnaranja16">Síguenos - Redes Sociales</div>
 	<ul>
-		<li><a href=""><div class="imgpie"><img src="themes/img/logos/facebook.png" width="20px;"></div> Facebook</a><div style="clear:both"></div></li>
+		<li><a href="https://www.facebook.com/pages/RenderDrive/741013012598334?ref=hl"><div class="imgpie"><img src="themes/img/logos/facebook.png" width="20px;"></div> Facebook</a><div style="clear:both"></div></li>
 		<li><a href="http://www.linkedin.com/company/render-drive"><div class="imgpie"><img src="themes/img/logos/linkedin.png" width="20px;"></div> Linkedin</a><div style="clear:both"></div></li>
 		<li><a href="http://twitter.com/RenderDrive"><div class="imgpie"><img src="themes/img/logos/twitter.png" width="20px;"></div> Twitter</a><div style="clear:both"></div></li>
 		<li><a href="https://plus.google.com/+RenderdriveServices/"><div class="imgpie"><img src="themes/img/logos/google.png" width="20px;"></div> Google+</a><div style="clear:both"></div></li>
