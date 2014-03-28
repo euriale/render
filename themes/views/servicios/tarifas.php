@@ -77,7 +77,7 @@
 <div class="textocontenido">
 <p>
  Utiliza nuestra calculadora para obtener un coste aproximado del render de tu proyecto . <br>
-Estas tarifas son sin promociones, ponte en <strong><a href="#contacto" class="enlace">contacto</a> </strong> con nosotros y obten importantes descuentos. 
+Estas tarifas son sin promociones, ponte en <strong><a href="#contacto" class="ancla">contacto</a> </strong> con nosotros y obten importantes descuentos. 
  
  
 </p>
