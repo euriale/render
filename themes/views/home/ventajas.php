@@ -4,7 +4,7 @@
 <div class="auxtexto2">
 <div class="textocontenido">
 <p>
-Debido a la complejidad del software 3D es necesaria una gran cantidad de horas para renderizar un proyecto. Además, supone una gran inversión disponer de el equipamiento destinado a esta tarea, gastos en licencias, costes de energía y refrigeración, mantenimiento, etc.
+Debido a la complejidad del software 3D es necesaria una gran cantidad de horas para renderizar un proyecto. Además, supone una gran inversión disponer del equipamiento destinado a esta tarea, gastos en licencias, costes de energía y refrigeración, mantenimiento, etc.
 </p>
 <p>
 Te indicamos a continuación las claves para que descubras las ventajas de trabajar con nosotros:
