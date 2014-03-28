@@ -5,7 +5,7 @@
 	<h3>Ponemos a tu disposición cientos de nodos preparados con el software que necesitas para que el renderizado sea un proceso sencillo, rápido y económico. <br>Selecciona la opción con tu software, calcula el coste de tu proyecto y comienza renderizar </h3>
 </div> 	
 <div id="ventajas"></div> 
-<div class="primeracaja" style="padding-top:15px;">
+<div class="primeracaja">
 	<div class="cajamini">
 		<h4><a href="#pq" class="ancla">Por qué usar Render Drive</a></h4>
 		<div class="txt15centro"><strong>Ventajas de renderizar en la nube</strong></div>

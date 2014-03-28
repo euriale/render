@@ -30,9 +30,13 @@ if ($_SERVER['HTTP_HOST']=="www.renderdrive.com") $raiz='http://www.renderdrive.
 elseif ($_SERVER['HTTP_HOST']=="renderdrive.com") $raiz='http://renderdrive.com/';
 else $GLOBALS['raiz']='/render/';
 ?>
-<link rel="STYLESHEET" type="text/css" href="themes/css/estilos.css" media="screen" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<link href="themes/css/estilosmovil.css" rel="stylesheet" type="text/css" media="handheld, only screen and (max-device-width: 480px)" />
+<link rel="STYLESHEET" type="text/css" href="themes/css/estilos.css" media="screen and (min-width: 481px)" />
+<link href="themes/css/estilosmovil.css" rel="stylesheet" type="text/css" media="handheld, only screen and (max-width: 480px)" />
+
+
+
 
 <!--calculadora-->
  <link rel="stylesheet" href="themes/css/jquery-ui.css">
