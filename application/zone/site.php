@@ -112,8 +112,9 @@ if (!isset($_GET['r1'])){
 		<li><a href="https://plus.google.com/+RenderdriveServices/"><div class="imgpie"><img src="themes/img/logos/google.png" width="20px;"></div> Google+</a><div style="clear:both"></div></li>
 	</ul>
 	<ul><li><div class="fb-like" data-href="http://www.renderdrive.com" data-layout="button" data-action="like" data-show-faces="true" data-share="false"></div></li></ul>
-	<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
-<g:plusone></g:plusone>
+	
+<!-- Place this tag where you want the +1 button to render. -->
+<div class="g-plusone" data-annotation="inline" data-width="300"></div>
 </div>
 	
 	
