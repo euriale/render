@@ -33,10 +33,7 @@
 	
 	<div class="faqanswer" id="ans6">Todos los precios indicados en la página web son precios sin IVA. </div>
 	
-	<div class="faqsask" id="ask7">  Si tengo dudas sobre el uso de aplicación ¿que hago? </div>
 
-	<div class="faqanswer" id="ans7"> En el momento de publicar la aplicación, dispondrás de un tutorial con todos los pasos a seguir para renderizar tu trabajo. Además dispones de técnicos especializados que te asesorarán para resolver cualquier duda. Puedes utilizar el formulario que tienes a continuación para canalizar tus dudas. </div>
-	
 
 
 

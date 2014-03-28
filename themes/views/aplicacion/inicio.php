@@ -11,7 +11,7 @@
 <div class="primeracaja">
 
 	<div class="cajaminidoble">
-		<div class="tituloleft">Próximamente estrenamos aplicación</div>  
+		<div class="tituloleft">Usa nuestra aplicación de render online</div>  
 		<div class="textocontenido">
 			<p>Hemos creado una aplicación que te ayudará a simplificar los pasos del renderizado de tu proyecto. Sólo tendrás que instalarte un plugin para Maya y un sincronizador desde nuestra web.</p>
 			<p>En tu propio Maya podrás lanzar tu render contra nuestra granja y automáticamente el sincronizador subirá el proyecto y comenzará a renderizarlo. </p>

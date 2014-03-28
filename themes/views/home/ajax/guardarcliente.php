@@ -30,7 +30,7 @@ else $GLOBALS['raiz']='/render/';
 	$versiones='';
 	if(isset($_GET['versiones'])) $versiones=$_GET['versiones'];
 	$motor='';
-	if(isset($_GET['motor'])) $telefono=$_GET['motor'];
+	if(isset($_GET['motor'])) $motor=$_GET['motor'];
 	$plugin='';
 	if(isset($_GET['plugin'])) $plugin=$_GET['plugin'];	
 	$equipo='';
@@ -49,8 +49,8 @@ else $GLOBALS['raiz']='/render/';
 	
 	echo 'La consulta se ha enviado correctamente. ';
 	
-/*---------------------Correo a info@renderdrive.com-----------------------
-$destinatario = 'info@renderdrive.com,mjlucena1@gmail.com,xavifernan@gmail.com';
+/*---------------------Correo a info@renderdrive.com-----------------------*/
+$destinatario = 'info@renderdrive.com';
 $asunto = "Consulta realizada en RenderDrive";
 $cuerpo = '
 	<html>
@@ -83,7 +83,7 @@ $cuerpo = '
 	$headers .= "Reply-To: info@renderdrive.com\r\n";
 
 
-mail($destinatario,$asunto,$cuerpo,$headers);*/
+mail($destinatario,$asunto,$cuerpo,$headers);
 
 
 ?> 
