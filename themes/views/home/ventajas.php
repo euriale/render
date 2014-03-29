@@ -33,7 +33,7 @@ Te indicamos a continuación las claves para que descubras las ventajas de trabaj
 			<div class="textocontenido">
 		
 				<p>
-				Te proporcionamos un servicio de <strong>pago por uso</strong>. Únicamente pagas por el uso de la graja consiguiendo un gran ahorro económico comparado con montar tu propia infraestructura.  Olvídate de inversiones en:
+				Te proporcionamos un servicio de <strong>pago por uso</strong>. Únicamente pagas por el uso de la granja consiguiendo un gran ahorro económico comparado con montar tu propia infraestructura.  Olvídate de inversiones en:
 				</p>
 				<ul>
 				<li class="txt">Compra, mantenimiento  y actualizaciones de equipos</li>
