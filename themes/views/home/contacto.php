@@ -85,11 +85,11 @@ function getCountry($ip_address){
 				$miarea->crearArea();
 			
 echo '</div>';
-				echo '<input type="button" id="envio" name="envio" class="botonenvio"  value="Enviar">';
+				echo '<input type="button" id="envio" name="envio" class="botonenvio"  value="Enviar" />';
 				$miformulario->cerrarFormulario();
 				
 				?>
-				<br><br><br>
+				<br /><br /><br />
 		
 		
 

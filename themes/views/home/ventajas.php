@@ -23,19 +23,19 @@ Te indicamos a continuación las claves para que descubras las ventajas de trabaj
 				
 			</div>
 		</div>
-		<div class="cajaminidoble"><img src="themes/img/tiempo.png" align="right" width="450px" ></div>
+		<div class="cajaminidoble"><img src="themes/img/tiempo.png" align="right" width="450px" title="Render Drive" alt="Render Drive" /></div>
 
 <!--segunda -->
 		<div style="width:100%;height:40px;"></div>
-		<div class="cajaminidoble"> <img src="themes/img/cpd3.jpg" align="right" width="450px" class="foto"></div>
+		<div class="cajaminidoble"> <img src="themes/img/cpd3.jpg" align="right" width="450px" class="foto" title="Render Drive" alt="Render Drive" /></div>
 		<div class="cajaminidoble">
 		<div class="tituloleft">Más barato que montar tu propia granja </div>
 			<div class="textocontenido">
 		
-				<p>
+				<span>
 				Te proporcionamos un servicio de <strong>pago por uso</strong>. Únicamente pagas por el uso de la granja consiguiendo un gran ahorro económico comparado con montar tu propia infraestructura.  Olvídate de inversiones en:
-				</p>
-				<ul>
+				</span>
+			<ul>
 				<li class="txt">Compra, mantenimiento  y actualizaciones de equipos</li>
 				<li class="txt">Adquisición y actualizaciones de nuevas versiones de Software y licencias</li>
 				<li class="txt">Costes de energía y refrigeración de máquinas</li>
@@ -55,16 +55,16 @@ Te indicamos a continuación las claves para que descubras las ventajas de trabaj
 			Desde hoy puedes lanzar tus trabajos desde <strong> Maya</strong> y muy pronto los podrás lanzar desde <strong>3ds Max y SoftImage</strong>.
 			</p>
 			<p>
-			 Consulta las secciones de <strong><a href="aplicacion-render" class="enlace">Aplicación</a> </strong>y<strong> <a href="servicios-render" class="enlace">Servicios<a/></strong> para más información, o rellena el formulario a continuación y nos pondremos en contacto contigo.
+			 Consulta las secciones de <strong><a href="aplicacion-render" class="enlace">Aplicación</a> </strong>y<strong> <a href="servicios-render" class="enlace">Servicios</a></strong> para más información, o rellena el formulario a continuación y nos pondremos en contacto contigo.
 			 </p>
 			</div>
 		</div>
-		<div class="cajaminidoble"><img src="themes/img/moto.jpg" align="right" width="450px" class="foto"></div>
+		<div class="cajaminidoble"><img src="themes/img/moto.jpg" align="right" width="450px" class="foto" title="Render Drive" alt="Render Drive" /></div>
 
 	
 	 
  
-<div class="abajo"><a href="#contacto" class="ancla"><img src="themes/img/abajo2.jpg"></a></div>  </div>
+<div class="abajo"><a href="#contacto" class="ancla"><img src="themes/img/abajo2.jpg" title="Render Drive - Contacto" border="0" alt="Render Drive - Contacto" /></a></div>  </div>
 
 
 

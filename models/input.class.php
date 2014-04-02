@@ -34,7 +34,7 @@ class input{
 		$file_aux=explode("/", $this->value);
 		$fil='<input type="hidden" name="file_delete" id="file_delete" value="0"><div class="linkfile"><div id="linkfil"><a  href="'.$this->value.'" target=_blank>'.$file_aux[3].'</a></div>  <div id="delete">Eliminar</div></div>';
 	}	
-    echo '<div class="'.$class_aux.$this->type.$ob.'"><input type="'.$this->type.'" '.$this->atributos.' '.$valor.'  '.$evento.'>'.$fil.'</div>';
+    echo '<div class="'.$class_aux.$this->type.$ob.'"><input type="'.$this->type.'" '.$this->atributos.' '.$valor.'  '.$evento.' />'.$fil.'</div>';
 	//if ($class_aux!='elementoboton') echo '<div style="clear:both;"></div>';
   }
 
