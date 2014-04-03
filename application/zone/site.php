@@ -1,7 +1,7 @@
 <div id="inicio"></div>
 <div id="cabecera">
 	<div class="logo">
-		<h1><a href="<?php echo $GLOBALS['raiz']; ?>">Render <span class="drive">Drive</span></a></h1>	
+		<h1><a href="<?php echo $GLOBALS['raiz']; ?>"><span class="drive">Render</span> Drive</a></h1>	
 	</div>	
 	<div class="dreta">	
 <!-- Pendiente realizar traducción de textos
