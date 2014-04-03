@@ -10,11 +10,14 @@ define ('__SITE_PATH', $site_path);
 <head>
 <title>Render Drive  Servicios de Render Online</title>
 <meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1" />
-
+<meta name="keywords" content="Render Farm, Renderfarm, Granja de render, Render Online, Servicios Render, Servicios de renderizado en España, Servicios de Renderizado, Render en la nube" />
+<meta name="description" content="El servicio de render online más eficaz para tu proyecto." />
+  
+  
 <script src="themes/js/jquery.js" type="text/javascript" ></script>
 <script type="text/javascript" src="themes/js/codigo.js" charset="ISO-8859-1"></script>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Roboto:300&amp;subset=latin-ext' rel='stylesheet' />
-
+<link  rel="shortcut icon" type="image/vnd.microsoft.icon" href="themes/img/favicon.ico" />
 <?php 
 
 if ($_SERVER['HTTP_HOST']=="www.renderdrive.com") $raiz='http://www.renderdrive.com/';
