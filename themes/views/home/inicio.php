@@ -34,7 +34,7 @@
 
 	</div>
 	<br /><br /><br /><br /><br /><br />
-<div class="abajo"><a href="#pq" class="ancla"><img src="themes/img/abajo.jpg" border="0" alt="Porqué usar RenderDrive" title="Porqué usar RenderDrive" ></a></div>
+<div class="abajo"><a href="#pq" class="ancla"><img src="themes/img/abajo.jpg" border="0" alt="Porqué usar RenderDrive" title="Porqué usar RenderDrive" /></a></div>
 	</div>
 
 

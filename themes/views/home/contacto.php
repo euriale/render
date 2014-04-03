@@ -36,10 +36,10 @@ function getCountry($ip_address){
 	<div class="titulo">Contacta con nosotros</div>
 			
 			<?php
-	echo '<div class="cajaminidoble">';			
+	
 				$miformulario = new form('post',$GLOBALS['raiz']. 'controllers/direct/guardarclienteController.php','','','formulario');
 				$miformulario->crearFormulario(); 
-				
+		echo '<div class="cajaminidoble">';					
 				$milabel = new label('nombre','Nombre',1,'');
 				$milabel->crearLabel();
 				$miinput = new input('text','id="nombre" name="nombre" class="input"','','');
@@ -81,7 +81,7 @@ function getCountry($ip_address){
 				
 				$milabel = new label('consulta','Escribe tu Consulta',1,'');
 				$milabel->crearLabel();
-				$miarea = new area('consulta','','','');
+				$miarea = new area('consulta','rows="5" cols="20"','','');
 				$miarea->crearArea();
 			
 echo '</div>';

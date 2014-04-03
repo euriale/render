@@ -8,6 +8,7 @@ Debido a la complejidad del software 3D es necesaria una gran cantidad de horas 
 </p>
 <p>
 Te indicamos a continuación las claves para que descubras las ventajas de trabajar con nosotros:
+</p>
 </div></div>
 
 <!--primera -->
@@ -51,7 +52,8 @@ Te indicamos a continuación las claves para que descubras las ventajas de trabaj
 			<div class="textocontenido">
 			<p>
 			Tenemos los mejores precios y si lanzas tu render desde nuestra aplicación, te saldrá aún mas barato.
-				<p>
+			</p>
+			<p>
 			Desde hoy puedes lanzar tus trabajos desde <strong> Maya</strong> y muy pronto los podrás lanzar desde <strong>3ds Max y SoftImage</strong>.
 			</p>
 			<p>

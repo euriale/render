@@ -1,6 +1,8 @@
 RewriteEngine On
+RewriteCond %{HTTP_HOST} ^renderdrive\.com$ [NC]
+RewriteRule ^(.*)$ http://www.renderdrive.com/$1 [R=301,L]
 
-
+RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^([a-zA-Z0-9_-]+)$ index.php?r1=$1
