@@ -28,7 +28,7 @@ Te indicamos a continuación las claves para que descubras las ventajas de trabaj
 
 <!--segunda -->
 		<div style="width:100%;height:40px;"></div>
-		<div class="cajaminidoble"> <img src="themes/img/cpd3.jpg" align="right" width="450px" class="foto" title="Render Drive" alt="Render Drive" /></div>
+		<div class="cajaminidoble"> <img src="themes/img/servicios render.jpg" align="right" width="450px" class="foto" title="Render Drive" alt="Render Drive" /></div>
 		<div class="cajaminidoble">
 		<div class="tituloleft">Más barato que montar tu propia granja </div>
 			<div class="textocontenido">
