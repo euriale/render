@@ -13,7 +13,7 @@
 	
 -->
 	<div style="clear:both"></div>
-	<div class="renderapp"><a href="http://farm.renderdrive.com" target="_blank">Acceder</a></div>
+	<div class="renderapp"><a href="http://cp.farm.renderdrive.com" target="_blank">Acceder</a></div>
 	
 	
    </div>
