@@ -45,30 +45,7 @@
 			
 		
 		</div>
-		
 
-<!--
-	<div class="txtazul">Indica la configuración que necesitas.</div>
-		
-		<div class="cajaazul">
-
-			<div class="txtcalcu">Tiempo Máximo ( Horas ): </div>
-			<div id="elemtmax" class="txtcalcunum">200 </div>
-			<div style="clear:both;"></div>
-			<div class="min" id="elemtmaxmin">Min 1</div><div id="tmax"></div><div class="max" id="elemtmaxmax">Max</div><div class="eleminput"><input type="text" value="1" name="tmaxinput" id="tmaxinput" class="inputscal"></div>
-
-			<div style="clear:both;"></div>
-			
-			
-			<div class="txtcalcu">Número de Slots (200 GgHz): </div>
-			<div id="elemslots" class="txtcalcunum">20</div>
-			<div style="clear:both;"></div>
-			
-			<div class="min">Min 1</div><div id="slots"></div><div class="max">Max 20</div><div class="eleminput"><input type="text" value="1" name="slotsinput" id="slotsinput" class="inputscal"></div>
-			<div style="clear:both;"></div>
-		</div>	
-	<div class="txtcalcu" id="caltotal">1</div>
-	-->
 	</div>
 	
 	<div style="clear:both;"></div>
@@ -78,10 +55,12 @@
 <p>
  Utiliza nuestra calculadora para obtener un coste aproximado del render de tu proyecto . <br>
  Estas tarifas son sin promociones, date de alta en la <strong><a href="http://farm.renderdrive.com" class="enlace">Aplicación</a> </strong> y obten importantes descuentos. 
+ </p>
+<p>IVA no incluido</p>
+ <div class="tituloleft">1 Crédito = 1 Euro </div>
+ 
+ 
 
- 
- 
-</p>
 
 </div>
 </div>
@@ -97,6 +76,11 @@
 		<div class="tarifadown1">
 			La mejor opción para renderizado en línea económico y altamente competitivo.
 		</div>	
+		<div class="tarifaupnaranaja">
+				<strong>15% descuento</strong>
+			<div class="muygrande"><span class="valore" id="totnormaldto">1.2 €</span></div>
+			
+		</div>	
 	</div>
 	<div class="cajamini">
 				<div class="tarifaup2">
@@ -107,7 +91,12 @@
 				</div>
 		<div class="tarifadown2">
 			La mejor opción para empresas. Una combinación económica y de renderizado prioritario.
-		</div>					
+		</div>	
+		<div class="tarifaupnaranaja">
+				<strong>15% descuento</strong>
+			<div class="muygrande"><span class="valore" id="totaltadto">1.2 €</span></div>
+			
+		</div>			
 	</div>
 	<div class="cajamini">
 			<div class="tarifaup3">
@@ -119,6 +108,11 @@
 			<div class="tarifadown3">
 				Siempre primero. Prioridad absoluta en sus proyectos de renderizados. 				   
 			</div>	
+			<div class="tarifaupnaranaja">
+				<strong>15% descuento</strong>
+			<div class="muygrande"><span class="valore" id="totpremiumdto">1.2 €</span></div>
+			
+		</div>	
 	</div>
 	
 	<div style="clear:both;"></div>

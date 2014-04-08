@@ -582,7 +582,7 @@ text-align:center;
 width:500px;
 
 }
-.tarifaup1,.tarifaup2,.tarifaup3{
+.tarifaup1,.tarifaup2,.tarifaup3,.tarifaupnaranaja{
 padding-top:25px;
 background:#999;
 font: bold 18px 'Roboto','Open Sans',arial;
@@ -590,7 +590,9 @@ color:#fff;
 display:block-line;
 text-align:center;
 }
-
+.tarifaupnaranaja{
+background:#FF8C00;
+}
 .tarifaup2{
 background:#555;
 }

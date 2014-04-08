@@ -561,9 +561,19 @@ $(document).ready(function () {
 			var totalnormal=tc*0.0400;
 			var totalalta=tc*0.0620;
 			var totalpremium=tc*0.0710;
+			
+			var totalnormaldto=Math.ceil(totalnormal*0.15);
+			var totalpremiumdto=Math.ceil(totalpremium*0.15);
+			var totalaltadto=Math.ceil(totalalta*0.15);
+			
 			var totalnormal=Math.ceil(totalnormal);
 			var totalpremium=Math.ceil(totalpremium);
 			var totalalta=Math.ceil(totalalta);
+			
+		
+			//var totalnormaldto=format(totalnormaldto);
+			//var totalpremiumdto=format(totalpremiumdto);
+			//var totalaltadto=format(totalaltadto);
 			
 			var totalnormal=format(totalnormal);
 			var totalpremium=format(totalpremium);
@@ -589,6 +599,11 @@ $(document).ready(function () {
 			$("#totnormal").text(totalnormal+' Créditos');
 			$("#totalta").text(totalalta+' Créditos');
 			$("#totpremium").text(totalpremium+' Créditos');
+			
+			$("#totnormaldto").text((totalnormaldto)+' Créditos');
+			$("#totaltadto").text((totalaltadto)+' Créditos');
+			$("#totpremiumdto").text((totalpremiumdto)+' Créditos');
+			
 			$("#totnormal2").text(totalnormal+' €');
 			$("#totalta2").text(totalalta+' €');
 			$("#totpremium2").text(totalpremium+' €');
