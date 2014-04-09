@@ -19,7 +19,7 @@
    </div>
 	   <ul class="navigation">
 		<li id="menuinicio">
-			<a class="menuinicioa" href="<?php echo $GLOBALS['raiz']; ?>" <?php if (!isset($_GET['r1'])) echo 'id="actitem"'; ?>><?php echo INICIO; ?>	</a>
+			<a class="menuinicioa" href="granja-online" <?php if (!isset($_GET['r1'])) echo 'id="actitem"'; ?>><?php echo INICIO; ?>	</a>
 		</li>
 		<li id="menuapp">
 			<a class="menuappa" href="aplicacion-render" <?php if (isset($_GET['r1']) && $_GET['r1']=='aplicacion-render') echo 'id="actitem"'; ?> >Aplicación</a>
@@ -43,6 +43,13 @@ require_once(__SITE_PATH.'/'.$ccontroller);
 
 <?php 
 if (!isset($_GET['r1'])){
+	$enlaceinicio='';
+	$classinicio='ancla';
+	$enlaceaplicacion=$GLOBALS['raiz'].'aplicacion-render';
+	$classaplicacion='';
+	$enlaceservicios=$GLOBALS['raiz'].'servicios-render';
+	$classservicios='';
+} else if (isset($_GET['r1']) && $_GET['r1']=='granja-online') {
 	$enlaceinicio='';
 	$classinicio='ancla';
 	$enlaceaplicacion=$GLOBALS['raiz'].'aplicacion-render';
