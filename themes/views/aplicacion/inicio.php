@@ -1,7 +1,7 @@
 	
 <div class="slide2">
 	<h2>Render en la nube</h2>
-	<h3>Conoce nuestra aplicación para renderizar en la nube. <br>Déjanos tu email y te avisaremos cuando la estrenemos, obtendrás<strong> importantes descuentos</strong></h3>
+	<h3>Conoce nuestra aplicación para renderizar en la nube. <br>Tu proceso de renderizado rápido, simplificado y con <strong> importantes descuentos</strong></h3>
 </div>
 	
 </div> 	
@@ -13,7 +13,7 @@
 	<div class="cajaminidoble">
 		<div class="tituloleft">Usa nuestra aplicación de render online</div>  
 		<div class="textocontenido">
-			<p>Nuestra aplicación de renderizado te ayudar a simplificar los pasos del renderizado de tu proyecto 3D. Sólo tendrás que instalarte un plugin para Maya y un sincronizador desde nuestra web.</p>
+			<p>Nuestra aplicación de renderizado te ayuda a simplificar los pasos del renderizado de tu proyecto 3D. Sólo tendrás que instalarte un plugin para Maya y un sincronizador desde nuestra web.</p>
 			<p>En tu propio Maya, con nuestro plugin, podrás lanzar tu render contra nuestra granja y automáticamente el sincronizador subirá el proyecto y comenzará a renderizarlo. </p>
 			<p>Podrás visualizar el resultado de cada tarea y obtener una vista previa.</p>
 			<p><strong>Para probar nuestra aplicación, haz clic <a href="http://farm.renderdrive.com"  style="color:#FF8C00;" target="_blank">aquí</a></strong></p>
