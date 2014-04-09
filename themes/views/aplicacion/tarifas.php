@@ -73,12 +73,10 @@
 			<div class="muygrande"><span class="valore" id="totnormal">1.2 €</span><span class="valord noactivo">2.1 $</span></div>
 			<div class="tiempos" id="tiempo1"></div>
 		</div>	
-		<div class="tarifadown1">
-			La mejor opción para renderizado en línea económico y altamente competitivo.
-		</div>	
-		<div class="tarifaupnaranaja">
+		<!--<div class="tarifadown1">La mejor opción para renderizado en línea económico y altamente competitivo.</div>-->	
+		<div class="tarifaupblanco">
 				<strong>15% descuento</strong>
-			<div class="muygrande"><span class="valore" id="totnormaldto">1.2 €</span></div>
+			<div class="muygrande1"><span class="valore" id="totnormaldto">1.2 €</span></div>
 			
 		</div>	
 	</div>
@@ -89,12 +87,10 @@
 					<div class="muygrande"><span class="valore" id="totalta">1.2 €</span><span class="valord noactivo">2.1 $</span></div>
 					<div class="tiempos" id="tiempo2"></div>
 				</div>
-		<div class="tarifadown2">
-			La mejor opción para empresas. Una combinación económica y de renderizado prioritario.
-		</div>	
-		<div class="tarifaupnaranaja">
+		<!--<div class="tarifadown2">La mejor opción para empresas. Una combinación económica y de renderizado prioritario.	</div>-->	
+		<div class="tarifaupblanco">
 				<strong>15% descuento</strong>
-			<div class="muygrande"><span class="valore" id="totaltadto">1.2 €</span></div>
+			<div class="muygrande1"><span class="valore" id="totaltadto">1.2 €</span></div>
 			
 		</div>			
 	</div>
@@ -105,12 +101,10 @@
 				<div class="muygrande"><span class="valore"  id="totpremium">1.2 €</span><span class="valord noactivo">2.1 $</span></div>
 				<div class="tiempos" id="tiempo3"></div>
 			</div>	
-			<div class="tarifadown3">
-				Siempre primero. Prioridad absoluta en sus proyectos de renderizados. 				   
-			</div>	
-			<div class="tarifaupnaranaja">
+			<!--<div class="tarifadown3">Siempre primero. Prioridad absoluta en sus proyectos de renderizados. </div>-->	
+			<div class="tarifaupblanco">
 				<strong>15% descuento</strong>
-			<div class="muygrande"><span class="valore" id="totpremiumdto">1.2 €</span></div>
+			<div class="muygrande1"><span class="valore" id="totpremiumdto">1.2 €</span></div>
 			
 		</div>	
 	</div>

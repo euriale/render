@@ -582,16 +582,38 @@ text-align:center;
 width:500px;
 
 }
-.tarifaup1,.tarifaup2,.tarifaup3,.tarifaupnaranaja{
-padding-top:25px;
+.tarifaup1,.tarifaup2,.tarifaup3,.tarifaupnaranaja,.tarifaupverde1,.tarifaupverde2,.tarifaupverde3,.tarifaupblanco{
+padding-top:15px;
 background:#999;
-font: bold 18px 'Roboto','Open Sans',arial;
+font: bold 14px 'Roboto','Open Sans',arial;
 color:#fff;
 display:block-line;
 text-align:center;
+padding-bottom:15px;
 }
 .tarifaupnaranaja{
 background:#FF8C00;
+}
+.tarifaupverde1{
+padding-top:10px;
+background:#C9DE36;
+font: bold 18px 'Roboto','Open Sans',arial;
+}
+.tarifaupverde2{
+padding-top:10px;
+background:#A2B51E;
+font: bold 18px 'Roboto','Open Sans',arial;
+}
+.tarifaupverde3{
+padding-top:10px;
+background:#51940B;
+font: bold 18px 'Roboto','Open Sans',arial;
+}
+.tarifaupblanco{
+padding-top:10px;
+background:#fff;
+font: bold 18px 'Roboto','Open Sans',arial;
+color:#444;
 }
 .tarifaup2{
 background:#555;
@@ -607,6 +629,7 @@ font: 15px 'Roboto','Open Sans',arial;
 color:#444;
 height:55px;
 
+
 }
 .tarifadown2{
 background:#fff;
@@ -615,8 +638,12 @@ background:#fff;
 background:#fff;
 }
 .muygrande{
-font: bold 30px 'Roboto','Open Sans',arial;
+font: bold 20px 'Roboto','Open Sans',arial;
 color:#fff;
+}
+.muygrande1{
+font: bold 30px 'Roboto','Open Sans',arial;
+color:#FF8C00;
 }
 
 .faqsask{

@@ -562,18 +562,18 @@ $(document).ready(function () {
 			var totalalta=tc*0.0620;
 			var totalpremium=tc*0.0710;
 			
-			var totalnormaldto=Math.ceil(totalnormal*0.15);
-			var totalpremiumdto=Math.ceil(totalpremium*0.15);
-			var totalaltadto=Math.ceil(totalalta*0.15);
+			var totalnormaldto=Math.ceil(totalnormal-(totalnormal*0.15));
+			var totalpremiumdto=Math.ceil(totalpremium-(totalpremium*0.15));
+			var totalaltadto=Math.ceil(totalalta-(totalalta*0.15));
 			
 			var totalnormal=Math.ceil(totalnormal);
 			var totalpremium=Math.ceil(totalpremium);
 			var totalalta=Math.ceil(totalalta);
 			
 		
-			//var totalnormaldto=format(totalnormaldto);
-			//var totalpremiumdto=format(totalpremiumdto);
-			//var totalaltadto=format(totalaltadto);
+			var totalnormaldto=format(totalnormaldto);
+			var totalpremiumdto=format(totalpremiumdto);
+			var totalaltadto=format(totalaltadto);
 			
 			var totalnormal=format(totalnormal);
 			var totalpremium=format(totalpremium);
