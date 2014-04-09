@@ -13,10 +13,10 @@
 	<div class="cajaminidoble">
 		<div class="tituloleft">Usa nuestra aplicación de render online</div>  
 		<div class="textocontenido">
-			<p>Hemos creado una aplicación que te ayudará a simplificar los pasos del renderizado de tu proyecto. Sólo tendrás que instalarte un plugin para Maya y un sincronizador desde nuestra web.</p>
-			<p>En tu propio Maya podrás lanzar tu render contra nuestra granja y automáticamente el sincronizador subirá el proyecto y comenzará a renderizarlo. </p>
+			<p>Nuestra aplicación de renderizado te ayudar a simplificar los pasos del renderizado de tu proyecto 3D. Sólo tendrás que instalarte un plugin para Maya y un sincronizador desde nuestra web.</p>
+			<p>En tu propio Maya, con nuestro plugin, podrás lanzar tu render contra nuestra granja y automáticamente el sincronizador subirá el proyecto y comenzará a renderizarlo. </p>
 			<p>Podrás visualizar el resultado de cada tarea y obtener una vista previa.</p>
-			<p><strong>Prueba nuestra aplicación, haz clic <a href="http://farm.renderdrive.com"  style="color:#FF8C00;" target="_blank">aquí</a></strong></p>
+			<p><strong>Para probar nuestra aplicación, haz clic <a href="http://farm.renderdrive.com"  style="color:#FF8C00;" target="_blank">aquí</a></strong></p>
 			
 		</div>
 	</div>

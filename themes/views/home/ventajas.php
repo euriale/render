@@ -5,22 +5,7 @@
 <div class="textocontenido">
 <!-- Fragmento enriquecido  -->
 
-<div itemscope itemtype="http://data-vocabulary.org/Product">
-<img itemprop="image" src="themes/img/socialimg/logo150x150.jpg" align="left" class="fotomargin" />
-  <span itemprop="brand">Render Drive</span> te ofrece <span itemprop="name">servicios de render online</span>.<br />
-   <span itemprop="description">
-  Nuestra aplicación te ayudará a simplificar los pasos del renderizado de tu proyecto.
-  </span>
-  Pouedes probar nuestra
-  <span itemprop="category" content="Software > Software informático > Software de diseño y multimedia > Software de modelado en 3D">aplicación de render en la nube</span>.<br />
-  
-  <span itemprop="offerDetails" itemscope itemtype="http://data-vocabulary.org/Offer">
-   <meta itemprop="currency" content="EUR" /><span itemprop="availability" content="in_stock">Consulta nuestras promociones y obten importantes descuentos.</span><br />
-   Desde <span itemprop="price">2.90</span>Céntimos de Euro por GHzh. 
-    
-  </span>
 
-</div>
 
 <!-- Fin del fragmento enriquecido -->
 <p>
@@ -83,8 +68,26 @@ Te indicamos a continuación las claves para que descubras las ventajas de trabaj
 		</div>
 		<div class="cajaminidoble"><img src="themes/img/moto.jpg" align="right" width="450px" class="foto" title="Render Drive" alt="Render Drive" /></div>
 
-	
-	 
+	<div style="width:100%;height:40px;"></div>
+ 
+	<div itemscope itemtype="http://data-vocabulary.org/Product">
+<div class="cajaminidoble"> <img itemprop="image" src="themes/img/socialimg/logo150x150.jpg" align="left" class="fotomargin" /></div>
+<div class="cajaminidoble"> 
+ <span itemprop="brand">Render Drive</span> te ofrece <span itemprop="name">servicios de render online</span>.<br />
+   <span itemprop="description">
+  Nuestra aplicación te permite simplificar el proceso de renderizado de tu proyecto 3D.
+  </span>
+  Utiliza nuestra
+  <span itemprop="category" content="Software > Software informático > Software de diseño y multimedia > Software de modelado en 3D">aplicación de render en la nube</span>.<br />
+  
+  <span itemprop="offerDetails" itemscope itemtype="http://data-vocabulary.org/Offer">
+   <meta itemprop="currency" content="EUR" /><span itemprop="availability" content="in_stock">Consulta nuestras promociones y obtén importantes descuentos.</span><br />
+   Desde <span itemprop="price">2.90</span>Céntimos de Euro por GHzh. 
+    
+  </span>
+
+</div>
+	 </div>
  
 <div class="abajo"><a href="#contacto" class="ancla"><img src="themes/img/abajo2.jpg" title="Render Drive - Contacto" border="0" alt="Render Drive - Contacto" /></a></div>  </div>
 
