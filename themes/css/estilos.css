@@ -631,6 +631,13 @@ height:55px;
 
 
 }
+.menumedia{
+	display:none;
+}
+.menumediadesplegado{
+	display:none;
+}
+
 .tarifadown2{
 background:#fff;
 }

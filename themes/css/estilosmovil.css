@@ -19,6 +19,7 @@ html,body{
 	background:#fff;
 	height:70px;
 	z-index:5;
+	border-bottom:solid 1px #ddd;
 }
 #cabecera2{
 	width:100%;
@@ -28,6 +29,42 @@ html,body{
 	background:trasparent;
 	height:70px;
 	z-index:5;
+}
+.menumedia{
+	float:right;
+	cursor:pointer;
+	margin-right:5px;
+	margin-top:5px;
+}
+.menumediadesplegado{
+	color: #444444;
+    font: 15px 'Roboto','Open Sans',arial;
+	display:none;
+
+	margin-top:75px;
+}
+.menumediadesplegado ul{
+	list-style-type: none;
+	padding-left:0;
+}
+.menumediadesplegado li {
+	border-bottom:solid 1px #ddd;
+	height:35px;
+
+}
+.menumediadesplegado li a{
+	font: 13px 'Roboto','Open Sans',arial;
+	color:#444;
+	text-decoration:none;
+
+}
+.menumediadesplegado li a:hover{
+	
+	text-decoration:underline;
+}
+
+#actmovil{
+color:#FF8C00;
 }
 /*-------------------menu-----------------*/
 .navigation{
@@ -327,9 +364,10 @@ background:#f1f1f1;
 max-width:90%;
 }
 .tituloleft{
-font: 2.1em 'Roboto','Open Sans',arial;
+font: 1.7em 'Roboto','Open Sans',arial;
 color:#FF8C00;
 text-align:left;
+margin-top:25px;
 }
 .textocontenido{
 font: 15px 'Roboto','Open Sans',arial;
@@ -757,7 +795,7 @@ select option:hover
 
 #cores .ui-slider-range,#ghz .ui-slider-range, #frames .ui-slider-range, #temp .ui-slider-range,#slots .ui-slider-range,#tmax .ui-slider-range { 
 	background: #FF8C00; /* Old browsers */
-	
+	display:none;
 
  }
 

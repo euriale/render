@@ -452,7 +452,16 @@ $(document).ready(function () {
 			$("#elemtmaxmin").text('Min ' +format(topemin));
 			
 		}
-		
+		/*--------MENU MOVIL---------*/
+		$(".menumedia").click(function() {
+			$( ".menumediadesplegado" ).toggle();
+			
+			if ($(".menumediadesplegado").is (":visible")) $(".primeracaja").css("padding-top", "0px");
+			else $(".primeracaja").css("padding-top", "55px");
+			
+		});
+	
+	
 		/*----APP-----*/
 		
 		function refreshSwatchTmax() {

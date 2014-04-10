@@ -2,7 +2,8 @@
 <div id="cabecera">
 	<div class="logo">
 		<h1><a href="<?php echo $GLOBALS['raiz']; ?>"><span class="drive">Render</span> Drive</a></h1>	
-	</div>	
+	</div>	 
+	<div class="menumedia"><img src="themes/img/menumedia.png" alt="Render Drive - Menú" title="Render Drive - Menú" /></div>
 	<div class="dreta">	
 <!-- Pendiente realizar traducción de textos
 	<div class="idiomas">
@@ -19,7 +20,7 @@
    </div>
 	   <ul class="navigation">
 		<li id="menuinicio">
-			<a class="menuinicioa" href="granja-online" <?php if (!isset($_GET['r1'])) echo 'id="actitem"'; ?>><?php echo INICIO; ?>	</a>
+			<a class="menuinicioa" href="granja-online" <?php if (!isset($_GET['r1']) || $_GET['r1']=='granja-online') echo 'id="actitem"'; ?>><?php echo INICIO; ?>	</a>
 		</li>
 		<li id="menuapp">
 			<a class="menuappa" href="aplicacion-render" <?php if (isset($_GET['r1']) && $_GET['r1']=='aplicacion-render') echo 'id="actitem"'; ?> >Aplicación</a>
@@ -27,11 +28,22 @@
 		<li id="menuserv">
 			<a class="menuserva" href="servicios-render" <?php if (isset($_GET['r1']) && $_GET['r1']=='servicios-render') echo 'id="actitem"';?>>Servicios</a>
 		</li>
-		
-		
-   </ul>	
+	  </ul>	
+	 
 </div>	
-
+<div class="menumediadesplegado">
+<ul>
+	<li>
+		<a href="granja-online" <?php if (!isset($_GET['r1']) || $_GET['r1']=='granja-online') echo 'id="actmovil"'; ?>><?php echo INICIO; ?>	</a>
+	</li>
+	<li>
+		<a  href="aplicacion-render" <?php if (isset($_GET['r1']) && $_GET['r1']=='aplicacion-render') echo 'id="actmovil"'; ?>>Aplicación</a>
+	</li>
+	<li>
+		<a href="servicios-render" <?php if (isset($_GET['r1']) && $_GET['r1']=='servicios-render') echo 'id="actmovil"';?>>Servicios</a>
+	</li>
+</ul>
+</div>
 <?php 
 require_once(__SITE_PATH.'/'.$ccontroller);
 ?>
