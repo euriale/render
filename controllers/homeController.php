@@ -1,8 +1,9 @@
 <?php	
-render('home/submenu');
-render('home/inicio');
-render('home/ventajas');
-render('home/contacto');
+render('servicios/submenu');
+render('servicios/inicio');
+render('servicios/tarifas');
+render('servicios/faqs');
+render('servicios/contacto');
 ?>
 
 

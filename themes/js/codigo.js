@@ -605,13 +605,13 @@ $(document).ready(function () {
 			
 			
 			
-			$("#totnormal").text(totalnormal+' Créditos');
-			$("#totalta").text(totalalta+' Créditos');
-			$("#totpremium").text(totalpremium+' Créditos');
+			$("#totnormal").text(totalnormal+' Euros');
+			$("#totalta").text(totalalta+' Euros');
+			$("#totpremium").text(totalpremium+' Euros');
 			
-			$("#totnormaldto").text((totalnormaldto)+' Créditos');
-			$("#totaltadto").text((totalaltadto)+' Créditos');
-			$("#totpremiumdto").text((totalpremiumdto)+' Créditos');
+			$("#totnormaldto").text((totalnormaldto)+' Euros');
+			$("#totaltadto").text((totalaltadto)+' Euros');
+			$("#totpremiumdto").text((totalpremiumdto)+' Euros');
 			
 			$("#totnormal2").text(totalnormal+' €');
 			$("#totalta2").text(totalalta+' €');

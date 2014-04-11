@@ -3,11 +3,7 @@
 <div class="titulo">Por qué trabajar con Render Drive</div>
 <div class="auxtexto2">
 <div class="textocontenido">
-<!-- Fragmento enriquecido  -->
 
-
-
-<!-- Fin del fragmento enriquecido -->
 <p>
 Debido a la complejidad del software 3D es necesaria una gran cantidad de horas para renderizar un proyecto. Además, supone una gran inversión disponer del equipamiento destinado a esta tarea, gastos en licencias, costes de energía y refrigeración, mantenimiento, etc.
 </p>
@@ -66,6 +62,9 @@ Te indicamos a continuación las claves para que descubras las ventajas de trabaj
 			 </p>
 			</div>
 		</div>
+		
+		
+		
 		<div class="cajaminidoble"><img src="themes/img/moto.jpg" align="right" width="450px" class="foto" title="Render Drive" alt="Render Drive" /></div>
 
 	<div style="width:100%;height:40px;"></div>
