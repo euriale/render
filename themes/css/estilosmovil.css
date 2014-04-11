@@ -35,13 +35,17 @@ html,body{
 	cursor:pointer;
 	margin-right:5px;
 	margin-top:5px;
+
+	
 }
 .menumediadesplegado{
+	position:fixed;
 	color: #444444;
     font: 15px 'Roboto','Open Sans',arial;
 	display:none;
-
-	margin-top:75px;
+	width:100%;
+	background:#fff;
+	top:55px;
 }
 .menumediadesplegado ul{
 	list-style-type: none;

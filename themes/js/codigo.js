@@ -456,8 +456,8 @@ $(document).ready(function () {
 		$(".menumedia").click(function() {
 			$( ".menumediadesplegado" ).toggle();
 			
-			if ($(".menumediadesplegado").is (":visible")) $(".primeracaja").css("padding-top", "0px");
-			else $(".primeracaja").css("padding-top", "55px");
+			if ($(".menumediadesplegado").is (":visible")) $(".primeracaja").css("padding-top", "100px");
+			else $(".primeracaja").css("padding-top", "0px");
 			
 		});
 	
