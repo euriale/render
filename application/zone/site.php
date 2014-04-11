@@ -14,7 +14,7 @@
 	
 -->
 	<div style="clear:both"></div>
-	<div class="renderapp"><a href="http://farm.renderdrive.com" target="_blank">Acceder</a></div>
+<!--	Pendiente de disponer aplicación <div class="renderapp"><a href="http://farm.renderdrive.com" target="_blank">Acceder</a></div> -->
 	
 	
    </div>
