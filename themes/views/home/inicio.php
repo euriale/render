@@ -1,13 +1,7 @@
 	
 <div class="slide3">
 	<h2><?php echo GRANJA_RENDER_ONLINE; ?></h2>
-<<<<<<< HEAD:themes/views/home/inicio.php
-<h3>Ponemos a tu disposición una granja de render compatible con la mayoría del software 3D del mercado</h3>
-	<!--<h3>Ponemos a tu disposición cientos de nodos preparados con el software 3D que necesitas para que el renderizado sea un proceso sencillo, rápido y económico. <br />Selecciona la opción con tu software, calcula el coste de tu proyecto y comienza renderizar </h3>-->
-=======
-
 	<h3>Ponemos a tu disposición cientos de nodos preparados con el software 3D que necesitas para que el renderizado sea un proceso sencillo, rápido y económico. <br />Descubre las ventajas de renderizar tus proyecto en nuestra granja online</h3>
->>>>>>> 4a5bd81d8d47cce11514aafe6b8167c79f79df7d:themes/views/home/inicio.php
 </div> 	
 <div id="ventajas"></div> 
 <div class="primeracaja">
