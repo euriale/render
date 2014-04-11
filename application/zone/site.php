@@ -20,13 +20,13 @@
    </div>
 	   <ul class="navigation">
 		<li id="menuinicio">
-			<a class="menuinicioa" href="granja-online" <?php if (!isset($_GET['r1']) || $_GET['r1']=='granja-online') echo 'id="actitem"'; ?>><?php echo INICIO; ?>	</a>
-		</li>
-		<li id="menuapp">
-			<a class="menuappa" href="aplicacion-render" <?php if (isset($_GET['r1']) && $_GET['r1']=='aplicacion-render') echo 'id="actitem"'; ?> >Aplicación</a>
+			<a class="menuinicioa" href="granja-online" <?php if (!isset($_GET['r1']) || $_GET['r1']=='granja-online') echo 'id="actitem"'; ?>><?php echo SERVICIOS; ?>	</a>
 		</li>
 		<li id="menuserv">
-			<a class="menuserva" href="servicios-render" <?php if (isset($_GET['r1']) && $_GET['r1']=='servicios-render') echo 'id="actitem"';?>>Servicios</a>
+			<a class="menuserva" href="ventajas-render" <?php if (isset($_GET['r1']) && $_GET['r1']=='ventajas-render') echo 'id="actitem"';?>><?php echo VENTAJAS; ?></a>
+		</li>
+		<li id="menuapp">
+			<a class="menuappa" href="aplicacion-render" <?php if (isset($_GET['r1']) && $_GET['r1']=='aplicacion-render') echo 'id="actitem"'; ?> ><?php echo APLICACION; ?></a>
 		</li>
 	  </ul>	
 	 
@@ -59,14 +59,14 @@ if (!isset($_GET['r1'])){
 	$classinicio='ancla';
 	$enlaceaplicacion=$GLOBALS['raiz'].'aplicacion-render';
 	$classaplicacion='';
-	$enlaceservicios=$GLOBALS['raiz'].'servicios-render';
+	$enlaceservicios=$GLOBALS['raiz'].'ventajas-render';
 	$classservicios='';
 } else if (isset($_GET['r1']) && $_GET['r1']=='granja-online') {
 	$enlaceinicio='';
 	$classinicio='ancla';
 	$enlaceaplicacion=$GLOBALS['raiz'].'aplicacion-render';
 	$classaplicacion='';
-	$enlaceservicios=$GLOBALS['raiz'].'servicios-render';
+	$enlaceservicios=$GLOBALS['raiz'].'ventajas-render';
 	$classservicios='';
 } else if (isset($_GET['r1']) && $_GET['r1']=='aplicacion-render') {
 	$enlaceinicio=$GLOBALS['raiz'];
@@ -76,7 +76,7 @@ if (!isset($_GET['r1'])){
 	$enlaceservicios=$GLOBALS['raiz'].'servicios-render';
 	$classservicios='';
 	
-} else if (isset($_GET['r1']) && $_GET['r1']=='servicios-render') {
+} else if (isset($_GET['r1']) && $_GET['r1']=='ventajas-render') {
 	$enlaceinicio=$GLOBALS['raiz'];
 	$classinicio='';
 	$enlaceaplicacion=$GLOBALS['raiz'].'aplicacion-render';

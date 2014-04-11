@@ -1,8 +1,8 @@
 	
-<div class="slide3">
+<div class="slide">
 	<h2><?php echo GRANJA_RENDER_ONLINE; ?></h2>
-
-	<h3>Ponemos a tu disposición una granja de render compatible con la mayoría del software 3D del mercado</h3>
+<h3>Ponemos a tu disposición cientos de nodos preparados con el software 3D que necesitas para que el renderizado sea un proceso sencillo, rápido y económico. <br />Selecciona la opción con tu software, calcula el coste de tu proyecto y comienza renderizar </h3>
+	<!--<h3>Ponemos a tu disposición una granja de render compatible con la mayoría del software 3D del mercado</h3>-->
 </div> 	
 <div id="descripcion"></div> 
 <div class="primeracaja">
