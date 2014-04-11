@@ -86,6 +86,20 @@ if (!isset($_GET['r1'])){
 }
 ?>
 
+
+
+
+<div class="cajapie">
+	<div class="txtnaranja16"><a href="<?php echo $enlaceservicios; ?>#inicio" class="<?php echo $classservicios; ?>">Servicios Render</a></div>
+	<ul>
+		<li><a href="<?php echo $enlaceservicios; ?>#descripcion" class="<?php echo $classservicios; ?>">Conoce nuestros servicios</a></li>
+		<li><a href="<?php echo $enlaceservicios; ?>#tarifas" class="<?php echo $classservicios; ?>">Tarifas</a></li>
+		<li><a href="<?php echo $enlaceservicios; ?>#faqs" class="<?php echo $classservicios; ?>">FAQS</a></li>
+		<li><a href="<?php echo $enlaceservicios; ?>#contacto" class="<?php echo $classservicios; ?>">Contacto</a></li>
+	</ul>
+
+</div>
+
 <div class="cajapie">
 	<div class="txtnaranja16"><a href="<?php echo $enlaceinicio; ?>#inicio" class="<?php echo $classinicio; ?>">Render Drive</a></div>
 	<ul>
@@ -102,24 +116,12 @@ if (!isset($_GET['r1'])){
 	<div class="txtnaranja16"><a href="<?php echo $enlaceaplicacion; ?>#descripcion" class="<?php echo $classaplicacion; ?>">Aplicación Render</a></div>
 	<ul>
 		<li><a href="<?php echo $enlaceaplicacion; ?>#descripcion" class="<?php echo $classaplicacion; ?>">Conoce nuestra aplicación</a></li>
-		<li><a href="<?php echo $enlaceaplicacion; ?>#tarifas" class="<?php echo $classaplicacion; ?>" >Tarifas</a></li>
-		<li><a href="<?php echo $enlaceaplicacion; ?>#faqs" class="<?php echo $classaplicacion; ?>">FAQS</a></li>
+	<!-- PTE Aplicacion	<li><a href="<?php echo $enlaceaplicacion; ?>#tarifas" class="<?php echo $classaplicacion; ?>" >Tarifas</a></li>
+		<li><a href="<?php echo $enlaceaplicacion; ?>#faqs" class="<?php echo $classaplicacion; ?>">FAQS</a></li> -->
 		<li><a href="<?php echo $enlaceaplicacion; ?>#contacto" class="<?php echo $classaplicacion; ?>">Contacto</a></li>
 	</ul>
 
 </div>
-
-<div class="cajapie">
-	<div class="txtnaranja16"><a href="<?php echo $enlaceservicios; ?>#inicio" class="<?php echo $classservicios; ?>">Servicios Render</a></div>
-	<ul>
-		<li><a href="<?php echo $enlaceservicios; ?>#descripcion" class="<?php echo $classservicios; ?>">Conoce nuestros servicios</a></li>
-		<li><a href="<?php echo $enlaceservicios; ?>#tarifas" class="<?php echo $classservicios; ?>">Tarifas</a></li>
-		<li><a href="<?php echo $enlaceservicios; ?>#faqs" class="<?php echo $classservicios; ?>">FAQS</a></li>
-		<li><a href="<?php echo $enlaceservicios; ?>#contacto" class="<?php echo $classservicios; ?>">Contacto</a></li>
-	</ul>
-
-</div>
-
 <div class="cajapie">
 	<div class="txtnaranja16">Síguenos - Redes Sociales</div>
 	<ul>
