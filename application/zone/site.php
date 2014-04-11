@@ -97,7 +97,7 @@ if (!isset($_GET['r1'])){
 		<li><a href="<?php echo $enlaceservicios; ?>#faqs" class="<?php echo $classservicios; ?>">FAQS</a></li>
 		<li><a href="<?php echo $enlaceservicios; ?>#contacto" class="<?php echo $classservicios; ?>">Contacto</a></li>
 	</ul>
-
+ 
 </div>
 
 <div class="cajapie">
