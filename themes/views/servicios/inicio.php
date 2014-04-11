@@ -55,7 +55,7 @@
 			<div class="tituloleft">Precios siempre competitivos </div> 
 			<div class="textocontenido">
 			<p>
-			El coste final de renderizado depende de varios factores, número de frames, motores utilizados, etc. A continuación te mostramos una calculadora que te dará una estimación del coste de tu proyecto. El coste de 50 € de configuración está incluido en los resultados mostrados.
+			El coste final de renderizado depende de varios factores, número de frames, motores utilizados, etc. A continuación te mostramos una calculadora que te dará una estimación del coste de tu proyecto. El coste de 50 € de configuración no está incluido en los resultados mostrados.
 			</p>
 			<p>
 			 Si tienes dudas, nos ponemos en contacto contigo y te ayudamos a realizar una estimación sin compromiso. 

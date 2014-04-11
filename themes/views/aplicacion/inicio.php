@@ -1,7 +1,7 @@
 	
 <div class="slide2">
 	<h2>Próximamente</h2>
-	<h3>Estamos trabajando para prensataros nuestra aplicación para renderizar en la nube. <br>Tu proceso de renderizado será: rápido, simplificado y con <strong> importantes descuentos</strong></h3>
+	<h3>Estamos trabajando para presentaros nuestra aplicación para renderizar en la nube. <br>Tu proceso de renderizado será: rápido, simplificado y con <strong> importantes descuentos</strong></h3>
 </div>
 	
 </div> 	
@@ -64,7 +64,7 @@
 	<div class="cajaminidoble">	
 		<div class="tituloleft">Precios siempre competitivos</div>
 		<div class="textocontenido">
-		El coste final de renderizado depende de varios factores, número de frames, motores utilizados, tiempo invertido en adaptar las máquinas a cada proyecto, personal cualificiado etc. Al tener todo parametrizado en la aplicación podremos reducir el coste de tu proyecto y ofrecerte aún mejores precios.
+		El coste final de renderizado depende de varios factores, número de frames, motores utilizados, tiempo invertido en adaptar las máquinas a cada proyecto, personal cualificado etc. Al tener todo parametrizado en la aplicación podremos reducir el coste de tu proyecto y ofrecerte aún mejores precios.
 			</p>
 		<p>
 			 Si quieres más información ponte en contacto con nosotros. 
