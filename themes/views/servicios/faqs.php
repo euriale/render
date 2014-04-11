@@ -3,19 +3,19 @@
 	<div class="titulo">Preguntas Frecuentes</div>
 	
 <div class="cajaminidoble">
-	<div class="faqsask" id="ask1"> Uso otra aplicación que no aparece en la página</div>
+	<div class="faqsask" id="ask1"> Uso otra aplicación de software 3D</div>
 	
 	<div class="faqanswer" id="ans1"> Ponte en contacto con nosotros para determinar si tu aplicación se adapta a la infraestructura de nuestra granja. Si es así la preparemos para que puedas comenzar a renderizar tu proyecto cuanto antes. </div>
 
 
 	<div class="faqsask" id="ask3"> ¿Me podéis enviar mi proyecto en un disco duro USB? </div>
 	
-	<div class="faqanswer" id="ans3"> Aunque disponemos de conexión de fibra para subida y bajada de ficheros 500/50 Mbs, si necesitas que te lo enviemos por mensajeria te lo haremos llegar en un pendrive o disco duro USB    </div>
+	<div class="faqanswer" id="ans3"> Aunque disponemos de conexión de fibra para subida y bajada de ficheros 500/50 Mbs, si necesitas que te lo enviemos por mensajería te lo haremos llegar en un pendrive o disco duro USB    </div>
 		
 
-	<div class="faqsask" id="ask5"> Quiero renderizar una película ¿que ventajas obtengo?. </div>
+	<div class="faqsask" id="ask5"> Quiero renderizar una película ¿que ventajas obtengo? </div>
 
-	<div class="faqanswer" id="ans5"> Disponemos del modo productora, te preparamos una granja con las máquinas que necesites, y dispondrás de un frontal con un gestor de render para controlar todo el proyecto. Además obtendrás grandes descuentos, contacta con nosotros y un técnico te informará de todo el proceso . </div>
+	<div class="faqanswer" id="ans5"> Disponemos del modo productora, te preparamos una granja con las máquinas que necesites, y dispondrás de un frontal con un gestor de render para controlar todo el proyecto. Además obtendrás grandes descuentos, contacta con nosotros y un técnico te informará de todo el proceso. </div>
 	
 
 
