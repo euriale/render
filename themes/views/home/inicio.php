@@ -9,7 +9,7 @@
 
 	<div class="cajamini">
 		<h4><a href="servicios-render">Servicios</a> </h4>
-		<div class="txt15centro"><strong>Uso otro Software 3D en mis Proyectos</strong></div>
+		<div class="txt15centro"><strong>Granja online con el mejor software 3D</strong></div>
 		<div class="imagencaja"><img src="themes/img/logos/logoscolor.jpg" title="Servicios Render" alt="Servicios Render" /></div>
 		<div class="txt15"> Trabajamos con Maya, Cinema 4D, 3ds Max, SoftImage, Blender, LightWave, After Effects, Revit Architecture..
 		</div>
@@ -29,9 +29,9 @@
 	
 	<div class="cajamini">
 		<h4><a href="aplicacion-render">Aplicación</a></h4>
-		<div class="txt15centro"><strong>Uso AutoDesk Maya para mis Proyectos</strong></div>
+		<div class="txt15centro"><strong>Compatible con AutoDesk Maya y 3ds Max</strong></div>
 		<div class="imagencaja"><img src="themes/img/logos/logoscolormaya.jpg" title="Render Maya" alt="Render Maya" /></div>
-		<div class="txt15">	Usa nuestra aplicación de render online y disfruta de los mejores precios e <strong> importantes descuentos</strong>.</div>
+		<div class="txt15">	Próximamente dispondrás de nuestra aplicación de render online : los mejores precios e <strong> importantes descuentos</strong>.</div>
 	
 		<div class="link"><a href="aplicacion-render">Saber más &nbsp;&nbsp;<img src="themes/img/redpointer.png" alt="Saber más" title="Saber más" /></a></div>
 	</div>
