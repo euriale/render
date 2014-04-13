@@ -1,7 +1,7 @@
 	
 <div class="slide3">
 	<h2><?php echo GRANJA_RENDER_ONLINE; ?></h2>
-	<h3>Ponemos a tu disposición cientos de nodos preparados con el software 3D que necesitas para que el renderizado sea un proceso sencillo, rápido y económico. <br />Descubre las ventajas de renderizar tus proyecto en nuestra granja online</h3>
+	<h3>Ponemos a tu disposición cientos de nodos preparados con el software 3D que necesitas para que el renderizado sea un proceso sencillo, rápido y económico. <br />Descubre las ventajas de renderizar tus proyectos en nuestra granja online</h3>
 </div> 	
 <div id="ventajas"></div> 
 <div class="primeracaja">
