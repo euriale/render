@@ -45,7 +45,7 @@
 		$("#temp").slider({
 			orientation: "horizontal",
 			range: "min",
-			max: 300,
+			max: 500,
 			min:1,
 			value: 1,
 			change: refreshSwatchTemp
@@ -72,7 +72,7 @@
 			
 		});
 		calculototal();
-		$( "#cores" ).slider( "value", 1 );
+		$( "#cores" ).slider( "value", 8 );
 		$( "#frames" ).slider( "value", 1 );
 		$( "#temp" ).slider( "value", 1 );
 		$( "#slots" ).slider( "value",1 );
@@ -256,6 +256,16 @@
 		$( "#slots" ).slider( "value", valor );
 		calculotarifa();
 		calculototal();
+	});	
+	
+	/*----------Recalculo de máximos--------------*/
+	$( "#coreinput" ).change(function() {
+		var maximo= $( "#maxcores" ).text();
+		var valor= $( "#coreinput" ).val();
+		if (valor>maximo) { 
+			$("#cores").slider( "option", "max", valor );
+			//$("#elemtmaxmax").text('Max '+format(topemax));
+		}	
 	});	
 	
 	
@@ -453,7 +463,7 @@ float:right;
 			<div id="elemcores" class="txtcalcunum">1</div>
 			<div style="clear:both;"></div>
 			
-			<div class="min">Min 1 </div><div id="cores"></div><div class="max">Max 64 </div><div class="eleminput"><input type="text" value="1" name="coreinput" id="coreinput" class="inputscal"></div>
+			<div class="min">Min 1 </div><div id="cores"></div><div class="max">Max <span id="maxcores">64</span> </div><div class="eleminput"><input type="text" value="1" name="coreinput" id="coreinput" class="inputscal"></div>
 			
 			<div style="clear:both;"></div>
 			
@@ -469,7 +479,7 @@ float:right;
 			<div id="elemtemp" class="txtcalcunum">1</div>
 			<div style="clear:both;"></div>
 			
-			<div class="min">Min 1 </div><div id="temp"></div><div class="max">Max 300 </div><div class="eleminput"><input type="text" value="1" name="tempinput" id="tempinput" class="inputscal"></div>
+			<div class="min">Min 1 </div><div id="temp"></div><div class="max">Max 500 </div><div class="eleminput"><input type="text" value="1" name="tempinput" id="tempinput" class="inputscal"></div>
 			<div style="clear:both;"></div>
 		</div>
 		
