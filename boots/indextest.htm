@@ -1,0 +1,297 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Plantilla básica de Bootstrap</title>
+ 
+    <!-- CSS de Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+    <!-- librerías opcionales que activan el soporte de HTML5 para IE8 -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<style>
+	div { border: solid 1px green;}
+	</style>
+
+  </head>
+  <body>
+    <h1>¡Hola mundo!</h1>
+	
+
+<div class="btn-group">
+  <button type="button" class="btn btn-default">Izquierdo</button>
+  <button type="button" class="btn btn-default">Central</button>
+  <button type="button" class="btn btn-default">Derecho</button>
+</div>
+
+
+<div class="btn-group">
+  <button type="button" class="btn btn-default dropdown-toggle"
+          data-toggle="dropdown">
+    Título del botón <span class="caret"></span>
+  </button>
+ 
+  <ul class="dropdown-menu" role="menu">
+    <li><a href="#">Acción #1</a></li>
+    <li><a href="#">Acción #2</a></li>
+    <li><a href="#">Acción #3</a></li>
+    <li class="divider"></li>
+    <li><a href="#">Acción #4</a></li>
+  </ul>
+</div>
+
+<br><br><br>
+
+
+<ul class="nav nav-tabs">
+  <li class="active"><a href="#">Inicio</a></li>
+  <li><a href="#">Perfil</a></li>
+  <li><a href="#">Mensajes</a></li>
+</ul>
+
+
+<br><br><br>
+	<hr>
+	    <div class="container">
+
+      <!-- Static navbar -->
+      <div class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Project name</a>
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li class="dropdown-header">Nav header</li>
+                  <li><a href="#">Separated link</a></li>
+                  <li><a href="#">One more separated link</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li class="active"><a href="./">Default</a></li>
+              <li><a href="../navbar-static-top/">Static top</a></li>
+              <li><a href="../navbar-fixed-top/">Fixed top</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </div>
+    </div> <!-- /container -->
+
+	<hr>
+	<div class="dropdown">
+   <a id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="/page.html">
+    Dropdown <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+    <li role="presentation">
+      <a role="menuitem" tabindex="-1" href="#">Acción</a>
+    </li>
+    <li role="presentation">
+      <a role="menuitem" tabindex="-1" href="#">Otra acción</a>
+    </li>
+    <li role="presentation">
+      <a role="menuitem" tabindex="-1" href="#">Otra acción más</a>
+    </li>
+    <li role="presentation" class="divider"></li>
+    <li role="presentation">
+      <a role="menuitem" tabindex="-1" href="#">Acción separada</a>
+    </li>
+  </ul>
+</div>
+
+<br><br><br>
+
+	<span class="glyphicon glyphicon-search"></span>
+	<span class="glyphicon glyphicon-exclamation-sign"></span>
+	
+<br><br><br>
+	<div class=".btn-sm"> lilo lilo li lo </div>
+	<div class=".container-fluid"> lilo lilo li lo </div>
+	<div class="container"> lilo lilo li lo </div>
+	<div style="padding:0 15px;border:solid 1px green">
+		<div class="container" style="border:solid 1px red">Phasellus vitae arcu libero. Vestibulum tincidunt, eros nec aliquam aliquet, ligula enim auctor lorem, at cursus erat turpis id erat. Duis lacinia massa ac ligula bibendum porta. Ut tincidunt urna sed felis porta, sed dapibus massa facilisis. Quisque sed neque varius, commodo dolor quis, ullamcorper velit. Nullam eu posuere ante, non fringilla quam. Fusce non nisl sit amet mi scelerisque vulputate quis eget nisi. Suspendisse leo odio, tincidunt at ultricies vel, tristique et nulla. Sed at blandit nisi. Morbi blandit lobortis tincidunt. </div>
+		
+		<div class="container-fluid" style="border:solid 1px blue">
+		In consectetur id neque nec pharetra. Sed vitae aliquet urna. Mauris luctus elit mauris, ac consectetur est laoreet non. Praesent eleifend velit eu auctor lacinia. Nullam vitae justo orci. Quisque semper venenatis purus, sed imperdiet tellus ultricies non. Nunc rhoncus, nisl ornare auctor ultrices, velit est tincidunt risus, vitae sagittis dui metus eget diam. Suspendisse libero quam, volutpat at sem et, malesuada blandit tortor. Mauris sed hendrerit eros, vitae aliquet nisi. Ut fringilla iaculis mi in tempor. Quisque adipiscing, lorem quis cursus hendrerit, mi nisl feugiat nunc, non tempus dolor risus sed ligula. Maecenas gravida egestas eros, pulvinar lacinia urna euismod ac. 
+		</div>
+		
+		
+
+<div class="row">
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+</div>
+<div class="row">
+  <div class="col-md-8">.col-md-8</div>
+  <div class="col-md-4">.col-md-4</div>
+</div>
+<div class="row">
+  <div class="col-md-4">.col-md-4</div>
+  <div class="col-md-4">.col-md-4</div>
+  <div class="col-md-4">.col-md-4</div>
+</div>
+<div class="row">
+  <div class="col-md-6">.col-md-6</div>
+  <div class="col-md-6">.col-md-6</div>
+</div>
+
+
+	</div>
+	
+	<br><br>
+	
+
+<div class="row">
+  <div class="col-xs-12 col-sm-6 col-md-8">.col-xs-12 .col-sm-6 .col-md-8</div>
+  <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+</div>
+ 
+<div class="row">
+  <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+  <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+ 
+  <!-- Código opcional para limpiar las columnas XS en caso de que el
+       contenido de todas las columnas no coincida en altura -->
+  <div class="clearfix visible-xs"></div>
+  <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+</div>
+<br><br><br>
+
+
+
+<div class="row">
+  <div class="col-md-4">.col-md-4</div>
+  <div class="col-md-4 col-md-offset-4">.col-md-4 .col-md-offset-4</div>
+</div>
+ 
+<div class="row">
+  <div class="col-md-3 col-md-offset-3">.col-md-3 .col-md-offset-3</div>
+  <div class="col-md-3 col-md-offset-3">.col-md-3 .col-md-offset-3</div>
+</div>
+ 
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">.col-md-6 .col-md-offset-3</div>
+</div>
+
+<br><br>
+<div class="container">
+<h1>h1. Bootstrap heading <small>Secondary text</small></h1>
+<h2>h2. Bootstrap heading <small>Secondary text</small></h2>
+<h3>h3. Bootstrap heading <small>Secondary text</small></h3>
+<h4>h4. Bootstrap heading <small>Secondary text</small></h4>
+<h5>h5. Bootstrap heading <small>Secondary text</small></h5>
+<h6>h6. Bootstrap heading <small>Secondary text</small></h6>
+</div>
+<div class="container">
+<h1>h1. Bootstrap heading <small>Secondary text</small></h1>
+<h2>h2. Bootstrap heading <small>Secondary text</small></h2>
+<h3>h3. Bootstrap heading <small>Secondary text</small></h3>
+<h4>h4. Bootstrap heading <small>Secondary text</small></h4>
+<h5>h5. Bootstrap heading <small>Secondary text</small></h5>
+<h6>h6. Bootstrap heading <small>Secondary text</small></h6>
+</div>
+
+<br><br>
+
+<div class="container">
+<p class="lead">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.</p>
+
+<p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
+
+</div>
+<br><br>
+
+
+
+<p class="text-muted">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
+<p class="text-primary">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+<p class="text-success">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+<p class="text-info">Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+<p class="text-warning">Etiam porta sem malesuada magna mollis euismod.</p>
+<p class="text-danger">Donec ullamcorper nulla non metus auctor fringilla.</p>
+
+
+<br><br>
+
+
+
+<table class="table table-hover">
+<tbody>
+  <!-- Aplicadas en las filas -->
+  <tr class="active">...</tr>
+  <tr class="success">...</tr>
+  <tr class="warning">...</tr>
+  <tr class="danger">...</tr>
+ 
+  <!-- Aplicadas en las celdas (<td> o <th>) -->
+  <tr>
+    <td class="active">...</td>
+    <td class="success">...</td>
+    <td class="warning">...</td>
+    <td class="danger">...</td>
+  </tr>
+</tbody>
+</table>
+
+
+<button type="button" class="btn btn-info">Guardar cambios</button>
+
+<br><br><br>
+
+
+
+
+<div class="dropdown">
+  <button class="btn dropdown-toggle sr-only" type="button"
+          id="dropdownMenu1" data-toggle="dropdown">
+    Menú desplegable
+    <span class="caret"></span>
+  </button>
+ 
+
+</div>
+
+
+ 
+    <!-- Librería jQuery requerida por los plugins de JavaScript -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+ 
+    <!-- Todos los plugins JavaScript de Bootstrap (también puedes
+         incluir archivos JavaScript individuales de los únicos
+         plugins que utilices) -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
+
