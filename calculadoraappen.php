@@ -56,7 +56,7 @@
 		$("#temp").slider({
 			orientation: "horizontal",
 			range: "min",
-			max: 300,
+			max: 600,
 			min:1,
 			value: 1,
 			change: refreshSwatchTemp
@@ -669,7 +669,7 @@ color:#FF8C00;
 			<div id="elemtemp" class="txtcalcunum">1</div>
 			<div style="clear:both;"></div>
 			
-			<div class="min">Min 1 </div><div id="temp"></div><div class="max">Max 300 </div><div class="eleminput"><input type="text" value="1" name="tempinput" id="tempinput" class="inputscal"></div>
+			<div class="min">Min 1 </div><div id="temp"></div><div class="max">Max 600 </div><div class="eleminput"><input type="text" value="1" name="tempinput" id="tempinput" class="inputscal"></div>
 			<div style="clear:both;"></div>
 			
 		

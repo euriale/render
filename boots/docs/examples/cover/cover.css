@@ -27,13 +27,13 @@ a:hover {
 html,
 body {
   height: 100%;
-  /*background-color: #333;*/
+  background-color: #333;
 }
 body {
   color: #fff;
   text-align: center;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
-  /*box-shadow: inset 0 0 100px rgba(0,0,0,.5);*/
+  box-shadow: inset 0 0 100px rgba(0,0,0,.5);
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -158,45 +158,4 @@ body {
   .cover-container {
     width: 700px;
   }
-}
-/* Añadido MJ */
-#cabecera{
-background-color:#333;
-text-align:left;
-}
-
-/*
- * Placeholder dashboard ideas (las bolitas)
- */
-#fondoplaceholders{
-	background-color:#fff;
-	color:#444;
-	font: bold 14px arial;
-}
-#lista{
-text-align:left;
-}
-.placeholders {
-  margin-bottom: 30px;
-  text-align: center;
-}
-.placeholders h4 {
-  margin-bottom: 0;
-}
-.placeholder {
-  margin-bottom: 20px;
-}
-.placeholder img {
-  display: inline-block;
-  border-radius: 50%;
-}
-#green{
-background-color:#73B100;
-}
-.espacio{
-padding:100px;
-}
-.blanco{
-	background-color:#fff;
-	padding:35px;
 }
