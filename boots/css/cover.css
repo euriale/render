@@ -16,9 +16,15 @@ a:hover {
   color: #333;
   text-shadow: none; /* Prevent inheritence from `body` */
   background-color: #fff;
-  border: 1px solid #fff;
+  /*border: 1px solid #fff;*/
 }
-
+.btn-default:hover
+ {
+ 
+  text-shadow: none; /* Prevent inheritence from `body` */
+  background-color: #eee;
+  
+}
 
 /*
  * Base structure
@@ -192,6 +198,28 @@ text-align:left;
 }
 #green{
 background-color:#73B100;
+}
+.gray{
+	color:#444;
+}
+h3{
+color:#73B100;
+text-shadow: none;
+}
+p{
+text-shadow: none;
+margin-top:10px;
+}
+.row{
+	margin-bottom:25px;
+}
+.informacion{
+	border:1px solid #ddd;
+	margin:0 auto;
+	display:inline-block;
+	vertical-align: top;
+	width:auto;
+	padding:25px;
 }
 .espacio{
 padding:100px;
