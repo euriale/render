@@ -165,11 +165,12 @@ body {
     width: 700px;
   }
 }
-/* Añadido MJ */
+/* Añadido MJ || Modificado Color #333 JF  */
 #cabecera{
-background-color:#333;
+background-color:#73B100;;
 text-align:left;
 }
+
 
 /*
  * Placeholder dashboard ideas (las bolitas)
