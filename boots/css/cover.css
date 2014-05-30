@@ -202,9 +202,15 @@ background-color:#73B100;
 }
 .gray{
 	color:#444;
+	text-align:center;
 }
 .list-unstyled{
 text-shadow: none;
+text-align:left;
+font-size:24px;
+margin:auto 0;
+display:inline-block;
+	vertical-align: top;
 }
 h3{
 color:#73B100;
@@ -231,4 +237,5 @@ padding:100px;
 .blanco{
 	background-color:#fff;
 	padding:35px;
+	color:#444;
 }
