@@ -203,6 +203,9 @@ background-color:#73B100;
 .gray{
 	color:#444;
 }
+.list-unstyled{
+text-shadow: none;
+}
 h3{
 color:#73B100;
 text-shadow: none;
