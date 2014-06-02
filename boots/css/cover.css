@@ -198,7 +198,12 @@ text-align:left;
   border-radius: 50%;
 }
 #green{
-background-color:#73B100;
+	background-color:#73B100;
+	padding:35px;
+	background-repeat:no-repeat;
+	background-image:url("../fons2.png");
+	background-position:center;
+
 }
 .gray{
 	color:#444;
@@ -238,4 +243,10 @@ padding:100px;
 	background-color:#fff;
 	padding:35px;
 	color:#444;
+	background-repeat:no-repeat;
+	background-image:url("../fons.png");
+	background-position:center;
+}
+#centro{
+font-size:65px;
 }
