@@ -209,6 +209,13 @@ text-align:left;
 	color:#444;
 	text-align:center;
 }
+.imagen{
+width:100%;
+position:fixed;
+ display: table;
+ z-index:-10;
+ top:0;
+}
 .list-unstyled{
 text-shadow: none;
 text-align:left;
