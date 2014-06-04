@@ -506,11 +506,19 @@ jQuery(document).ready(function() {
 					}, 3000);
 				}
 				else {
-					//jQuery('#state').fadeIn('slow');
-					//jQuery("#state").html('The following error occured: ' + error + '');
-					/*setTimeout(function() {
+				/*
+					jQuery('#state').fadeIn('slow');
+					jQuery("#state").html('The following error occured: ' + error + '');
+					setTimeout(function() {
 					    jQuery('#state').fadeOut('slow');
 					}, 3000);*/
+					jQuery('span.valid').remove();
+					jQuery('#thanks').fadeIn('slow');
+					jQuery('input').val('');
+					jQuery('textarea').val('');
+					setTimeout(function() {
+				    jQuery('#thanks').fadeOut('slow');
+					}, 3000);
 				}
 			},
 			success: function() {
