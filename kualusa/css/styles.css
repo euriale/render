@@ -71,7 +71,7 @@ height: 100%;
 /* Intro Styles */
    
 #intro{text-align: center;}  
-#intro h1{margin-top: 0.2em;margin-bottom: 0;color: #73B100;font-size: 45px;opacity:0;padding-top: 2em;font-family: Verdana;text-shadow: 0 1px 3px rgba(0,0,0,.5);}
+#intro h1{margin-top: 0.2em;margin-bottom: 0;color: #73B100;opacity:0;padding-top: 2em;font-family: Helvetica;font-weight:normal;text-shadow: 0 1px 3px rgba(0,0,0,.5);}
 #intro h2{margin-bottom: 0;font-size: 1.5em;opacity:0;padding-top: 2em;color: #ffffff;}
 #intro h3{color: #ffffff;}
 #intro p{color:white;}
@@ -101,7 +101,7 @@ height: 100%;
    All Section Styles
    ========================================================================== */
    
-section{padding-top: 3.125em;padding-bottom: 1.875em;text-align: center;}
+section{padding-top: 3.125em;padding-bottom: 1.875em;}
 section h1,.intro p{margin-bottom: 0; }  
 
 
@@ -184,7 +184,7 @@ section#studio{padding-bottom: 0;overflow:hidden;}
 .skills-bar {display:none;padding:0; margin-top:2em;list-style: none;}
 .skills-bar li {position:relative;margin-bottom: 30px;height: 40px;background: #333;}
 .skills-bar li:last-child {margin-bottom: 0px;}
-.skills-bar li em {position: absolute;top: 10px;color:white;font-weight: bold;}
+.skills-bar li em {position: absolute;top: 10px;color:white;font-weight: bold;width:100%;text-align:center;}
 .expand {position: absolute;left: 0;height: 40px;background: #73B100;}
 
 /* Animations */
@@ -287,13 +287,13 @@ span.valid{background-image:url("../images/notifications/valid.svg");}
 
 /* Social Footer */
 
-footer{padding-bottom: 3.75em; background-color:#f2f2f2;}
+footer{padding-bottom: 3.75em; background-color:#73B100;}
 footer hr{margin:0; margin-bottom:2em;border-bottom:1px solid #cccccc;}
 
 #social-profiles ul.centerUl li a i {text-decoration:none; color: black;opacity: 0.5;-webkit-transition: all 0.4s ease-in-out;-moz-transition: all 0.4s ease-in-out;-o-transition: all 0.4s ease-in-out;transition: all 0.4s ease-in-out;}
 #social-profiles ul.centerUl li a:hover i{color:black;opacity: 1;}
 
-#copyrights {padding:0; margin:0;margin-top:30px;font-size: 0.7em; color: grey; text-align: center;}
+#copyrights {padding:0; margin:0;margin-top:30px;font-size: 0.7em; color: white; text-align: center;}
 
 /* ==========================================================================
    Project Styles
@@ -351,7 +351,7 @@ footer hr{margin:0; margin-bottom:2em;border-bottom:1px solid #cccccc;}
 	
 	#logo img{width:150px;}
 
-	#intro h1{margin-top: 1.25em;font-size: 3em;}
+	#intro h1{margin-top: 0;font-size: 6em;}
 	#intro h2{font-size: 2.5em;}
 	
 	#explore{margin-top: 0em;}
