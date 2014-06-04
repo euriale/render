@@ -6,7 +6,7 @@ if(isset($_POST['email'])) $email=$_POST['email'];
 $consulta='';
 if(isset($_POST['message'])) $consulta=$_POST['message'];
 
-var_dump[$_POST];
+var_dump($_POST);
 echo '<br><br>';
 
 echo $nombre.' '.$email.'  '.$consulta;

@@ -506,11 +506,11 @@ jQuery(document).ready(function() {
 					}, 3000);
 				}
 				else {
-					jQuery('#state').fadeIn('slow');
-					jQuery("#state").html('The following error occured: ' + error + '');
-					setTimeout(function() {
+					//jQuery('#state').fadeIn('slow');
+					//jQuery("#state").html('The following error occured: ' + error + '');
+					/*setTimeout(function() {
 					    jQuery('#state').fadeOut('slow');
-					}, 3000);
+					}, 3000);*/
 				}
 			},
 			success: function() {
