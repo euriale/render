@@ -16,11 +16,11 @@ $('<img/>').attr('src', 'images/background.jpg').load(function() {
 		});
 	});
 });
-
+jQuery(document).ready(function() {
 textCenter();
 
 	function textCenter()
-{
+	{
 	$('.text-container').css({
         position:'absolute'
     });
@@ -29,12 +29,11 @@ textCenter();
  
         left: ($(window).width() - $('.text-container').outerWidth())/2,
         top: ($(window).height() - $('.text-container').outerHeight())/2
-
     });
-
+alert($(window).width()+ ' ' +$('.text-container').outerWidth());
 }
 	
-jQuery(document).ready(function() {
+
 
 	/*-----------------------------------------------------------------------------------*/
 	/*	Navigation
