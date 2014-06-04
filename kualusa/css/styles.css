@@ -71,7 +71,7 @@ height: 100%;
 /* Intro Styles */
    
 #intro{text-align: center;}  
-#intro h1{margin-top: 0.5em;margin-bottom: 0;color: #73B100;font-size: 1.875em;opacity:0;padding-top: 2em;font-family:arial;}
+#intro h1{margin-top: 0.2em;margin-bottom: 0;color: #73B100;font-size: 45px;opacity:0;padding-top: 2em;font-family: Verdana;text-shadow: 0 1px 3px rgba(0,0,0,.5);}
 #intro h2{margin-bottom: 0;font-size: 1.5em;opacity:0;padding-top: 2em;color: #ffffff;}
 #intro h3{color: #ffffff;}
 #intro p{color:white;}

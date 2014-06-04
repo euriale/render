@@ -55,6 +55,18 @@ jQuery(document).ready(function() {
 			jQuery('#top-bar').stop().animate({top:'-75px'}, 300);
 		}
 		*/
+		/* Animation for Top Navigation */
+		var scrollTop = jQuery(window).scrollTop();
+		
+		if (scrollTop > jQuery('#services').offset().top-60 && animate == 'down') {
+			animate='up';
+			jQuery('#top-bar').stop().animate({top:'0'}, 300);
+		} else if(scrollTop < jQuery('#services').offset().top-60 && animate == 'up'){
+			animate='down';
+			jQuery('#top-bar').stop().animate({top:'-75px'}, 300);
+		}
+		
+		
 		/* Update Section on Top-Bar */
 		jQuery('section').each(function(){
 			if (scrollTop > jQuery(this).offset().top-60){
