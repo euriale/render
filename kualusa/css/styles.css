@@ -71,8 +71,9 @@ height: 100%;
 /* Intro Styles */
    
 #intro{text-align: center;}  
-#intro h1{margin-top: 0.5em;margin-bottom: 0;color: white;font-size: 1.875em;opacity:0;padding-top: 2em;font-family:arial;}
-#intro h2{margin-bottom: 0;font-size: 1.5em;opacity:0;padding-top: 2em;}
+#intro h1{margin-top: 0.5em;margin-bottom: 0;color: #73B100;font-size: 1.875em;opacity:0;padding-top: 2em;font-family:arial;}
+#intro h2{margin-bottom: 0;font-size: 1.5em;opacity:0;padding-top: 2em;color: #ffffff;}
+#intro h3{color: #ffffff;}
 #intro p{color:white;}
 
 #explore {opacity:0;margin-top: 0em;}
@@ -148,7 +149,7 @@ ul.social li a:hover i{color:white;}
    Studio Styles
    ========================================================================== */
 section#studio{padding-bottom: 0;overflow:hidden;}
-#studio, #contacts{background:#f2f2f2;}	
+#studio, #contacts{background:#fff;}	
 .swiper-slide:not(.swiper-slide-active) img{-webkit-filter: grayscale(100%);filter: url("data:image/svg+xml;filter: gray;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");}
 
 /* Swiper - Mobile Touch Slider CSS 
@@ -252,9 +253,9 @@ section#studio{padding-bottom: 0;overflow:hidden;}
    Contact Styles
    ========================================================================== */
 
-input{color:#1a1a1a;font-weight: normal;}
+input{color:#1a1a1a;font-weight: normal;background-color:#f2f2f2;}
 input[type="text"]{ margin-bottom: 15px;height:40px;}
-textarea{height:120px; resize: none;}	
+textarea{height:120px; resize: none;background-color:#f2f2f2;}	
 input[type="text"], textarea{padding:0.6em;width: 100%;outline: none;border: none;-webkit-border-radius:0px;box-shadow: none; color: #1a1a1a;}
 input[type="text"]:focus, textarea:focus{background: #e6e6e6; -webkit-transition: all 0.15s linear; -moz-transition: all 0.15s linear; transition: all 0.15s linear;}
 
