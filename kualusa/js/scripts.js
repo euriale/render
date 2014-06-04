@@ -30,7 +30,7 @@ textCenter();
         left: ($(window).width() - $('.text-container').outerWidth())/2,
         top: ($(window).height() - $('.text-container').outerHeight())/2
     });
-alert($(window).width()+ ' ' +$('.text-container').outerWidth());
+
 }
 	
 
