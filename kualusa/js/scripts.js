@@ -22,13 +22,13 @@ textCenter();
 	function textCenter()
 	{
 	$('.text-container').css({
-        position:'absolute'
+        //position:'absolute'
+		
     });
 
     $('.text-container').css({
- 
-        left: ($(window).width() - $('.text-container').outerWidth())/2,
-        top: ($(window).height() - $('.text-container').outerHeight())/2
+        marginTop: ($(window).height() - $('.text-container').outerHeight())/2
+		
     });
 
 }
