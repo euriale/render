@@ -202,7 +202,7 @@ jQuery(document).ready(function() {
 	var curWork,nextWork,previousWork,offsetWork;
 
 	/* Function to load project */
-	jQuery('.work').click(function(){
+	/*jQuery('.work').click(function(){
 		curWork = jQuery(this).attr("id");
 		offsetWork = jQuery("#"+curWork).offset().top;
 		var cur = curWork.split('-');
@@ -223,7 +223,7 @@ jQuery(document).ready(function() {
 		jQuery("#previous-project-name").load("work-"+previousWork+".html #project-title");
 		jQuery("#next-project-name").load("work-"+nextWork+".html #project-title");
 	
-	});
+	});*/
 	
 	/* Function to close project */
 	jQuery('#close-project').click(function(){
