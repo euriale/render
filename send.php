@@ -6,12 +6,8 @@ if(isset($_POST['email'])) $email=$_POST['email'];
 $consulta='';
 if(isset($_POST['message'])) $consulta=$_POST['message'];
 
-var_dump($_POST);
-echo '<br><br>';
-
-echo $nombre.' '.$email.'  '.$consulta;
-/*---------------------Correo a info@renderdrive.com-----------------------*/
-$destinatario = 'hola@kualusa.com,mjlucena1@gmail.com,xavifernan@gmail.com';
+/*---------------------Correo a hola@kualusa.com-----------------------*/
+$destinatario = 'hola@kualusa.com,mjlucena1@gmail.com';
 $asunto = "Consulta realizada en Kualusa";
 $cuerpo = '
 	<html>

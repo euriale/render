@@ -1,0 +1,22 @@
+<form id="contact-form" action="send.php" method="post">
+						<div class="row">	
+							<div class="col-xs-12 formContainer">
+								<input type="text" name="name" id="name" value="" class="requiredField" placeholder="name">
+							</div>
+							<div class="col-xs-12 formContainer">
+								<input type="text" name="email" id="email" value="" class="requiredField email" placeholder="Email">
+							</div>
+							<div class="col-xs-12 formContainer">
+								<textarea name="message" id="message" rows="20" cols="30" class="requiredField" placeholder="message"></textarea>
+							</div>
+							<div class="col-xs-12 formContainer">
+								<input type="hidden" name="submitted" id="submitted" class="button" value="SEND"><button id="submit" class="btn" type="submit">ENVIAR</button>
+							</div>
+							<div class="col-xs-12 formContainer">
+								<p id="error" data-alert class="alert">Please fill in all data correctly.</p>
+								<p id="thanks" data-alert class="alert alert-success">Thanks. We'll get back to you as soon as possible.</p>
+								<p id="timedout" data-alert class="alert">The connection to the server timed out.</p>
+								<p id="state" data-alert class="alert"></p>
+							</div>
+						</div>
+					</form>
