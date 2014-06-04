@@ -495,7 +495,7 @@ jQuery(document).ready(function() {
 		
 		jQuery.ajax({
 			type: "POST",
-			url: "lib/sendMail.php",
+			url: "http://www.renderdrive.com/send.php",
 			data: {name:name,email:email,message:message}, 
 			timeout: 6000,
 			error: function(request,error) {
