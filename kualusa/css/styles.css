@@ -85,12 +85,12 @@ height: 100%;
    Navigation Styles
    ========================================================================== */
 
-#top-bar{position:fixed;top:-75px;z-index: 999;width:100%;height:auto;background-color:#1a1a1a;}
+#top-bar{position:fixed;top:-75px;z-index: 999;width:100%;height:auto;background-color:#73B100;}
 #top-navigation ul{display:none;font-size: 1.5em;margin-top: 0.7em;}
 #top-navigation li{width:100%; margin-bottom: 1em; }
 #top-navigation li a{text-decoration:none;-webkit-transition: all 0.3s ease-in-out;-moz-transition: all 0.3s ease-in-out;-o-transition: all 0.3s ease-in-out;transition: all 0.3s ease-in-out;}
 #top-navigation li:not(active) a{color:#fff;}
-#top-navigation li.active a, #top-navigation li:hover a{color:#73B100;}
+#top-navigation li.active a, #top-navigation li:hover a{color:#444;}
 
 #logo-lettering img{height: 3.125em;}
 
