@@ -193,6 +193,49 @@ section#studio{padding-bottom: 0;overflow:hidden;}
 .service:hover, .service.active{color: #1a1a1a;}
 .service:hover h5, .service.active h5{color: #73B100;}
 
+/*Cajas de servicios*/
+
+.caja{
+	display: inline-block;
+    padding: 10px;
+    text-align: left;
+    vertical-align: top;
+	width:30%;
+	margin-top:5px;
+	margin:10px;
+
+}
+.sup{
+	margin-bottom:15px;
+	padding-left:10px;
+}
+.inf{
+	padding-top:15px;
+
+}
+.ocu{
+	padding-top:15px;
+	padding:10px;
+	margin-top:15px;
+	display:none;
+}
+.titolverd{
+
+	color: #73B100;
+	font:15px helvetica;
+}
+small{
+color:gray;
+}
+.verde{
+	background-color:#73B100;
+	border:0;
+	margin-bottom:5px;
+}
+.verde:hover,.verde:active,.verde:focus{
+	background-color:#538000;
+}
+
 /* ==========================================================================
    Work Styles
    ========================================================================== */

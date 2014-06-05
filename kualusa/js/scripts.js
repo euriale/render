@@ -179,6 +179,28 @@ textCenter();
 	var curSkills="branding";
 	
 	/* Services Animations */
+	jQuery('#ocl1').click(function(){
+		if ( $( "#ocu1" ).is( ":hidden" ) ) {
+			$( "#ocu1" ).slideDown( "fast" );
+		} else {
+			$( "#ocu1" ).slideUp( "fast" );
+		}
+	});
+	jQuery('#ocl2').click(function(){
+		if ( $( "#ocu2" ).is( ":hidden" ) ) {
+			$( "#ocu2" ).slideDown( "fast" );
+		} else {
+			$( "#ocu2" ).slideUp( "fast" );
+		}
+	});
+		jQuery('#ocl3').click(function(){
+		if ( $( "#ocu3" ).is( ":hidden" ) ) {
+			$( "#ocu3" ).slideDown( "fast" );
+		} else {
+			$( "#ocu3" ).slideUp( "fast" );
+		}
+	});
+	
 	jQuery('.service').click(function(){
 		jQuery('.service').removeClass('active');
 		jQuery(this).addClass('active');
