@@ -235,7 +235,9 @@ color:gray;
 .verde:hover,.verde:active,.verde:focus{
 	background-color:#538000;
 }
-
+a:hover{
+text-decoration:none;
+}
 /* ==========================================================================
    Work Styles
    ========================================================================== */
