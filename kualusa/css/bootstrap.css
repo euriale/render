@@ -5244,6 +5244,7 @@ td.hidden-lg {
   .hidden-xs {
     display: none !important;
   }
+
   tr.hidden-xs {
     display: none !important;
   }

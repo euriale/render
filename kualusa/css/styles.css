@@ -12,7 +12,7 @@ h1,h2,h3,h4,h5,h6{color: #73B100;letter-spacing: -0.03em;font-weight: bold; font
 
 a{color: #73B100; cursor:pointer;}
 p{color: #4a4a4a;font-size: 1.125em;line-height: 1.5625em;}
-select{color: white;padding: 0 1em; height: 2.4em;outline: none;border: 0;border-radius: 0 !important;background: url('../images/arrow-down.png') no-repeat right 0.8em #73B100;-webkit-appearance: none;}
+select{color: white;padding: 0 1em; height: 2.4em;outline: none;border: 0;border-radius: 0 !important;background: url('http://renderdrive.com/kualusa/images/arrow-down.png') no-repeat right 0.8em #73B100;-webkit-appearance: none;}
 time{color:#73B100;}
 /* ==========================================================================
    helpers
@@ -64,7 +64,7 @@ height: 100%;
 
 
 
-#header{overflow:hidden;height:auto;background: url('../images/background.jpg') fixed no-repeat; height:100%;}
+#header{overflow:hidden;height:auto;background: url('http://renderdrive.com/kualusa/images/background.jpg') fixed no-repeat; height:100%;}
 .no-touch #header{-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;background-attachment: fixed;}
 
 #logo{display:none;}
@@ -205,6 +205,9 @@ section#studio{padding-bottom: 0;overflow:hidden;}
 	margin:10px;
 
 }
+#top-bar2{
+	background-color:#73B100;
+}
 .sup{
 	margin-bottom:15px;
 	padding-left:10px;
@@ -314,8 +317,8 @@ input[type="text"]:focus, textarea:focus{background: #e6e6e6; -webkit-transition
 
 span.error,span.valid{position: absolute;top:0; right: 1em;}
 span.error, span.valid{ width:40px;height:40px; background-position:center center;background-size:20px; background-repeat: no-repeat;}
-span.error{background-image:url("../images/notifications/error.svg");}
-span.valid{background-image:url("../images/notifications/valid.svg");}
+span.error{background-image:url("http://renderdrive.com/kualusa/images/notifications/error.svg");}
+span.valid{background-image:url("http://renderdrive.com/kualusa/images/notifications/valid.svg");}
 
 .alert{display:none;border: 0; border-radius: 0; background-color:#ff3333; color: white;}
 .alert-success{background-color:#22b573; color: white;}
@@ -354,9 +357,9 @@ footer hr{margin:0; margin-bottom:2em;border-bottom:1px solid #cccccc;}
 #project-top-bar{width:100%;height:50px; background: #1a1a1a; z-index:999;}
 #project-top-bar p{color: white;}
 
-#next-project{background-image: url('../images/works/arrow-right.svg');}
-#previous-project{background-image: url('../images/works/arrow-left.svg');}
-#close-project{margin: 0 auto;background-image: url('../images/works/close-project.svg');}
+#next-project{background-image: url('http://renderdrive.com/kualusa/images/works/arrow-right.svg');}
+#previous-project{background-image: url('http://renderdrive.com/kualusa/images/works/arrow-left.svg');}
+#close-project{margin: 0 auto;background-image: url('http://renderdrive.com/kualusa/images/works/close-project.svg');}
 
 #project h2{margin-top: 0;}
 
@@ -385,7 +388,7 @@ footer hr{margin:0; margin-bottom:2em;border-bottom:1px solid #cccccc;}
 @media (min-width: 992px) {
 	
 
-	
+
 	
 	/* All Section Styles */
 	
@@ -449,11 +452,11 @@ footer hr{margin:0; margin-bottom:2em;border-bottom:1px solid #cccccc;}
 	#project-top-bar{height:auto;}
 	
 	#next-project,#previous-project,#close-project,#next-project-name, #previous-project-name{position:fixed; z-index: 999;}
-	#close-project{top:0.4125em; right:1.25em;width:1.5em;height:1.5em;background-size: 1.5em;}
+	#close-project{top:0.4125em; right:2em;width:2em;height:1.5em;background-size: 1.5em;}
 	#next-project{top:18.2em; right:1.25em;}
 	#previous-project{top:18.2em; left:1.25em;}
 		
-	#next-project-name, #previous-project-name{background-color:rgb(244,89,78);background-color:rgba(244,89,78,0.7);padding:0.5em 1em;opacity:0; display: inherit;color:white;}
+	#next-project-name, #previous-project-name{background-color:rgb(115,177,00);background-color:rgba(115,177,00,0.7);padding:0.5em 1em;opacity:0; display: inherit;color:white;}
 	#next-project-name{top:18.8em; right:8em;}
 	#previous-project-name{top:18.8em; left:8em;}
 	
@@ -463,4 +466,74 @@ footer hr{margin:0; margin-bottom:2em;border-bottom:1px solid #cccccc;}
 	#next-project:hover,#previous-project:hover,#close-project:hover{opacity:1;}
 	
 
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-width : 320px)
+and (max-width : 480px) {
+		
+		.caja{ 
+		width:95%;}
+		.service h5{font-size: 1em;}
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen
+and (min-width : 321px) {
+	
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width : 320px) {
+		.caja{ 
+		width:95%;}
+		.service h5{font-size: 1em;}
+
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+
+}
+
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+/* Styles */
+
+}
+
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1224px) {
+
+}
+
+/* Large screens ----------- */
+@media only screen
+and (min-width : 1824px) {
+/* Styles */
+
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+.caja{border:solid 1px red;}
 }

@@ -220,31 +220,41 @@ textCenter();
 	/*	Works
 	/*-----------------------------------------------------------------------------------*/
 	
-	var curWork,nextWork,previousWork,offsetWork;
+	var curWork,nextWork,previousWork,offsetWork,actul;
 
 	/* Function to load project */
-	/*jQuery('.work').click(function(){
+	jQuery('.work').click(function(){
 		curWork = jQuery(this).attr("id");
+		
 		offsetWork = jQuery("#"+curWork).offset().top;
 		var cur = curWork.split('-');
+		actual=cur[0];
 		cur=parseInt(cur[1]);
 		nextWork=cur+1;
-		previousWork=cur-1;
-		if (previousWork == 0){
-			previousWork=jQuery('.work').length;
+		var previousWork=cur-1;
+		
+		if (previousWork == 0) $("#previous-project").hide();
+		else{
+			$("#previous-project").show();
+			jQuery("#previous-project-name").load(actual+"-"+previousWork+".html #project-title");
+		}	
+		
+		if (nextWork == 4) $("#next-project").hide();
+		else {
+			$("#next-project").show();
+			jQuery("#next-project-name").load(actual+"-"+nextWork+".html #project-title");
 		}
-		if (nextWork == jQuery('.work').length+1){
-			nextWork=1;
-		}
+				
 		jQuery("#page").fadeOut(750, function(){
 			window.scrollTo(0,0);
 			jQuery("#project-page").fadeIn(750);
 		});
+		
+		
 	    jQuery('#project').load(curWork+".html");
-		jQuery("#previous-project-name").load("work-"+previousWork+".html #project-title");
-		jQuery("#next-project-name").load("work-"+nextWork+".html #project-title");
+
 	
-	});*/
+	});
 	
 	/* Function to close project */
 	jQuery('#close-project').click(function(){
@@ -256,22 +266,29 @@ textCenter();
 		
 	});
 	
-	/* Function to load next project */
+	/* Function to load next project*/
 	jQuery('#next-project').click(function(){
 		var cur = nextWork;
+		
 		jQuery("#next-project-name").animate({"right":"8em","opacity":"0"}, 500, function(){
 			jQuery("#project").fadeOut(500,function(){
-				jQuery('#project').load("work-"+cur+".html");	
+				jQuery('#project').load(actual+"-"+cur+".html");	
 				nextWork=cur+1;
 				previousWork=cur-1;
-				if (previousWork == 0){
-					previousWork=jQuery('.work').length;
+				
+				if (previousWork == 0) $("#previous-project").hide();
+				else{
+					$("#previous-project").show();
+					jQuery("#previous-project-name").load(actual+"-"+previousWork+".html #project-title");
+				}	
+		
+				if (nextWork == 4) $("#next-project").hide();
+				else {
+					$("#next-project").show();
+					jQuery("#next-project-name").load(actual+"-"+nextWork+".html #project-title");
 				}
-				if (nextWork == jQuery('.work').length+1){
-					nextWork=1;
-				}
-				jQuery("#previous-project-name").load("work-"+previousWork+".html #project-title");
-				jQuery("#next-project-name").load("work-"+nextWork+".html #project-title");
+				
+				
 				jQuery("#project").fadeIn(500);
 			});
 		});
@@ -282,17 +299,23 @@ textCenter();
 		var cur = previousWork;
 		jQuery("#previous-project-name").animate({"left":"8em","opacity":"0"}, 500, function(){
 			jQuery("#project").fadeOut(500,function(){
-				jQuery('#project').load("work-"+cur+".html");	
+				jQuery('#project').load(actual+"-"+cur+".html");	
 				nextWork=cur+1;
 				previousWork=cur-1;
-				if (previousWork == 0){
-					previousWork=jQuery('.work').length;
+				
+				if (previousWork == 0) $("#previous-project").hide();
+				else{
+					$("#previous-project").show();
+					jQuery("#previous-project-name").load(actual+"-"+previousWork+".html #project-title");
+				}	
+		
+				if (nextWork == 4) $("#next-project").hide();
+				else {
+					$("#next-project").show();
+					jQuery("#next-project-name").load(actual+"-"+nextWork+".html #project-title");
 				}
-				if (nextWork == jQuery('.work').length+1){
-					nextWork=1;
-				}
-				jQuery("#previous-project-name").load("work-"+previousWork+".html #project-title");
-				jQuery("#next-project-name").load("work-"+nextWork+".html #project-title");	
+				
+
 				jQuery("#project").fadeIn(500);
 			});
 		});
