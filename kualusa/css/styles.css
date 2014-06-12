@@ -470,6 +470,15 @@ footer hr{margin:0; margin-bottom:2em;border-bottom:1px solid #cccccc;}
 .car{
 	color:white;
 }
+.car:hover{
+	color:white;
+}
+.car a{
+	color:white;
+}
+.car a:hover{
+	color:white;
+}
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen
 and (min-width : 320px)
