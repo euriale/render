@@ -118,7 +118,7 @@ textCenter();
 	    
 	    jQuery('#top-navigation li').removeClass('active');
 	    jQuery(this).addClass('active');
-	
+
 	    jQuery('html, body').stop().animate({
 	        scrollTop: jQuery(anchor.attr('href')).offset().top-50
 	    }, 1500,'easeInOutExpo');
@@ -138,6 +138,8 @@ textCenter();
 	    jQuery('html, body').stop().animate({
 	        scrollTop: jQuery(anchor.attr('href')).offset().top-50
 	    }, 1500,'easeInOutExpo');
+		
+		
 	    
 	    /* If Mobile hide menu on select */
 	    if(jQuery(window).width()<=767){	
@@ -147,6 +149,22 @@ textCenter();
 	    
 	    event.preventDefault();
 	});
+	
+	/* *--------------- anchor de los botones de caracteristicas ----------------------*/
+		jQuery('#ocl3').bind('click',function(event){
+			var anchor = jQuery(this).find('a');
+				
+	    if ( $( "#ocu3" ).is( ":hidden" ) ) {
+			jQuery('html, body').stop().animate({
+		        scrollTop: jQuery(anchor.attr('href')).offset().top-50
+					
+			}, 1500,'easeInOutExpo');
+		}
+	    
+	    event.preventDefault();
+	});
+	
+
 	
 	/*-----------------------------------------------------------------------------------*/
 	/*	Studio
