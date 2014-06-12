@@ -160,11 +160,32 @@ textCenter();
 					
 			}, 1500,'easeInOutExpo');
 		}
-	    
-	    event.preventDefault();
+	      event.preventDefault();
 	});
 	
-
+		jQuery('#ocl2').bind('click',function(event){
+			var anchor = jQuery(this).find('a');
+				
+	    if ( $( "#ocu3" ).is( ":hidden" ) ) {
+			jQuery('html, body').stop().animate({
+		        scrollTop: jQuery(anchor.attr('href')).offset().top-50
+					
+			}, 1500,'easeInOutExpo');
+		}
+	      event.preventDefault();
+		});
+	
+		jQuery('#ocl1').bind('click',function(event){
+			var anchor = jQuery(this).find('a');
+				
+	    if ( $( "#ocu3" ).is( ":hidden" ) ) {
+			jQuery('html, body').stop().animate({
+		        scrollTop: jQuery(anchor.attr('href')).offset().top-50
+					
+			}, 1500,'easeInOutExpo');
+		}
+	      event.preventDefault();
+	});
 	
 	/*-----------------------------------------------------------------------------------*/
 	/*	Studio
