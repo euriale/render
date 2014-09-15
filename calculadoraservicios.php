@@ -2,6 +2,19 @@
 	<head>
 	<SCRIPT>
 	function calcular(){
+		var moneda=document.getElementsByName('moneda')[0].checked;
+		
+		if (moneda==true){
+			var monedavalor=1;
+			document.getElementById("dol").style.display="none";
+			document.getElementById("eur").style.display="inline";
+		}	
+		else{
+			var monedavalor=document.getElementById('valordolar').value;
+			document.getElementById("eur").style.display="none";
+			document.getElementById("dol").style.display="inline";
+		}	
+		
 		if(validar()){
 			var f = document.getElementById('fCalc');
 			var granja = 150;
@@ -39,7 +52,8 @@
 			f.nuestroTiempo.value = parseInt(tiempo*100)/100;
 			f.porcentaje.value = parseInt(save*100)/100;
 			f.potencia.value = parseInt(pot*100)/100;
-			f.coste.value = parseInt(money*100)/100;
+			//alert (monedavalor);
+			f.coste.value = Math.round (monedavalor * (parseInt(money*100)/100));
 		}
 	}
 	function validar(){
@@ -64,12 +78,7 @@
 	function isNum(numero){ return (/^([0-9])*$/.test(numero)); }
 	
 	
-	function conversor_monedas($moneda_origen,$moneda_destino,$cantidad) {
-		$get = file_get_contents("https://www.google.com/finance/converter?a=$cantidad&from=$moneda_origen&to=$moneda_destino");
-		$get = explode("<span class=bld>",$get);
-		$get = explode("</span>",$get[1]);  
-		return preg_replace("/[^0-9\.]/", null, $get[0]);
-	}
+
 
 
 
@@ -182,11 +191,22 @@
 		<p class="p1">¿Cu&aacute;ntos frames desea realizar?&nbsp;&nbsp;&nbsp;<INPUT TYPE="text" NAME="frames" /> fr.</p>
 		
 	</DIV><br>
+	<p class="p1">Seleccione divisa</p> &nbsp;&nbsp;&nbsp;&nbsp;
+	<p class="p1">€ <INPUT TYPE="radio" NAME="moneda" checked="true"/> </p>
+	<p class="p1">$ <INPUT TYPE="radio" NAME="moneda" /></p><br>
 	
-	<p class="p1">€ <INPUT TYPE="radio" NAME="euro" checked="true"/> </p>
-	<p class="p1">$ <INPUT TYPE="radio" NAME="dolar" /></p><br>
+	<?php 
 	
-	echo conversor_monedas("USD","EUR",1);
+		function conversor_monedas($moneda_origen,$moneda_destino,$cantidad) {
+		$get = file_get_contents("http://www.google.com/finance/converter?a=$cantidad&from=$moneda_origen&to=$moneda_destino");
+		$get = explode("<span class=bld>",$get);
+		$get = explode("</span>",$get[1]);  
+		return preg_replace("/[^0-9\.]/", null, $get[0]);
+	}
+		
+	$valordolar=conversor_monedas("EUR","USD",1);
+	?>
+	<input type="hidden" name="valordolar" id="valordolar" value="<?php echo $valordolar; ?>">
 	<INPUT TYPE="button" VALUE="Calcular" onclick="calcular();" class="boton" />
 	
 	<DIV class="caja">
@@ -195,7 +215,10 @@
 		<p><div class="tit1">Nuestro tiempo: </div> <INPUT TYPE="text" NAME="nuestroTiempo" readonly class="out" /> horas</p>
 		<p><div class="tit1">Ah&oacute;rrese </div> <INPUT TYPE="text" NAME="porcentaje" readonly class="out" /> h de procesado</p>
 		<p><div class="tit1">Potencia requerida: </div> <INPUT TYPE="text" NAME="potencia" readonly class="out" /> Ghz</p>
-		<p><div class="tit1">Coste del proyecto: </div> <INPUT TYPE="text" NAME="coste" readonly class="out"  /> &euro;</p>
+		<p><div class="tit1">Coste del proyecto: </div> <INPUT TYPE="text" NAME="coste" readonly class="out"  /> 
+			<span id="eur">&euro;</span>
+			<span id="dol" style="display:none;">$</span>
+		</p>
 		
 		<P/>
 		<I><U>Nota</U>: Este c&aacute;lculo es orientativo y ser&aacute; tomado como referencia en pagos fraccionados</I>

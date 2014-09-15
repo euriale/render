@@ -325,9 +325,21 @@
 		calculototal();
 	});	
 	
+	$( ".moneda" ).change(function() {
+		calculototal();
+	});	
+	
 	
 	});
 	function calculototal(){
+			var moneda=document.getElementsByName('moneda')[0].checked;
+		
+		if (moneda==true){
+			var monedavalor=1;
+		}	
+		else{
+			var monedavalor=document.getElementById('valordolar').value;
+		}	
 			
 			var tarifa = $( "#tarifa" ).val();
 			
@@ -341,9 +353,9 @@
 			var tc= pc*frames*(temp/60);
 		
 			
-			var totalnormal=tc*0.0400;
-			var totalalta=tc*0.0620;
-			var totalpremium=tc*0.0710;
+			var totalnormal=monedavalor*(tc*0.0400);
+			var totalalta=monedavalor*(tc*0.0620);
+			var totalpremium=monedavalor*(tc*0.0710);
 			
 			var totalnormaldto=Math.ceil(totalnormal-(totalnormal*0.15));
 			var totalpremiumdto=Math.ceil(totalpremium-(totalpremium*0.15));
@@ -378,10 +390,15 @@
 			$("#tiempo3").text(nuevotiempored3+' Horas');
 			
 			
-			
-			$("#totnormal").text(totalnormal+' Euros');
-			$("#totalta").text(totalalta+' Euros');
-			$("#totpremium").text(totalpremium+' Euros');
+			if (monedavalor==1){
+				$("#totnormal").text(totalnormal+' Euros');
+				$("#totalta").text(totalalta+' Euros');
+				$("#totpremium").text(totalpremium+' Euros');
+			}else {
+				$("#totnormal").text(totalnormal+' Dólares');
+				$("#totalta").text(totalalta+' Dólares');
+				$("#totpremium").text(totalpremium+' Dólares');
+			}
 			
 			$("#totnormaldto").text((totalnormaldto)+' Euros');
 			$("#totaltadto").text((totalaltadto)+' Euros');
@@ -671,7 +688,23 @@ color:#FF8C00;
 			<div class="min">Min 1 </div><div id="temp"></div><div class="max">Max 600 </div><div class="eleminput"><input type="text" value="1" name="tempinput" id="tempinput" class="inputscal"></div>
 			<div style="clear:both;"></div>
 			
+		<div class="txtcalcu">Seleccione divisa</div><br>
+		<div class="min">€ <INPUT TYPE="radio" NAME="moneda" class="moneda" checked="true"/> </div>
+		<div class="min">$ <INPUT TYPE="radio" NAME="moneda" class="moneda" /></div>
+		<br>
+				
+		<?php 
+	
+		function conversor_monedas($moneda_origen,$moneda_destino,$cantidad) {
+		$get = file_get_contents("http://www.google.com/finance/converter?a=$cantidad&from=$moneda_origen&to=$moneda_destino");
+		$get = explode("<span class=bld>",$get);
+		$get = explode("</span>",$get[1]);  
+		return preg_replace("/[^0-9\.]/", null, $get[0]);
+	}
 		
+		$valordolar=conversor_monedas("EUR","USD",1);
+		?>
+		<input type="hidden" name="valordolar" id="valordolar" value="<?php echo $valordolar; ?>">
 		</div>
 
 	</div>

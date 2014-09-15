@@ -9,6 +9,9 @@ else $GLOBALS['raiz']='/render/';
 
 	$nombre='';
 	if(isset($_POST['nombre'])) $nombre=$_POST['nombre'];
+	$pais='1';
+	if(isset($_POST['pais'])) $pais=$_POST['pais'];
+	
 	$apellidos='';
 	if(isset($_POST['apellidos'])) $apellidos=$_POST['apellidos'];
 	$telefono='';
@@ -24,7 +27,7 @@ else $GLOBALS['raiz']='/render/';
 	
 	
 	$bd = new bd();
-	$query1 = new query('insert into clientes (nombre, apellidos,telefono,idaplicacion,consulta,email,otraaplicacion) values ("'.$nombre.'", "'.$apellidos.'","'.$telefono.'","'.$idaplicacion.'","'.$consulta.'","'.$email.'","'.$otraaplicacion.'")',$bd);
+	$query1 = new query('insert into clientes (nombre, apellidos,telefono,idaplicacion,consulta,email,otraaplicacion,pais) values ("'.$nombre.'", "'.$apellidos.'","'.$telefono.'","'.$idaplicacion.'","'.$consulta.'","'.$email.'","'.$otraaplicacion.'","'.$pais.'")',$bd);
 
 
 ?>

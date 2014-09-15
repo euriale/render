@@ -48,7 +48,26 @@ else $GLOBALS['raiz']='/render/';
 	$query1 = new query('insert into clientes (nombre, apellidos,telefono,empresa,consulta,email,motivo,pais, idaplicacion,otraaplicacion,idversion,motor,plugin,equipo,procesador,numframes,tframes) values ("'.$nombre.'", "'.$apellidos.'","'.$telefono.'","'.$empresa.'","'.$consulta.'","'.$email.'","'.$motivo.'","'.$pais.'","'.$idaplicacion.'","'.$otraaplicacion.'","'.$versiones.'","'.$motor.'","'.$plugin.'","'.$equipo.'","'.$procesador.'","'.$numframes.'","'.$tframes.'")',$bd);
 	
 	echo 'La consulta se ha enviado correctamente. ';
+	$bd = new bd();
 	
+	$aplicacion='';
+	if ($idaplicacion!=''){
+		$query5 = new query('SELECT aplicaciones from aplicaciones where idaplicaciones="'.$idaplicacion.'"',$bd);
+		if($query5->n){
+			foreach ($query5->v as $fila5){
+				$aplicacion=$fila5->aplicaciones;
+			}
+		}
+	}
+	$version='';
+	if ($versiones!=''){
+		$query6 = new query('SELECT version from version_aplicaciones where idversion_aplicacion="'.$versiones.'"',$bd);
+		if($query6->n){
+			foreach ($query6->v as $fila6){
+				$version=$fila6->version;
+			}
+		}
+	}
 /*---------------------Correo a info@renderdrive.com-----------------------*/
 $destinatario = 'info@renderdrive.com';
 $asunto = "Consulta realizada en RenderDrive";
@@ -67,6 +86,15 @@ $cuerpo = '
 	Motivo: '.$motivo.'<br>	
 	País: '.$pais.'<br>
 	Consulta: '.$consulta.'<br>
+	--------- <br>
+	Aplicación: '.$idaplicacion.' '.$aplicacion.' '.$otraaplicacion.' <br>
+	Versión: '.$version.'<br>
+	Motor: '.$motor.'<br>
+	Plugin: '.$plugin.'<br>
+	Equipo: '.$equipo.'<br>
+	Procesador:'.$procesador.'<br>
+	Número de Frames:'.$numframes.'<br>
+	Tiempo por Frame: '.$tframes.'<br>
 	</p>
 	</body>
 	</html>

@@ -2,6 +2,19 @@
 	<head>
 	<SCRIPT>
 	function calcular(){
+		var moneda=document.getElementsByName('moneda')[0].checked;
+		
+		if (moneda==true){
+			var monedavalor=1;
+			document.getElementById("dol").style.display="none";
+			document.getElementById("eur").style.display="inline";
+		}	
+		else{
+			var monedavalor=document.getElementById('valordolar').value;
+			document.getElementById("eur").style.display="none";
+			document.getElementById("dol").style.display="inline";
+		}	
+
 		if(validar()){
 			var f = document.getElementById('fCalc');
 			var granja = 150;
@@ -39,7 +52,8 @@
 			f.nuestroTiempo.value = parseInt(tiempo*100)/100;
 			f.porcentaje.value = parseInt(save*100)/100;
 			f.potencia.value = parseInt(pot*100)/100;
-			f.coste.value = parseInt(money*100)/100;
+			//f.coste.value = parseInt(money*100)/100;
+			f.coste.value = Math.round (monedavalor * (parseInt(money*100)/100));
 		}
 	}
 	function validar(){
@@ -62,18 +76,8 @@
 		return true;
 	}
 	function isNum(numero){ return (/^([0-9])*$/.test(numero)); }
-	
-	
-	function conversor_monedas($moneda_origen,$moneda_destino,$cantidad) {
-		$get = file_get_contents("https://www.google.com/finance/converter?a=$cantidad&from=$moneda_origen&to=$moneda_destino");
-		$get = explode("<span class=bld>",$get);
-		$get = explode("</span>",$get[1]);  
-		return preg_replace("/[^0-9\.]/", null, $get[0]);
-	}
-
-
-
 	</SCRIPT>
+	
 	<style>
 	body{ 
 		font-family:arial;
@@ -115,18 +119,15 @@
 	}
 	@media handheld, only screen and (max-width: 480px){
 		.caja{
-			max-width:450px;
-		}
-		.tit1{
-			display:
+			width:400px;
 		}
 	}
 	</style>
 	</head>
-	<body>
+	<body style="font-family:arial;font-size:15px;color:#444;">
 	<FORM ID="fCalc">
 	<DIV class="caja">
-		<p class="p1">Seleccione el procesador y velocidad de su sistema:</p>
+		<p class="p1">Choose your processor and speed:</p>
 		<p>
 			<SELECT style="width:200px;text-align:left" NAME="procesador">
 				<OPTION VALUE="5.4">Intel XEON 4 QuadCore</OPTION>
@@ -173,32 +174,46 @@
 				<option value="3.0">AMD Athlon 64 X2</option>
 				<option value="2.4">AMD Opteron 2xx</option>
 				<option value="1.39">AMD Athlon 64</option>
-			</SELECT> a </p>
+			</SELECT> at </p>
 			<p><INPUT TYPE="text" NAME="velocidad" /> Ghz</p>
 		</DIV>
 		<P/>
 		
-		<p class="p1">¿Cu&aacute;nto tarda un frame de su animaci&oacute;n?&nbsp;&nbsp;&nbsp;<INPUT TYPE="text" NAME="segFrame" /> seg.</p><br>
-		<p class="p1">¿Cu&aacute;ntos frames desea realizar?&nbsp;&nbsp;&nbsp;<INPUT TYPE="text" NAME="frames" /> fr.</p>
+		<p class="p1">How much time takes for a single frame to render?&nbsp;&nbsp;&nbsp;</p><p><INPUT TYPE="text" NAME="segFrame" /> seg.</p><br>
+		<p class="p1">How many frames will you need?&nbsp;&nbsp;&nbsp;</p><p><INPUT TYPE="text" NAME="frames" /> fr.</p>
 		
 	</DIV><br>
+	<p class="p1">Choose currency</p> &nbsp;&nbsp;&nbsp;&nbsp;
+	<p class="p1">€ <INPUT TYPE="radio" NAME="moneda" /> </p>
+	<p class="p1">$ <INPUT TYPE="radio" NAME="moneda" checked="true"/></p><br>
 	
-	<p class="p1">€ <INPUT TYPE="radio" NAME="euro" checked="true"/> </p>
-	<p class="p1">$ <INPUT TYPE="radio" NAME="dolar" /></p><br>
+	<?php 
 	
-	echo conversor_monedas("USD","EUR",1);
-	<INPUT TYPE="button" VALUE="Calcular" onclick="calcular();" class="boton" />
+		function conversor_monedas($moneda_origen,$moneda_destino,$cantidad) {
+		$get = file_get_contents("http://www.google.com/finance/converter?a=$cantidad&from=$moneda_origen&to=$moneda_destino");
+		$get = explode("<span class=bld>",$get);
+		$get = explode("</span>",$get[1]);  
+		return preg_replace("/[^0-9\.]/", null, $get[0]);
+	}
+		
+	$valordolar=conversor_monedas("EUR","USD",1);
+	?>
+	<input type="hidden" name="valordolar" id="valordolar" value="<?php echo $valordolar; ?>">
+	<INPUT TYPE="button" VALUE="Quote!" onclick="calcular();" class="boton" />
 	
 	<DIV class="caja">
 			
-		<p><div class="tit1">Su tiempo:</div> <INPUT TYPE="text" NAME="suTiempo" readonly class="out" /> horas</p>
-		<p><div class="tit1">Nuestro tiempo: </div> <INPUT TYPE="text" NAME="nuestroTiempo" readonly class="out" /> horas</p>
-		<p><div class="tit1">Ah&oacute;rrese </div> <INPUT TYPE="text" NAME="porcentaje" readonly class="out" /> h de procesado</p>
-		<p><div class="tit1">Potencia requerida: </div> <INPUT TYPE="text" NAME="potencia" readonly class="out" /> Ghz</p>
-		<p><div class="tit1">Coste del proyecto: </div> <INPUT TYPE="text" NAME="coste" readonly class="out"  /> &euro;</p>
+		<p><div class="tit1">Your time:</div> <INPUT TYPE="text" NAME="suTiempo" readonly class="out" /> hours</p>
+		<p><div class="tit1">Our time: </div> <INPUT TYPE="text" NAME="nuestroTiempo" readonly class="out" /> hours</p>
+		<p><div class="tit1">Save </div> <INPUT TYPE="text" NAME="porcentaje" readonly class="out"  /> processing hours</p>
+		<p><div class="tit1">Power required: </div> <INPUT TYPE="text" NAME="potencia" readonly class="out" /> Ghz</p>
+		<p><div class="tit1">Project cost: </div> <INPUT TYPE="text" NAME="coste" readonly class="out" /> 	
+			<span id="eur" style="display:none;">&euro;</span>
+			<span id="dol">$</span>
+		</p>
 		
 		<P/>
-		<I><U>Nota</U>: Este c&aacute;lculo es orientativo y ser&aacute; tomado como referencia en pagos fraccionados</I>
+		<I><U>Note</U>: This calculation is only an estimation and will be taken as a reference for payment</I>
 	</DIV>
 	</TD>
 </TR>

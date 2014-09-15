@@ -50,20 +50,20 @@
 	
 	<div style="clear:both;"></div>
 	</div>
+<!--
 <div class="cajaminidoble">
 <div class="textocontenido">
 <p>
  Estos datos son orientativos, disponemos de descuento por volumen, contacta con nosotros para obtener un presupuesto sin compromiso.
- <!-- Estas tarifas son sin promociones, date de alta en la <strong><a href="http://farm.renderdrive.com" class="enlace">Aplicación</a> </strong> y obten importantes descuentos. -->
+ Estas tarifas son sin promociones, date de alta en la <strong><a href="http://farm.renderdrive.com" class="enlace">Aplicación</a> </strong> y obten importantes descuentos. 
  </p>
 <p>IVA no incluido</p>
 
- 
- 
+
 
 
 </div>
-</div>
+</div>-->
 		<div style="clear:both;"></div>
 
 	<div class="cajamini">

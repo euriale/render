@@ -25,9 +25,9 @@
 		<li id="menuserv">
 			<a class="menuserva" href="ventajas-render" <?php if (isset($_GET['r1']) && $_GET['r1']=='ventajas-render') echo 'id="actitem"';?>><?php echo VENTAJAS; ?></a>
 		</li>
-		<li id="menuapp">
+		<!--<li id="menuapp">
 			<a class="menuappa" href="aplicacion-render" <?php if (isset($_GET['r1']) && $_GET['r1']=='aplicacion-render') echo 'id="actitem"'; ?> ><?php echo APLICACION; ?></a>
-		</li>
+		</li>-->
 	  </ul>	
 	 
 </div>	
